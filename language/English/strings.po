@@ -1,0 +1,1166 @@
+# XBMC Media Center language file
+# Addon Name: carpc-xtouch
+# Addon id: skin.carpc-xtouch
+# Addon Provider: jack
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Skins\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#Misc labels
+
+msgctxt "#31000"
+msgid "Change Your"
+msgstr ""
+
+msgctxt "#31001"
+msgid "Close"
+msgstr ""
+
+msgctxt "#31002"
+msgid "Audio Settings"
+msgstr ""
+
+msgctxt "#31003"
+msgid "IP"
+msgstr ""
+
+msgctxt "#31004"
+msgid "Caps[CR]Lock"
+msgstr ""
+
+msgctxt "#31005"
+msgid "Visualization Options"
+msgstr ""
+
+msgctxt "#31006"
+msgid "Visualization Presets"
+msgstr ""
+
+msgctxt "#31007"
+msgid "Context Menu"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Fullscreen"
+msgstr ""
+
+msgctxt "#31009"
+msgid "Working..."
+msgstr ""
+
+msgctxt "#31010"
+msgid "Currently logged in as"
+msgstr ""
+
+#.Used for subtitle button in the OSD
+msgctxt "#31011"
+msgid "N/A"
+msgstr ""
+
+msgctxt "#31012"
+msgid "Music - Files"
+msgstr ""
+
+msgctxt "#31013"
+msgid "Recent Movies"
+msgstr ""
+
+msgctxt "#31014"
+msgid "Recent Episodes"
+msgstr ""
+
+msgctxt "#31015"
+msgid "Recent Music Videos"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Recent Albums"
+msgstr ""
+
+msgctxt "#31017"
+msgid "Volume Muted"
+msgstr ""
+
+#empty strings from id 31018 to 31023
+
+msgctxt "#31024"
+msgid "Page"
+msgstr ""
+
+msgctxt "#31025"
+msgid "Items"
+msgstr ""
+
+#empty strings from id 31026 to 31029
+#ViewType labels
+
+msgctxt "#31030"
+msgid "Info List"
+msgstr ""
+
+msgctxt "#31031"
+msgid "Info Wide"
+msgstr ""
+
+#empty strings from id 31032 to 31039
+#Extra labels
+
+msgctxt "#31040"
+msgid "Now Playing"
+msgstr ""
+
+#empty string with id 31041
+
+msgctxt "#31042"
+msgid "PLAYING"
+msgstr ""
+
+msgctxt "#31043"
+msgid "PAUSED"
+msgstr ""
+
+msgctxt "#31044"
+msgid "FAST FORWARD"
+msgstr ""
+
+msgctxt "#31045"
+msgid "REWIND"
+msgstr ""
+
+msgctxt "#31046"
+msgid "Audio Properties"
+msgstr ""
+
+msgctxt "#31047"
+msgid "Current Preset"
+msgstr ""
+
+msgctxt "#31048"
+msgid "Visualization Presets"
+msgstr ""
+
+msgctxt "#31049"
+msgid "End Time"
+msgstr ""
+
+msgctxt "#31050"
+msgid "Sort: Ascending"
+msgstr ""
+
+msgctxt "#31051"
+msgid "Sort: Descending"
+msgstr ""
+
+#empty strings from id 31052 to 31054
+#Playlist Editor labels
+
+msgctxt "#31055"
+msgid "Open playlist"
+msgstr ""
+
+msgctxt "#31056"
+msgid "Save playlist"
+msgstr ""
+
+msgctxt "#31057"
+msgid "Close playlist"
+msgstr ""
+
+msgctxt "#31058"
+msgid "System music files"
+msgstr ""
+
+msgctxt "#31059"
+msgid "Current playlist"
+msgstr ""
+
+msgctxt "#31060"
+msgid "This file is stacked, select the part you want to play from."
+msgstr ""
+
+#-----------------------------------------------
+
+#Home Menu
+
+msgctxt "#31061"
+msgid "Radio FM"
+msgstr ""
+
+msgctxt "#31062"
+msgid "Music"
+msgstr ""
+
+msgctxt "#31063"
+msgid "Video"
+msgstr ""
+
+msgctxt "#31064"
+msgid "Navigation"
+msgstr ""
+
+msgctxt "#31065"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Shutdown"
+msgstr ""
+
+msgctxt "#31067"
+msgid "Reboot"
+msgstr ""
+
+msgctxt "#31068"
+msgid "Reload Skin"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "#31070"
+msgid "Reboot"
+msgstr ""
+
+msgctxt "#31071"
+msgid "Programs"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Favourites"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Connect 3G"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Filemanager"
+msgstr ""
+
+msgctxt "#31075"
+msgid "Appearance"
+msgstr ""
+
+msgctxt "#31076"
+msgid "Service"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Skin Settings"
+msgstr ""
+
+msgctxt "#31078"
+msgid "Addons"
+msgstr ""
+
+msgctxt "#31079"
+msgid "System"
+msgstr ""
+
+msgctxt "#31080"
+msgid "System Info"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Home Submenu Settings"
+msgstr ""
+
+msgctxt "#31082"
+msgid "Home Menu"
+msgstr "Home Menü"
+
+msgctxt "#31083"
+msgid "Backgrounds"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Clock Settings"
+msgstr ""
+
+msgctxt "#31085"
+msgid "Show Radio Info on Homescreen"
+msgstr ""
+
+msgctxt "#31086"
+msgid "Show Music Info on Homescreen"
+msgstr ""
+
+msgctxt "#31087"
+msgid "Main Menu"
+msgstr ""
+
+msgctxt "#31088"
+msgid "Show Favourites Button"
+msgstr ""
+
+msgctxt "#31089"
+msgid "Show Programs Button"
+msgstr ""
+
+msgctxt "#31090"
+msgid "Show FileManager Button"
+msgstr ""
+
+msgctxt "#31091"
+msgid "Show Connect 3G Button"
+msgstr ""
+
+msgctxt "#31092"
+msgid "Background & Logo Settings"
+msgstr ""
+
+msgctxt "#31093"
+msgid "Custom Background"
+msgstr ""
+
+msgctxt "#31094"
+msgid " >> Custom Background Path:"
+msgstr ""
+
+msgctxt "#31095"
+msgid "Custom Logo (use also for Clock Face)"
+msgstr ""
+
+msgctxt "#31096"
+msgid " >> Custom Logo Path:"
+msgstr ""
+
+msgctxt "#31097"
+msgid "Clock Settings"
+msgstr ""
+
+msgctxt "#31098"
+msgid "Analog Clock Face"
+msgstr ""
+
+msgctxt "#31099"
+msgid "Analog Clock Face Path:"
+msgstr ""
+
+msgctxt "#31100"
+msgid "Show Digital Clock"
+msgstr ""
+
+msgctxt "#31101"
+msgid "Show Analog Clock"
+msgstr ""
+
+msgctxt "#31102"
+msgid "Clock Hands black (default=white)"
+msgstr ""
+
+msgctxt "#31103"
+msgid "Show Seconds Hand"
+msgstr ""
+
+msgctxt "#31104"
+msgid "Show Navigation Button"
+msgstr ""
+
+msgctxt "#31105"
+msgid "Show Music Button (Default)"
+msgstr ""
+
+msgctxt "#31106"
+msgid "Show Video Button"
+msgstr ""
+
+msgctxt "#31107"
+msgid "Show Radio FM Button"
+msgstr ""
+
+msgctxt "#31108"
+msgid "Show Weather Button"
+msgstr ""
+
+msgctxt "#31109"
+msgid "Show Pictures Button"
+msgstr ""
+
+msgctxt "#31110"
+msgid "Main Button Settings"
+msgstr ""
+
+msgctxt "#31111"
+msgid "Show OBD"
+msgstr ""
+
+msgctxt "#31112"
+msgid "Show Weather info and button"
+msgstr ""
+
+msgctxt "#31113"
+msgid "If you use a 1024x600 Screen"
+msgstr ""
+
+#------------------------------------------------
+
+#Connect 3G
+
+msgctxt "#31114"
+msgid "Your IP:"
+msgstr ""
+
+msgctxt "#31115"
+msgid "Network"
+msgstr ""
+
+msgctxt "#31116"
+msgid "Connect"
+msgstr ""
+
+msgctxt "#31117"
+msgid "Disconnect"
+msgstr ""
+
+#------------------------------------------------
+
+#Shutdown Dialog
+
+msgctxt "#31118"
+msgid "What do you want to do?"
+msgstr ""
+
+msgctxt "#31119"
+msgid "Shutdown"
+msgstr ""
+
+msgctxt "#31120"
+msgid "Reboot"
+msgstr ""
+
+msgctxt "#31121"
+msgid "Reload Skin"
+msgstr ""
+
+msgctxt "#31122"
+msgid "Cancel"
+msgstr ""
+
+#------------------------------------------------
+
+#Weitere Skin Settings
+
+msgctxt "#31123"
+msgid "Show visualisation on home when music is playing"
+msgstr ""
+
+msgctxt "#31124"
+msgid "1024x600 screen distortion fix"
+msgstr ""
+
+#------------------------------------------------
+
+#Custom Paths for Music and Video
+
+msgctxt "#31125"
+msgid "Music and Video Source"
+msgstr ""
+
+msgctxt "#31126"
+msgid "Music Source"
+msgstr ""
+
+msgctxt "#31127"
+msgid " >> Custom Music Path:"
+msgstr ""
+
+msgctxt "#31128"
+msgid "Custom Video Destination"
+msgstr ""
+
+msgctxt "#31129"
+msgid " >> Custom Video Path:"
+msgstr ""
+
+msgctxt "#31130"
+msgid "Music & Video"
+msgstr ""
+
+msgctxt "#31131"
+msgid "Custom Skin Colors"
+msgstr ""
+
+msgctxt "#31132"
+msgid "Standard Skin Color"
+msgstr ""
+
+msgctxt "#31133"
+msgid "Focus Color"
+msgstr ""
+
+msgctxt "#31134"
+msgid "Sort your Main Buttons"
+msgstr ""
+
+msgctxt "#31135"
+msgid "Weather"
+msgstr ""
+
+msgctxt "#31136"
+msgid "Connect 3G"
+msgstr ""
+
+msgctxt "#31137"
+msgid "OBD"
+msgstr ""
+
+msgctxt "#31138"
+msgid "You can freely place your main menu buttons. Tap on the entry of the button you wish to move and then type the number (between 1 to 6) and the button will be placed on that position. [CR][CR]To hide a Button from home screen just leave the input field empty. If you wish to have access to the function of a hidden button, you can activate the according submenu button. The submenu buttons for ‚Shutdown‘ and ‚Settings‘ are a activated automatically when their home screen buttons are hidden."
+msgstr ""
+
+msgctxt "#31139"
+msgid "Visualisation"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Music & Radio Infos"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Visualisation on Home Screen"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Use Custom Backround Picture (400x400px)"
+msgstr ""
+
+msgctxt "#31143"
+msgid " >> Choose Path to Background Picture"
+msgstr ""
+
+msgctxt "#31144"
+msgid "Logo"
+msgstr ""
+
+msgctxt "#31145"
+msgid "Choose a Backround Picture for Visualisation on Fullscreen"
+msgstr ""
+
+msgctxt "#31146"
+msgid " >> Path to Background Picture"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Title Area"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Your Home Title"
+msgstr ""
+
+msgctxt "#31149"
+msgid "Shutdown without Dialog"
+msgstr ""
+
+msgctxt "#31150"
+msgid "Shutdown with Dialog"
+msgstr ""
+
+msgctxt "#31151"
+msgid "Hide Shutdown Dialog"
+msgstr ""
+
+msgctxt "#31152"
+msgid "Main Menu Buttons Help"
+msgstr ""
+
+msgctxt "#31153"
+msgid "Magic Buttons"
+msgstr ""
+
+msgctxt "#31154"
+msgid "Home Screen Position"
+msgstr ""
+
+msgctxt "#31155"
+msgid "Button Title"
+msgstr ""
+
+msgctxt "#31156"
+msgid "Icon"
+msgstr ""
+
+msgctxt "#31157"
+msgid "Action"
+msgstr "Action"
+
+msgctxt "#31158"
+msgid "You can add up to three freely configurable 'Magic Buttons' to your home screen. These buttons allow you to call a new function, a window, a plugin or a script directly from the home screen.[CR] "
+msgstr ""
+
+msgctxt "#31159"
+msgid "Options:"
+msgstr ""
+
+msgctxt "#31160"
+msgid "HOME SCREEN POSITION: Choose on which position on the home screen the button should appear[CR]BUTTON TITLE: The Title of the button [CR]ICON: The icon for the button (PNG with transparency, 80x80px)[CR]ACTION: The action that should be performed when the button is pressed. For instance: ActivateWindow(WindowName_or_ID) or: RunScript("plugin.name“)."
+msgstr ""
+
+msgctxt "#31161"
+msgid "Add Magic Button"
+msgstr ""
+
+msgctxt "#31162"
+msgid "+ Add Magic Button (2)"
+msgstr ""
+
+msgctxt "#31163"
+msgid "+ Add Magic Button (3)"
+msgstr ""
+
+msgctxt "#31164"
+msgid "Use Album Cover as Background"
+msgstr ""
+
+msgctxt "#31165"
+msgid "Album Cover is used"
+msgstr ""
+
+msgctxt "#31166"
+msgid "Choose Background Pictures for Main Buttons"
+msgstr ""
+
+msgctxt "#31167"
+msgid "Main Button"
+msgstr ""
+
+msgctxt "#31168"
+msgid "Clear all"
+msgstr ""
+
+msgctxt "#31169"
+msgid "Show Random/Repeat Buttons"
+msgstr ""
+
+msgctxt "#31170"
+msgid "Icon & Text Color"
+msgstr ""
+
+msgctxt "#31171"
+msgid "General"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Home Menu"
+msgstr ""
+
+msgctxt "#31173"
+msgid "Media"
+msgstr ""
+
+msgctxt "#31174"
+msgid "Submenu Buttons"
+msgstr ""
+
+msgctxt "#31175"
+msgid "Skin Colors"
+msgstr ""
+
+msgctxt "#31176"
+msgid "Skin Background"
+msgstr ""
+
+msgctxt "#31177"
+msgid "Logo Area"
+msgstr ""
+
+msgctxt "#31178"
+msgid "Screen Correction"
+msgstr ""
+
+msgctxt "#31179"
+msgid "Player Buttons"
+msgstr ""
+
+msgctxt "#31180"
+msgid "Icon & Title Color"
+msgstr ""
+
+msgctxt "#31181"
+msgid "Color & Background"
+msgstr ""
+
+msgctxt "#31182"
+msgid "Choose Color for Main Button Icon & Title"
+msgstr ""
+
+msgctxt "#31183"
+msgid "Magic Buttons"
+msgstr ""
+
+msgctxt "#31184"
+msgid "Main Button Icon & Title Color"
+msgstr ""
+
+msgctxt "#31185"
+msgid "Show Weather Info Top Right"
+msgstr ""
+
+msgctxt "#31186"
+msgid "Enable Home Screen Title (Top Left)"
+msgstr ""
+
+msgctxt "#31187"
+msgid "Enable Weather Info (Top Right)"
+msgstr ""
+
+msgctxt "#31188"
+msgid ">> Go to Weather Addon"
+msgstr ""
+
+msgctxt "#31189"
+msgid "Quit"
+msgstr ""
+
+msgctxt "#31190"
+msgid "Current Color:"
+msgstr ""
+
+msgctxt "#31191"
+msgid "Enter Hex-Code:"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Choose a Color"
+msgstr ""
+
+msgctxt "#31193"
+msgid "Main Buttons Background Solid Color"
+msgstr ""
+
+msgctxt "#31194"
+msgid "Title Text"
+msgstr ""
+
+msgctxt "#31195"
+msgid "Weather Info"
+msgstr ""
+
+msgctxt "#31196"
+msgid "Visualisation Background"
+msgstr "Visualisierung Hintergrund"
+
+msgctxt "#31197"
+msgid "Background Solid Color"
+msgstr ""
+
+msgctxt "#31198"
+msgid "Background Pictures"
+msgstr ""
+
+msgctxt "#31199"
+msgid "You can set the color of the title and icon of the main menu buttons. Choose a color from the list or enter your own color in hex code (AARRGGBB (AA=transparency, FF=opaque, 00=fully transparent, RRGGBB=color code). Default color is White."
+msgstr ""
+
+#------------------------------------------------
+
+#Submenu labels
+
+msgctxt "#31200"
+msgid "Back"
+msgstr ""
+
+msgctxt "#31201"
+msgid "Location"
+msgstr ""
+
+msgctxt "#31202"
+msgid "View"
+msgstr ""
+
+#------------------------------------------------
+
+msgctxt "#31203"
+msgid "You can set a background color for the main buttons. Choose a color from the list or enter your own color in hex code (AARRGGBB (AA=transparency, FF=opaque, 00=fully transparent, RRGGBB=color code). Default color is White. Additionally you can set the opacity of the background."
+msgstr ""
+
+msgctxt "#31204"
+msgid "You can set a background image for each of your main buttons separately. Store the images on the pi and choose the path. The dimensions of the pictures should be 588x136px. Bigger images are also possible but will be scaled to fit the box."
+msgstr ""
+
+msgctxt "#31205"
+msgid "Background colors must be deactivated first!"
+msgstr ""
+
+msgctxt "#31206"
+msgid "Background images must be deactivated first!"
+msgstr ""
+
+msgctxt "#31207"
+msgid "Main Button Style"
+msgstr ""
+
+msgctxt "#31208"
+msgid "Reset to Standard"
+msgstr ""
+
+msgctxt "#31209"
+msgid "Input Hex Code"
+msgstr ""
+
+msgctxt "#31210"
+msgid "Choose Color for Button Borders"
+msgstr ""
+
+msgctxt "#31211"
+msgid "Configuration"
+msgstr ""
+
+msgctxt "#31212"
+msgid "No Color"
+msgstr ""
+
+msgctxt "#31213"
+msgid "Button Border"
+msgstr ""
+
+msgctxt "#31214"
+msgid "Decide whether the borders of the main menu buttons should be visible or hidden. When visible, you can set the color for the borders. Choose a color from the list or enter your own color in hex code (AARRGGBB (AA=transparency, FF=opaque, 00=fully transparent, RRGGBB=color code). Default color is White."
+msgstr ""
+
+msgctxt "#31215"
+msgid "Main Button Border Color"
+msgstr ""
+
+msgctxt "#31216"
+msgid "Radio Background"
+msgstr ""
+
+msgctxt "#31217"
+msgid "Activate Color Background"
+msgstr ""
+
+msgctxt "#31218"
+msgid "Set Opacity"
+msgstr ""
+
+msgctxt "#31219"
+msgid "Opacity"
+msgstr "Deckkraft"
+
+msgctxt "#31220"
+msgid "You are starting this version of the xTouch skin for the first time. This First Run Wizzard will guide you through the steps to do some necessary basic settings. Just follow the instructions on the screen. It will take only one minute"
+msgstr ""
+
+msgctxt "#31221"
+msgid "Welcome!"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Let's go!"
+msgstr ""
+
+msgctxt "#31223"
+msgid "Step 1: Set the Skin Colors"
+msgstr ""
+
+msgctxt "#31224"
+msgid "Choose the standard color and focus color for the the active elements (buttons) of the screen. To start with white as standard color will be a good choice. You can change all settings later at any time. [CR] [CR|Choose a color from the list or enter your own color in hex code (AARRGGBB (AA=transparency, FF=opaque, 00=fully transparent, RRGGBB=color code). "
+msgstr ""
+
+msgctxt "#31225"
+msgid "Choose up to six main menu buttons for the home screen. You can alter your choice, the position of the buttons on the home screen as well as the style of the buttons later at any time."
+msgstr ""
+
+msgctxt "#31226"
+msgid "Skin Basic Settings"
+msgstr ""
+
+msgctxt "#31227"
+msgid "Step 2: Main Menu"
+msgstr ""
+
+msgctxt "#31228"
+msgid "Step 3: Main Menu Buttons Style"
+msgstr ""
+
+msgctxt "#31229"
+msgid "Main menu button style: Choose the colors for text, icon and outline of the main menu buttons.[CR] [CR|Choose a color from the list or enter your own color in hex code (AARRGGBB (AA=transparency, FF=opaque, 00=fully transparent, RRGGBB=color code). "
+msgstr ""
+
+msgctxt "#31230"
+msgid "You can freely place your main menu buttons. Tap on the entry of the button you wish to move and then type the number (between 1 to 6) and the button will be placed on that position."
+msgstr ""
+
+msgctxt "#31231"
+msgid "Next"
+msgstr ""
+
+msgctxt "#31232"
+msgid "Almost done!"
+msgstr ""
+
+msgctxt "#31233"
+msgid "Just on last step: click 'Finish' to close the this assistant. You can change this settings at any given time. You can find them together with a ton of other settings in the Skin Settings. [CR] [CR]And now: Have fun and drive safely!"
+msgstr ""
+
+msgctxt "#31234"
+msgid "Finish"
+msgstr ""
+
+msgctxt "#31235"
+msgid "Show Outlines"
+msgstr ""
+
+msgctxt "#31236"
+msgid "Depending on the chosen screen background it may be reasonable to give the player buttons a background to make them more perceptible. Here you can set this background, it's color and opacity. Choose a color from the list or enter your own color in hex code (AARRGGBB (AA=transparency, FF=opaque, 00=fully transparent, RRGGBB=color code). Default color is Black. Additionally you can set the opacity of the background."
+msgstr ""
+
+msgctxt "#31237"
+msgid "Player Buttons Background"
+msgstr ""
+
+msgctxt "#31238"
+msgid "Skin Background"
+msgstr ""
+
+msgctxt "#31239"
+msgid "Bottom Bar Background"
+msgstr ""
+
+msgctxt "#31240"
+msgid "Depending on the chosen screen background it may be reasonable to give the bottom area a background to make the submenu buttons and volume slider more perceptible. Here you can set this background, it's color and opacity. Choose a color from the list or enter your own color in hex code (AARRGGBB (AA=transparency, FF=opaque, 00=fully transparent, RRGGBB=color code). Default color is Black. Additionally you can set the opacity of the background."
+msgstr ""
+
+msgctxt "#31241"
+msgid " >> Artists"
+msgstr ""
+
+msgctxt "#31242"
+msgid " >> Albums"
+msgstr ""
+
+msgctxt "#31243"
+msgid " >> Genre"
+msgstr ""
+
+msgctxt "#31244"
+msgid "Activate background pictures for home buttons"
+msgstr ""
+
+msgctxt "#31245"
+msgid "Artist"
+msgstr ""
+
+msgctxt "#31246"
+msgid "Album"
+msgstr ""
+
+msgctxt "#31247"
+msgid "Title"
+msgstr ""
+
+msgctxt "#31248"
+msgid " >> Playlists"
+msgstr ""
+
+msgctxt "#31249"
+msgid "Show Music Button (Artists)"
+msgstr ""
+
+msgctxt "#31249"
+msgid "Show Music Button (Albums)"
+msgstr ""
+
+msgctxt "#31249"
+msgid "Show Music Button (Genres)"
+msgstr ""
+
+
+#empty strings from id 31249 to 31299
+#------------------------------------------------
+
+#Extra labels
+
+msgctxt "#31300"
+msgid "Current Temp"
+msgstr ""
+
+msgctxt "#31301"
+msgid "Last Updated"
+msgstr ""
+
+#empty string with id 31302
+
+msgctxt "#31303"
+msgid "Data provider"
+msgstr ""
+
+#------------------------------------------------
+
+#empty strings from id 31304 to 31308
+
+msgctxt "#31309"
+msgid "Memory Used:"
+msgstr ""
+
+#empty strings from id 31310 to 31311
+
+msgctxt "#31312"
+msgid "Current Scraper"
+msgstr ""
+
+msgctxt "#31313"
+msgid "Choose a Scraper"
+msgstr ""
+
+msgctxt "#31314"
+msgid "Content Scanning Options"
+msgstr ""
+
+#empty strings from id 31315 to 31318
+
+msgctxt "#31319"
+msgid "Currently available XBMC user profiles"
+msgstr ""
+
+msgctxt "#31320"
+msgid "Last Logged In"
+msgstr ""
+
+msgctxt "#31321"
+msgid "Karaoke Song Selector"
+msgstr ""
+
+msgctxt "#31322"
+msgid "Aired"
+msgstr ""
+
+#empty strings from id 31323 to 31324
+
+msgctxt "#31325"
+msgid "Playlist Options"
+msgstr ""
+
+#empty strings from id 31326 to 31350
+#Video and Music OSD Labels
+
+msgctxt "#31351"
+msgid "Pause"
+msgstr ""
+
+msgctxt "#31352"
+msgid "Stop"
+msgstr ""
+
+msgctxt "#31353"
+msgid "Fast Forward"
+msgstr ""
+
+msgctxt "#31354"
+msgid "Rewind"
+msgstr ""
+
+msgctxt "#31355"
+msgid "Video Menu"
+msgstr ""
+
+msgctxt "#31356"
+msgid "Download Subtitles"
+msgstr ""
+
+msgctxt "#31357"
+msgid "Image Info"
+msgstr ""
+
+#empty strings from id 31358 to 31389
+#Skin Fontsets
+
+msgctxt "#31390"
+msgid "Skin default"
+msgstr ""
+
+msgctxt "#31391"
+msgid "Arial based"
+msgstr ""
+
+#empty strings from id 31392 to 31399
+#Description Labels
+
+msgctxt "#31400"
+msgid "Change the skin · Set language and region · Change file listing options · Set up a screensaver"
+msgstr ""
+
+msgctxt "#31401"
+msgid "Manage your video library · Set video playback options · Change video listing options · Set subtitle fonts"
+msgstr ""
+
+msgctxt "#31402"
+msgid "Manage your music library · Set music playback options · Change music listing options · Setup song submission · Set karaoke options"
+msgstr ""
+
+msgctxt "#31403"
+msgid "Set picture listing options · Configure slideshows"
+msgstr ""
+
+msgctxt "#31404"
+msgid "Set three cities to collect weather information"
+msgstr ""
+
+msgctxt "#31405"
+msgid "Setup control of XBMC via UPnP and HTTP · Configure file sharing · Set internet access options"
+msgstr ""
+
+msgctxt "#31406"
+msgid "Setup and calibrate displays · Configure audio output · Setup remote controls · Set power saving options · Enable debugging · Setup master lock"
+msgstr ""
+
+msgctxt "#31407"
+msgid "Setup the skin · Add and remove home menu items · Change skin backgrounds"
+msgstr ""
+
+msgctxt "#31408"
+msgid "Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org · Modify Add-on settings"
+msgstr ""
+
+#empty strings from id 31409 to 31420
+
+msgctxt "#31421"
+msgid "Select your XBMC user Profile[CR]to login and continue"
+msgstr ""
+
+#empty strings from id 31422 to 31499
+#Skin Setting Headers
+
+msgctxt "#31500"
+msgid "Home Menu Catagory Buttons"
+msgstr ""
+
+msgctxt "#31501"
+msgid "Home Page Add-on Quick Links"
+msgstr ""
+
+msgctxt "#31502"
+msgid "Miscellaneous Options"
+msgstr ""
+
+msgctxt "#31503"
+msgid "Media Window Add-ons"
+msgstr ""
+
+#empty strings from id 31504 to 31549
+#Skin Setting Options
+
+msgctxt "#31550"
+msgid "Home Screen Weather Info and button"
+msgstr ""
+
+msgctxt "#31551"
+msgid "Add-on Shortcut"
+msgstr ""
+
+msgctxt "#31552"
+msgid "Set Add-on to use for subtitles"
+msgstr ""

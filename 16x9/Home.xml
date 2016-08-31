@@ -1,0 +1,501 @@
+<window id="0">
+	<onload>RunScript("special://skin/scripts/check_calibration.py")</onload>
+	<onunload condition="Container(9000).Hasfocus(2) | Container(9000).Hasfocus(3) | ControlGroup(9010).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
+	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(1)">ClearProperty(VideosDirectLink)</onunload>
+	<onload condition="!Skin.HasSetting(HideSettingsManager)">ActivateWindow(1122)</onload>
+	<defaultcontrol always="true">3001</defaultcontrol>
+	<controls>
+		<include>CommonBackground</include>
+<!--	<control type="videowindow">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>ScreenWidth</width>
+			<height>ScreenHeight</height>
+			<visible>Player.HasVideo</visible>
+		</control>	-->	
+		
+		<include>CommonTopBar</include>		
+ 	    <include>WeatherTitleWidget</include>
+		
+<!-- Title Text -->
+		<control type="label">
+			<description>Text Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Skin.String(HomeScreenTitle)]</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control>
+		<control type="button">
+			<description>Viz Fullscreen Button</description>
+			<visible>Player.HasAudio</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>100</height>
+			<width>100</width>
+			<label></label> 
+			<font>font40_title</font>
+			<textcolor>-</textcolor>
+			<texturenofocus>1px_transparent.png</texturenofocus>
+			<texturefocus>1px_transparent.png</texturefocus>
+			<onclick>ActivateWindow(2006)</onclick>
+		</control>
+
+			<!--Menu customized-->
+		
+<!-- Home Buttons Custom Backgrounds -->
+
+		<include>HomeBG_1</include>
+		<include>HomeBG_2</include>
+		<include>HomeBG_3</include>
+		<include>HomeBG_4</include>
+		<include>HomeBG_5</include>
+		<include>HomeBG_6</include> 
+
+		<include>HomeBG_1Fix</include>
+		<include>HomeBG_2Fix</include>
+		<include>HomeBG_3Fix</include>
+		<include>HomeBG_4Fix</include>
+		<include>HomeBG_5Fix</include>
+		<include>HomeBG_6Fix</include> 
+
+<!-- Home Buttons Backgrounds Solid Color-->
+
+		<include>HomeBGColor_1</include>
+		<include>HomeBGColor_2</include>
+		<include>HomeBGColor_3</include>
+		<include>HomeBGColor_4</include>
+		<include>HomeBGColor_5</include>
+		<include>HomeBGColor_6</include> 
+
+		<include>HomeBGColor_1Fix</include>
+		<include>HomeBGColor_2Fix</include>
+		<include>HomeBGColor_3Fix</include>
+		<include>HomeBGColor_4Fix</include>
+		<include>HomeBGColor_5Fix</include>
+		<include>HomeBGColor_6Fix</include> 
+
+<!-- Homebuttons -->
+		<include>Radio1</include>
+		<include>Radio2</include>
+		<include>Radio3</include>
+		<include>Radio4</include>
+		<include>Radio5</include>
+		<include>Radio6</include> 
+		<include>Music1</include>  
+		<include>Music2</include>  
+		<include>Music3</include>  
+		<include>Music4</include>  
+		<include>Music5</include>  
+		<include>Music6</include>  
+<!--	<include>MusicDefault</include>  
+		<include>MusicDefault1</include>  
+		<include>MusicDefault2</include>  
+		<include>MusicDefault3</include>  
+		<include>MusicDefault4</include>  
+		<include>MusicDefault5</include>  
+		<include>MusicDefault6</include>  -->
+		<include>Video1</include>
+		<include>Video2</include>
+		<include>Video3</include>
+		<include>Video4</include>
+		<include>Video5</include>
+		<include>Video6</include>
+<!--	<include>VideoDefault</include> 
+		<include>VideoDefault1</include>
+		<include>VideoDefault2</include>
+		<include>VideoDefault3</include>
+		<include>VideoDefault4</include>
+		<include>VideoDefault5</include>
+		<include>VideoDefault6</include> -->
+		<include>Navigation1</include>  
+		<include>Navigation2</include>  
+		<include>Navigation3</include>  
+		<include>Navigation4</include>  
+		<include>Navigation5</include>  
+		<include>Navigation6</include>  
+		<include>Settings1</include>
+		<include>Settings2</include>
+		<include>Settings3</include>
+		<include>Settings4</include>
+		<include>Settings5</include>
+		<include>Settings6</include>
+		<include>Shutdown1</include>
+		<include>Shutdown2</include>
+		<include>Shutdown3</include>
+		<include>Shutdown4</include>
+		<include>Shutdown5</include>
+		<include>Shutdown6</include>
+		<include>ShutdownNoDialog1</include>
+		<include>ShutdownNoDialog2</include>
+		<include>ShutdownNoDialog3</include>
+		<include>ShutdownNoDialog4</include>
+		<include>ShutdownNoDialog5</include>
+		<include>ShutdownNoDialog6</include>
+		<include>Weather1</include>
+		<include>Weather2</include>
+		<include>Weather3</include>
+		<include>Weather4</include>
+		<include>Weather5</include>
+		<include>Weather6</include>
+		<include>Connect3G1</include>
+		<include>Connect3G2</include>
+		<include>Connect3G3</include>
+		<include>Connect3G4</include>
+		<include>Connect3G5</include>
+		<include>Connect3G6</include>
+		<include>OBD1</include>
+		<include>OBD2</include>
+		<include>OBD3</include>
+		<include>OBD4</include>
+		<include>OBD5</include>
+		<include>OBD6</include>
+		<include>CustomButton1</include>
+		<include>CustomButton2</include>
+		<include>CustomButton3</include>
+		<include>CustomButton4</include>
+		<include>CustomButton5</include>
+		<include>CustomButton6</include>
+		<include>CustomButton2-1</include>
+		<include>CustomButton2-2</include>
+		<include>CustomButton2-3</include>
+		<include>CustomButton2-4</include>
+		<include>CustomButton2-5</include>
+		<include>CustomButton2-6</include>
+		<include>CustomButton3-1</include>
+		<include>CustomButton3-2</include>
+		<include>CustomButton3-3</include>
+		<include>CustomButton3-4</include>
+		<include>CustomButton3-5</include>
+		<include>CustomButton3-6</include> 
+
+
+<!-- Homebuttons 1024x600Fix -->
+		<include>RadioFix1</include>
+		<include>RadioFix2</include>
+		<include>RadioFix3</include>
+		<include>RadioFix4</include>
+		<include>RadioFix5</include>
+		<include>RadioFix6</include>
+		<include>MusicFix1</include>  
+		<include>MusicFix2</include>  
+		<include>MusicFix3</include>  
+		<include>MusicFix4</include>  
+		<include>MusicFix5</include>  
+		<include>MusicFix6</include>  
+<!--	<include>MusicFixDefault</include>  
+		<include>MusicFixDefault1</include>  
+		<include>MusicFixDefault2</include>  
+		<include>MusicFixDefault3</include>  
+		<include>MusicFixDefault4</include>  
+		<include>MusicFixDefault5</include>  
+		<include>MusicFixDefault6</include>  -->
+		<include>VideoFix1</include>
+		<include>VideoFix2</include>
+		<include>VideoFix3</include>
+		<include>VideoFix4</include>
+		<include>VideoFix5</include>
+		<include>VideoFix6</include>
+<!--	<include>VideoFixDefault</include> 
+		<include>VideoFixDefault1</include>
+		<include>VideoFixDefault2</include>
+		<include>VideoFixDefault3</include>
+		<include>VideoFixDefault4</include>
+		<include>VideoFixDefault5</include>
+		<include>VideoFixDefault6</include>  -->
+		<include>NavigationFix1</include>  
+		<include>NavigationFix2</include>  
+		<include>NavigationFix3</include>  
+		<include>NavigationFix4</include>  
+		<include>NavigationFix5</include>  
+		<include>NavigationFix6</include>  
+		<include>SettingsFix1</include>
+		<include>SettingsFix2</include>
+		<include>SettingsFix3</include>
+		<include>SettingsFix4</include>
+		<include>SettingsFix5</include>
+		<include>SettingsFix6</include>
+		<include>ShutdownFix1</include>
+		<include>ShutdownFix2</include>
+		<include>ShutdownFix3</include>
+		<include>ShutdownFix4</include>
+		<include>ShutdownFix5</include>
+		<include>ShutdownFix6</include>
+		<include>ShutdownNoDialogFix1</include>
+		<include>ShutdownNoDialogFix2</include>
+		<include>ShutdownNoDialogFix3</include>
+		<include>ShutdownNoDialogFix4</include>
+		<include>ShutdownNoDialogFix5</include>
+		<include>ShutdownNoDialogFix6</include>
+		<include>WeatherFix1</include>
+		<include>WeatherFix2</include>
+		<include>WeatherFix3</include>
+		<include>WeatherFix4</include>
+		<include>WeatherFix5</include>
+		<include>WeatherFix6</include>
+		<include>Connect3GFix1</include>
+		<include>Connect3GFix2</include>
+		<include>Connect3GFix3</include>
+		<include>Connect3GFix4</include>
+		<include>Connect3GFix5</include>
+		<include>Connect3GFix6</include>
+		<include>OBDFix1</include>
+		<include>OBDFix2</include>
+		<include>OBDFix3</include>
+		<include>OBDFix4</include>
+		<include>OBDFix5</include>
+		<include>OBDFix6</include>
+		<include>CustomButtonFix1</include>
+		<include>CustomButtonFix2</include>
+		<include>CustomButtonFix3</include>
+		<include>CustomButtonFix4</include>
+		<include>CustomButtonFix5</include>
+		<include>CustomButtonFix6</include>
+		<include>CustomButton2Fix1</include>
+		<include>CustomButton2Fix2</include>
+		<include>CustomButton2Fix3</include>
+		<include>CustomButton2Fix4</include>
+		<include>CustomButton2Fix5</include>
+		<include>CustomButton2Fix6</include>
+		<include>CustomButton3Fix1</include>
+		<include>CustomButton3Fix2</include>
+		<include>CustomButton3Fix3</include>
+		<include>CustomButton3Fix4</include>
+		<include>CustomButton3Fix5</include>
+		<include>CustomButton3Fix6</include>
+
+<!-- Logo area -->
+		<control type="image">
+			<description>Normal Default Logo Image</description>
+			<posx>440</posx>
+			<posy>80</posy>
+			<width>400</width>
+			<height>396</height>
+	    	<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+			<texture>logo.png</texture>
+			<visible>![Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath)) + Skin.HasSetting(Hide1024x600Fix)  + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]]</visible>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
+		<control type="image">
+			<description>User Set Logo Image</description>
+			<posx>440</posx>
+			<posy>80</posy>
+			<width>400</width>
+			<height>396</height>
+	        <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+			<texture>$INFO[Skin.String(CustomLogoPath)]</texture>
+			<visible>Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath)) + Skin.HasSetting(Hide1024x600Fix) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]</visible>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
+		<control type="image">
+			<description>Normal Default Logo Image - Fix</description>
+			<posx>436</posx>
+			<posy>80</posy>
+			<width>410</width>
+			<height>396</height>
+	    	<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+			<texture>logo.png</texture>
+			<visible>![Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath)) + !Skin.HasSetting(Hide1024x600Fix) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]]</visible>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
+		<control type="image">
+			<description>User Set Logo Image - Fix</description>
+			<posx>436</posx>
+			<posy>80</posy>
+			<width>410</width>
+			<height>396</height>
+	        <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+			<texture>$INFO[Skin.String(CustomLogoPath)]</texture>
+			<visible>Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath)) + !Skin.HasSetting(Hide1024x600Fix) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]</visible>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
+
+		<include>Clock_Date</include> 
+		<include>Clock_Time</include>
+		<include>Clock_Time_White</include>
+<!--		<include>Clock_Hour</include>  -->
+		<include>Time</include>				
+
+<!-- Visualisation -->
+		<control type="image">
+			<description>Visualisation Background: Path</description>
+			<posx>440</posx>
+			<posy>85</posy>
+			<width>402</width>
+			<height>388</height>
+			<visible>Skin.HasSetting(UseVisBg) + Player.HasAudio + Window.IsVisible(home) + !Skin.HasSetting(HideVisualisationHome) + !Skin.HasSetting(UseVisBgCover)</visible> 
+	        <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+			<texture diffuse="cover_mask.png">$INFO[Skin.String(CustomVisBgPath)]</texture>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control> 
+		<control type="image">
+			<description>Visualisation Background: Label</description>
+			<posx>440</posx>
+			<posy>85</posy>
+			<width>402</width>
+			<height>388</height>
+			<visible>Skin.HasSetting(UseVisBgCover) + Player.HasAudio + Window.IsVisible(home) + !Skin.HasSetting(HideVisualisationHome) + !Skin.HasSetting(UseVisBg)</visible> 
+	        <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio> 
+			<texture diffuse="cover_mask.png" background="false">$INFO[MusicPlayer.Cover]</texture>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control> 
+
+	    <include>VisualisationHome</include> 
+
+		
+		<include>CommonBottomBar</include>   
+
+		<!-- Song/radio info -->
+		<control type="group">
+			<include>BottomBG</include>
+<!--		<include>BottomBGFix</include> -->
+			<include>MusicPlayerTitle</include>
+			<include>MusicPlayerTitlewithButtons</include>
+			<include>RandomRepeatButtonsFix</include> 
+			<include>RadioStationName</include>
+			<include>MusicPlayerTitleFix</include>
+			<include>MusicPlayerTitlewithButtonsFix</include>
+			<include>RandomRepeatButtons</include>
+			<include>RadioStationNameFix</include>
+			<control type="image">
+	            <visible>[Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle)] | [!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioStationName) + substring(Window(Home).Property(Radio.Active),true)]</visible>
+				<description>Infobox Background</description>
+				<posx>70</posx>
+                <posy>500</posy>
+                <width>1140</width>
+                <height>65</height>
+				<aspectratio></aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">info_bg.png</texture>
+				<include>Window_OpenClose_Animation_Zoom</include>
+			</control>
+		</control>
+
+<!--	<include>HomeRecentlyAddedInfo</include> -->
+		<include>BottomNowPLaying</include>
+		
+
+		<control type="panel" id="9003">
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>SubMenuCommonLayout2</include>
+			<content>
+				<item id="3010">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusic) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]</visible>
+					<icon>button_music.png</icon>
+					<onclick>ActivateWindow(Music,$INFO[Skin.String(CustomMusicPath)])</onclick>
+				</item>
+				<item id="3011">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicArtists)</visible>
+					<icon>button_musicartist.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://artists/,return)</onclick>
+				</item>
+				<item id="3012">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicAlbums)</visible>
+					<icon>button_musicalbum.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://albums/,return])</onclick>
+				</item>
+				<item id="3013">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicGenres)</visible>
+					<icon>button_musicgenre.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://genres/,return)</onclick>
+				</item>
+				<item id="3014">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVideo) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]</visible>
+					<icon>button_video.png</icon>
+					<onclick>ActivateWindow(Videos,$INFO[Skin.String(CustomVideoPath)])</onclick>
+				</item>
+				<item id="3015">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonNavigation) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]</visible>
+					<icon>button_navi.png</icon>
+					<onclick>RunScript("plugin.program.navigation")</onclick>
+				</item>
+				<item id="3016">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadio) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]</visible>
+					<icon>button_radio.png</icon>
+					<onclick>RunScript("plugin.program.radioFM")</onclick>
+				</item>
+				<item id="3017">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]</visible>
+					<icon>button_settings.png</icon>
+					<onclick>ActivateWindow(Settings)</onclick>
+				</item>
+				<item id="3018">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonShutdownDialog) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)] + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+					<icon>button_shutdown.png</icon>
+					<onclick>ActivateWindow(1998)</onclick>
+				</item>  
+				<item id="3019">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(HideHomeButtonShutdownDialog) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)] + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+					<icon>button_shutdown.png</icon>
+					<onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
+				</item>  
+				<item id="3020">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFileManager)</visible>
+					<icon>button_filemanager.png</icon>
+					<onclick>ActivateWindow(FileManager)</onclick>
+				</item>
+				<item id="3021">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnect3g) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]</visible>
+					<icon>button_3g.png</icon>
+					<onclick>ActivateWindow(1118)</onclick>
+				</item>
+<!--			<item>
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonOBD) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]</visible>
+					<icon>button_obd.png</icon>
+					<onclick>-</onclick>
+				</item>  -->
+				<item id="3022">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]</visible>
+					<icon>button_weather.png</icon>
+					<onclick>ActivateWindow(Weather)</onclick>
+				</item>
+<!--			<item>
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPictures)</visible>
+					<icon>button_pictures.png</icon>
+					<onclick>ActivateWindow(Pictures)</onclick>
+				</item> -->
+				<item id="3023">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFavourites)</visible>
+					<icon>button_favs.png</icon>
+					<onclick>ActivateWindow(Favourites)</onclick>
+				</item>
+				<item id="3024">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms)</visible>
+					<icon>button_apps.png</icon>
+					<onclick>ActivateWindow(Programs)</onclick>
+				</item>
+<!--			<item>
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonReload)</visible>
+					<icon>button_reload.png</icon>
+					<onclick>XBMC.ReloadSkin()</onclick>
+				</item>  -->
+			</content>
+		</control>
+
+   		<include>BehindDialogFadeOut</include>
+   		
+   			
+   		
+	</controls>	
+</window>

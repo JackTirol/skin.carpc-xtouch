@@ -1,0 +1,312 @@
+<window id="132">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<include>16x9_xPos_Relocation</include>
+	<include>Window_OpenClose_Animation_Zoom</include>
+	<coordinates>
+		<system>1</system>
+		<posx>100</posx>
+		<posy>23</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>750</width>
+			<height>45</height>
+			<texture border="5">DialogHeader.png</texture>
+		</control>
+		<control type="label" id="1">
+			<description>header label</description>
+			<posx>15</posx>
+			<posy>0</posy>
+			<include>WindowTitleCommons</include>
+			<width>682</width>
+			<label>$LOCALIZE[20333]</label>
+		</control>
+		<control type="group">
+			<posx>698</posx>
+			<posy>0</posy>
+			<include>DialogCloseButtonCommons</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>45</posy>
+			<width>750</width>
+			<height>630</height>
+			<texture border="5">DialogBack.png</texture>
+		</control>
+
+		<control type="group">
+			<posx>15</posx>
+			<control type="label">
+				<description>Content Picker Header</description>
+				<posx>0</posx>
+				<posy>52</posy>
+				<width>345</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<label>$LOCALIZE[20344]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>black</textcolor>
+			</control>
+			<control type="spincontrolex" id="3">
+				<description>Content Picker</description>
+				<posx>0</posx>
+				<posy>90</posy>
+				<width>345</width>
+				<height>37</height>
+				<texturefocus border="5">ListNF.png</texturefocus>
+				<texturenofocus border="5">ListNF.png</texturenofocus>
+				<font>-</font>
+				<label>-</label>
+				<reverse>yes</reverse>
+				<onup>28</onup>
+				<ondown>5</ondown>
+				<onleft>60</onleft>
+				<onright>4</onright>
+			</control>
+			<control type="label">
+				<description>Content Picker label</description>
+				<posx>8</posx>
+				<posy>90</posy>
+				<width>210</width>
+				<height>37</height>
+				<font>font13</font>
+				<label>$INFO[Control.GetLabel(3)]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+			</control>
+			<control type="label">
+				<description>Used Scraper Header</description>
+				<posx>0</posx>
+				<posy>135</posy>
+				<width>345</width>
+				<height>15</height>
+				<font>font13</font>
+				<label>$LOCALIZE[31312]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>black</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="image">
+				<description>Used Scraper Image</description>
+				<posx>0</posx>
+				<posy>157</posy>
+				<width>345</width>
+				<height>142</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<bordertexture border="8">ThumbShadow.png</bordertexture>
+				<bordersize>8</bordersize>
+			</control>
+			<control type="label">
+				<description>Used Scaper Label</description>
+				<posx>0</posx>
+				<posy>300</posy>
+				<width>345</width>
+				<height>23</height>
+				<font>font13</font>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>black</textcolor>
+			</control>
+		</control>
+		<control type="group">
+			<posx>390</posx>
+			<control type="label">
+				<description>Scraper List Header</description>
+				<posx>0</posx>
+				<posy>52</posy>
+				<width>345</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<label>$LOCALIZE[31313]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>black</textcolor>
+			</control>
+			<control type="list" id="4">
+				<posx>0</posx>
+				<posy>90</posy>
+				<width>345</width>
+				<height>233</height>
+				<onup>4</onup>
+				<onleft>3</onleft>
+				<onright>60</onright>
+				<ondown>4</ondown>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="37" width="345">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>345</width>
+						<height>37</height>
+						<texture>MenuItemNF.png</texture>
+					</control>
+					<control type="image">
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="label" width="345">
+						<posx>45</posx>
+						<posy>0</posy>
+						<width>307</width>
+						<height>37</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>black</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<info>ListItem.Label</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="37">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>345</width>
+						<height>37</height>
+						<texture>MenuItemNF.png</texture>
+					</control>
+					<control type="image">
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture>$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="label" width="345">
+						<posx>45</posx>
+						<posy>0</posy>
+						<width>307</width>
+						<height>37</height>
+						<font>font13</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>black</textcolor>
+						<selectedcolor>selected</selectedcolor>
+						<info>ListItem.Label</info>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+		<control type="image">
+			<posx>15</posx>
+			<posy>345</posy>
+			<width>720</width>
+			<height>4</height>
+			<texture>separator.png</texture>
+		</control>
+		<control type="label">
+			<description>Scanning Options Header</description>
+			<posx>15</posx>
+			<posy>368</posy>
+			<width>720</width>
+			<height>22</height>
+			<font>font13_title</font>
+			<label>$LOCALIZE[31314]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>black</textcolor>
+		</control>
+		<control type="grouplist" id="5">
+			<description>control area</description>
+			<posx>15</posx>
+			<posy>405</posy>
+			<width>720</width>
+			<height>187</height>
+			<itemgap>-1</itemgap>
+			<onup>3</onup>
+			<ondown>28</ondown>
+			<onleft>5</onleft>
+			<onright>5</onright>
+		</control>
+		<control type="grouplist" id="9000">
+			<posx>15</posx>
+			<posy>600</posy>
+			<width>720</width>
+			<height>50</height>
+			<itemgap>5</itemgap>
+			<align>center</align>
+			<orientation>horizontal</orientation>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>50</onup>
+			<ondown>49</ondown>
+			<control type="button" id="28">
+				<description>OK Button</description>
+				<width>150</width>
+				<include>ButtonInfoDialogsCommonValues</include>
+				<label>186</label>
+			</control>
+			<control type="button" id="29">
+				<description>Cancel Button</description>
+				<width>150</width>
+				<include>ButtonInfoDialogsCommonValues</include>
+				<label>222</label>
+			</control>
+			<control type="button" id="6">
+				<description>Settings Button</description>
+				<width>150</width>
+				<include>ButtonInfoDialogsCommonValues</include>
+				<label>5</label>
+			</control>
+		</control>
+
+		<control type="button" id="7">
+			<description>Default Button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>37</height>
+			<font>font13</font>
+			<textcolor>black</textcolor>
+			<texturefocus border="5">MenuItemNF.png</texturefocus>
+			<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+		</control>
+		<control type="radiobutton" id="8">
+			<description>Default RadioButton</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>37</height>
+			<font>font13</font>
+			<textcolor>black</textcolor>
+			<texturefocus border="5">MenuItemNF.png</texturefocus>
+			<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+		</control>
+
+		<control type="group">
+			<control type="image">
+				<posx>278</posx>
+				<posy>45</posy>
+				<width>4</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>separator_vertical.png</texture>
+			</control>
+			<control type="scrollbar" id="60">
+				<posx>559</posx>
+				<posy>75</posy>
+				<width>20</width>
+				<height>180</height>
+				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<onleft>4</onleft>
+				<onright>3</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+		</control>
+	</controls>
+</window>

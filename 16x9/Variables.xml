@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+
+  <variable name="HomeButtonOutline_1">
+    <value condition="Skin.HasSetting(OutlineNormal)">home_1.png</value>
+    <value condition="Skin.HasSetting(OutlineBold)">homebold_1.png</value>
+    <value condition="Skin.HasSetting(OutlineNone)">homenone_1.png</value>
+    <value>home_1.png</value>
+  </variable>
+
+  <variable name="HomeButtonOutline_2">
+    <value condition="Skin.HasSetting(OutlineNormal)">home_2.png</value>
+    <value condition="Skin.HasSetting(OutlineBold)">homebold_2.png</value>
+    <value condition="Skin.HasSetting(OutlineNone)">homenone_2.png</value>
+    <value>home_2.png</value>
+  </variable>
+
+  <variable name="HomeButtonOutline_3">
+    <value condition="Skin.HasSetting(OutlineNormal)">home_3.png</value>
+    <value condition="Skin.HasSetting(OutlineBold)">homebold_3.png</value>
+    <value condition="Skin.HasSetting(OutlineNone)">homenone_3.png</value>
+    <value>home_3.png</value>
+  </variable>
+
+  <variable name="HomeButtonOutline_4">
+    <value condition="Skin.HasSetting(OutlineNormal)">home_4.png</value>
+    <value condition="Skin.HasSetting(OutlineBold)">homebold_4.png</value>
+    <value condition="Skin.HasSetting(OutlineNone)">homenone_4.png</value>
+    <value>home_4.png</value>
+  </variable>
+
+  <variable name="HomeButtonOutline_5">
+    <value condition="!Skin.HasSetting(OutlineNormal)">home_5.png</value>
+    <value condition="Skin.HasSetting(OutlineBold)">homebold_5.png</value>
+    <value condition="Skin.HasSetting(OutlineNone)">homenone_5.png</value>
+    <value>home_5.png</value>
+  </variable>
+
+  <variable name="HomeButtonOutline_6">
+    <value condition="Skin.HasSetting(OutlineNormal)">home_6.png</value>
+    <value condition="Skin.HasSetting(OutlineBold)">homebold_6.png</value>
+    <value condition="Skin.HasSetting(OutlineNone)">homenone_6.png</value>
+    <value>home_6.png</value>
+  </variable>
+
+
+
+  <variable name="Mainbutton_1">
+    <value condition="!Skin.HasSetting(Hide1024x600Fix)">home_1f</value>
+    <value condition="Skin.HasSetting(Hide1024x600Fix)">home_1n</value>
+    <value>home_1.png</value>
+  </variable>
+
+  <variable name="buttonMain_2">
+    <value condition="!Skin.HasSetting(Hide1024x600Fix)">home_2f</value>
+    <value condition="Skin.HasSetting(Hide1024x600Fix)">home_2n</value>
+    <value>home_2.png</value>
+  </variable>
+  <variable name="Mainbutton_3">
+    <value condition="!Skin.HasSetting(Hide1024x600Fix)">home_3f</value>
+    <value condition="Skin.HasSetting(Hide1024x600Fix)">home_3n</value>
+    <value>home_3.png</value>
+  </variable>
+  <variable name="Mainbutton_4">
+    <value condition="!Skin.HasSetting(Hide1024x600Fix)">home_4f</value>
+    <value condition="Skin.HasSetting(Hide1024x600Fix)">home_4n</value>
+    <value>home_4.png</value>
+  </variable>
+  <variable name="Mainbutton_5">
+    <value condition="!Skin.HasSetting(Hide1024x600Fix)">home_5f</value>
+    <value condition="Skin.HasSetting(Hide1024x600Fix)">home_5n</value>
+    <value>home_5.png</value>
+  </variable>
+  <variable name="Mainbutton_6">
+    <value condition="!Skin.HasSetting(Hide1024x600Fix)">home_6f</value>
+    <value condition="Skin.HasSetting(Hide1024x600Fix)">home_6n</value>
+    <value>home_6.png</value>
+  </variable>
+
+
+
+<includes>
