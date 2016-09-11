@@ -5,10 +5,12 @@
 
 	<include name="Radio1">
         <control type="group" id="5200">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,1) + ![Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
             <control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -48,10 +50,12 @@
 	
 	<include name="Radio2">
         <control type="group" id="5202">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,2) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
             <control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -91,10 +95,12 @@
 	
 	<include name="Radio3">
         <control type="group" id="5204">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,3) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
             <control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -131,12 +137,15 @@
             </control>
         </control>
 	</include>
+
 	<include name="Radio4">
         <control type="group" id="5206">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,4) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>74</posy>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
             <control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -176,10 +185,12 @@
 	
 	<include name="Radio5">
         <control type="group" id="5208">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,5) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
             <control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -219,10 +230,12 @@
 	
 	<include name="Radio6">
         <control type="group" id="5210">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,6) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
             <control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -264,11 +277,13 @@
 <!-- Musik -->
 	<include name="Music1">
 		<control type="group" id="5220">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,1) + ![Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>74</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
 			<control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -310,11 +325,13 @@
 
 	<include name="Music2">
 		<control type="group" id="5222">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,2) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
 			<control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -356,11 +373,13 @@
 
 	<include name="Music3">
 		<control type="group" id="5224">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,3) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
 			<control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -402,11 +421,13 @@
 
 	<include name="Music4">
 		<control type="group" id="5226">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,4) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>74</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
 			<control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -448,11 +469,13 @@
 
 	<include name="Music5">
 		<control type="group" id="5228">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,5) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
 			<control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -494,11 +517,13 @@
 
 	<include name="Music6">
 		<control type="group" id="5230">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,6) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
 			<control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -543,10 +568,12 @@
 <!-- Video -->
 	<include name="Video1">
 		<control type="group" id="5230">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,1) + ![Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
 			<control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -586,10 +613,12 @@
 
 	<include name="Video2">
 		<control type="group" id="5232">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,2) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
 			<control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -630,10 +659,12 @@
 
 	<include name="Video3">
 		<control type="group" id="5234">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,3) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
 			<control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -674,10 +705,12 @@
 
 	<include name="Video4">
 		<control type="group" id="5236">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,4) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>74</posy>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
 			<control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -722,6 +755,8 @@
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
 			<control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -762,10 +797,12 @@
 
 	<include name="Video6">
 		<control type="group" id="5240">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,6) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
 			<control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -807,10 +844,12 @@
 <!-- Navigation -->
     <include name="Navigation1">
         <control type="group" id="5290">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,1) + ![Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
             <control type="button" id="3001">
                 <description>Navit Button</description>
                 <onup>Control.SetFocus(9003)</onup>
@@ -850,10 +889,12 @@
 
     <include name="Navigation2">
         <control type="group" id="5292">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,2) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>210</posy>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
             <control type="button" id="3002">
                 <description>Navit Button</description>
                 <onup>Control.SetFocus(3001)</onup>
@@ -893,10 +934,12 @@
 
     <include name="Navigation3">
         <control type="group" id="5294">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,3) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
             <control type="button" id="3003">
                 <description>Navit Button</description>
                 <onup>Control.SetFocus(3002)</onup>
@@ -936,10 +979,12 @@
 
     <include name="Navigation4">
         <control type="group" id="5296">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,4) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>74</posy>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
             <control type="button" id="3004">
                 <description>Navit Button</description>
                 <onup>Control.SetFocus(3003)</onup>
@@ -979,10 +1024,12 @@
 
     <include name="Navigation5">
         <control type="group" id="5298">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,5) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>210</posy>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
             <control type="button" id="3005">
                 <description>Navit Button</description>
                 <onup>Control.SetFocus(3004)</onup>
@@ -1022,10 +1069,12 @@
 
     <include name="Navigation6">
         <control type="group" id="5300">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,6) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>346</posy>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
             <control type="button" id="3006">
                 <description>Navit Button</description>
                 <onup>Control.SetFocus(3005)</onup>
@@ -1066,13 +1115,15 @@
 
 
 <!-- Settings -->
- <include name="Settings1">   
+	<include name="Settings1">   
     <control type="group" id="5250">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,1) + ![Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>74</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
 			<control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -1111,13 +1162,15 @@
 		</control>
     </include>
     
- <include name="Settings2">   
+	<include name="Settings2">   
     <control type="group" id="5252">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,2) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
 			<control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -1156,13 +1209,15 @@
 		</control>
     </include>
     
- <include name="Settings3">   
+	<include name="Settings3">   
     <control type="group" id="5254">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,3) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
 			<control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -1201,13 +1256,15 @@
 		</control>
     </include>
     
-<include name="Settings4">   
+	<include name="Settings4">   
     <control type="group" id="5256">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,4) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>74</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
 			<control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -1246,13 +1303,15 @@
 		</control>
     </include>
     
-<include name="Settings5">   
+	<include name="Settings5">   
     <control type="group" id="5258">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,5) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
 			<control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -1291,13 +1350,15 @@
 		</control>
     </include>
     
-<include name="Settings6">   
+	<include name="Settings6">   
     <control type="group" id="5260">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,6) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
 			<control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -1340,12 +1401,14 @@
 <!-- Shutdown -->    
 	<include name="Shutdown1">
 		<control type="group" id="5270">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,1) + ![Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>74</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
 			<control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -1387,12 +1450,14 @@
 
 	<include name="Shutdown2">
 		<control type="group" id="5272">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,2) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
 			<control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -1432,14 +1497,16 @@
 		</control>
     </include>
 
-<include name="Shutdown3">
+	<include name="Shutdown3">
 		<control type="group" id="5274">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,3) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
 			<control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -1479,14 +1546,16 @@
 		</control>
     </include>
 
-<include name="Shutdown4">
+	<include name="Shutdown4">
 		<control type="group" id="5276">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,4) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>74</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
 			<control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -1526,14 +1595,16 @@
 		</control>
     </include>
 
-<include name="Shutdown5">
+	<include name="Shutdown5">
 		<control type="group" id="5278">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,5) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
 			<control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -1573,14 +1644,16 @@
 		</control>
     </include>
 
-<include name="Shutdown6">
+	<include name="Shutdown6">
 		<control type="group" id="5280">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,6) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
 			<control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -1624,12 +1697,14 @@
 <!-- Shutdown no Dialog-->    
 	<include name="ShutdownNoDialog1">
 		<control type="group" id="5270">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,1) + ![Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>74</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
 			<control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -1670,12 +1745,14 @@
 
 	<include name="ShutdownNoDialog2">
 		<control type="group" id="5272">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,2) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
 			<control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -1714,14 +1791,16 @@
 		</control>
     </include>
 
-<include name="ShutdownNoDialog3">
+	<include name="ShutdownNoDialog3">
 		<control type="group" id="5274">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,3) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
 			<control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -1760,14 +1839,16 @@
 		</control>
     </include>
 
-<include name="ShutdownNoDialog4">
+	<include name="ShutdownNoDialog4">
 		<control type="group" id="5276">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,4) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>74</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
 			<control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -1806,14 +1887,16 @@
 		</control>
     </include>
 
-<include name="ShutdownNoDialog5">
+	<include name="ShutdownNoDialog5">
 		<control type="group" id="5278">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,5) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
 			<control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -1852,14 +1935,16 @@
 		</control>
     </include>
 
-<include name="ShutdownNoDialog6">
+	<include name="ShutdownNoDialog6">
 		<control type="group" id="5280">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,6) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialogNoDialog,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
 			<visible>true</visible>
 			<include>VisibleFadeEffect</include>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
 			<control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -1903,10 +1988,12 @@
 <!-- Weather -->
 	<include name="Weather1">
         <control type="group" id="5400">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,1) + ![Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
             <control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -1946,10 +2033,12 @@
 	
 	<include name="Weather2">
         <control type="group" id="5402">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,2) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
             <control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -1989,10 +2078,12 @@
 	
 	<include name="Weather3">
         <control type="group" id="5404">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,3) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
             <control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -2029,12 +2120,15 @@
             </control>
         </control>
 	</include>
+
 	<include name="Weather4">
         <control type="group" id="5406">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,4) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>74</posy>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
             <control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -2074,11 +2168,13 @@
 	
 	<include name="Weather5">
         <control type="group" id="5408">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,5) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
-            <control type="button" id="3005">
+ 			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
+           <control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
                 <onleft>3002</onleft>
@@ -2117,10 +2213,12 @@
 	
 	<include name="Weather6">
         <control type="group" id="5410">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,6) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
             <control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -2162,10 +2260,12 @@
 <!-- Connect 3G -->
 	<include name="Connect3G1">
         <control type="group" id="5420">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,1) + ![Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
             <control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -2205,11 +2305,13 @@
 	
 	<include name="Connect3G2">
         <control type="group" id="5422">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,2) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
-            <control type="button" id="3002">
+ 			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
+           <control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
                 <onright>3005</onright>
@@ -2248,10 +2350,12 @@
 	
 	<include name="Connect3G3">
         <control type="group" id="5424">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,3) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
             <control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -2288,12 +2392,15 @@
             </control>
         </control>
 	</include>
+
 	<include name="Connect3G4">
         <control type="group" id="5426">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,4) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>74</posy>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
             <control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -2333,11 +2440,13 @@
 	
 	<include name="Connect3G5">
         <control type="group" id="5428">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,5) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
-            <control type="button" id="3005">
+ 			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
+           <control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
                 <onleft>3002</onleft>
@@ -2376,10 +2485,12 @@
 	
 	<include name="Connect3G6">
         <control type="group" id="5430">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,6) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
             <control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -2421,10 +2532,12 @@
 	<!-- OBD -->
 	<include name="OBD1">
         <control type="group" id="5520">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,1) + ![Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
             <control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -2464,10 +2577,12 @@
 	
 	<include name="OBD2">
         <control type="group" id="5522">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,2) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
             <control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -2507,10 +2622,12 @@
 	
 	<include name="OBD3">
         <control type="group" id="5524">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,3) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
             <control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -2547,12 +2664,15 @@
             </control>
          </control>
 	</include>
+
 	<include name="OBD4">
         <control type="group" id="5526">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,4) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>74</posy>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
             <control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -2592,10 +2712,12 @@
 	
 	<include name="OBD5">
         <control type="group" id="5528">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,5) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
             <control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -2635,11 +2757,13 @@
 	
 	<include name="OBD6">
         <control type="group" id="5530">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,6) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
-            <control type="button" id="3006">
+ 			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
+           <control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
 				<ondown condition="Control.IsVisible(606)">Control.SetFocus(606)</ondown>
@@ -2681,10 +2805,12 @@
 <!-- Custom Button -->
 	<include name="CustomButton1">
         <control type="group" id="5532">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,1) + ![Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(HomePosOBD,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
             <control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -2723,10 +2849,12 @@
 	
 	<include name="CustomButton2">
         <control type="group" id="5534">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,2) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
             <control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -2765,10 +2893,12 @@
 	
 	<include name="CustomButton3">
         <control type="group" id="5536">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,3) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
             <control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -2807,11 +2937,13 @@
 
 	<include name="CustomButton4">
         <control type="group" id="5538">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,4) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>74</posy>
-            <control type="button" id="3004">
+ 			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
+           <control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
                 <onleft>3001</onleft>
@@ -2849,10 +2981,12 @@
 	
 	<include name="CustomButton5">
         <control type="group" id="5540">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,5) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
             <control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -2891,10 +3025,12 @@
 	
 	<include name="CustomButton6">
         <control type="group" id="5542">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,6) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
             <control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -2935,10 +3071,12 @@
 <!-- Custom Button-2 -->
 	<include name="CustomButton2-1">
         <control type="group" id="5632">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,1) + ![Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(HomePosOBD,4) | Skin.String(CustomHomeButton2Pos,5) | Skin.String(CustomHomeButton2Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
             <control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -2977,10 +3115,12 @@
 	
 	<include name="CustomButton2-2">
         <control type="group" id="5634">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,2) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,5) | Skin.String(CustomHomeButton2Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
             <control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -3019,10 +3159,12 @@
 	
 	<include name="CustomButton2-3">
         <control type="group" id="5636">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,3) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,5) | Skin.String(CustomHomeButton2Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
             <control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -3061,11 +3203,13 @@
 
 	<include name="CustomButton2-4">
         <control type="group" id="5638">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,4) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,5) | Skin.String(CustomHomeButton2Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>74</posy>
-            <control type="button" id="3004">
+ 			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
+           <control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
                 <onleft>3001</onleft>
@@ -3103,11 +3247,13 @@
 	
 	<include name="CustomButton2-5">
         <control type="group" id="5640">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,5) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
-            <control type="button" id="3005">
+ 			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
+           <control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
                 <onleft>3002</onleft>
@@ -3145,10 +3291,12 @@
 	
 	<include name="CustomButton2-6">
         <control type="group" id="5642">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,6) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
             <control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>
@@ -3189,10 +3337,12 @@
 <!-- Custom Button-3 -->
 	<include name="CustomButton3-1">
         <control type="group" id="5732">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,1) + ![Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(HomePosOBD,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>60</posx>
             <posy>74</posy>
+			<include>HomeBG_1</include>
+			<include>HomeBGColor_1</include> 
             <control type="button" id="3001">
                 <onup>Control.SetFocus(9003)</onup>
                 <ondown>Control.SetFocus(3002)</ondown>
@@ -3231,10 +3381,12 @@
 	
 	<include name="CustomButton3-2">
         <control type="group" id="5734">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,2) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>210</posy>
+			<include>HomeBG_2</include>
+			<include>HomeBGColor_2</include> 
             <control type="button" id="3002">
                 <onup>Control.SetFocus(3001)</onup>
                 <ondown>Control.SetFocus(3003)</ondown>
@@ -3273,10 +3425,12 @@
 	
 	<include name="CustomButton3-3">
         <control type="group" id="5736">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,3) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>60</posx>
 			<posy>346</posy>
+			<include>HomeBG_3</include>
+			<include>HomeBGColor_3</include> 
             <control type="button" id="3003">
                 <onup>Control.SetFocus(3002)</onup>
                 <ondown>Control.SetFocus(3004)</ondown>
@@ -3315,10 +3469,12 @@
 
 	<include name="CustomButton3-4">
         <control type="group" id="5738">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,4) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
             <posx>644</posx>
             <posy>74</posy>
+			<include>HomeBG_4</include>
+			<include>HomeBGColor_4</include> 
             <control type="button" id="3004">
                 <onup>Control.SetFocus(3003)</onup>
                 <ondown>Control.SetFocus(3005)</ondown>
@@ -3357,10 +3513,12 @@
 	
 	<include name="CustomButton3-5">
         <control type="group" id="5740">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,5) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,6)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>210</posy>
+			<include>HomeBG_5</include>
+			<include>HomeBGColor_5</include> 
             <control type="button" id="3005">
                 <onup>Control.SetFocus(3004)</onup>
                 <ondown>Control.SetFocus(3006)</ondown>
@@ -3399,10 +3557,12 @@
 	
 	<include name="CustomButton3-6">
         <control type="group" id="5742">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,6) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5)]</visible>
+            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>644</posx>
 			<posy>346</posy>
+			<include>HomeBG_6</include>
+			<include>HomeBGColor_6</include> 
             <control type="button" id="3006">
                 <onup>Control.SetFocus(3005)</onup>
 				<ondown condition="!Control.IsVisible(606)">Control.SetFocus(9003)</ondown>

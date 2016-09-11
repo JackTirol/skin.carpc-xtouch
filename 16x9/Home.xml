@@ -47,226 +47,166 @@
 
 			<!--Menu customized-->
 		
-<!-- Home Buttons Custom Backgrounds -->
-
-		<include>HomeBG_1</include>
-		<include>HomeBG_2</include>
-		<include>HomeBG_3</include>
-		<include>HomeBG_4</include>
-		<include>HomeBG_5</include>
-		<include>HomeBG_6</include> 
-
-		<include>HomeBG_1Fix</include>
-		<include>HomeBG_2Fix</include>
-		<include>HomeBG_3Fix</include>
-		<include>HomeBG_4Fix</include>
-		<include>HomeBG_5Fix</include>
-		<include>HomeBG_6Fix</include> 
-
-<!-- Home Buttons Backgrounds Solid Color-->
-
-		<include>HomeBGColor_1</include>
-		<include>HomeBGColor_2</include>
-		<include>HomeBGColor_3</include>
-		<include>HomeBGColor_4</include>
-		<include>HomeBGColor_5</include>
-		<include>HomeBGColor_6</include> 
-
-		<include>HomeBGColor_1Fix</include>
-		<include>HomeBGColor_2Fix</include>
-		<include>HomeBGColor_3Fix</include>
-		<include>HomeBGColor_4Fix</include>
-		<include>HomeBGColor_5Fix</include>
-		<include>HomeBGColor_6Fix</include> 
-
 <!-- Homebuttons -->
-		<include>Radio1</include>
-		<include>Radio2</include>
-		<include>Radio3</include>
-		<include>Radio4</include>
-		<include>Radio5</include>
-		<include>Radio6</include> 
-		<include>Music1</include>  
-		<include>Music2</include>  
-		<include>Music3</include>  
-		<include>Music4</include>  
-		<include>Music5</include>  
-		<include>Music6</include>  
-<!--	<include>MusicDefault</include>  
-		<include>MusicDefault1</include>  
-		<include>MusicDefault2</include>  
-		<include>MusicDefault3</include>  
-		<include>MusicDefault4</include>  
-		<include>MusicDefault5</include>  
-		<include>MusicDefault6</include>  -->
-		<include>Video1</include>
-		<include>Video2</include>
-		<include>Video3</include>
-		<include>Video4</include>
-		<include>Video5</include>
-		<include>Video6</include>
-<!--	<include>VideoDefault</include> 
-		<include>VideoDefault1</include>
-		<include>VideoDefault2</include>
-		<include>VideoDefault3</include>
-		<include>VideoDefault4</include>
-		<include>VideoDefault5</include>
-		<include>VideoDefault6</include> -->
-		<include>Navigation1</include>  
-		<include>Navigation2</include>  
-		<include>Navigation3</include>  
-		<include>Navigation4</include>  
-		<include>Navigation5</include>  
-		<include>Navigation6</include>  
-		<include>Settings1</include>
-		<include>Settings2</include>
-		<include>Settings3</include>
-		<include>Settings4</include>
-		<include>Settings5</include>
-		<include>Settings6</include>
-		<include>Shutdown1</include>
-		<include>Shutdown2</include>
-		<include>Shutdown3</include>
-		<include>Shutdown4</include>
-		<include>Shutdown5</include>
-		<include>Shutdown6</include>
-		<include>ShutdownNoDialog1</include>
-		<include>ShutdownNoDialog2</include>
-		<include>ShutdownNoDialog3</include>
-		<include>ShutdownNoDialog4</include>
-		<include>ShutdownNoDialog5</include>
-		<include>ShutdownNoDialog6</include>
-		<include>Weather1</include>
-		<include>Weather2</include>
-		<include>Weather3</include>
-		<include>Weather4</include>
-		<include>Weather5</include>
-		<include>Weather6</include>
-		<include>Connect3G1</include>
-		<include>Connect3G2</include>
-		<include>Connect3G3</include>
-		<include>Connect3G4</include>
-		<include>Connect3G5</include>
-		<include>Connect3G6</include>
-		<include>OBD1</include>
-		<include>OBD2</include>
-		<include>OBD3</include>
-		<include>OBD4</include>
-		<include>OBD5</include>
-		<include>OBD6</include>
-		<include>CustomButton1</include>
-		<include>CustomButton2</include>
-		<include>CustomButton3</include>
-		<include>CustomButton4</include>
-		<include>CustomButton5</include>
-		<include>CustomButton6</include>
-		<include>CustomButton2-1</include>
-		<include>CustomButton2-2</include>
-		<include>CustomButton2-3</include>
-		<include>CustomButton2-4</include>
-		<include>CustomButton2-5</include>
-		<include>CustomButton2-6</include>
-		<include>CustomButton3-1</include>
-		<include>CustomButton3-2</include>
-		<include>CustomButton3-3</include>
-		<include>CustomButton3-4</include>
-		<include>CustomButton3-5</include>
-		<include>CustomButton3-6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,1) + ![Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">Radio1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,2) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">Radio2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,3) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">Radio3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,4) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">Radio4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,5) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,6)]">Radio5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,6) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5)]">Radio6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,1) + ![Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">Music1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,2) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">Music2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,3) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">Music3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,4) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">Music4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,5) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,6)]">Music5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,6) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5)]">Music6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,1) + ![Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">Video1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,2) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">Video2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,3) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">Video3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,4) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">Video4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,5) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,6)]">Video5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,6) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5)]">Video6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,1) + ![Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">Navigation1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,2) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">Navigation2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,3) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">Navigation3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,4) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">Navigation4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,5) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,6)]">Navigation5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,6) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5)]">Navigation6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,1) + ![Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">Settings1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,2) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">Settings2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,3) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">Settings3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,4) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">Settings4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,5) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,6)]">Settings5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,6) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5)]">Settings6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,1) + ![Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">Shutdown1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,2) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">Shutdown2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,3) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">Shutdown3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,4) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">Shutdown4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,5) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,6)]">Shutdown5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,6) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5)]">Shutdown6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,1) + ![Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,2) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,3) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,4) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,5) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,6) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5)]">ShutdownNoDialog6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,1) + ![Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">Weather1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,2) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">Weather2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,3) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">Weather3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,4) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">Weather4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,5) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,6)]">Weather5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,6) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5)]">Weather6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,1) + ![Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">Connect3G1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,2) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">Connect3G2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,3) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">Connect3G3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,4) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">Connect3G4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,5) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,6)]">Connect3G5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,6) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5)]">Connect3G6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,1) + ![Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBD1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,2) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBD2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,3) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBD3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,4) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBD4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,5) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,6)]">OBD5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,6) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5)]">OBD6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,1) + ![Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButton1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,2) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButton2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,3) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButton3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,4) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButton4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,5) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,6)]">CustomButton5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,6) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5)]">CustomButton6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,1) + ![Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,2) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,3) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,4) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,5) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,6) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5)]">CustomButton2-6</include> 
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,1) + ![Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-1</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,2) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-2</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,3) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-3</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,4) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-4</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,5) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-5</include>
+		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,6) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5)]">CustomButton3-6</include>
 
 
 <!-- Homebuttons 1024x600Fix -->
-		<include>RadioFix1</include>
-		<include>RadioFix2</include>
-		<include>RadioFix3</include>
-		<include>RadioFix4</include>
-		<include>RadioFix5</include>
-		<include>RadioFix6</include>
-		<include>MusicFix1</include>  
-		<include>MusicFix2</include>  
-		<include>MusicFix3</include>  
-		<include>MusicFix4</include>  
-		<include>MusicFix5</include>  
-		<include>MusicFix6</include>  
-<!--	<include>MusicFixDefault</include>  
-		<include>MusicFixDefault1</include>  
-		<include>MusicFixDefault2</include>  
-		<include>MusicFixDefault3</include>  
-		<include>MusicFixDefault4</include>  
-		<include>MusicFixDefault5</include>  
-		<include>MusicFixDefault6</include>  -->
-		<include>VideoFix1</include>
-		<include>VideoFix2</include>
-		<include>VideoFix3</include>
-		<include>VideoFix4</include>
-		<include>VideoFix5</include>
-		<include>VideoFix6</include>
-<!--	<include>VideoFixDefault</include> 
-		<include>VideoFixDefault1</include>
-		<include>VideoFixDefault2</include>
-		<include>VideoFixDefault3</include>
-		<include>VideoFixDefault4</include>
-		<include>VideoFixDefault5</include>
-		<include>VideoFixDefault6</include>  -->
-		<include>NavigationFix1</include>  
-		<include>NavigationFix2</include>  
-		<include>NavigationFix3</include>  
-		<include>NavigationFix4</include>  
-		<include>NavigationFix5</include>  
-		<include>NavigationFix6</include>  
-		<include>SettingsFix1</include>
-		<include>SettingsFix2</include>
-		<include>SettingsFix3</include>
-		<include>SettingsFix4</include>
-		<include>SettingsFix5</include>
-		<include>SettingsFix6</include>
-		<include>ShutdownFix1</include>
-		<include>ShutdownFix2</include>
-		<include>ShutdownFix3</include>
-		<include>ShutdownFix4</include>
-		<include>ShutdownFix5</include>
-		<include>ShutdownFix6</include>
-		<include>ShutdownNoDialogFix1</include>
-		<include>ShutdownNoDialogFix2</include>
-		<include>ShutdownNoDialogFix3</include>
-		<include>ShutdownNoDialogFix4</include>
-		<include>ShutdownNoDialogFix5</include>
-		<include>ShutdownNoDialogFix6</include>
-		<include>WeatherFix1</include>
-		<include>WeatherFix2</include>
-		<include>WeatherFix3</include>
-		<include>WeatherFix4</include>
-		<include>WeatherFix5</include>
-		<include>WeatherFix6</include>
-		<include>Connect3GFix1</include>
-		<include>Connect3GFix2</include>
-		<include>Connect3GFix3</include>
-		<include>Connect3GFix4</include>
-		<include>Connect3GFix5</include>
-		<include>Connect3GFix6</include>
-		<include>OBDFix1</include>
-		<include>OBDFix2</include>
-		<include>OBDFix3</include>
-		<include>OBDFix4</include>
-		<include>OBDFix5</include>
-		<include>OBDFix6</include>
-		<include>CustomButtonFix1</include>
-		<include>CustomButtonFix2</include>
-		<include>CustomButtonFix3</include>
-		<include>CustomButtonFix4</include>
-		<include>CustomButtonFix5</include>
-		<include>CustomButtonFix6</include>
-		<include>CustomButton2Fix1</include>
-		<include>CustomButton2Fix2</include>
-		<include>CustomButton2Fix3</include>
-		<include>CustomButton2Fix4</include>
-		<include>CustomButton2Fix5</include>
-		<include>CustomButton2Fix6</include>
-		<include>CustomButton3Fix1</include>
-		<include>CustomButton3Fix2</include>
-		<include>CustomButton3Fix3</include>
-		<include>CustomButton3Fix4</include>
-		<include>CustomButton3Fix5</include>
-		<include>CustomButton3Fix6</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,1) + ![Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">RadioFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,2) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">RadioFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,3) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">RadioFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,4) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">RadioFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,5) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,6)]">RadioFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,6) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5)]">RadioFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,1) + ![Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">MusicFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,2) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">MusicFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,3) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">MusicFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,4) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">MusicFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,5) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,6)]">MusicFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,6) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5)]">MusicFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,1) + ![Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">VideoFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,2) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">VideoFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,3) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">VideoFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,4) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">VideoFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,5) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,6)]">VideoFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,6) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5)]">VideoFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,1) + ![Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">NavigationFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,2) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">NavigationFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,3) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">NavigationFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,4) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">NavigationFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,5) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,6)]">NavigationFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,6) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5)]">NavigationFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,1) + ![Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">SettingsFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,2) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">SettingsFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,3) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">SettingsFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,4) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">SettingsFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,5) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,6)]">SettingsFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,6) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5)]">SettingsFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,1) + ![Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">ShutdownFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,2) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">ShutdownFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,3) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">ShutdownFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,4) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">ShutdownFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,5) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,6)]">ShutdownFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,6) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5)]">ShutdownFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,1) + ![Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,2) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,3) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,4) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,5) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,6) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5)]">ShutdownNoDialogFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,1) + ![Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">WeatherFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,2) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">WeatherFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,3) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">WeatherFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,4) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">WeatherFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,5) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,6)]">WeatherFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,6) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5)]">WeatherFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,1) + ![Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">3GFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,2) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">3GFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,3) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">3GFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,4) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">3GFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,5) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,6)]">3GFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,6) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5)]">3GFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,1) + ![Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBDFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,2) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBDFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,3) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBDFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,4) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBDFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,5) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,6)]">OBDFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,6) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5)]">OBDFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,1) + ![Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,2) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,3) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,4) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,5) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,6) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5)]">CustomButtonFix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,1) + ![Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2Fix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,2) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2Fix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,3) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2Fix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,4) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2Fix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,5) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2Fix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,6) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5)]">CustomButton2Fix6</include> 
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,1) + ![Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix1</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,2) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix2</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,3) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix3</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,4) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix4</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,5) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix5</include>
+		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,6) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5)]">CustomButton3Fix6</include> 
 
 <!-- Logo area -->
 		<control type="image">
@@ -350,16 +290,6 @@
 
 		<!-- Song/radio info -->
 		<control type="group">
-			<include>BottomBG</include>
-<!--		<include>BottomBGFix</include> -->
-			<include>MusicPlayerTitle</include>
-			<include>MusicPlayerTitlewithButtons</include>
-			<include>RandomRepeatButtonsFix</include> 
-			<include>RadioStationName</include>
-			<include>MusicPlayerTitleFix</include>
-			<include>MusicPlayerTitlewithButtonsFix</include>
-			<include>RandomRepeatButtons</include>
-			<include>RadioStationNameFix</include>
 			<control type="image">
 	            <visible>[Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle)] | [!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioStationName) + substring(Window(Home).Property(Radio.Active),true)]</visible>
 				<description>Infobox Background</description>
@@ -371,12 +301,22 @@
 				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">info_bg.png</texture>
 				<include>Window_OpenClose_Animation_Zoom</include>
 			</control>
+			<include>BottomBG</include>
+			<include>RandomRepeatButtons</include>
+			<include>MusicPlayerTitle</include>
+			<include>MusicPlayerTitlewithButtons</include>
+			<include>RadioStationName</include>
+<!--		<include>BottomBGFix</include> -->
+			<include>RandomRepeatButtonsFix</include> 
+			<include>MusicPlayerTitleFix</include>
+			<include>MusicPlayerTitlewithButtonsFix</include>
+			<include>RadioStationNameFix</include>
 		</control>
 
 <!--	<include>HomeRecentlyAddedInfo</include> -->
 		<include>BottomNowPLaying</include>
 		
-
+<!-- Submenu -->
 		<control type="panel" id="9003">
 			<visible>!Window.IsActive(PlayerControls) + [Player.HasAudio | Player.HasVideo]</visible>
 			<include>SubMenuCommonLayout2</include>
@@ -491,7 +431,6 @@
 				</item>  -->
 			</content>
 		</control>
-
 		<control type="panel" id="9003">
 			<visible>!Window.IsActive(PlayerControls) + !Player.HasAudio + !Player.HasVideo</visible>
 			<include>SubMenuCommonLayoutBig</include>

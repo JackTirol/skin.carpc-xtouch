@@ -349,8 +349,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_1_Background Nofocus</description>
-                <posx>60</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -360,8 +360,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
                 <description>Home_1_Background Focus</description>
-                <posx>60</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -374,8 +374,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_2_Background Nofocus</description>
-                <posx>60</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -385,8 +385,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
                 <description>Home_2_Background Focus</description>
-                <posx>60</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -399,8 +399,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_3_Background Nofocus</description>
-                <posx>60</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -410,8 +410,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
                 <description>Home_3_Background Focus</description>
-                <posx>60</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -424,8 +424,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_4_Background Nofocus</description>
-                <posx>644</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -435,8 +435,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
                 <description>Home_4_Background Focus</description>
-                <posx>644</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -449,8 +449,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_5_Background Nofocus</description>
-                <posx>644</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -460,8 +460,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
                 <description>Home_5_Background Focus</description>
-                <posx>644</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -474,8 +474,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_6_Background Nofocus</description>
-                <posx>644</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -485,8 +485,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
                 <description>Home_6_Background Focus</description>
-                <posx>644</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -502,8 +502,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_1_Background Nofocus</description>
-                <posx>48</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -513,8 +513,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
                 <description>Home_1_Background Focus</description>
-                <posx>48</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -527,8 +527,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_2_Background Nofocus</description>
-                <posx>48</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -538,8 +538,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
                 <description>Home_2_Background Focus</description>
-                <posx>48</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -552,8 +552,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_3_Background Nofocus</description>
-                <posx>48</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -563,8 +563,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
                 <description>Home_3_Background Focus</description>
-                <posx>48</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -577,8 +577,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_4_Background Nofocus</description>
-                <posx>644</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -588,8 +588,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
                 <description>Home_4_Background Focus</description>
-                <posx>644</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -602,8 +602,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_5_Background Nofocus</description>
-                <posx>644</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -613,8 +613,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
                 <description>Home_5_Background Focus</description>
-                <posx>644</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -627,8 +627,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_6_Background Nofocus</description>
-                <posx>644</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -638,8 +638,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
                 <description>Home_6_Background Focus</description>
-                <posx>644</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -655,8 +655,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_1_Background</description>
-                <posx>60</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -669,8 +669,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_2_Background</description>
-                <posx>60</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -683,8 +683,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_3_Background</description>
-                <posx>60</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -697,8 +697,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_4_Background</description>
-                <posx>644</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -711,8 +711,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_5_Background</description>
-                <posx>644</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -725,8 +725,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_6_Background</description>
-                <posx>644</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>576</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -742,8 +742,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_1_Background</description>
-                <posx>48</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -756,8 +756,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_2_Background</description>
-                <posx>48</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -770,8 +770,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_3_Background</description>
-                <posx>48</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -784,8 +784,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_4_Background</description>
-                <posx>644</posx>
-                <posy>74</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -798,8 +798,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_5_Background</description>
-                <posx>644</posx>
-                <posy>210</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
@@ -812,8 +812,8 @@
 				<include>Window_OpenClose_Animation_Zoom</include>
 	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_6_Background</description>
-                <posx>644</posx>
-                <posy>346</posy>
+                <posx>0</posx>
+                <posy>0</posy>
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
