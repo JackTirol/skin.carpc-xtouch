@@ -276,7 +276,7 @@
 			<width>400</width>
 			<height>396</height>
 	    	<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-			<texture>logo.png</texture>
+			<texture diffuse="cover_mask.png">logo.png</texture>
 			<visible>![Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath)) + Skin.HasSetting(Hide1024x600Fix)  + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]]</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 		</control>
@@ -287,7 +287,7 @@
 			<width>400</width>
 			<height>396</height>
 	        <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-			<texture>$INFO[Skin.String(CustomLogoPath)]</texture>
+			<texture diffuse="cover_mask.png">$INFO[Skin.String(CustomLogoPath)]</texture>
 			<visible>Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath)) + Skin.HasSetting(Hide1024x600Fix) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 		</control>
@@ -298,7 +298,7 @@
 			<width>410</width>
 			<height>396</height>
 	    	<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-			<texture>logo.png</texture>
+			<texture diffuse="cover_mask.png">logo.png</texture>
 			<visible>![Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath)) + !Skin.HasSetting(Hide1024x600Fix) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]]</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 		</control>
@@ -309,16 +309,10 @@
 			<width>410</width>
 			<height>396</height>
 	        <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-			<texture>$INFO[Skin.String(CustomLogoPath)]</texture>
+			<texture diffuse="cover_mask.png">$INFO[Skin.String(CustomLogoPath)]</texture>
 			<visible>Skin.HasSetting(UseCustomLogo) + !IsEmpty(Skin.String(CustomLogoPath)) + !Skin.HasSetting(Hide1024x600Fix) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]</visible>
 			<include>Window_OpenClose_Animation_Zoom</include>
 		</control>
-
-		<include>Clock_Date</include> 
-		<include>Clock_Time</include>
-		<include>Clock_Time_White</include>
-<!--		<include>Clock_Hour</include>  -->
-		<include>Time</include>				
 
 <!-- Visualisation -->
 		<control type="image">
@@ -346,6 +340,11 @@
 
 	    <include>VisualisationHome</include> 
 
+		<include>Clock_Date</include> 
+		<include>Clock_Time</include>
+		<include>Clock_Time_White</include>
+<!--	<include>Clock_Hour</include>  -->
+		<include>Time</include>				
 		
 		<include>CommonBottomBar</include>   
 
@@ -379,7 +378,7 @@
 		
 
 		<control type="panel" id="9003">
-			<visible>!Window.IsActive(PlayerControls)</visible>
+			<visible>!Window.IsActive(PlayerControls) + [Player.HasAudio | Player.HasVideo]</visible>
 			<include>SubMenuCommonLayout2</include>
 			<content>
 				<item id="3010">
@@ -492,6 +491,122 @@
 				</item>  -->
 			</content>
 		</control>
+
+		<control type="panel" id="9003">
+			<visible>!Window.IsActive(PlayerControls) + !Player.HasAudio + !Player.HasVideo</visible>
+			<include>SubMenuCommonLayoutBig</include>
+			<content>
+				<item id="3010">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusic) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]</visible>
+					<icon>button_music.png</icon>
+					<onclick>ActivateWindow(Music,$INFO[Skin.String(CustomMusicPath)])</onclick>
+				</item>
+				<item id="3011">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicArtists)</visible>
+					<icon>button_musicartist.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://artists/,return)</onclick>
+				</item>
+				<item id="3012">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicAlbums)</visible>
+					<icon>button_musicalbum.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://albums/,return])</onclick>
+				</item>
+				<item id="3013">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicGenre)</visible>
+					<icon>button_musicgenre.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://genres/,return)</onclick>
+				</item>
+				<item id="3014">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVideo) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]</visible>
+					<icon>button_video.png</icon>
+					<onclick>ActivateWindow(Videos,$INFO[Skin.String(CustomVideoPath)])</onclick>
+				</item>
+				<item id="3015">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonNavigation) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]</visible>
+					<icon>button_navi.png</icon>
+					<onclick>RunScript("plugin.program.navigation")</onclick>
+				</item>
+				<item id="3016">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadio) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]</visible>
+					<icon>button_radio.png</icon>
+					<onclick>RunScript("plugin.program.radioFM")</onclick>
+				</item>
+				<item id="3017">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]</visible>
+					<icon>button_settings.png</icon>
+					<onclick>ActivateWindow(Settings)</onclick>
+				</item>
+				<item id="3018">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonShutdownDialog) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)] + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+					<icon>button_shutdown.png</icon>
+					<onclick>ActivateWindow(1998)</onclick>
+				</item>  
+				<item id="3019">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(HideHomeButtonShutdownDialog) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)] + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+					<icon>button_shutdown.png</icon>
+					<onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
+				</item>  
+				<item id="3020">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFileManager)</visible>
+					<icon>button_filemanager.png</icon>
+					<onclick>ActivateWindow(FileManager)</onclick>
+				</item>
+				<item id="3021">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnect3g) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]</visible>
+					<icon>button_3g.png</icon>
+					<onclick>ActivateWindow(1118)</onclick>
+				</item>
+<!--			<item>
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonOBD) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]</visible>
+					<icon>button_obd.png</icon>
+					<onclick>-</onclick>
+				</item>  -->
+				<item id="3022">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]</visible>
+					<icon>button_weather.png</icon>
+					<onclick>ActivateWindow(Weather)</onclick>
+				</item>
+<!--			<item>
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPictures)</visible>
+					<icon>button_pictures.png</icon>
+					<onclick>ActivateWindow(Pictures)</onclick>
+				</item> -->
+				<item id="3023">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFavourites)</visible>
+					<icon>button_favs.png</icon>
+					<onclick>ActivateWindow(Favourites)</onclick>
+				</item>
+				<item id="3024">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms)</visible>
+					<icon>button_apps.png</icon>
+					<onclick>ActivateWindow(Programs)</onclick>
+				</item>
+<!--			<item>
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonReload)</visible>
+					<icon>button_reload.png</icon>
+					<onclick>XBMC.ReloadSkin()</onclick>
+				</item>  -->
+			</content>
+		</control>
+
 
    		<include>BehindDialogFadeOut</include>
    		

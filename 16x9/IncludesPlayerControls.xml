@@ -10,6 +10,7 @@
 			<texture>$INFO[Skin.String(CustomBackgroundPath)]</texture>
 			<visible>!Window.IsVisible(Visualisation) + !Window.IsVisible(FullScreenVideo)</visible>
 		</control>
+		<include>CommonBottomBar</include>   
 		
 		<!--Music Header-->
 		<control type="group">
@@ -667,7 +668,7 @@
 				<onleft>666</onleft>
 				<onright condition="Control.IsVisible(668)">668</onright>
 				<onright>669</onright>
-				<onup></onup>
+				<onup condition="!Control.IsVisible(668)"></onup>
 				<ondown>87</ondown>
 			</control>
 			<control type="radiobutton" id="667">
@@ -686,7 +687,7 @@
 				<visible>Player.HasVideo</visible>
 				<onleft>666</onleft>
 				<onright condition="Control.IsVisible(668)">668</onright>
-				<onright>669</onright>
+				<onright condition="!Control.IsVisible(668)">669</onright>
 				<onup></onup>
 				<ondown>87</ondown>
 			</control>
@@ -754,7 +755,7 @@
 				<textureradiooff flipx="true" flipy="true">GoFullscreen.png</textureradiooff>
 				<visible>Window.IsVisible(Visualisation) | Window.IsVisible(FullScreenVideo) + !Window.IsVisible(Karaoke)</visible>
 				<onleft condition="Control.IsVisible(668)">668</onleft>
-				<onleft>667</onleft>
+				<onleft condition="!Control.IsVisible(668)">667</onleft>
 				<onright></onright>
 				<onup></onup>
 				<ondown>87</ondown>
@@ -945,6 +946,7 @@
 			<include>SubMenuCommonLayout</include>
 			<onup condition="Control.IsVisible(87)">Control.SetFocus(87)</onup>
 			<onleft condition="Control.IsVisible(607)">Control.SetFocus(607)</onleft>
+			<onleft condition="Control.IsVisible(605) + !Control.IsVisible(607)">Control.SetFocus(605)</onleft>
 			<content>
 				<!--<item>
 					<label></label>

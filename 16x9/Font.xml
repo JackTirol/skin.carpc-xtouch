@@ -106,6 +106,12 @@
 		</font>
 		
 		<font>
+			<name>font18_bold</name>
+			<filename>Roboto-Bold.ttf</filename>
+			<size>18</size>
+		</font>
+		
+		<font>
 			<name>font20_bold</name>
 			<filename>Roboto-Bold.ttf</filename>
 			<size>20</size>

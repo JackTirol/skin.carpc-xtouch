@@ -948,7 +948,7 @@ msgid " >> Genre"
 msgstr " >> Genero"
 
 msgctxt "#31244"
-msgid "Activate background pictures for home buttons"
+msgid "Activate background pictures"
 msgstr ""
 
 msgctxt "#31245"
@@ -979,8 +979,12 @@ msgctxt "#31251"
 msgid "Show Music Button (Genres)"
 msgstr ""
 
+msgctxt "#31252"
+msgid "Focus Pictures (optional)"
+msgstr ""
 
-#empty strings from id 31252 to 31299
+
+#empty strings from id 31253 to 31299
 #------------------------------------------------
 
 #Extra labels

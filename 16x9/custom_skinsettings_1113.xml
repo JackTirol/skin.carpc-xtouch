@@ -3313,7 +3313,7 @@
 				<onclick>Skin.SetString(OpenSetting7c,1)</onclick>
 				<onclick>Control.SetFocus(733)</onclick>
 				<onup>20</onup>
-				<ondown>Control.SetFocus(733)</ondown>
+				<ondown>Control.SetFocus(750)</ondown>
 				<onleft>Control.SetFocus(700,3)</onleft>
 				<onright>Control.SetFocus(700,1)</onright>
 			</control>
@@ -4157,7 +4157,7 @@
 			<posx>40</posx>
 			<posy>220</posy>
 			<width>920</width>
-			<height>680</height>
+			<height>125</height>
 			<itemgap>-1</itemgap>
 			<onup>Control.SetFocus(740)</onup>
 			<ondown>Control.SetFocus(733)</ondown>
@@ -4176,144 +4176,11 @@
 				<align>left</align>
 				<aligny>top</aligny>
 			</control>
-
-			<control type="radiobutton" id="733">
-				<description>Enable Home Button Backgrounds</description>
-			    <visible>!Skin.HasSetting(EnableBGColor)</visible>
-				<height>50</height>
-				<width>920</width>
-				<font>font24_title</font>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
-				<textcolor>white</textcolor>
-				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<wrapmultiline>true</wrapmultiline>
-				<label>[B]$LOCALIZE[31244][/B]</label>
-				<onclick>Skin.Reset(HBSolidColor)</onclick>
-				<onclick>Skin.ToggleSetting(EnableBGPictures)</onclick>
-				<selected>Skin.HasSetting(EnableBGPictures)</selected>
-				<onup>Control.SetFocus(740)</onup>
-				<ondown>Control.SetFocus(733)</ondown>
-			</control>
-					<control type="button" id="760">
-			            <visible>!Skin.HasSetting(EnableBGColor)</visible>
-						<height>45</height>
-					   	<width>920</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31167] 1</label>  
-						<label2>[COLOR=selected]$INFO[Skin.String(Home1BG)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-					    <onclick>Skin.Reset(Home1BG)</onclick>
-						<onclick>Skin.SetImage(Home1BG)</onclick>
-						<onup>733</onup>
-						<ondown>761</ondown>
-					</control>
-					<control type="button" id="761">
-			            <visible>!Skin.HasSetting(EnableBGColor)</visible>
-						<height>45</height>
-					   	<width>920</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31167] 2</label>  
-						<label2>[COLOR=selected]$INFO[Skin.String(Home2BG)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-					    <onclick>Skin.Reset(Home2BG)</onclick>
-						<onclick>Skin.SetImage(Home2BG)</onclick>
-						<onup>760</onup>
-						<ondown>762</ondown>
-					</control>
-					<control type="button" id="762">
-			            <visible>!Skin.HasSetting(EnableBGColor)</visible>
-						<height>45</height>
-					   	<width>920</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31167] 3</label>  
-						<label2>[COLOR=selected]$INFO[Skin.String(Home3BG)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-					    <onclick>Skin.Reset(Home3BG)</onclick>
-						<onclick>Skin.SetImage(Home3BG)</onclick>
-						<onup>761</onup>
-						<ondown>763</ondown>
-					</control>
-					<control type="button" id="763">
-			            <visible>!Skin.HasSetting(EnableBGColor)</visible>
-						<height>45</height>
-					   	<width>920</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31167] 4</label>  
-						<label2>[COLOR=selected]$INFO[Skin.String(Home4BG)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-					    <onclick>Skin.Reset(Home4BG)</onclick>
-						<onclick>Skin.SetImage(Home4BG)</onclick>
-						<onup>762</onup>
-						<ondown>764</ondown>
-					</control>
-					<control type="button" id="764">
-			            <visible>!Skin.HasSetting(EnableBGColor)</visible>
-						<height>45</height>
-					   	<width>920</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31167] 5</label>  
-						<label2>[COLOR=selected]$INFO[Skin.String(Home5BG)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-					    <onclick>Skin.Reset(Home5BG)</onclick>
-						<onclick>Skin.SetImage(Home5BG)</onclick>
-						<onup>763</onup>
-						<ondown>765</ondown>
-					</control>
-					<control type="button" id="765">
-			            <visible>!Skin.HasSetting(EnableBGColor)</visible>
-						<height>45</height>
-					   	<width>920</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31167] 6</label>  
-						<label2>[COLOR=selected]$INFO[Skin.String(Home6BG)][/COLOR]</label2>
-						<textcolor>white</textcolor>
-						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-					    <onclick>Skin.Reset(Home6BG)</onclick>
-						<onclick>Skin.SetImage(Home6BG)</onclick>
-						<onup>764</onup>
-						<ondown>766</ondown>
-					</control>
-					<control type="button" id="766">
-			            <visible>!Skin.HasSetting(EnableBGColor)</visible>
-						<height>45</height>
-					   	<width>920</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31168]</label>  
-						<textcolor>white</textcolor>
-						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-					    <onclick>Skin.Reset(Home1BG)</onclick>
-					    <onclick>Skin.Reset(Home2BG)</onclick>
-					    <onclick>Skin.Reset(Home3BG)</onclick>
-					    <onclick>Skin.Reset(Home4BG)</onclick>
-					    <onclick>Skin.Reset(Home5BG)</onclick>
-					    <onclick>Skin.Reset(Home6BG)</onclick>
-						<onup>765</onup>
-						<ondown></ondown>
-					</control>
-			<control type="group">
-			    <visible>Skin.HasSetting(EnableBGColor)</visible>
+		</control>
+		<control type="group">
+			    <visible>Skin.String(OpenSetting7c,1) + Skin.String(SkinSettings,7) + Skin.HasSetting(EnableBGColor)</visible>
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>360</posy>
 	            <control type="image">
 	                <description>Hintergrund</description>
 					<posx>0</posx>
@@ -4353,8 +4220,326 @@
 					<onup>Control.SetFocus(740)</onup>
 					<ondown></ondown>
 				</control> 
-			</control>
 		</control>
+
+
+<!-- Home Buttons Background Normal -->
+		<control type="grouplist" id="750">
+			<description>Activate Home Buttons Picture Background</description>
+			<visible>Skin.String(OpenSetting7c,1) + Skin.String(SkinSettings,7) + !Skin.HasSetting(EnableBGColor)</visible>
+			<posx>40</posx>
+			<posy>360</posy>
+			<width>460</width>
+			<height>360</height>
+			<itemgap>-1</itemgap>
+			<onup>Control.SetFocus(740)</onup>
+			<onright>Control.SetFocus(734)</onright>
+			<ondown>Control.SetFocus(733)</ondown>
+			<control type="radiobutton" id="733">
+				<description>Enable Home Button Backgrounds</description>
+			    <visible>!Skin.HasSetting(EnableBGColor)</visible>
+				<height>50</height>
+				<width>450</width>
+				<font>font24_title</font>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
+				<textcolor>white</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<wrapmultiline>true</wrapmultiline>
+				<label>[B]$LOCALIZE[31244][/B]</label>
+				<onclick>Skin.Reset(HBSolidColor)</onclick>
+				<onclick>Skin.ToggleSetting(EnableBGPictures)</onclick>
+				<selected>Skin.HasSetting(EnableBGPictures)</selected>
+				<onup>Control.SetFocus(740)</onup>
+				<onright>Control.SetFocus(751)</onright>
+				<ondown>Control.SetFocus(760)</ondown>
+			</control>
+					<control type="button" id="760">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 1</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home1BG)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home1BG)</onclick>
+						<onclick>Skin.SetImage(Home1BG)</onclick>
+						<onup>733</onup>
+						<ondown>761</ondown>
+					</control>
+					<control type="button" id="761">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 2</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home2BG)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home2BG)</onclick>
+						<onclick>Skin.SetImage(Home2BG)</onclick>
+						<onup>760</onup>
+						<ondown>762</ondown>
+					</control>
+					<control type="button" id="762">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 3</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home3BG)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home3BG)</onclick>
+						<onclick>Skin.SetImage(Home3BG)</onclick>
+						<onup>761</onup>
+						<ondown>763</ondown>
+					</control>
+					<control type="button" id="763">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 4</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home4BG)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home4BG)</onclick>
+						<onclick>Skin.SetImage(Home4BG)</onclick>
+						<onup>762</onup>
+						<ondown>764</ondown>
+					</control>
+					<control type="button" id="764">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 5</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home5BG)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home5BG)</onclick>
+						<onclick>Skin.SetImage(Home5BG)</onclick>
+						<onup>763</onup>
+						<ondown>765</ondown>
+					</control>
+					<control type="button" id="765">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 6</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home6BG)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home6BG)</onclick>
+						<onclick>Skin.SetImage(Home6BG)</onclick>
+						<onup>764</onup>
+						<ondown>766</ondown>
+					</control>
+					<control type="button" id="766">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31168]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home1BG)</onclick>
+					    <onclick>Skin.Reset(Home2BG)</onclick>
+					    <onclick>Skin.Reset(Home3BG)</onclick>
+					    <onclick>Skin.Reset(Home4BG)</onclick>
+					    <onclick>Skin.Reset(Home5BG)</onclick>
+					    <onclick>Skin.Reset(Home6BG)</onclick>
+						<onup>765</onup>
+						<ondown></ondown>
+					</control>
+		</control>
+
+<!-- Separator -->
+		<control type="grouplist">
+			<description>Vertical Separator</description>
+			<posx>520</posx>
+			<posy>360</posy>
+			<width>4</width>
+			<height>360</height>
+			<itemgap>-1</itemgap>
+			<pagecontrol></pagecontrol>
+			<onup></onup>
+			<ondown></ondown>
+			<onleft></onleft>
+			<onright></onright>
+			<visible>Skin.String(OpenSetting7c,1) + Skin.String(SkinSettings,7) + !Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+
+			<control type="image">
+				<height>670</height>
+				<width>4</width>
+				<texture>separator_v.png</texture>
+			</control>  
+		</control>
+
+<!-- Home Buttons Background Focus -->
+		<control type="grouplist" id="751">
+			<description>Activate Home Buttons Picture Background Focus</description>
+			<visible>Skin.String(OpenSetting7c,1) + Skin.String(SkinSettings,7) + !Skin.HasSetting(EnableBGColor) + Skin.HasSetting(EnableBGPictures)</visible>
+			<posx>540</posx>
+			<posy>360</posy>
+			<width>460</width>
+			<height>360</height>
+			<itemgap>-1</itemgap>
+			<onup>Control.SetFocus(740)</onup>
+			<onleft>Control.SetFocus(733)</onleft>
+			<ondown>Control.SetFocus(734)</ondown>
+			<control type="radiobutton" id="734">
+				<description>Enable Home Button Background Focus</description>
+			    <visible>!Skin.HasSetting(EnableBGColor)</visible>
+				<height>50</height>
+				<width>450</width>
+				<font>font24_title</font>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
+				<textcolor>white</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<wrapmultiline>true</wrapmultiline>
+				<label>[B]$LOCALIZE[31252][/B]</label>
+				<onclick>Skin.Reset(HBSolidColor)</onclick>
+				<onclick>Skin.ToggleSetting(BGPicturesAllowFocus)</onclick>
+				<selected>Skin.HasSetting(BGPicturesAllowFocus)</selected>
+				<onup>Control.SetFocus(740)</onup>
+				<onleft>Control.SetFocus(750)</onleft>
+				<ondown>Control.SetFocus(770)</ondown>
+			</control>
+					<control type="button" id="770">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(BGPicturesAllowFocus)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 1 Focus</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home1BGFocus)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home1BGFocus)</onclick>
+						<onclick>Skin.SetImage(Home1BGFocus)</onclick>
+						<onup>733</onup>
+						<ondown>771</ondown>
+					</control>
+					<control type="button" id="771">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(BGPicturesAllowFocus)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 2 Focus</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home2BGFocus)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home2BGFocus)</onclick>
+						<onclick>Skin.SetImage(Home2BGFocus)</onclick>
+						<onup>770</onup>
+						<ondown>772</ondown>
+					</control>
+					<control type="button" id="772">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(BGPicturesAllowFocus)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 3 Focus</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home3BGFocus)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home3BGFocus)</onclick>
+						<onclick>Skin.SetImage(Home3BGFocus)</onclick>
+						<onup>771</onup>
+						<ondown>773</ondown>
+					</control>
+					<control type="button" id="773">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(BGPicturesAllowFocus)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 4 Focus</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home4BGFocus)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home4BGFocus)</onclick>
+						<onclick>Skin.SetImage(Home4BGFocus)</onclick>
+						<onup>772</onup>
+						<ondown>774</ondown>
+					</control>
+					<control type="button" id="774">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(BGPicturesAllowFocus)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 5 Focus</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home5BGFocus)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home5BGFocus)</onclick>
+						<onclick>Skin.SetImage(Home5BGFocus)</onclick>
+						<onup>773</onup>
+						<ondown>775</ondown>
+					</control>
+					<control type="button" id="775">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(BGPicturesAllowFocus)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31167] 6 Focus</label>  
+						<label2>[COLOR=selected]$INFO[Skin.String(Home6BGFocus)][/COLOR]</label2>
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home6BGFocus)</onclick>
+						<onclick>Skin.SetImage(Home6BGFocus)</onclick>
+						<onup>774</onup>
+						<ondown>776</ondown>
+					</control>
+					<control type="button" id="776">
+			            <visible>!Skin.HasSetting(EnableBGColor) + Skin.HasSetting(BGPicturesAllowFocus)</visible>
+						<height>45</height>
+					   	<width>460</width>
+						<font>font24_title</font>
+						<label>$LOCALIZE[31168]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+					    <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+					    <onclick>Skin.Reset(Home1BGFocus)</onclick>
+					    <onclick>Skin.Reset(Home2BGFocus)</onclick>
+					    <onclick>Skin.Reset(Home3BGFocus)</onclick>
+					    <onclick>Skin.Reset(Home4BGFocus)</onclick>
+					    <onclick>Skin.Reset(Home5BGFocus)</onclick>
+					    <onclick>Skin.Reset(Home6BGFocus)</onclick>
+						<onup>775</onup>
+						<ondown></ondown>
+					</control>
+			</control>
 
 
 
@@ -4422,9 +4607,9 @@
 <!-- Left list -->
 		<control type="grouplist" id="801">
 			<description>control area</description>
-			<posx>40</posx>
+			<posx>20</posx>
 			<posy>200</posy>
-			<width>440</width>
+			<width>450</width>
 			<height>750</height>
 			<itemgap>-1</itemgap>
 			<pagecontrol>30</pagecontrol>
@@ -4437,7 +4622,7 @@
 			<control type="radiobutton" id="802">
 				<description>Show Music - default source</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4455,7 +4640,7 @@
 			<control type="radiobutton" id="803">
 				<description>Show Music - Artists</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4473,7 +4658,7 @@
 			<control type="radiobutton" id="804">
 				<description>Show Music - Albums</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4491,7 +4676,7 @@
 			<control type="radiobutton" id="805">
 				<description>Show Music - Genre</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4509,7 +4694,7 @@
 			<control type="radiobutton" id="806">
 				<description>Show Radio</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4527,7 +4712,7 @@
 			<control type="radiobutton" id="807">
 				<description>Show Video</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4545,7 +4730,7 @@
 			<control type="radiobutton" id="808">
 				<description>Show Navigation</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4566,7 +4751,7 @@
 			<description>control area</description>
 			<posx>510</posx>
 			<posy>200</posy>
-			<width>440</width>
+			<width>450</width>
 			<height>750</height>
 			<itemgap>-1</itemgap>
 			<pagecontrol>30</pagecontrol>
@@ -4579,7 +4764,7 @@
 			<control type="radiobutton" id="811">
 				<description>Show Favourites</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4597,7 +4782,7 @@
 			<control type="radiobutton" id="812">
 				<description>Show Programs</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4615,7 +4800,7 @@
 			<control type="radiobutton" id="813">
 				<description>FileManager</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4633,7 +4818,7 @@
 			<control type="radiobutton" id="814">
 				<description>Connect3g</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4651,7 +4836,7 @@
 			<control type="radiobutton" id="815">
 				<description>Weather</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4669,7 +4854,7 @@
 			<control type="radiobutton" id="816">
 				<description>Shutdown no Dialog</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4687,7 +4872,7 @@
 <!--		<control type="radiobutton" id="817">
 				<description>Pictures</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4701,7 +4886,7 @@
 <!--		<control type="radiobutton" id="818">
 				<description>OBD</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4715,7 +4900,7 @@
 <!--		<control type="radiobutton" id="819">
 				<description>Show Weather info and button</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4729,7 +4914,7 @@
 <!--		<control type="radiobutton" id="820">
 				<description>Reload</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4743,7 +4928,7 @@
 <!--		<control type="radiobutton" id="821">
 				<description>Clock</description>
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font24_title</font>
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
 				<textcolor>white</textcolor>
@@ -4756,7 +4941,7 @@
 
 <!--		<control type="label">
 				<height>55</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font13_title</font>
 				<label>31503</label>
 				<textcolor>white</textcolor>
@@ -4767,7 +4952,7 @@
 			<control type="button" id="822">
 				<description>Subtitle Script Button</description>
 				<height>50</height>
-				<width>440</width>
+				<width>450</width>
 				<font>font13</font>
 				<textcolor>white</textcolor>
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>

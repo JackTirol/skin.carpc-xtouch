@@ -9,6 +9,7 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+		<include>CommonBottomBar</include>   
 		<include>PlayerControlCommons</include>
 	</controls>
 </window>

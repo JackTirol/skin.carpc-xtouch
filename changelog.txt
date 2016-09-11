@@ -22,7 +22,7 @@ v1.2:
 Main Changes:
 - You can now freely configure your home screen. Choose which buttons you want to be displayed and which positions they should take. 
 - NEW: The ’Magic Buttons’. These are freely configurable buttons for the home screen. They allow you to call a new function, a window, a plugin, a script, … directly from the home screen. You can choose the position of the button on the home screen, text and icon as well as the action which should be executed when the button is pressed. 
-- Help for the configuration of home screen buttons and Magic Buttons is included in Skin settings. 
+- Help for the configuration of home screen buttons and Magic Buttons is included in skin settings. 
 - NEW: You can define an individual background for each home button separately. Can be set in skin settings. You need a background image (PNG or JPG, 576x136px – bigger images are also possible and will be scaled to fit into the box).
 
 Other changes:
@@ -45,9 +45,11 @@ v2.0
 - Some bugfixes and optimizations.
 
 v2.1
-- The skin is now completely controllable by keyboard and/or rotary encoders and push buttons. You need keys or encoders/push buttons with the functions left, right, up, down, enter, esc.
+- The skin is now completely controllable by keyboard and/or rotary encoders and push buttons. You need keys or encoders/push buttons with the functions left, right, up, down, enter, esc to navigate through the skin.
 - Added Spanish localization (many thanks to redgod for translation)
-- In Skin Settings > Media > Music&Video you now can choose between four music sources: directory, artists, albums, genre.
-- Added new submenu buttons: Music Artists, Music Albums and Music Genres. Can be activated/disabled in skin Settings. 
-- Some minor aesthetical refinements in the music window.
-- Some bugfixes and optimizations.
+- Home screen: If picture backgrounds for main menu buttons are used, you now can define separate pictures for focused state (optional). 
+- In Skin Settings > Media > Music&Video you now can choose between four music sources: directory, music library artists, music library albums, music library genre.
+- Added new submenu buttons: Music Artists, Music Albums and Music Genres. Can be activated/disabled in skin settings. 
+- Submenu buttons are bigger now and will shrink to a smaller size when player buttons are visible.
+- Some minor cosmetical refinements in the music window.
+- As usual: Some bugfixes and optimizations.
