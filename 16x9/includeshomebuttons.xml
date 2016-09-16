@@ -23,7 +23,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_1.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_1_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.radioFM")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.radioFM)</onclick>
             </control>
             <control type="image">
                 <description>Radio</description>
@@ -68,7 +68,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_2.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_2_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.radioFM")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.radioFM)</onclick>
             </control>
             <control type="image">
                 <description>Radio</description>
@@ -113,7 +113,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_3.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_3_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.radioFM")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.radioFM)</onclick>
             </control>
             <control type="image">
                 <description>Radio</description>
@@ -158,7 +158,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_4.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_4_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.radioFM")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.radioFM)</onclick>
             </control>
             <control type="image">
                 <description>Radio</description>
@@ -203,7 +203,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_5.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_5_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.radioFM")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.radioFM)</onclick>
             </control>
             <control type="image">
                 <description>Radio</description>
@@ -249,7 +249,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_6.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_6_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.radioFM")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.radioFM)</onclick>
             </control>
             <control type="image">
                 <description>Radio</description>
@@ -862,7 +862,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
                 <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_1.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_1_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.navigation")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.navigation)</onclick>
             </control>
             <control type="image">
                 <description>Navit Button Image</description>
@@ -907,7 +907,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
                 <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_2.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_2_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.navigation")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.navigation)</onclick>
             </control>
             <control type="image">
                 <description>Navit Button Image</description>
@@ -952,7 +952,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
                 <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_3.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_3_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.navigation")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.navigation)</onclick>
             </control>
             <control type="image">
                 <description>Navit Button Image</description>
@@ -997,7 +997,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
                 <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_4.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_4_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.navigation")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.navigation)</onclick>
             </control>
             <control type="image">
                 <description>Navit Button Image</description>
@@ -1042,7 +1042,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
                 <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_5.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_5_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.navigation")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.navigation)</onclick>
             </control>
             <control type="image">
                 <description>Navit Button Image</description>
@@ -1088,7 +1088,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
                 <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_6.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_6_p.png</texturefocus>
-                <onclick>RunScript("plugin.program.navigation")</onclick>
+                <onclick>RunPlugin(plugin://plugin.program.navigation)</onclick>
             </control>
             <control type="image">
                 <description>Navit Button Image</description>
@@ -2550,7 +2550,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_1.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_1_p.png</texturefocus>
-                <onclick>ActivateWindow()</onclick>
+                <onclick>RunPlugin(plugin://script.cardiagnostic)</onclick>
             </control>
             <control type="image">
                 <description>OBD</description>
@@ -2595,7 +2595,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_2.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_2_p.png</texturefocus>
-                <onclick>ActivateWindow()</onclick>
+                <onclick>RunPlugin(plugin://script.cardiagnostic)</onclick>
             </control>
             <control type="image">
                 <description>OBD</description>
@@ -2640,7 +2640,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_3.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_3_p.png</texturefocus>
-                <onclick>ActivateWindow()</onclick>
+                <onclick>RunPlugin(plugin://script.cardiagnostic)</onclick>
             </control>
             <control type="image">
                 <description>OBD</description>
@@ -2685,7 +2685,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_4.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_4_p.png</texturefocus>
-                <onclick>ActivateWindow()</onclick>
+                <onclick>RunPlugin(plugin://script.cardiagnostic)</onclick>
             </control>
             <control type="image">
                 <description>OBD</description>
@@ -2730,7 +2730,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_5.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_5_p.png</texturefocus>
-                <onclick>ActivateWindow()</onclick>
+                <onclick>RunPlugin(plugin://script.cardiagnostic)</onclick>
             </control>
             <control type="image">
                 <description>OBD</description>
@@ -2776,7 +2776,7 @@
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 	            <texturenofocus colordiffuse="$INFO[Skin.String(HBOutlineColor)]">home_6.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">home_6_p.png</texturefocus>
-                <onclick>ActivateWindow()</onclick>
+                <onclick>RunPlugin(plugin://script.cardiagnostic)</onclick>
             </control>
             <control type="image">
                 <description>OBD</description>

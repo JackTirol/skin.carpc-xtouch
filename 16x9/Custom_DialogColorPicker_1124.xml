@@ -67,6 +67,12 @@
 		<include>SkinColorList</include>
 		<include>FocusColorList</include>
 		<include>ButtonBGColorList</include>
+<!--	<include>Button1BGColorList</include>
+		<include>Button2BGColorList</include>
+		<include>Button3BGColorList</include>
+		<include>Button4BGColorList</include>
+		<include>Button5BGColorList</include>
+		<include>Button6BGColorList</include> -->
 		<include>OutlineColorList</include>
 		<include>IconTextColorList</include>
 		<include>BottomBGColorList</include>

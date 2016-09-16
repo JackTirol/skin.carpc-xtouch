@@ -17,6 +17,12 @@
     <include file="IncludesSkinColor.xml" />
     <include file="IncludesFocusColor.xml" />
     <include file="IncludesButtonBGColor.xml" />
+    <include file="IncludesButton1BGColor.xml" />
+    <include file="IncludesButton2BGColor.xml" />
+    <include file="IncludesButton3BGColor.xml" />
+    <include file="IncludesButton4BGColor.xml" />
+    <include file="IncludesButton5BGColor.xml" />
+    <include file="IncludesButton6BGColor.xml" />
     <include file="IncludesIconTextColor.xml" />
     <include file="IncludesOutlineColor.xml" />
     <include file="IncludesBottomBGColor.xml" />
@@ -2249,13 +2255,21 @@
         </control>
     </include>
 
-    <include name="OptionsButtonCommons">
+    <include name="OptionsButtonCommons-old">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Down</include>
             <posx>75r</posx>
             <posy>1</posy>
             <visible>!Window.IsActive(PlayerControls)</visible>
             <include>VisibleFadeEffect</include>
+            <control type="image">
+                <description>Options Button Image</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>75</width>
+                <height>75</height>
+                <texture>icon_system.png</texture>
+            </control>
             <control type="button" id="557">
                 <description>Options Button</description>
                 <posx>0</posx>
@@ -2265,20 +2279,12 @@
                 <font>-</font>
                 <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]" border="5">floor_button.png</texturenofocus>
                 <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">floor_button.png</texturefocus>
-                <onclick>Skin.ToggleSetting(MediaSubMenuVisible)</onclick>
+                <onclick>Skin.ToggleSetting(MediaSubMenuVisible2)</onclick>
 				<onleft>666</onleft>
 				<onright></onright>
 				<onup></onup>
 				<ondown condition="Control.IsVisible(50)">50</ondown>
 				<ondown condition="Control.IsVisible(500)">500</ondown>
-            </control>
-            <control type="image">
-                <description>Options Button Image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>75</width>
-                <height>75</height>
-                <texture>icon_system.png</texture>
             </control>
         </control>
     </include>

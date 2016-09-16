@@ -2371,13 +2371,11 @@
                 <description>Farbfeld</description>
 				<posx>700</posx>
 				<posy>15</posy>
-                <posx>0</posx>
-                <posy>0</posy>
                 <width>100</width>
                 <height>40</height>
                 <texture colordiffuse="$INFO[Skin.String(HBSolidColor)]">button-nofocus.png</texture>
             </control>
-				
+            				
 		</control>
 
 		<control type="grouplist">

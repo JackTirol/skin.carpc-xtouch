@@ -2,13 +2,13 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<views>50,500</views>
-	<onunload>Skin.Reset(MediaSubMenuVisible)</onunload>
+	<onunload>Skin.Reset(MediaSubMenuVisible2)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<include>CommonBackgroundOverlay</include>
 		<include>CommonTopBar</include>
 		<include>CommonBottomBar</include>
-		<include>FileCountCommons</include>
+		<include>FileCountCommons</include> 
 		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
 		<include>OptionsButtonCommons</include>
@@ -27,9 +27,9 @@
 			<onright>Control.SetFocus(556)</onright>
 		</control>
 		<include>ScrollBarCommons</include>
-		<include>MediaSubMenu</include>
+		<include>MediaSubMenu</include> 
 		<control type="group">
-			<visible>Skin.HasSetting(MediaSubMenuVisible)</visible>
+			<visible>Skin.HasSetting(MediaSubMenuVisible2)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="button">
 				<description>Hidden button to close the sort when its focused</description>
@@ -39,7 +39,7 @@
 				<height>ScreenHeight</height>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
+				<onclick>Skin.Reset(MediaSubMenuVisible2)</onclick>
 			</control>
 			<control type="group">
 				<posx>340r</posx>
@@ -70,13 +70,14 @@
 					<height>420</height>
 					<texture border="5">SubBack2.png</texture>
 				</control>
-				<control type="image">
+				<control type="button">
 					<description>Panel Arrow image</description>
 					<posx>270</posx>
 					<posy>-34</posy>
 					<width>40</width>
 					<height>40</height>
 					<texture>arrow-big-up.png</texture>
+					<onclick>Skin.Reset(MediaSubMenuVisible2)</onclick>
 				</control>
 				<control type="grouplist" id="556">
 					<posx>11</posx>
@@ -106,7 +107,7 @@
 					<control type="radiobutton" id="99">
 						<description>Library button</description>
 						<label>$LOCALIZE[29800]</label>
-						<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
+						<onclick>Skin.Reset(MediaSubMenuVisible2)</onclick>
 						<onclick>ReplaceWindow(MusicFiles)</onclick>
 						<selected>Window.IsVisible(MusicLibrary)</selected>
 						<include>ButtonCommonValues2</include>
@@ -120,16 +121,8 @@
 						<description>PartyMode</description>
 						<label>589</label>
 						<include>ButtonCommonValues2</include>
-						<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
+						<onclick>Skin.Reset(MediaSubMenuVisible2)</onclick>
 					</control>
-					
-					<!--<control type="image">
-						<posx>0</posx>
-						<posy>100</posy>
-						<width>298</width>
-						<height>10</height>
-						<texture>shelf_shadow.png</texture>
-					</control>-->
 				</control>
 			</control>
 		</control>

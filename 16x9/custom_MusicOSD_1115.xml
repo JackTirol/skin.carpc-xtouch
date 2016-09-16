@@ -3,7 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,500</views>
 	
-	<onunload>Skin.Reset(MediaSubMenuVisible)</onunload>
+	<onunload>Skin.Reset(MediaSubMenuVisible2)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<include>PlayerControlCommons</include>

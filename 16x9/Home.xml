@@ -2,7 +2,7 @@
 	<onload>RunScript("special://skin/scripts/check_calibration.py")</onload>
 	<onunload condition="Container(9000).Hasfocus(2) | Container(9000).Hasfocus(3) | ControlGroup(9010).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(1)">ClearProperty(VideosDirectLink)</onunload>
-	<onload condition="!Skin.HasSetting(HideSettingsManager)">ActivateWindow(1122)</onload>
+	<onload condition="!Skin.HasSetting(HideSettingsManager2.1)">ActivateWindow(1122)</onload>
 	<defaultcontrol always="true">3001</defaultcontrol>
 	<controls>
 		<include>CommonBackground</include>
@@ -423,6 +423,23 @@
 					<icon>button_apps.png</icon>
 					<onclick>ActivateWindow(Programs)</onclick>
 				</item>
+				<item id="3025">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day)</visible>
+					<icon>button_day.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,day)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
+				</item>
+				<item id="3025">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night)</visible>
+					<icon>button_night.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,night)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
+				</item>
+
 <!--			<item>
 					<label></label>
 		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonReload)</visible>
@@ -536,6 +553,22 @@
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms)</visible>
 					<icon>button_apps.png</icon>
 					<onclick>ActivateWindow(Programs)</onclick>
+				</item>
+				<item id="3025">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day)</visible>
+					<icon>button_day.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,day)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
+				</item>
+				<item id="3025">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night)</visible>
+					<icon>button_night.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,night)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
 				</item>
 <!--			<item>
 					<label></label>

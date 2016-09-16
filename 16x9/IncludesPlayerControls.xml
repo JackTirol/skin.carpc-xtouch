@@ -1165,17 +1165,6 @@
 		<control type="group">
 			<visible>Skin.HasSetting(PlayerControlsSubMenuVisible)</visible>
 			<include>VisibleFadeEffect</include>
-			<control type="button">
-				<description>Hidden button to close the sort when its focused</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>ScreenWidth</width>
-				<height>ScreenHeight</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
-				<onclick>Control.SetFocus(666)</onclick>
-			</control>
 			<control type="group">
 				<posx>570r</posx>
 				<posy>113</posy>

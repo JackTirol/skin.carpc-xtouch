@@ -95,8 +95,7 @@
 
 <!-- ### Page 1 ############################################################################################ -->
 
-<!-- ### Home Buttons Colors ### -->
-
+<!-- ### Skin Colors Menu ### -->
 		<control type="grouplist" id="100">
 			<description>Settings 8 Menu</description>
 			<visible>Skin.String(SkinSettings,1)</visible>
@@ -141,8 +140,6 @@
 				<label></label>
 			</control>
 		</control>
-
-
 
 <!-- Standard Skin Color -->
 		<control type="group" id="102">
@@ -341,7 +338,7 @@
             </control>
 		</control>
 
-<!--	Home Button Outline-->
+<!-- Home Button Outline -->
 		<control type="grouplist" id="108">
 			<description>Home Buttons Outline Color</description>
 			<visible>Skin.String(SkinSettings,1)</visible>
@@ -2057,6 +2054,8 @@
 <!-- ### Page 3 Ende ####################################################################################### -->
 <!-- ### Page 4 ############################################################################################ -->
 
+<!-- Title Area -->
+
 		<control type="grouplist">
 			<description>Settings 4 Menu</description>
 			<visible>Skin.String(SkinSettings,4)</visible>
@@ -2163,7 +2162,7 @@
 			</control>
 		</control>
 		
-<!-- Titelzeile -->
+<!-- Title Text -->
 		<control type="label">
 			<visible>Skin.String(SkinSettings,4) + Skin.String(OpenSetting4a,1)</visible>
 			<height>65</height>
@@ -2293,6 +2292,121 @@
 
 
 <!-- ### Page 4 Ende ####################################################################################### -->
+
+<!-- ### Page 4.2 ############################################################################################ -->
+
+<!-- Day/Night-Mode -->
+		<control type="grouplist">
+			<description>Settings 4.2 Menu</description>
+			<visible>Skin.String(SkinSettings,42)</visible>
+			<posx>40</posx>
+			<posy>140</posy>
+			<width>920</width>
+			<height>60</height>
+			<itemgap>10</itemgap>
+			<align>top</align>
+			<orientation>horizontal</orientation>
+			<onleft>9</onleft>
+			<onright>9</onright>
+			<onup>1</onup>
+			<ondown>2</ondown>
+			<control type="label">
+				<visible>Skin.String(SkinSettings,42)</visible>
+				<width>300</width>
+				<height>60</height>
+				<label></label>
+			</control>
+			<control type="button" id="440">
+				<visible>Skin.String(SkinSettings,42)</visible>
+				<width>300</width>
+				<height>60</height>
+				<include>ButtonMenuTopCommonValuesFocus</include>
+				<label>[B]$LOCALIZE[31254][/B]</label>
+				<onclick>Control.SetFocus(442)</onclick>
+				<ondown>442</ondown>
+			</control>
+			<control type="label">
+				<visible>Skin.String(SkinSettings,42)</visible>
+				<width>300</width>
+				<height>60</height>
+				<label></label>
+			</control>
+		</control>
+		<control type="grouplist">
+			<description>control area</description>
+			<posx>40</posx>
+			<posy>220</posy>
+			<width>920</width>
+			<height>350</height>
+			<itemgap>-1</itemgap>
+			<visible>Skin.String(SkinSettings,42)</visible>
+			<control type="label">
+				<wrapmultiline>true</wrapmultiline>
+ 				<posx>40</posx>
+				<posy>20</posy>
+				<height>300</height>
+				<width>920</width>
+				<font>font22_title</font>
+				<label>$LOCALIZE[31255]</label>
+				<textcolor>white</textcolor>
+				<align>left</align>
+				<aligny>top</aligny>
+			</control>
+		</control> 					
+		<control type="group" id="441">
+			<description>control area</description>
+			<posx>40</posx>
+			<posy>520</posy>
+			<width>920</width>
+			<height>180</height>
+			<onup>1</onup>
+			<ondown></ondown>
+			<onleft></onleft>
+			<onright></onright>
+			<visible>Skin.String(SkinSettings,42)</visible>
+			<control type="button" id="442">
+				<description>Day/Night-Mode</description>
+				<posx>290</posx>
+				<posy>10</posy>
+				<height>50</height>
+		   		<width>340</width>
+				<font>font24_title</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$LOCALIZE[31256]</label>  
+				<textcolor>white</textcolor>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<texturefocus border="0,2,0,2">button_outline_black_f.png</texturefocus>
+		    	<texturenofocus border="0,2,0,2">button_outline_black.png</texturenofocus>
+				<onclick>RunScript("plugin.program.carpc-xtouch")</onclick>
+				<onclick>Dialog.Close(1113)</onclick>
+				<onup>Control.SetFocus(440)</onup>
+				<onup>440</onup>
+				<ondown>443</ondown>
+			</control>
+			<control type="radiobutton" id="443">
+				<description>Skin Day-Night</description>
+				<posx>200</posx>
+				<posy>80</posy>
+				<height>55</height>
+				<width>520</width>
+				<font>font24_title</font>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
+				<textcolor>white</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31253]</label>
+				<onclick>Skin.ToggleSetting(HideHomeButtonDayNight)</onclick>
+				<selected>!Skin.HasSetting(HideHomeButtonDayNight)</selected>
+				<onup>442</onup>
+				<ondown></ondown>
+			</control> 
+		</control> 					
+
+
+<!-- ### Page 4.2 Ende ####################################################################################### -->
+
+
 <!-- ### Page 5 ############################################################################################ -->
 
 <!-- 1024x600 Fix -->
@@ -2380,6 +2494,8 @@
 
 <!-- ### Page 5 Ende ####################################################################################### -->
 <!-- ### Page 6 ############################################################################### -->	 	
+
+<!-- Main Menu -->
 
 		<control type="grouplist">
 			<description>Settings 6 Menu</description>
@@ -2509,7 +2625,7 @@
 			</control>  
 		</control>
 
-<!-- Help Home Buttons Order -->	
+<!-- Help Home Buttons -->	
 		<control type="grouplist" id="691">
 			<description>control area</description>
 			<posx>515</posx>
@@ -2613,7 +2729,7 @@
 			</control>
 		</control> 
 
-<!-- Home Position neu -->	
+<!-- Main Menu Buttons -->	
 		<control type="grouplist" id="611">
 			<description>control area</description>
 			<posx>40</posx>
@@ -3196,7 +3312,7 @@
 		</control>
 
 		<control type="grouplist" id="700">
-			<description>Settings 77 Menu</description>
+			<description>Settings 7 Menu</description>
 			<visible>Skin.String(SkinSettings,7)</visible>
 			<posx>20</posx>
 			<posy>140</posy>
@@ -4869,6 +4985,20 @@
 				<onright></onright>
 			</control>  
 
+			<control type="radiobutton" id="817">
+				<description>Skin Day-Night</description>
+				<height>55</height>
+				<width>450</width>
+				<font>font24_title</font>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
+				<textcolor>white</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31253]</label>
+				<onclick>Skin.ToggleSetting(HideHomeButtonDayNight)</onclick>
+				<selected>!Skin.HasSetting(HideHomeButtonDayNight)</selected>
+			</control> 
+
 <!--		<control type="radiobutton" id="817">
 				<description>Pictures</description>
 				<height>55</height>
@@ -5495,7 +5625,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31175]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu1)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu1)</onclick>
 				<onclick>Skin.SetString(SkinSettings,1)</onclick>
 				<onclick>Control.SetFocus(103)</onclick>
 				<onup>10</onup>
@@ -5509,7 +5639,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31083]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu1)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu1)</onclick>
 				<onclick>Skin.Reset(OpenSetting2a)</onclick>
 				<onclick>Skin.Reset(OpenSetting2b)</onclick>
 				<onclick>Skin.Reset(OpenSetting2c)</onclick>
@@ -5527,7 +5657,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31177]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu1)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu1)</onclick>
 				<onclick>Skin.Reset(OpenSetting3b)</onclick>
 				<onclick>Skin.Reset(OpenSetting3c)</onclick>
 				<onclick>Skin.SetString(OpenSetting3a,1)</onclick>
@@ -5543,7 +5673,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31147]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu1)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu1)</onclick>
 				<onclick>Skin.Reset(OpenSetting4b)</onclick>
 				<onclick>Skin.SetString(OpenSetting4a,1)</onclick>
 				<onclick>Skin.SetString(SkinSettings,4)</onclick>
@@ -5557,11 +5687,24 @@
 				<width>300</width>
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
+				<label>$LOCALIZE[31254]</label>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu1)</onclick>
+				<onclick>Skin.SetString(SkinSettings,42)</onclick>
+				<onclick>Control.SetFocus(440)</onclick>
+				<onup>14</onup>
+				<ondown>16</ondown>
+			</control>  
+			<control type="button" id="16">
+				<visible>Skin.HasSetting(OpenSettingsMenu1)</visible>
+				<description>Settings5 - Correction</description>
+				<width>300</width>
+				<height>60</height>
+				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31178]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu1)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu1)</onclick>
 				<onclick>Skin.SetString(SkinSettings,5)</onclick>
 				<onclick>Control.SetFocus(502)</onclick>
-				<onup>14</onup>
+				<onup>15</onup>
 				<ondown>1</ondown>
 			</control>  
 		</control> 
@@ -5606,7 +5749,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31211]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu2)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu2)</onclick>
 				<onclick>Skin.SetString(SkinSettings,6)</onclick>
 				<onclick>Control.SetFocus(630)</onclick>
 				<onup>20</onup>
@@ -5619,7 +5762,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31207]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu2)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu2)</onclick>
 				<onclick>Skin.Reset(OpenSetting7b)</onclick>
 				<onclick>Skin.Reset(OpenSetting7c)</onclick>
 				<onclick>Skin.Reset(OpenSetting7d)</onclick>
@@ -5636,7 +5779,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31174]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu2)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu2)</onclick>
 				<onclick>Skin.SetString(SkinSettings,8)</onclick>
 				<onclick>Control.SetFocus(810)</onclick>
 				<onup>22</onup>
@@ -5681,7 +5824,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31130]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu3)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu3)</onclick>
 				<onclick>Skin.Reset(OpenSetting9b)</onclick>
 				<onclick>Skin.SetString(SkinSettings,9)</onclick>
 				<onclick>Skin.SetString(OpenSetting9a,1)</onclick>
@@ -5696,7 +5839,7 @@
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<label>$LOCALIZE[31139]</label>
-				<onclick>Skin.Reset(OpenSettingsMenu3)</onclick>
+				<onclick>Skin.ToggleSetting(OpenSettingsMenu3)</onclick>
 				<onclick>Skin.SetString(SkinSettings,10)</onclick>
 				<onclick>Control.Setfocus(1001)</onclick>
 				<onup>31</onup>
@@ -5726,7 +5869,8 @@
 				<onclick>Skin.Reset(OpenSettingsMenu1)</onclick>
 				<onclick>Skin.Reset(OpenSettingsMenu2)</onclick>
 				<onclick>Skin.Reset(OpenSettingsMenu3)</onclick>
-				<onclick>Skin.ToggleSetting(OpenSettingsMenu3)</onclick>
+				<onclick>Skin.SetString(SkinSettings,1)</onclick>
+				<onclick>Control.SetFocus(1)</onclick>
 				<onclick>Dialog.Close(1113)</onclick>
 				<onleft>30</onleft>
 				<onright></onright>

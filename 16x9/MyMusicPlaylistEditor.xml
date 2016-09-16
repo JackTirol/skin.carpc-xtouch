@@ -1,7 +1,7 @@
 <window id="503">
 	<defaultcontrol allways="true">6</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<onunload>Skin.Reset(MediaSubMenuVisible)</onunload>
+	<onunload>Skin.Reset(MediaSubMenuVisible2)</onunload>
 	<controls>
 		<include>CommonBackground</include>
         <include>CommonTopBar</include>
@@ -318,7 +318,7 @@
 			</content>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(MediaSubMenuVisible)</visible>
+			<visible>Skin.HasSetting(MediaSubMenuVisible2)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="button">
 				<description>Hidden button to close the sort when its focused</description>
@@ -328,7 +328,7 @@
 				<height>ScreenHeight</height>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
+				<onclick>Skin.Reset(MediaSubMenuVisible2)</onclick>
 			</control>
 			<control type="group">
 				<posx>225r</posx>

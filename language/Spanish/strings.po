@@ -78,7 +78,6 @@ msgstr "Películas recientes"
 msgctxt "#31014"
 msgid "Recent Episodes"
 msgstr "Episodios recientes"
-msgstr ""
 
 msgctxt "#31015"
 msgid "Recent Music Videos"
@@ -983,8 +982,24 @@ msgctxt "#31252"
 msgid "Focus Pictures (optional)"
 msgstr ""
 
+msgctxt "#31253"
+msgid "Show Day/Night Switch"
+msgstr ""
 
-#empty strings from id 31253 to 31299
+msgctxt "#31254"
+msgid "Day/Night Mode"
+msgstr ""
+
+msgctxt "#31255"
+msgid "The Day/Night Mode allows you to store two different skin-configurations (for example a bright look for daytime and a dark look for the night) and to switch manually or automatically between them. This function needs the addon 'X-Touch Helper' to be installed and activated. [CR] [CR] HOW TO USE: First create your settings (backgrounds, colors, … anything you like) for the look you want to have at daytime, then press the button below and on the following screen press 'Save Day'. All current settings will be stored. Then do the same for the look you want to have at night time and store the settings by pressing 'Save Night'. To switch from Day-Mode to Night-Mode or vice versa you can activate the according submenu button (manual switching) or set the time for day and night in the addon settings. Then the switch will be executed automatically at the given times."
+msgstr ""
+
+msgctxt "#31256"
+msgid "Configure"
+msgstr ""
+
+
+#empty strings from id 31257 to 31299
 #------------------------------------------------
 
 #Extra labels
