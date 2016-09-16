@@ -45,9 +45,9 @@ v2.0
 - Some bugfixes and optimizations.
 
 v2.1
-- NEW: Day/Night Mode! Thanks to hawkeyexp there now is a new addon available called 'X-Touch Helper'. It allows you to store two different skin-configurations (for example a bright look for daytime and a dark look for the night). If configured, you can switch manually or automatically between the two looks. Of course this function needs the addon 'X-Touch Helper' to be installed and activated.
-- The skin is now completely controllable by keyboard and/or rotary encoders and push buttons. You need keys or encoders/push buttons with the functions left, right, up, down, enter, esc to navigate through the skin.
-- Added Spanish localization (many thanks to redgod for translation)
+- NEW: Day/Night Mode! Thanks to hawkeyexp there now is a new addon available called 'X-Touch Helper'. It allows you to store two different skin-configurations (for example a bright look for daytime and a dark look for the night). If configured, you can switch manually or automatically (scheduled) between the two looks. Of course this function needs the addon 'X-Touch Helper' to be installed and activated.
+- The skin is now to 99% controllable by keyboard and/or rotary encoders and push buttons. You need keys or encoders/push buttons with the functions left, right, up, down, enter, esc to navigate through the skin.
+- Added Spanish localization (many thanks to redgod for the translation)
 - Home screen: If picture backgrounds for main menu buttons are used, you now can define separate pictures for focused state (optional). 
 - In Skin Settings > Media > Music&Video you now can choose between four music sources: directory, music library artists, music library albums, music library genre.
 - Added new submenu buttons: Music Artists, Music Albums, Music Genres and Switch Day/Night Mode. Can be activated/disabled in skin settings. 

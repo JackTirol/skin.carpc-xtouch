@@ -2356,7 +2356,7 @@
 		<control type="group" id="441">
 			<description>control area</description>
 			<posx>40</posx>
-			<posy>520</posy>
+			<posy>490</posy>
 			<width>920</width>
 			<height>180</height>
 			<onup>1</onup>
@@ -2366,10 +2366,10 @@
 			<visible>Skin.String(SkinSettings,42)</visible>
 			<control type="button" id="442">
 				<description>Day/Night-Mode</description>
-				<posx>290</posx>
+				<posx>190</posx>
 				<posy>10</posy>
 				<height>50</height>
-		   		<width>340</width>
+		   		<width>240</width>
 				<font>font24_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -2378,8 +2378,26 @@
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline_black_f.png</texturefocus>
 		    	<texturenofocus border="0,2,0,2">button_outline_black.png</texturenofocus>
-				<onclick>RunScript("plugin.program.carpc-xtouch")</onclick>
-				<onclick>Dialog.Close(1113)</onclick>
+				<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,saveday)</onclick>
+				<onup>Control.SetFocus(440)</onup>
+				<onup>440</onup>
+				<ondown>443</ondown>
+			</control>
+			<control type="button" id="442">
+				<description>Day/Night-Mode</description>
+				<posx>500</posx>
+				<posy>10</posy>
+				<height>50</height>
+		   		<width>240</width>
+				<font>font24_title</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$LOCALIZE[31257]</label>  
+				<textcolor>white</textcolor>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<texturefocus border="0,2,0,2">button_outline_black_f.png</texturefocus>
+		    	<texturenofocus border="0,2,0,2">button_outline_black.png</texturenofocus>
+				<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,savenight)</onclick>
 				<onup>Control.SetFocus(440)</onup>
 				<onup>440</onup>
 				<ondown>443</ondown>
@@ -2387,7 +2405,7 @@
 			<control type="radiobutton" id="443">
 				<description>Skin Day-Night</description>
 				<posx>200</posx>
-				<posy>80</posy>
+				<posy>90</posy>
 				<height>55</height>
 				<width>520</width>
 				<font>font24_title</font>

@@ -991,15 +991,19 @@ msgid "Day/Night Mode"
 msgstr "Tag/Nacht-Modus"
 
 msgctxt "#31255"
-msgid "The Day/Night Mode allows you to store two different skin-configurations (for example a bright look for daytime and a dark look for the night) and to switch manually or automatically between them. This function needs the addon 'X-Touch Helper' to be installed and activated. [CR] [CR] HOW TO USE: First create your settings (backgrounds, colors, … anything you like) for the look you want to have at daytime, then press the button below and on the following screen press 'Save Day'. All current settings will be stored. Then do the same for the look you want to have at night time and store the settings by pressing 'Save Night'. To switch from Day-Mode to Night-Mode or vice versa you can activate the according submenu button (manual switching) or set the time for day and night in the addon settings. Then the switch will be executed automatically at the given times."
-msgstr "Der Tag/Nacht-Modus erlaubt das Speichern und aufrufen von zwei verschiedenen „Looks“ des Skins (z.B. einen hellen Look für den Tag und einen dunkleren für die Nacht. Für diese Funktion muss das Addon „X-Touch Helper“ installiert und aktiviert sein. [CR]Und so geht das: Zuerst nehme in den Ekin-Settings alle Einstellungen (Hintergründe, Farben, … was auch immer) für den Look am Tag vor, dann klicke auf den unten stehenden Button und im folgenden Fenster auf „Save Day“. Danach mache das selbe für den Nacht-Modus und speichere die Settings durch Klick auf „Save Night“. Das Umschalten zwischen den beiden Modi geschieht dann entweder manuell über den entsprechenden Submenü-Button oder automatisch zu den in den Einstellungen des Addons definierten Zeiten."
+msgid "The Day/Night Mode allows you to store two different skin-configurations (for example a bright look for daytime and a dark look for the night) and to switch manually or automatically between them. This function needs the addon 'X-Touch Helper' to be installed and activated. [CR] [CR] HOW TO USE: First create your settings (backgrounds, colors, … anything you like) for the look you want to have at daytime, then press 'Save Day' below. All current settings will be stored. Then do the same for the look you want to have at night time and store the settings by pressing 'Save Night'. To switch from Day-Mode to Night-Mode or vice versa you can activate the according submenu button (manual switching) or set the time for day and night in the addon settings. Then the switch will be executed automatically at the given times."
+msgstr "Der Tag/Nacht-Modus erlaubt das Speichern und aufrufen von zwei verschiedenen „Looks“ des Skins (z.B. einen hellen Look für den Tag und einen dunkleren für die Nacht. Für diese Funktion muss das Addon „X-Touch Helper“ installiert und aktiviert sein. [CR]Und so geht das: Zuerst nehme in den Skin-Settings alle Einstellungen (Hintergründe, Farben, … was auch immer) für den Look am Tag vor, dann klicke auf den unten auf „Save Day“. Danach mache das selbe für den Nacht-Modus und speichere die Settings durch Klick auf „Save Night“. Das Umschalten zwischen den beiden Modi geschieht dann entweder manuell über den entsprechenden Submenü-Button oder automatisch zu den in den Einstellungen des Addons definierten Zeiten."
 
 msgctxt "#31256"
-msgid "Configure"
-msgstr "Konfigurieren"
+msgid "Save Day"
+msgstr ""
+
+msgctxt "#31257"
+msgid "Save Night"
+msgstr ""
 
 
-#empty strings from id 31257 to 31299
+#empty strings from id 31258 to 31299
 #------------------------------------------------
 
 #Extra labels
