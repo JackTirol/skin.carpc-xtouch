@@ -3,9 +3,6 @@
 	<allowoverlay>no</allowoverlay>
 	<include>16x9_xPos_Relocation</include>
 	<include>Window_OpenClose_Animation_Zoom</include>
-<!--<onload condition="String.IsEmpty(CustomColorNofocus)">Skin.SetString(CustomColorNofocus,Color9)</onload>
-	<onload condition="String.IsEmpty(CustomColorHomebuttons)">Skin.SetString(CustomColorHomebuttons,Color9)</onload>
-	<onload condition="!Skin.HasSetting(UseVisBg) + !Skin.HasSetting(UseVisBgCover)">Skin.ToggleSetting(UseVisBgCover)</onload> -->
 
 	<coordinates>
 		<system>1</system>
@@ -28,11 +25,11 @@
 			<width>910</width>
 			<label>20077</label>
 		</control>
-		<control type="group">
+<!--	<control type="group">
 			<posx>930</posx>
 			<posy>0</posy>
 			<include>DialogCloseButtonCommons</include>
-		</control>
+		</control> -->
 		<control type="image">
 			<posx>0</posx>
 			<posy>60</posy>
@@ -40,35 +37,6 @@
 			<height>650</height>
 			<texture border="5">dialog_back_black.png</texture>
 		</control>
-
-<!--	<control type="group">
-			<posx>20</posx>
-			<posy>75</posy>
-			<control type="button">
-				<description>left Arrow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>40</width>
-				<height>40</height>
-				<texturefocus>arrow-big-left.png</texturefocus>
-				<texturenofocus>arrow-big-left.png</texturenofocus>
-				<onclick>Control.Move(9,-1)</onclick>
-				<include>VisibleFadeEffect</include>
-				<visible>Container(9).HasPrevious</visible>
-			</control>
-			<control type="button">
-				<description>right Arrow</description>
-				<posx>920</posx>
-				<posy>0</posy>
-				<width>40</width>
-				<height>40</height>
-				<texturefocus>arrow-big-right.png</texturefocus>
-				<texturenofocus>arrow-big-right.png</texturenofocus>
-				<onclick>Control.Move(9,1)</onclick>
-				<include>VisibleFadeEffect</include>
-				<visible>Container(9).HasNext</visible>
-			</control>
-		</control> -->
 
 			<control type="image">
 				<description>Settings Menu Background</description>
@@ -116,13 +84,6 @@
 				<height>60</height>
 				<label></label>
 			</control>
-<!--		<control type="button">
-				<visible>Skin.String(SkinSettings,1)</visible>
-				<width>300</width>
-				<height>60</height>
-				<include>ButtonMenuTopCommonValues</include>
-				<label>[B]$LOCALIZE[31175][/B]</label>
-			</control> -->
 			<control type="button" id="101">
 				<visible>Skin.String(SkinSettings,1)</visible>
 				<width>300</width>
@@ -2751,7 +2712,7 @@
 		<control type="grouplist" id="611">
 			<description>control area</description>
 			<posx>40</posx>
-			<posy>220</posy>
+			<posy>210</posy>
 			<width>460</width>
 			<height>670</height>
 			<itemgap>-1</itemgap>
@@ -2762,7 +2723,7 @@
 			<onright></onright>
 			<visible>Skin.String(SkinSettings,6) + Skin.String(OpenSetting6a,1)</visible>
 					<control type="button" id="602">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31061]</label>  
@@ -2777,7 +2738,7 @@
 						<ondown>603</ondown>
 					</control>
 					<control type="button" id="603">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31062]</label>  
@@ -2792,7 +2753,7 @@
 						<ondown>604</ondown>
 					</control>  
 					<control type="button" id="604">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31063]</label>  
@@ -2807,7 +2768,7 @@
 						<ondown>605</ondown>
 					</control>  
 					<control type="button" id="605">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31064]</label>  
@@ -2822,7 +2783,7 @@
 						<ondown>606</ondown>
 					</control>  
 					<control type="button" id="606">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31065]</label>  
@@ -2837,7 +2798,7 @@
 						<ondown>607</ondown>
 					</control>  
 					<control type="button" id="607">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31150]</label>  
@@ -2852,7 +2813,7 @@
 						<ondown>608</ondown>
 					</control>  
 					<control type="button" id="608">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31149]</label>  
@@ -2867,7 +2828,7 @@
 						<ondown>609</ondown>
 					</control>  
 					<control type="button" id="609">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31135]</label>  
@@ -2882,7 +2843,7 @@
 						<ondown>610</ondown>
 					</control>  
 					<control type="button" id="610">
-						<height>55</height>
+						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
 						<label>$LOCALIZE[31136]</label>  
@@ -2896,7 +2857,7 @@
 						<onup>609</onup>
 						<ondown></ondown>
 					</control>  
-<!--				<control type="button" id="611">
+					<control type="button" id="611">
 						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
@@ -2908,7 +2869,7 @@
 				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 				        <onclick>Skin.Reset(HomePosOBD)</onclick>
 						<onclick>Skin.SetNumeric(HomePosOBD)</onclick>
-					</control>  -->
+					</control>  
 			</control>
 
 <!-- ### Magic Buttons ### -->
@@ -3182,87 +3143,6 @@
 					</control>  
 			</control>
 			
-<!-- Show Magic Button-Positions -->
-		<control type="grouplist">
-			<description>Custom Button-1</description>
-			<posx>930</posx>
-			<posy>140</posy>
-			<width>30</width>
-			<height>670</height>
-			<itemgap>-1</itemgap>
-			<pagecontrol>30</pagecontrol>
-			<visible>Skin.String(SkinSettings,6) + Skin.String(OpenSetting6b,1)</visible>
-
-			<control type="label">
-				<height>50</height>
-				<width>460</width>
-				<font>font30_title</font>
-				<label></label>
-				<textcolor>white</textcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-			</control>  
-
-<!-- Position Magic Button -->
-					<control type="label">
-						<width>30</width>
-						<height>60</height>
-						<font>font24_title</font>
-						<label>$INFO[Skin.String(CustomHomeButtonPos)]</label>
-						<textcolor>white</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-
-<!-- Position Magic Button-2 -->
-					<control type="label">
-						<visible>Skin.HasSetting(AddCustomButton1)</visible>  
-						<posx>30</posx>
-						<posy>200</posy>
-						<height>200</height>
-						<width>880</width>
-						<font>font22_title</font>
-						<label></label>
-					</control>
-					<control type="label">
-						<width>30</width>
-						<height>60</height>
-						<font>font24_title</font>
-						<label>$INFO[Skin.String(CustomHomeButton2Pos)]</label>
-						<textcolor>white</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-
-<!-- Position Magic Button-3 -->
-					<control type="label">
-						<visible>Skin.HasSetting(AddCustomButton1)</visible>  
-						<posx>30</posx>
-						<posy>200</posy>
-						<height>200</height>
-						<width>880</width>
-						<font>font22_title</font>
-						<label></label>
-				</control>
-					<control type="label">
-						<visible>Skin.HasSetting(AddCustomButton2)</visible>  
-						<posx>30</posx>
-						<posy>200</posy>
-						<height>200</height>
-						<width>880</width>
-						<font>font22_title</font>
-						<label></label>
-				</control>
-					<control type="label">
-						<width>30</width>
-						<height>60</height>
-						<font>font24_title</font>
-						<label>$INFO[Skin.String(CustomHomeButton3Pos)]</label>
-						<textcolor>white</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-					</control>
-		</control>
 
 
 <!-- ### Page 6 End ########################################################################### -->	 	
