@@ -1358,6 +1358,112 @@
         </control>
     </include>
 
+    <include name="MusicPlayerTitleNavit">
+        <control type="group">
+            <include>Window_OpenClose_Animation_Slide_Up</include>
+            <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + substring(Window(Home).Property(Radio.Active),false)</visible>
+            <control type="label">
+                <visible>true</visible>
+                <posx>66</posx>
+                <posy>40r</posy>
+                <width>70</width>
+                <height>35</height>
+                <font>font12_title</font>
+                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <align></align>
+                <aligny>top</aligny>
+                <label>Playing</label>
+                <scrollspeed>50</scrollspeed>
+                <scrollsuffix> - </scrollsuffix>
+            </control>
+            <control type="label">
+                <visible>true</visible>
+                <posx>136</posx>
+                <posy>40r</posy>
+                <width>884</width>
+                <height>35</height>
+                <font>font30_title</font>
+                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <align></align>
+                <aligny>center</aligny>
+                <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
+                <scroll>true</scroll>
+                <scrollspeed>50</scrollspeed>
+                <scrollsuffix> - </scrollsuffix>
+            </control>
+            <control type="label">
+                <visible>true</visible>
+                <posx>66r</posx>
+                <posy>40r</posy>
+                <width>80</width>
+                <height>35</height>
+                <font>font30_title</font>
+                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>$INFO[Player.TimeRemaining]</label>
+            </control>
+             <control type="label">
+                <visible>true</visible>
+                <posx>1104</posx>
+                <posy>40r</posy>
+                <width>30</width>
+                <height>35</height>
+                <font>font30_title</font>
+                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label> / </label>
+            </control>
+             <control type="label">
+                <visible>true</visible>
+                <posx>1104</posx>
+                <posy>40r</posy>
+                <width>80</width>
+                <height>35</height>
+                <font>font30_title</font>
+                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <align>right</align>
+                <aligny>center</aligny>
+                <label>$INFO[Player.Time(mm:ss)]</label>
+            </control>
+        </control>
+    </include>
+
+    <include name="RadioStationNameNavit">
+        <control type="group">
+        	<visible>substring(Window(Home).Property(Radio.Active),true) + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioStationName) + !Player.HasAudio</visible>
+            <include>Window_OpenClose_Animation_Slide_Up</include>
+            <control type="label">
+                <visible>true</visible>
+                <posx>66</posx>
+                <posy>40r</posy>
+                <width>28</width>
+                <height>35</height>
+                <font>font10_title</font>
+                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <align></align>
+                <aligny>top</aligny>
+                <label>FM</label>
+                <scrollspeed>50</scrollspeed>
+                <scrollsuffix> - </scrollsuffix>
+            </control>
+            <control type="label">
+                <visible>substring(Window(Home).Property(Radio.Active),true)</visible>
+                <posx>104</posx>
+                <posy>40r</posy>
+                <width>250</width>
+                <height>35</height>
+                <font>font30_title</font>
+                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <align></align>
+                <aligny>center</aligny>
+                <label>$INFO[Window(Home).Property(Radio.Frequency)]   $INFO[Window(Home).Property(Radio.StationName)]</label>
+                <scrollspeed>50</scrollspeed>
+                <scrollsuffix> - </scrollsuffix>
+            </control>
+        </control>
+    </include>
 
     <include name="RadioStationName">
         <control type="group">

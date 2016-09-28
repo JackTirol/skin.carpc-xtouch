@@ -22,10 +22,10 @@
 
         <!-- Bottom bar song/radio info -->
         <control type="group">
-            <posy>50r</posy>
-            <include>MusicPlayerTitle</include>
-            <include>RadioStationName</include>
-        </control> 
+            <posy>0</posy>
+            <include>MusicPlayerTitleNavit</include>
+            <include>RadioStationNameNavit</include>
+      </control> 
 
 	</controls>
 </window>
