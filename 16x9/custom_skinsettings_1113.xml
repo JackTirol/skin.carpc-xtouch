@@ -2339,6 +2339,8 @@
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline_black_f.png</texturefocus>
 		    	<texturenofocus border="0,2,0,2">button_outline_black.png</texturenofocus>
+				<onclick>Skin.Reset(DayNightModus)</onclick>
+				<onclick>Skin.SetString(DayNightModus,day)</onclick>
 				<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,saveday)</onclick>
 				<onup>Control.SetFocus(440)</onup>
 				<onup>440</onup>
@@ -2358,6 +2360,8 @@
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline_black_f.png</texturefocus>
 		    	<texturenofocus border="0,2,0,2">button_outline_black.png</texturenofocus>
+				<onclick>Skin.Reset(DayNightModus)</onclick>
+				<onclick>Skin.SetString(DayNightModus,night)</onclick>
 				<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,savenight)</onclick>
 				<onup>Control.SetFocus(440)</onup>
 				<onup>440</onup>

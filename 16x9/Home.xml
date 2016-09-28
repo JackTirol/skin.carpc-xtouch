@@ -558,7 +558,7 @@
 				</item>
 				<item id="3025">
 					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day)</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day) + Skin.String(DayNightModus,night)</visible>
 					<icon>button_day.png</icon>
 					<onclick>Skin.Reset(DayNightModus)</onclick>
 					<onclick>Skin.SetString(DayNightModus,day)</onclick>
@@ -566,7 +566,7 @@
 				</item>
 				<item id="3025">
 					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night)</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night) + Skin.String(DayNightModus,day)</visible>
 					<icon>button_night.png</icon>
 					<onclick>Skin.Reset(DayNightModus)</onclick>
 					<onclick>Skin.SetString(DayNightModus,night)</onclick>
