@@ -55,3 +55,6 @@ v2.1
 - Submenu buttons are bigger now and will shrink to a smaller size when player buttons are visible.
 - Some minor cosmetical refinements in the music window.
 - As usual: Some bugfixes and optimizations.
+
+v2.1.1
+- Bugfix: Music and radio infos are no longer hidden in Navit. 

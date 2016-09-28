@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.carpc-xtouch"
-  version="2.1"
+  version="2.1.1"
   name="CarPC-XTouch"
   provider-name="JackTirol">
   <requires>
