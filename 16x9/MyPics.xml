@@ -5,7 +5,7 @@
 	<onunload>Skin.Reset(MediaSubMenuVisible2)</onunload>
 	<controls>
 		<include>CommonBackground</include>
-		<include>CommonBackgroundOverlay</include>
+		<!-- <include>CommonBackgroundOverlay</include> -->
 		<include>CommonTopBar</include>
 		<include>FileCountCommons</include>
 		<include>HomeButtonCommons</include>
@@ -13,7 +13,7 @@
 		<!--<include>MediaBladeLeft</include>-->
 		<include>CommonBottomBar</include>
 		<include>CommonNowPlaying</include>
-		<include>OptionsButtonCommons</include>
+		<!-- <include>OptionsButtonCommons</include> -->
 		<include>BottomNowPLaying</include>
 		<control type="label">
 			<description>Window label</description>

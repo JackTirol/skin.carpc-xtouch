@@ -58,3 +58,9 @@ v2.1
 
 v2.1.1
 - Bugfix: Music and radio infos are no longer hidden in Navit. 
+
+v2.1.2
+- Several changes to make the handling of WiFi-Connections easier. Requires the addon 'WiFiManager' (thanks to Hawkeyexp for this great addon). For more informations see the file README_WiFi.md, which is included in this folder. 
+	- New custom window: 'Connect_WiFi'
+	- Added submenu button 'Connect WiFi'
+	- Added scripts for connecting/disconnecting WiFi. 

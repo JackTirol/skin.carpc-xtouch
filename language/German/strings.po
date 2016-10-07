@@ -1002,8 +1002,20 @@ msgctxt "#31257"
 msgid "Save Night"
 msgstr ""
 
+msgctxt "#31258"
+msgid "Show WiFi Button"
+msgstr "Zeige Button WiFi"
 
-#empty strings from id 31258 to 31299
+msgctxt "#31259"
+msgid "Connect 3G"
+msgstr "Verbinde 3G"
+
+msgctxt "#31260"
+msgid "Connect WiFi"
+msgstr "Verbinde WiFi"
+
+
+#empty strings from id 31261 to 31299
 #------------------------------------------------
 
 #Extra labels

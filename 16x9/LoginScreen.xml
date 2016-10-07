@@ -3,7 +3,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
-		<include>CommonBackgroundOverlay</include>
+		<!-- <include>CommonBackgroundOverlay</include> -->
 		<include>CommonTopBar</include>
 		<include>CommonBottomBar</include>
 		<include>CommonNowPlaying</include>

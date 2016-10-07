@@ -4852,6 +4852,24 @@
 			</control>  
 
 			<control type="radiobutton" id="815">
+				<description>ConnectWiFi</description>
+				<height>55</height>
+				<width>450</width>
+				<font>font24_title</font>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
+				<textcolor>white</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31258]</label>
+				<onclick>Skin.ToggleSetting(HideHomeButtonConnectWiFi)</onclick>
+				<selected>!Skin.HasSetting(HideHomeButtonConnectWiFi)</selected>
+				<onup>814</onup>
+				<ondown>816</ondown>
+				<onleft>802</onleft>
+				<onright></onright>
+			</control>  
+
+			<control type="radiobutton" id="816">
 				<description>Weather</description>
 				<height>55</height>
 				<width>450</width>
@@ -4863,13 +4881,13 @@
 				<label>$LOCALIZE[31108]</label>
 				<onclick>Skin.ToggleSetting(HideHomeButtonWeather)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonWeather)</selected>
-				<onup>814</onup>
-				<ondown>816</ondown>
+				<onup>815</onup>
+				<ondown>817</ondown>
 				<onleft>802</onleft>
 				<onright></onright>
 			</control>
 
-			<control type="radiobutton" id="816">
+			<control type="radiobutton" id="817">
 				<description>Shutdown no Dialog</description>
 				<height>55</height>
 				<width>450</width>
@@ -4881,13 +4899,13 @@
 				<label>$LOCALIZE[31151]</label>
 				<onclick>Skin.ToggleSetting(HideHomeButtonShutdownDialog)</onclick>
 				<selected>Skin.HasSetting(HideHomeButtonShutdownDialog)</selected>
-				<onup>815</onup>
-				<ondown></ondown>
+				<onup>816</onup>
+				<ondown>818</ondown>
 				<onleft>802</onleft>
 				<onright></onright>
 			</control>  
 
-			<control type="radiobutton" id="817">
+			<control type="radiobutton" id="818">
 				<description>Skin Day-Night</description>
 				<height>55</height>
 				<width>450</width>
@@ -4899,6 +4917,10 @@
 				<label>$LOCALIZE[31253]</label>
 				<onclick>Skin.ToggleSetting(HideHomeButtonDayNight)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonDayNight)</selected>
+				<onup>817</onup>
+				<ondown></ondown>
+				<onleft>802</onleft>
+				<onright></onright>
 			</control> 
 
 <!--		<control type="radiobutton" id="817">

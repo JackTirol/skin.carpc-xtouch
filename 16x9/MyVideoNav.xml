@@ -8,11 +8,11 @@
 		<include>CommonBackground</include>
 		<include>CommonTopBar</include>
 		<include>CommonBottomBar</include>
-		<include>CommonBackgroundOverlay</include>
+		<!-- <include>CommonBackgroundOverlay</include> -->
 		<include>MediaBladeLeft</include>
 		<include>FileCountCommons</include>
 		<include>HomeButtonCommons</include>
-		<include>OptionsButtonCommons</include>
+		<!-- <include>OptionsButtonCommons</include> -->
         <include>BottomNowPLaying</include>
         
 		<control type="label">

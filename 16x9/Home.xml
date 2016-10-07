@@ -18,6 +18,18 @@
  	    <include>WeatherTitleWidget</include>
 		
 <!-- Title Text -->
+<!--	<control type="label">
+			<description>Text Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Network.LinkState]</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> -->
 		<control type="label">
 			<description>Text Top Left</description>
 			<posx>45</posx>
@@ -29,7 +41,7 @@
 			<aligny>center</aligny>
 			<font>font40_title</font>
 			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-		</control>
+		</control> 
 		<control type="button">
 			<description>Viz Fullscreen Button</description>
 			<visible>Player.HasAudio</visible>
@@ -558,13 +570,19 @@
 				</item>
 				<item id="3025">
 					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnectWiFi)</visible>
+					<icon>button_wifi.png</icon>
+					<onclick>ActivateWindow(1119)</onclick>
+				</item>
+				<item id="3026">
+					<label></label>
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day) + Skin.String(DayNightModus,night)</visible>
 					<icon>button_day.png</icon>
 					<onclick>Skin.Reset(DayNightModus)</onclick>
 					<onclick>Skin.SetString(DayNightModus,day)</onclick>
 					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
 				</item>
-				<item id="3025">
+				<item id="3026">
 					<label></label>
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night) + Skin.String(DayNightModus,day)</visible>
 					<icon>button_night.png</icon>

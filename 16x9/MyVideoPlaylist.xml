@@ -6,10 +6,10 @@
 	<controls>
 		<include>CommonBackground</include>
 		<include>MediaBladeLeft</include>
-		<include>CommonBackgroundOverlay</include>
+		<!-- <include>CommonBackgroundOverlay</include> -->
 		<include>FileCountCommons</include>
 		<include>HomeButtonCommons</include>
-		<include>OptionsButtonCommons</include>
+		<!-- <include>OptionsButtonCommons</include> -->
 
         <include>BottomNowPLaying</include>
         

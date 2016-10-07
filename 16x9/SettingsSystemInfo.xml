@@ -5,7 +5,7 @@
 		<include>CommonBackground</include>
 		<include>CommonTopBar</include>
 		<include>CommonBottomBar</include>
-		<include>CommonBackgroundOverlay</include>
+		<!-- <include>CommonBackgroundOverlay</include> -->
 		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
 

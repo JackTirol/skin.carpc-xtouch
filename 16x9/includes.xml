@@ -1719,7 +1719,7 @@
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
-			<include>ScreenWidth</include>
+			<width>ScreenWidth</width>
 			<height>ScreenHeight</height>
 			<texture>black.png</texture>
 			<visible>Player.HasVideo</visible>
@@ -1727,7 +1727,7 @@
 		<control type="videowindow">
 			<posx>0</posx>
 			<posy>0</posy>
-			<include>ScreenWidth</include>
+			<width>ScreenWidth</width>
 			<height>ScreenHeight</height>
 			<visible>Player.HasVideo</visible>
 		</control>
@@ -2315,6 +2315,7 @@
                 <ondown condition="Control.IsVisible(87)">Control.SetFocus(87)</ondown>
 				<onright condition="Control.IsVisible(667)">667</onright>
 				<onright condition="Control.IsVisible(557)">Control.SetFocus(557)</onright>
+                <ondown condition="Control.IsVisible(5001)">Control.SetFocus(5001)</ondown>
             </control>
 <!--        <control type="image">
                 <description>Home Button Image</description>
@@ -2361,7 +2362,7 @@
         </control>
     </include>
 
-    <include name="OptionsButtonCommons-old">
+    <include name="OptionsButtonCommons">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Down</include>
             <posx>75r</posx>
