@@ -1038,6 +1038,120 @@
     
 <!-- Ende Clock  -->
     
+
+	<include name="TempText1">
+		<control type="label">
+			<description>Temp Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Window(Home).Property(Temp1)] 1</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> 
+	</include>    
+	<include name="TempText2">
+		<control type="label">
+			<description>Temp Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Window(Home).Property(Temp2)] 2</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> 
+	</include> 	
+	<include name="TempText3">
+		<control type="label">
+			<description>Temp Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Window(Home).Property(Temp3)] 3</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> 
+	</include> 
+	<include name="TempText4">
+		<control type="label">
+			<description>Temp Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Window(Home).Property(Temp4)] 4</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> 
+	</include> 
+	<include name="TempText5">
+		<control type="label">
+			<description>Temp Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Window(Home).Property(Temp5)] 5</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> 
+	</include> 
+	<include name="TempText6">
+		<control type="label">
+			<description>Temp Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Window(Home).Property(Temp6)] 6</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> 
+	</include> 
+	<include name="TempText7">
+		<control type="label">
+			<description>Temp Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Window(Home).Property(Temp7)] 7</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> 
+	</include> 
+	<include name="TempText8">
+		<control type="label">
+			<description>Temp Top Left</description>
+			<posx>45</posx>
+			<posy>10</posy>
+			<height>40</height>
+			<width>500</width>
+			<label>$INFO[Window(Home).Property(Temp8)] 8</label> 
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font40_title</font>
+			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+		</control> 
+	</include> 
+
     
     
     <include name="MusicPlayerTitleFix">

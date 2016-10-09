@@ -2123,7 +2123,7 @@
 			</control>
 		</control>
 		
-<!-- Title Text -->
+<!-- Title Text / Temperature Sensor Output-->
 		<control type="label">
 			<visible>Skin.String(SkinSettings,4) + Skin.String(OpenSetting4a,1)</visible>
 			<height>65</height>
@@ -2154,13 +2154,33 @@
 			<posy>295</posy>
 			<width>920</width>
 			<height>670</height>
-			<itemgap>10</itemgap>
+			<itemgap>0</itemgap>
 			<onup>410</onup>
 			<ondown></ondown>
 			<onleft></onleft>
 			<onright></onright>
 			<visible>Skin.String(SkinSettings,4) + Skin.String(OpenSetting4a,1)</visible>
-			<control type="button" id="413">
+			<control type="radiobutton" id="413">
+				<description>Enable Title Text</description>
+				<visible>Skin.String(SkinSettings,4) + Skin.String(OpenSetting4a,1)</visible>
+				<height>65</height>
+				<width>920</width>
+				<font>font24_title</font>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
+				<textcolor>white</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<wrapmultiline>true</wrapmultiline>
+				<label>$LOCALIZE[31261]</label>
+				<onclick>Skin.ToggleSetting(EnableTitleText)</onclick>
+				<onclick condition="Skin.HasSetting(EnableTempOutput)">Skin.ToggleSetting(EnableTempOutput)</onclick>
+				<selected>Skin.HasSetting(EnableTitleText)</selected>
+				<onup>Control.SetFocus(410)</onup>
+				<ondown condition="Control.IsVisible(414)">Control.SetFocus(414)</ondown>
+				<ondown condition="Control.IsVisible(415)">Control.SetFocus(415)</ondown>
+			</control>
+			<control type="button" id="414">
+				<visible>Skin.HasSetting(EnableTitleText)</visible>
 	        	<width>920</width>
 				<height>65</height>
 				<font>font24_title</font>
@@ -2170,9 +2190,67 @@
 				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 		        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<enable>Skin.HasSetting(EnableTitleText)</enable>
 		        <onclick>Skin.Reset(HomeScreenTitle)</onclick>
 				<onclick>Skin.SetString(HomeScreenTitle)</onclick>
-				<onup>Control.SetFocus(410)</onup>
+				<onup>Control.SetFocus(413)</onup>
+				<ondown condition="Control.IsVisible(415)">Control.SetFocus(415)</ondown>
+			</control>
+
+			<control type="label" id="415">
+				<visible>Skin.String(SkinSettings,4) + Skin.String(OpenSetting4a,1)</visible>
+				<width>300</width>
+				<height>10</height>
+				<label></label>
+				<onup>Control.SetFocus(413)</onup>
+				<ondown condition="Control.IsVisible(416)">Control.SetFocus(416)</ondown>
+			</control>
+
+			<control type="radiobutton" id="416">
+				<description>Enable Temperature Output</description>
+				<visible>Skin.String(SkinSettings,4) + Skin.String(OpenSetting4a,1)</visible>
+				<height>65</height>
+				<width>920</width>
+				<font>font24_title</font>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>				
+				<textcolor>white</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<wrapmultiline>true</wrapmultiline>
+				<label>$LOCALIZE[31262]</label>
+				<onclick condition="Skin.HasSetting(EnableTitleText)">Skin.ToggleSetting(EnableTitleText)</onclick>
+				<onclick>Skin.ToggleSetting(EnableTempOutput)</onclick>
+				<selected>Skin.HasSetting(EnableTempOutput)</selected>
+				<onup>Control.SetFocus(413)</onup>
+				<ondown condition="Control.IsVisible(417)">Control.SetFocus(416)</ondown>
+			</control>
+			<control type="label">
+				<visible>Skin.HasSetting(EnableTempOutput) + !System.HasAddon(plugin.program.piwire)</visible>
+				<posx>50</posx>
+				<width>920</width>
+				<height>100</height>
+				<wrapmultiline>true</wrapmultiline>
+				<font>font22_title</font>
+				<textcolor>white</textcolor>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>$LOCALIZE[31264]</label>
+			</control>
+			<control type="button" id="417">
+				<visible>Skin.HasSetting(EnableTempOutput) + System.HasAddon(plugin.program.piwire)</visible>
+	        	<width>920</width>
+				<height>65</height>
+				<font>font24_title</font>
+				<label>$LOCALIZE[31263]</label>  
+				<label2>[COLOR=$INFO[Skin.String(CustomColorFocus)]]$INFO[Skin.String(TempSensor)][/COLOR]</label2>
+				<textcolor>white</textcolor>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+		        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<enable>Skin.HasSetting(EnableTempOutput)</enable>
+				<onclick>Skin.Reset(TempSensor)</onclick>
+				<onclick>Skin.SetNumeric(TempSensor)</onclick>
+				<onup>Control.SetFocus(416)</onup>
 				<ondown></ondown>
 			</control>
 		</control> 

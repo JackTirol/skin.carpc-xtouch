@@ -709,7 +709,7 @@ msgid "Show Weather Info Top Right"
 msgstr "Mostrar Info del clima Arriba a la derecha"
 
 msgctxt "#31186"
-msgid "Enable Home Screen Title (Top Left)"
+msgid "Home Screen Title Area (Top Left)"
 msgstr "Activar titulo  pantalla de inicio (arriba a la izquierda)"
 
 msgctxt "#31187"
@@ -1014,8 +1014,24 @@ msgctxt "#31260"
 msgid "Connect WiFi"
 msgstr ""
 
+msgctxt "#31261"
+msgid "Show Custom Home Title"
+msgstr ""
 
-#empty strings from id 31261 to 31299
+msgctxt "#31262"
+msgid "Show Temperature Sensor Output"
+msgstr ""
+
+msgctxt "#31263"
+msgid "Show Output of Sensor-Number:"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Attention! The addon '1-Wire Dashboard' and at least one attached temperature sensor is required for this function! For more informations see the README_Addons.md, which is included in the skin files."
+msgstr ""
+
+
+#empty strings from id 31265 to 31299
 #------------------------------------------------
 
 #Extra labels

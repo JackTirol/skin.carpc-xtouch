@@ -60,7 +60,8 @@ v2.1.1
 - Bugfix: Music and radio infos are no longer hidden in Navit. 
 
 v2.1.2
-- Several changes to make the handling of WiFi-Connections easier. Requires the addon 'WiFiManager' (thanks to Hawkeyexp for this great addon). For more informations see the file README_WiFi.md, which is included in this folder. 
+- Several changes to make the handling of WiFi-Connections easier. Requires the addon 'WiFiManager' (thanks to Hawkeyexp for this great addon). For more informations see the file README_Addons.md, which is included in this folder. 
 	- New custom window: 'Connect_WiFi'
 	- Added submenu button 'Connect WiFi'
 	- Added scripts for connecting/disconnecting WiFi. 
+- Added the option to display the output of a temperature sensor in the top left corner. Requires the addon '1-Wire Dashboard' (thanks again to Hawkeyexp for another useful addon). For more informations about the addon see the file README_Addons.md, which is included in this folder. 
