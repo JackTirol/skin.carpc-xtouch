@@ -56,8 +56,8 @@
 				<width>210</width>
 				<height>200</height>
 				<font>-</font>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">icon_shutdownnf.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_shutdownnf.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">icon_shutdownnf.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_shutdownnf.png</texturenofocus>
 				<onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
 			</control>
 			<control type="label">
@@ -89,8 +89,8 @@
 				<width>210</width>
 				<height>200</height>
 				<font>-</font>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">icon_rebootnf.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_rebootnf.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">icon_rebootnf.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_rebootnf.png</texturenofocus>
 				<onclick>RunScript("special://skin/scripts/system_reboot.py")</onclick>
 			</control>
 			<control type="label">
@@ -121,8 +121,8 @@
 				<width>210</width>
 				<height>200</height>
 				<font>-</font>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">icon_reloadnf.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_reloadnf.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">icon_reloadnf.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_reloadnf.png</texturenofocus>
 				<onclick>XBMC.ReloadSkin()</onclick>
 			</control>
 			<control type="label">
@@ -153,8 +153,8 @@
 				<width>300</width>
 				<height>80</height>
 				<font>-</font>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">button_outline.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">button_outline.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">button_outline.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">button_outline.png</texturenofocus>
 				<onclick>back</onclick>
 			</control>
 
@@ -193,8 +193,8 @@
                 <posy>0</posy>
                 <width>70</width>
                 <height>70</height>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_back_w.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">icon_back_w.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_back_w.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">icon_back_w.png</texturefocus>
                 <onclick>back</onclick>
             </control>   
 <!--        <control type="image">

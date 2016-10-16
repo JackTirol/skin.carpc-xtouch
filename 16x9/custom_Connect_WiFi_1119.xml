@@ -62,8 +62,8 @@
 				<width>210</width>
 				<height>200</height>
 				<font>-</font>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_connect_wifi.png</texturenofocus>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">icon_connect_wifi.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_connect_wifi.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">icon_connect_wifi.png</texturefocus>
 				<onclick>RunScript("special://skin/scripts/connect_wifi.py")</onclick>
 			</control>
 			<control type="label">
@@ -95,8 +95,8 @@
 				<width>210</width>
 				<height>200</height>
 				<font>-</font>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_disconnect_wifi.png</texturenofocus>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">icon_disconnect_wifi.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_disconnect_wifi.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">icon_disconnect_wifi.png</texturefocus>
 				<onclick>RunScript("special://skin/scripts/disconnect_wifi.py")</onclick>
 			</control>
 			<control type="label">
@@ -144,8 +144,8 @@
                 <posy>0</posy>
                 <width>70</width>
                 <height>70</height>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]" border="4">button_wifi_settings.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="4">button_wifi_settings.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]" border="4">button_wifi_settings.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="4">button_wifi_settings.png</texturefocus>
                 <onclick>RunPlugin(plugin://plugin.program.wifimanager)</onclick>
             </control>   
         </control>
@@ -163,8 +163,8 @@
                 <posy>0</posy>
                 <width>70</width>
                 <height>70</height>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]" border="4">icon_back_w.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="4">icon_back_w.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]" border="4">icon_back_w.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="4">icon_back_w.png</texturefocus>
                 <onclick>back</onclick>
             </control>   
         </control>

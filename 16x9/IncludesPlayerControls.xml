@@ -68,7 +68,7 @@
 					<align>left</align>
 					<font>font24_title</font>
 					<label>$LOCALIZE[31245]</label>
-					<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>
+					<textcolor>$VAR[CustomColorFocus]</textcolor>
 				</control>
 				<control type="image">
 					<description>artist label background</description>
@@ -99,7 +99,7 @@
 					<align>left</align>
 					<font>font24_title</font>
 					<label>$LOCALIZE[31247]</label>
-					<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>
+					<textcolor>$VAR[CustomColorFocus]</textcolor>
 				</control>		
 				<control type="image">
 					<description>title label background</description>
@@ -131,7 +131,7 @@
 					<align>left</align>
 					<font>font24_title</font>
 					<label>$LOCALIZE[31246]</label>
-					<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>
+					<textcolor>$VAR[CustomColorFocus]</textcolor>
 				</control>		
 				<control type="image">
 					<description>album label background</description>
@@ -165,7 +165,7 @@
 						<width>75</width>
 						<height>60</height>
 						<aspectratio align="left">keep</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+						<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
 					</control>
 					<control type="group">
 						<description>Rating</description>
@@ -180,7 +180,7 @@
 							<width>120</width>
 							<height>37</height>
 							<aspectratio align="left">stretch</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]" border="4">flagging/blank.png</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]" border="4">flagging/blank.png</texture>
 						</control>
 						<control type="image">
 							<description>Rating</description>
@@ -189,7 +189,7 @@
 							<width>105</width>
 							<height>37</height>
 							<aspectratio align="center">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]" fallback="LeftRating/rating0.png">$INFO[Player.StarRating,light/left_rating/]</texture>
+							<texture colordiffuse="$VAR[CustomColorFocus]" fallback="LeftRating/rating0.png">$INFO[Player.StarRating,light/left_rating/]</texture>
 						</control>
 					</control>
 				</control>
@@ -215,7 +215,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font24_title</font>
-					<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
 					<label>$INFO[musicplayer.Playlistposition,$LOCALIZE[554]: ]$INFO[musicplayer.Playlistlength, / ]</label>
 					<visible>!MusicPartyMode.Enabled</visible>
 				</control>
@@ -308,7 +308,7 @@
 							<width>75</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Resolution Image</description>
@@ -317,7 +317,7 @@
 							<width>56</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
@@ -326,7 +326,7 @@
 							<width>75</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
@@ -335,7 +335,7 @@
 							<width>56</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
 						</control>
 					</control>
 				</control>
@@ -398,7 +398,7 @@
 							<width>75</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Resolution Image</description>
@@ -407,7 +407,7 @@
 							<width>56</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
@@ -416,7 +416,7 @@
 							<width>75</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
@@ -425,7 +425,7 @@
 							<width>56</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
 						</control>
 					</control>
 				</control>
@@ -488,7 +488,7 @@
 							<width>75</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.VideoCodec,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Resolution Image</description>
@@ -497,7 +497,7 @@
 							<width>56</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
@@ -506,7 +506,7 @@
 							<width>75</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
 						</control>
 						<control type="image">
 							<description>Audio Codec Image</description>
@@ -515,7 +515,7 @@
 							<width>56</width>
 							<height>34</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
+							<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
 						</control>
 					</control>
 				</control>
@@ -656,7 +656,7 @@
 				<width>285</width>
 				<height>50</height>
 				<label>$LOCALIZE[544]</label>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<font>font13</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -676,7 +676,7 @@
 				<width>285</width>
 				<height>50</height>
 				<label>$LOCALIZE[544]</label>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<font>font13</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -696,7 +696,7 @@
 				<width>200</width>
 				<height>50</height>
 				<label>$LOCALIZE[33063]</label>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<font>font13</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -716,7 +716,7 @@
 				<height>50</height>
 				<radiowidth>36</radiowidth>
 				<radioheight>36</radioheight>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -740,7 +740,7 @@
 				<height>50</height>
 				<radiowidth>36</radiowidth>
 				<radioheight>36</radioheight>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -843,7 +843,7 @@
 				<action>seek</action>
 				<texturesliderbar>OSDProgressBack2.png</texturesliderbar>
 				<textureslidernib>OSDSliderNib.png</textureslidernib>
-				<textureslidernibfocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">OSDSliderNib.png</textureslidernibfocus>
+				<textureslidernibfocus colordiffuse="$VAR[CustomColorFocus]" border="5">OSDSliderNib.png</textureslidernibfocus>
 				<onup>666</onup>
 				<ondown>9002</ondown>
 			</control>
@@ -872,7 +872,7 @@
 				<posy>25</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatNF.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -881,7 +881,7 @@
 				<posy>25</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatNF.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -890,7 +890,7 @@
 				<posy>25</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatOneNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatOneNF.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -899,7 +899,7 @@
 				<posy>25</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatOneNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatOneNF.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -908,7 +908,7 @@
 				<posy>25</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatAllNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatAllNF.png</texture>
 				<visible>Playlist.IsRepeat</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -917,7 +917,7 @@
 				<posy>25</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatAllNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatAllNF.png</texture>
 				<visible>Playlist.IsRepeat</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -928,11 +928,11 @@
 				<height>64</height>
 				<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 				<font>-</font>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRandomOffNF.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRandomOffNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDRandomOffNF.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDRandomOffNF.png</texturenofocus>
 				<usealttexture>Playlist.IsRandom</usealttexture>
-				<alttexturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRandomOnNF.png</alttexturefocus>
-				<alttexturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRandomOnNF.png</alttexturenofocus>
+				<alttexturefocus colordiffuse="$VAR[CustomColorFocus]">OSDRandomOnNF.png</alttexturefocus>
+				<alttexturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDRandomOnNF.png</alttexturenofocus>
 				<onclick>XBMC.PlayerControl(Random)</onclick>
 				<onleft>606</onleft>
 				<onright>9002</onright>

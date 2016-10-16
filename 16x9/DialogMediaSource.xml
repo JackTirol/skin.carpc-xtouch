@@ -97,7 +97,7 @@
 					<aligny>center</aligny>
 					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
-					<label>[COLOR=$INFO[Skin.String(CustomColorFocus)]] > [/COLOR] $INFO[ListItem.Label]</label>
+					<label>[COLOR=$VAR[CustomColorFocus]] > [/COLOR] $INFO[ListItem.Label]</label>
 				</control>
 			</focusedlayout>
 		</control>

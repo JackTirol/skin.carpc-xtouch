@@ -2345,7 +2345,7 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31191]</label>  
 				<textcolor>white</textcolor>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline_black.png</texturefocus>
 			    <texturenofocus border="0,2,0,2">button_outline_black_f.png</texturenofocus>
 			    <onclick>Skin.Reset(HBSolidColor4)</onclick>
@@ -2397,7 +2397,7 @@
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31208]</label>
 				<align>center</align>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline2.png</texturefocus>
 				<texturenofocus border="0,2,0,2">button_outline2.png</texturenofocus>
 			    <onclick>Skin.SetString(HBSolidColor4,black)</onclick>
@@ -2409,7 +2409,7 @@
 				<textcolor>white</textcolor>
 				<label>OK</label>
 				<align>center</align>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline2.png</texturefocus>
 				<texturenofocus border="0,2,0,2">button_outline2.png</texturenofocus>
 				<onclick>ActivateWindow(1113)</onclick>

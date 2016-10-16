@@ -74,7 +74,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>black</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
@@ -95,7 +95,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>black</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>

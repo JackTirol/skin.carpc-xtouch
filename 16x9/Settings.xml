@@ -24,8 +24,8 @@
 				<width>459</width>
 				<height>100</height>
 				<font>-</font>
-	            <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">appearance_s.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">appearance_s_p.png</texturefocus>
+	            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">appearance_s.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">appearance_s_p.png</texturefocus>
 				<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			</control>
 			<control type="image">
@@ -34,7 +34,7 @@
 				<posy>0</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="label" id="4102">
 				<description>Appearance</description>
@@ -47,7 +47,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorFocus]</textcolor>		
 			</control>  
 			<control type="label" id="4103">
 				<description>Appearance</description>
@@ -60,7 +60,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorNofocus]</textcolor>		
 			</control>  
 		</control>
 		
@@ -79,8 +79,8 @@
 				<width>459</width>
 				<height>100</height>
 				<font>-</font>
-	            <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">music_s.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">music_s_p.png</texturefocus>
+	            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">music_s.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">music_s_p.png</texturefocus>
 				<onclick>ActivateWindow(MusicSettings)</onclick>
 			</control>
 			<control type="image">
@@ -89,7 +89,7 @@
 				<posy>0</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="label">
 				<description>Music</description>
@@ -102,7 +102,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorFocus]</textcolor>		
 			</control> 
 			<control type="label">
 				<description>Music</description>
@@ -115,7 +115,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorNofocus]</textcolor>		
 			</control> 
 		</control>
 		
@@ -134,8 +134,8 @@
 				<width>459</width>
 				<height>100</height>
 				<font>-</font>
-	            <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">services_s.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">services_s_p.png</texturefocus>
+	            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">services_s.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">services_s_p.png</texturefocus>
 				<onclick>ActivateWindow(ServiceSettings)</onclick>
 			</control>
 			<control type="image">
@@ -144,7 +144,7 @@
 				<posy>0</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="label">
 				<description>Service</description>
@@ -157,7 +157,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorFocus]</textcolor>		
 				</control> 
 			<control type="label">
 				<description>Service</description>
@@ -170,7 +170,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorNofocus]</textcolor>		
 				</control> 
 		</control>
 		
@@ -227,8 +227,8 @@
 				<width>459</width>
 				<height>100</height>
 				<font>-</font>
-	            <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">skin_settings_s.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">skin_settings_s_p.png</texturefocus>
+	            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">skin_settings_s.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">skin_settings_s_p.png</texturefocus>
 				<onclick>Skin.Reset(OpenSettingsMenu1)</onclick>
 				<onclick>Skin.Reset(OpenSettingsMenu2)</onclick>
 				<onclick>Skin.Reset(OpenSettingsMenu3)</onclick>
@@ -246,7 +246,7 @@
 				<posy>0</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="image">
 				<description>Separator</description>
@@ -254,7 +254,7 @@
 				<posy>100</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="label">
 				<description>Service</description>
@@ -267,7 +267,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorFocus]</textcolor>		
 				</control> 
 			<control type="label">
 				<description>Service</description>
@@ -280,7 +280,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorNofocus]</textcolor>		
 				</control> 
 		</control>
 
@@ -300,8 +300,8 @@
 				<width>459</width>
 				<height>100</height>
 				<font>-</font>
-	            <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">video_s.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">video_s_p.png</texturefocus>
+	            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">video_s.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">video_s_p.png</texturefocus>
 				<onclick>ActivateWindow(VideosSettings)</onclick>
 			</control>
 			<control type="image">
@@ -310,7 +310,7 @@
 				<posy>0</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="label">
 				<description>Video</description>
@@ -323,7 +323,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorFocus]</textcolor>		
 			</control>	
 			<control type="label">
 				<description>Video</description>
@@ -336,7 +336,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorNofocus]</textcolor>		
 			</control>	
 		</control>
 		
@@ -393,8 +393,8 @@
 				<width>459</width>
 				<height>100</height>
 				<font>-</font>
-	            <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">addons_s.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">addons_s_p.png</texturefocus>
+	            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">addons_s.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">addons_s_p.png</texturefocus>
 				<onclick>ActivateWindow(AddonBrowser)</onclick>
 			</control>
 			<control type="image">
@@ -403,7 +403,7 @@
 				<posy>0</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="label">
 				<description>Addons</description>
@@ -416,7 +416,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorFocus]</textcolor>		
 			</control>	
 			<control type="label">
 				<description>Video</description>
@@ -429,7 +429,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorNofocus]</textcolor>		
 			</control>	
 		</control>
 		
@@ -448,8 +448,8 @@
 				<width>459</width>
 				<height>100</height>
 				<font>-</font>
-	            <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">system_s.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">system_s_p.png</texturefocus>
+	            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">system_s.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">system_s_p.png</texturefocus>
 				<onclick>ActivateWindow(SystemSettings)</onclick>
 			</control>
 			<control type="image">
@@ -458,7 +458,7 @@
 				<posy>0</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="label">
 				<description>System</description>
@@ -471,7 +471,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorFocus]</textcolor>		
 			</control>	
 			<control type="label">
 				<description>System</description>
@@ -484,7 +484,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorNofocus]</textcolor>		
 			</control>	
 		</control>
 		
@@ -503,8 +503,8 @@
 				<width>459</width>
 				<height>100</height>
 				<font>-</font>
-	            <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">system_info_s.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">system_info_s_p.png</texturefocus>
+	            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">system_info_s.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">system_info_s_p.png</texturefocus>
 				<texturenofocus >system_info_s.png</texturenofocus>
 				<texturefocus>system_info_s_p.png</texturefocus>
 				<onclick>ActivateWindow(SystemInfo)</onclick>
@@ -515,7 +515,7 @@
 				<posy>0</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="image">
 				<description>Separator</description>
@@ -523,7 +523,7 @@
 				<posy>100</posy>
 				<width>460</width>
 				<height>1</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">separator_w.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">separator_w.png</texture>
 			</control>
 			<control type="label">
 				<description>System Info</description>
@@ -536,7 +536,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorFocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorFocus]</textcolor>		
 			</control>	
 			<control type="label">
 				<description>System Info</description>
@@ -549,7 +549,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font40_title</font>
-				<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>		
+				<textcolor>$VAR[CustomColorNofocus]</textcolor>		
 			</control>	
 		</control>
 
@@ -574,8 +574,8 @@
                 <posy>0</posy>
                 <width>70</width>
                 <height>70</height>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_back_w.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">icon_back_w.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_back_w.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">icon_back_w.png</texturefocus>
                 <onclick>back</onclick>
             </control>   
         </control>

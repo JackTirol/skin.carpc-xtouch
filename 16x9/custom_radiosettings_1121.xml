@@ -118,7 +118,7 @@
 				<font>font24_title</font>
 				<label>$LOCALIZE[31093]</label>
 				<textcolor>white</textcolor>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>						
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>						
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 				<onclick>Skin.ToggleSetting(UseCustomRadioBackground)</onclick>
@@ -132,7 +132,7 @@
 				<label>$LOCALIZE[31094]</label>
 				<label2>[COLOR=selected]$INFO[Skin.String(CustomRadioBackgroundPath)][/COLOR]</label2>
 				<textcolor>white</textcolor>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>						
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>						
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 				<onclick>Skin.SetImage(CustomRadioBackgroundPath)</onclick>

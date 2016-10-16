@@ -35,7 +35,7 @@
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>white</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -61,7 +61,7 @@
 					<width>1106</width>
 					<height>75</height>
 					<texture border="4">list_bg_fo.png</texture>
-					<colordiffuse>$INFO[Skin.String(CustomColorFocus)]</colordiffuse>
+					<colordiffuse>$VAR[CustomColorFocus]</colordiffuse>
 					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="image">
@@ -78,7 +78,7 @@
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>white</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor> 
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor> 
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -90,7 +90,7 @@
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>white</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor> 
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor> 
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
@@ -143,7 +143,7 @@
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>white</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -242,7 +242,7 @@
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>white</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -277,7 +277,7 @@
 					<height>22</height>
 					<font>font12</font>
 					<textcolor>black</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
@@ -459,7 +459,7 @@
 					<height>34</height>
 					<font>font10</font>
 					<textcolor>grey2</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<align>center</align>
 					<info>ListItem.Label</info>
 				</control>
@@ -508,7 +508,7 @@
 					<height>34</height>
 					<font>font10</font>
 					<textcolor>black</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<align>center</align>
 					<info>ListItem.Label</info>
 				</control>
@@ -608,7 +608,7 @@
 					<height>34</height>
 					<font>font10</font>
 					<textcolor>black</textcolor>
-					<selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
 					<align>center</align>
 					<info>ListItem.Label</info>
 				</control>

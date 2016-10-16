@@ -240,7 +240,7 @@
                     <label>  [B]$INFO[Window(Weather).Property(Location)][/B] – </label>
                     <font>font30</font>
                     <aligny>center</aligny>
-                    <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                    <textcolor>$VAR[CustomColorNofocus]</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="label">
@@ -251,7 +251,7 @@
                     <label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
                     <aligny>center</aligny>
                     <font>font30</font>
-                    <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                    <textcolor>$VAR[CustomColorNofocus]</textcolor>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="label">
@@ -262,7 +262,7 @@
                     <label>$INFO[System.TemperatureUnits]</label>
                     <font>font30</font>
                     <aligny>center</aligny>
-                    <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                    <textcolor>$VAR[CustomColorNofocus]</textcolor>
                     <shadowcolor>black</shadowcolor>
                     <visible>!IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
                 </control>
@@ -1050,7 +1050,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
 	</include>    
 	<include name="TempText2">
@@ -1064,7 +1064,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
 	</include> 	
 	<include name="TempText3">
@@ -1078,7 +1078,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
 	</include> 
 	<include name="TempText4">
@@ -1092,7 +1092,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
 	</include> 
 	<include name="TempText5">
@@ -1106,7 +1106,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
 	</include> 
 	<include name="TempText6">
@@ -1120,7 +1120,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
 	</include> 
 	<include name="TempText7">
@@ -1134,7 +1134,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
 	</include> 
 	<include name="TempText8">
@@ -1148,7 +1148,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
 	</include> 
 
@@ -1165,7 +1165,7 @@
                 <width>70</width>
                 <height>35</height>
                 <font>font12_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>top</aligny>
                 <label>Playing</label>
@@ -1177,7 +1177,7 @@
                 <width>900</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>center</aligny>
                 <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
@@ -1192,7 +1192,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.TimeRemaining]</label>
@@ -1204,7 +1204,7 @@
                 <width>30</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label> / </label>
@@ -1216,7 +1216,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.Time(mm:ss)]</label>
@@ -1235,7 +1235,7 @@
                 <width>70</width>
                 <height>35</height>
                 <font>font12_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>top</aligny>
                 <label>Playing</label>
@@ -1247,7 +1247,7 @@
                 <width>740</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>center</aligny>
                 <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
@@ -1262,7 +1262,7 @@
                 <width>90</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.TimeRemaining]</label>
@@ -1274,7 +1274,7 @@
                 <width>30</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label> / </label>
@@ -1286,7 +1286,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.Time(mm:ss)]</label>
@@ -1307,7 +1307,7 @@
                 <width>28</width>
                 <height>35</height>
                 <font>font10_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>top</aligny>
                 <label>FM</label>
@@ -1319,7 +1319,7 @@
                 <width>250</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <selectedcolor>selected</selectedcolor>
                 <align></align>
                 <aligny>center</aligny>
@@ -1341,7 +1341,7 @@
                 <width>70</width>
                 <height>35</height>
                 <font>font12_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>top</aligny>
                 <label>Playing</label>
@@ -1355,7 +1355,7 @@
                 <width>884</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>center</aligny>
                 <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
@@ -1370,7 +1370,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.TimeRemaining]</label>
@@ -1382,7 +1382,7 @@
                 <width>30</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label> / </label>
@@ -1394,7 +1394,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.Time(mm:ss)]</label>
@@ -1413,7 +1413,7 @@
                 <width>70</width>
                 <height>35</height>
                 <font>font12_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>top</aligny>
                 <label>Playing</label>
@@ -1425,7 +1425,7 @@
                 <width>730</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>center</aligny>
                 <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
@@ -1440,7 +1440,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.TimeRemaining]</label>
@@ -1452,7 +1452,7 @@
                 <width>30</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label> / </label>
@@ -1464,7 +1464,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.Time(mm:ss)]</label>
@@ -1483,7 +1483,7 @@
                 <width>70</width>
                 <height>35</height>
                 <font>font12_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>top</aligny>
                 <label>Playing</label>
@@ -1497,7 +1497,7 @@
                 <width>884</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>center</aligny>
                 <label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
@@ -1512,7 +1512,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.TimeRemaining]</label>
@@ -1524,7 +1524,7 @@
                 <width>30</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label> / </label>
@@ -1536,7 +1536,7 @@
                 <width>80</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label>$INFO[Player.Time(mm:ss)]</label>
@@ -1555,7 +1555,7 @@
                 <width>28</width>
                 <height>35</height>
                 <font>font10_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>top</aligny>
                 <label>FM</label>
@@ -1569,7 +1569,7 @@
                 <width>250</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>center</aligny>
                 <label>$INFO[Window(Home).Property(Radio.Frequency)]   $INFO[Window(Home).Property(Radio.StationName)]</label>
@@ -1590,7 +1590,7 @@
                 <width>28</width>
                 <height>35</height>
                 <font>font10_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>top</aligny>
                 <label>FM</label>
@@ -1604,7 +1604,7 @@
                 <width>250</width>
                 <height>35</height>
                 <font>font30_title</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <align></align>
                 <aligny>center</aligny>
                 <label>$INFO[Window(Home).Property(Radio.Frequency)]   $INFO[Window(Home).Property(Radio.StationName)]</label>
@@ -1640,7 +1640,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatNF.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -1649,7 +1649,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatNF.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -1658,7 +1658,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatOneNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatOneNF.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -1667,7 +1667,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatOneNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatOneNF.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -1676,7 +1676,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatAllNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatAllNF.png</texture>
 				<visible>Playlist.IsRepeat</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -1685,7 +1685,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatAllNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatAllNF.png</texture>
 				<visible>Playlist.IsRepeat</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -1696,11 +1696,11 @@
 				<height>60</height>
 				<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 				<font>-</font>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRandomOffNF.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRandomOffNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDRandomOffNF.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDRandomOffNF.png</texturenofocus>
 				<usealttexture>Playlist.IsRandom</usealttexture>
-				<alttexturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRandomOnNF.png</alttexturefocus>
-				<alttexturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRandomOnNF.png</alttexturenofocus>
+				<alttexturefocus colordiffuse="$VAR[CustomColorFocus]">OSDRandomOnNF.png</alttexturefocus>
+				<alttexturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDRandomOnNF.png</alttexturenofocus>
 				<onclick>XBMC.PlayerControl(Random)</onclick>
 				<onleft>606</onleft>
 				<onright>-</onright>
@@ -1736,7 +1736,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatNF.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -1745,7 +1745,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatNF.png</texture>
 				<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -1754,7 +1754,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatOneNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatOneNF.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -1763,7 +1763,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatOneNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatOneNF.png</texture>
 				<visible>Playlist.IsRepeatOne</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -1772,7 +1772,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRepeatAllNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">OSDRepeatAllNF.png</texture>
 				<visible>Playlist.IsRepeat</visible>
 				<visible>!Control.HasFocus(606)</visible>
 			</control>
@@ -1781,7 +1781,7 @@
 				<posy>0</posy>
 				<width>64</width>
 				<height>64</height>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRepeatAllNF.png</texture>
+				<texture colordiffuse="$VAR[CustomColorFocus]">OSDRepeatAllNF.png</texture>
 				<visible>Playlist.IsRepeat</visible>
 				<visible>Control.HasFocus(606)</visible>
 			</control>
@@ -1792,11 +1792,11 @@
 				<height>64</height>
 				<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 				<font>-</font>
-				<texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRandomOffNF.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRandomOffNF.png</texturenofocus>
+				<texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDRandomOffNF.png</texturefocus>
+				<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDRandomOffNF.png</texturenofocus>
 				<usealttexture>Playlist.IsRandom</usealttexture>
-				<alttexturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDRandomOnNF.png</alttexturefocus>
-				<alttexturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDRandomOnNF.png</alttexturenofocus>
+				<alttexturefocus colordiffuse="$VAR[CustomColorFocus]">OSDRandomOnNF.png</alttexturefocus>
+				<alttexturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDRandomOnNF.png</alttexturenofocus>
 				<onclick>XBMC.PlayerControl(Random)</onclick>
 				<onleft>606</onleft>
 				<onright>-</onright>
@@ -1993,8 +1993,8 @@
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font30</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
+                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>MusicPlayer.Artist</info>
@@ -2008,8 +2008,8 @@
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font30</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
+                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>MusicPlayer.Title</info>
@@ -2023,8 +2023,8 @@
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font16</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
+                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>MusicPlayer.Album</info>
@@ -2038,8 +2038,8 @@
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font16</font>
-                 <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+                 <textcolor>$VAR[CustomColorNofocus]</textcolor>
+                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>Player.Time(mm:ss)</info>
@@ -2052,8 +2052,8 @@
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font16</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
+                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label> / </label>
@@ -2066,8 +2066,8 @@
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font16</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
+                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>Player.TimeRemaining</info>
@@ -2080,8 +2080,8 @@
                 <width>ScreenWidth</width>
                 <height>52</height>
                 <font>font30</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
+                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>VideoPlayer.Artist</info>
@@ -2095,8 +2095,8 @@
                 <width>ScreenWidth</width>
                 <height>70</height>
                 <font>font30</font>
-                <textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
-                <selectedcolor>$INFO[Skin.String(CustomColorFocus)]</selectedcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
+                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>VideoPlayer.Title</info>
@@ -2119,8 +2119,8 @@
                 <height>80</height>
                 <label>157</label>
                 <font>-</font>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDPrevTrackNF.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDPrevTrackNF.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDPrevTrackNF.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDPrevTrackNF.png</texturenofocus>
                 <onleft></onleft>
                 <onright>Control.SetFocus(602)</onright>
                 <onup condition="Control.IsVisible(50)">50</onup>
@@ -2138,8 +2138,8 @@
                 <label>31351</label>
                 <altlabel>208</altlabel>
                 <font>-</font>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDPauseNF.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDPauseNF.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDPauseNF.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDPauseNF.png</texturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
                 <alttexturefocus>OSDPlayFO.png</alttexturefocus>
                 <alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
@@ -2159,8 +2159,8 @@
                 <height>80</height>
                 <label>31352</label>
                 <font>-</font>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDStopNF.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDStopNF.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDStopNF.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDStopNF.png</texturenofocus>
                 <onleft>Control.SetFocus(602)</onleft>
                 <onright>Control.SetFocus(605)</onright>
                 <onup condition="Control.IsVisible(50)">50</onup>
@@ -2177,8 +2177,8 @@
                 <height>80</height>
                 <label>209</label>
                 <font>-</font>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDNextTrackNF.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDNextTrackNF.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDNextTrackNF.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDNextTrackNF.png</texturenofocus>
                 <onleft>Control.SetFocus(603)</onleft>
                 <onright condition="Control.IsVisible(9002)">9002</onright>
                 <onright condition="Control.IsVisible(9003)">9003</onright>
@@ -2206,8 +2206,8 @@
                 <height>70</height>
                 <label>157</label>
                 <font>-</font>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDPrevTrackFO2.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDPrevTrackNF2.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDPrevTrackFO2.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDPrevTrackNF2.png</texturenofocus>
                 <onleft condition="Control.IsVisible(555)">555</onleft>
                 <onright>Control.SetFocus(602)</onright>
                 <onup condition="Control.IsVisible(50)">50</onup>
@@ -2225,8 +2225,8 @@
                 <label>31351</label>
                 <altlabel>208</altlabel>
                 <font>-</font>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDPauseFO2.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDPauseNF2.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDPauseFO2.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDPauseNF2.png</texturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
                 <alttexturefocus>OSDPlayFO2.png</alttexturefocus>
                 <alttexturenofocus>OSDPlayNF2.png</alttexturenofocus>
@@ -2246,8 +2246,8 @@
                 <height>70</height>
                 <label>31352</label>
                 <font>-</font>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">osdstopfo2.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">osdstopnf2.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">osdstopfo2.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">osdstopnf2.png</texturenofocus>
                 <onleft>Control.SetFocus(602)</onleft>
                 <onright>Control.SetFocus(605)</onright>
                 <onup condition="Control.IsVisible(50)">50</onup>
@@ -2264,8 +2264,8 @@
                 <height>70</height>
                 <label>209</label>
                 <font>-</font>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">OSDNextTrackFO2.png</texturefocus>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">OSDNextTrackNF2.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDNextTrackFO2.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDNextTrackNF2.png</texturenofocus>
                 <onleft>Control.SetFocus(603)</onleft>
                 <onright condition="Control.IsVisible(9002)">9002</onright>
                 <onright condition="Control.IsVisible(9003)">9003</onright>
@@ -2421,8 +2421,8 @@
                 <width>75</width>
                 <height>75</height>
                 <font>-</font>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]" border="5">icon_home.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">icon_home.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]" border="5">icon_home.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_home.png</texturefocus>
                 <onclick>ActivateWindow(Home)</onclick>
                 <ondown condition="Control.IsVisible(555)">Control.SetFocus(555)</ondown>
                 <ondown condition="Control.IsVisible(4101)">Control.SetFocus(4101)</ondown>
@@ -2454,8 +2454,8 @@
                 <width>70</width>
                 <height>70</height>
                 <font>-</font>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]" border="5">icon_home.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">icon_home.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]" border="5">icon_home.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_home.png</texturefocus>
                 <onclick>PlayerControl(Stop)</onclick>
                 <onclick>ActivateWindow(Home)</onclick>
                 <onclick>XBMC.ReloadSkin()</onclick>
@@ -2498,8 +2498,8 @@
                 <width>75</width>
                 <height>75</height>
                 <font>-</font>
-                <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]" border="5">floor_button.png</texturenofocus>
-                <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">floor_button.png</texturefocus>
+                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]" border="5">floor_button.png</texturenofocus>
+                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">floor_button.png</texturefocus>
                 <onclick>Skin.ToggleSetting(MediaSubMenuVisible2)</onclick>
 				<onleft>666</onleft>
 				<onright></onright>
@@ -2519,7 +2519,7 @@
             <height>60</height>
             <font>-</font>
             <onclick>back</onclick>
-            <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]">iconback-focus.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[CustomColorFocus]">iconback-focus.png</texturefocus>
             <texturenofocus></texturenofocus>
         </control>
         <control type="image">
@@ -2608,8 +2608,8 @@
                     <posy>8</posy>
                		<width>60</width>
                     <height>60</height>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_music_small.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">icon_music_small.png</texturefocus>
+                    <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_music_small.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_music_small.png</texturefocus>
                     <onclick>ActivateWindow(Music,$INFO[Skin.String(CustomMusicPath)])</onclick>
 		            <onup>666</onup>
 					<ondown>557</ondown>
@@ -2622,8 +2622,8 @@
                     <posy>85</posy>
                		<width>60</width>
                     <height>60</height>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_video_small.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">icon_video_small.png</texturefocus>
+                    <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_video_small.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_video_small.png</texturefocus>
                     <onclick>ActivateWindow(Videos,$INFO[Skin.String(CustomVideoPath)])</onclick>
 					<onup>556</onup>
 					<ondown>558</ondown>
@@ -2636,8 +2636,8 @@
                     <posy>162</posy>
                		<width>60</width>
                     <height>60</height>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_radio_small.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">icon_radio_small.png</texturefocus>
+                    <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_radio_small.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_radio_small.png</texturefocus>
                     <onclick>RunScript("plugin.program.radioFM")</onclick>
  					<onup>557</onup>
 					<ondown>559</ondown>
@@ -2650,8 +2650,8 @@
                     <posy>239</posy>
                		<width>60</width>
                     <height>60</height>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_navi_small.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">icon_navi_small.png</texturefocus>
+                    <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_navi_small.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_navi_small.png</texturefocus>
                     <onclick>RunScript("plugin.program.navigation")</onclick>
  					<onup>558</onup>
 					<ondown>560</ondown>
@@ -2664,8 +2664,8 @@
                     <posy>316</posy>
                		<width>60</width>
                     <height>60</height>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_apps_small.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">icon_apps_small.png</texturefocus>
+                    <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_apps_small.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_apps_small.png</texturefocus>
                     <onclick>ActivateWindow(Programs)</onclick>
  					<onup>559</onup>
 					<ondown>561</ondown>
@@ -2678,8 +2678,8 @@
                     <posy>393</posy>
                		<width>60</width>
                     <height>60</height>
-                    <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">icon_settings_small.png</texturenofocus>
-                    <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">icon_settings_small.png</texturefocus>
+                    <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">icon_settings_small.png</texturenofocus>
+                    <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_settings_small.png</texturefocus>
                     <onclick>ActivateWindow(Settings)</onclick>
 					<onup>560</onup>
 	                <ondown condition="Control.IsVisible(100)">600</ondown>
@@ -2721,7 +2721,7 @@
                 <height>70</height>
                 <!--<bordertexture border="5">floor_buttonfo.png</bordertexture>-->
                 <bordersize>6</bordersize>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]" border="5">$INFO[ListItem.Icon]</texture>
+                <texture colordiffuse="$VAR[CustomColorNofocus]" border="5">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
             </control>
         </itemlayout>
@@ -2740,7 +2740,7 @@
                 <height>70</height>
                 <!--<bordertexture border="5">IconBack-focus.png</bordertexture>-->
                 <bordersize>6</bordersize>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">$INFO[ListItem.Icon]</texture>
+                <texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
             </control>
         </focusedlayout>
@@ -2775,7 +2775,7 @@
                 <width>70</width>
                 <height>70</height>
                 <bordersize>6</bordersize>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[ListItem.Icon]</texture>
+                <texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
             </control>
         </itemlayout>
@@ -2788,7 +2788,7 @@
                 <width>70</width>
                 <height>70</height>
                 <bordersize>6</bordersize>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">$INFO[ListItem.Icon]</texture>
+                <texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
 		    </control>  
         </focusedlayout>
@@ -2823,7 +2823,7 @@
                 <width>85</width>
                 <height>85</height>
                 <bordersize>6</bordersize>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">$INFO[ListItem.Icon]</texture>
+                <texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
             </control>
         </itemlayout>
@@ -2836,7 +2836,7 @@
                 <width>85</width>
                 <height>85</height>
                 <bordersize>6</bordersize>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">$INFO[ListItem.Icon]</texture>
+                <texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
 		    </control>  
         </focusedlayout>
@@ -2881,7 +2881,7 @@
 				<font>font24_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 			</control>
         </focusedlayout>
@@ -2906,7 +2906,7 @@
 				<font>font18_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>$INFO[Skin.String(CustomColorHomebuttons)]</textcolor>
+				<textcolor>$VAR[CustomColorHomebuttons]</textcolor>
                 <texture colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[ListItem.Icon]</texture>
 	        </control>
             <control type="image">
@@ -2915,7 +2915,7 @@
                 <width>60</width>
                 <height>37</height>
                 <bordersize>6</bordersize>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">button-transparency00.png</texture>
+                <texture colordiffuse="$VAR[CustomColorNofocus]">button-transparency00.png</texture>
             </control>
         </itemlayout>
         <focusedlayout height="70" width="70">
@@ -2927,7 +2927,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
                 <texture colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[ListItem.Icon]</texture>
-				<textcolor>$INFO[Skin.String(CustomColorHomebuttons)]</textcolor>
+				<textcolor>$VAR[CustomColorHomebuttons]</textcolor>
 	        </control>
             <control type="image">
                 <posx>0</posx>
@@ -2935,7 +2935,7 @@
                 <width>60</width>
                 <height>37</height>
                 <bordersize>6</bordersize>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">$INFO[ListItem.Icon2]</texture>
+                <texture colordiffuse="$VAR[CustomColorFocus]">$INFO[ListItem.Icon2]</texture>
             </control>
         </focusedlayout>
     </include>
@@ -2952,8 +2952,8 @@
         <font>font10</font>
         <textcolor>grey2</textcolor>
         <focusedcolor>white</focusedcolor>
-        <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">HomeSubNF.png</texturenofocus>
-        <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">HomeSubNF.png</texturefocus>
+        <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">HomeSubNF.png</texturenofocus>
+        <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">HomeSubNF.png</texturefocus>
         <pulseonselect>false</pulseonselect>
         <textureradioon>HomeTab-focus.png</textureradioon>
         <textureradiooff>-</textureradiooff>
@@ -2972,8 +2972,8 @@
         <align>left</align>
         <aligny>center</aligny>
         <font>font13</font>
-        <texturenofocus colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">button-nofocus.png</texturenofocus>
-        <texturefocus colordiffuse="$INFO[Skin.String(CustomColorFocus)]" border="5">button-nofocus.png</texturefocus>
+        <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">button-nofocus.png</texturenofocus>
+        <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">button-nofocus.png</texturefocus>
         <pulseonselect>false</pulseonselect>
     </include>
  
@@ -2997,7 +2997,7 @@
         <aligny>center</aligny>
         <font>font24_title</font>
         <textcolor>FFFFFFFF</textcolor>
-		<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+		<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
         <texturenofocus>topmenu2_bg_nf.png</texturenofocus>
         <texturefocus>topmenu2_bg_f.png</texturefocus>
         <pulseonselect>false</pulseonselect>
@@ -3009,7 +3009,7 @@
         <aligny>center</aligny>
         <font>font24_title</font>
         <textcolor>FFFFFFFF</textcolor>
-		<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+		<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
         <texturenofocus>topmenu2_bg_f.png</texturenofocus>
         <texturefocus>topmenu2_bg_f.png</texturefocus>
         <pulseonselect>false</pulseonselect>

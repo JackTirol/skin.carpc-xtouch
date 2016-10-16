@@ -18,14 +18,14 @@
  	    <include>WeatherTitleWidget</include>
 		
 <!-- Title Text / Temperature-->
-		<include condition="Skin.String(TempSensor,1])">TempText1</include>
-		<include condition="Skin.String(TempSensor,2])">TempText2</include>
-		<include condition="Skin.String(TempSensor,3])">TempText3</include>
-		<include condition="Skin.String(TempSensor,4])">TempText4</include>
-		<include condition="Skin.String(TempSensor,5])">TempText5</include>
-		<include condition="Skin.String(TempSensor,6])">TempText6</include>
-		<include condition="Skin.String(TempSensor,7])">TempText7</include>
-		<include condition="Skin.String(TempSensor,8])">TempText8</include>
+		<include condition="Skin.String(TempSensor,1) + System.HasAddon(plugin.program.piwire)">TempText1</include>
+		<include condition="Skin.String(TempSensor,2) + System.HasAddon(plugin.program.piwire)">TempText2</include>
+		<include condition="Skin.String(TempSensor,3) + System.HasAddon(plugin.program.piwire)">TempText3</include>
+		<include condition="Skin.String(TempSensor,4) + System.HasAddon(plugin.program.piwire)">TempText4</include>
+		<include condition="Skin.String(TempSensor,5) + System.HasAddon(plugin.program.piwire)">TempText5</include>
+		<include condition="Skin.String(TempSensor,6) + System.HasAddon(plugin.program.piwire)">TempText6</include>
+		<include condition="Skin.String(TempSensor,7) + System.HasAddon(plugin.program.piwire)">TempText7</include>
+		<include condition="Skin.String(TempSensor,8) + System.HasAddon(plugin.program.piwire)">TempText8</include>
 
 		<control type="label">
 			<description>Text Top Left</description>
@@ -38,8 +38,9 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font40_title</font>
-			<textcolor>$INFO[Skin.String(CustomColorNofocus)]</textcolor>
+			<textcolor>$VAR[CustomColorNofocus]</textcolor>
 		</control> 
+		
 		<control type="button">
 			<description>Viz Fullscreen Button</description>
 			<visible>Player.HasAudio</visible>
@@ -54,6 +55,7 @@
 			<texturefocus>1px_transparent.png</texturefocus>
 			<onclick>ActivateWindow(2006)</onclick>
 		</control>
+
 
 			<!--Menu customized-->
 		
@@ -310,7 +312,7 @@
                 <width>1140</width>
                 <height>65</height>
 				<aspectratio></aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">info_bg.png</texture>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">info_bg.png</texture>
 				<include>Window_OpenClose_Animation_Zoom</include>
 			</control>
 			<include>BottomBG</include>

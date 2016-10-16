@@ -2344,7 +2344,7 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31191]</label>  
 				<textcolor>white</textcolor>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline_black.png</texturefocus>
 			    <texturenofocus border="0,2,0,2">button_outline_black_f.png</texturenofocus>
 			    <onclick>Skin.Reset(CustomColorFocus)</onclick>
@@ -2374,7 +2374,7 @@
                 <posy>0</posy>
                 <width>100</width>
                 <height>40</height>
-                <texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">button-nofocus.png</texture>
+                <texture colordiffuse="$VAR[CustomColorFocus]">button-nofocus.png</texture>
             </control>
 				
 		</control>
@@ -2397,7 +2397,7 @@
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31208]</label>
 				<align>center</align>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline2.png</texturefocus>
 				<texturenofocus border="0,2,0,2">button_outline2.png</texturenofocus>
 			    <onclick>Skin.SetString(CustomColorFocus,white)</onclick>
@@ -2413,7 +2413,7 @@
 				<textcolor>white</textcolor>
 				<label>OK</label>
 				<align>center</align>
-				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline2.png</texturefocus>
 				<texturenofocus border="0,2,0,2">button_outline2.png</texturenofocus>
 				<onclick>ActivateWindow(1113)</onclick>
