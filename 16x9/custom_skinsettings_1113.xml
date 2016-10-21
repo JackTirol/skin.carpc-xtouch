@@ -2406,6 +2406,7 @@
 			<height>350</height>
 			<itemgap>-1</itemgap>
 			<visible>Skin.String(SkinSettings,42)</visible>
+			<visible>System.HasAddon(plugin.program.carpc-xtouch)</visible>
 			<control type="label">
 				<wrapmultiline>true</wrapmultiline>
  				<posx>40</posx>
@@ -2418,7 +2419,29 @@
 				<align>left</align>
 				<aligny>top</aligny>
 			</control>
-		</control> 					
+		</control>
+		<control type="grouplist">
+			<description>Text addon missing</description>
+			<posx>40</posx>
+			<posy>220</posy>
+			<width>920</width>
+			<height>350</height>
+			<itemgap>-1</itemgap>
+			<visible>Skin.String(SkinSettings,42)</visible>
+			<visible>!System.HasAddon(plugin.program.carpc-xtouch)</visible>
+			<control type="label">
+				<wrapmultiline>true</wrapmultiline>
+ 				<posx>40</posx>
+				<posy>20</posy>
+				<height>300</height>
+				<width>920</width>
+				<font>font22_title</font>
+				<label>$LOCALIZE[31553]</label>
+				<textcolor>white</textcolor>
+				<align>left</align>
+				<aligny>top</aligny>
+			</control>
+		</control>
 		<control type="group" id="441">
 			<description>control area</description>
 			<posx>40</posx>
@@ -2430,6 +2453,7 @@
 			<onleft></onleft>
 			<onright></onright>
 			<visible>Skin.String(SkinSettings,42)</visible>
+			<visible>System.HasAddon(plugin.program.carpc-xtouch)</visible>
 			<control type="button" id="442">
 				<description>Day/Night-Mode</description>
 				<posx>190</posx>
