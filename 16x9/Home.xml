@@ -572,7 +572,7 @@
 					<label></label>
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms)</visible>
 					<icon>button_apps.png</icon>
-					<onclick>ActivateWindow(Programs)</onclick>
+					<onclick>ActivateWindow(Programs,addons://sources/executable)</onclick>
 				</item>
 				<item id="3025">
 					<label></label>
