@@ -914,7 +914,7 @@
 			<width>416</width>
 	        <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 			<align>center</align>
-			<label>[UPPERCASE]$INFO[system.date][/UPPERCASE]</label>
+			<label>$INFO[system.date(ddd. dd. mmm. yyyy)]</label>
 			<font>font24_title</font>
 			<textcolor>white</textcolor>
 		</control>
@@ -1046,7 +1046,8 @@
     <include name="MusicPlayerTitleFix">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Up</include>
-            <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible>
+	       <visible>Player.HasAudio + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat)</visible> 
+<!--       <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible> -->
             <control type="label">
                 <visible>true</visible>
                 <posx>50</posx>
@@ -1116,7 +1117,7 @@
     <include name="MusicPlayerTitlewithButtonsFix">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Up</include>
-            <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible>
+            <visible>Player.HasAudio + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat)</visible>
             <control type="label">
                 <visible>true</visible>
                 <posx>66</posx>
@@ -1183,8 +1184,6 @@
         </control>
     </include>
 
-
-
     <include name="RadioStationNameFix">
         <control type="group">
         	<visible>substring(Window(Home).Property(Radio.Active),true) + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonRadioStationName) + !Player.HasAudio</visible>
@@ -1222,7 +1221,8 @@
     <include name="MusicPlayerTitle">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Up</include>
-            <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible>
+<!--             <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible> -->
+            <visible>Player.HasAudio + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat)</visible>
             <control type="label">
                 <visible>true</visible>
                 <posx>66</posx>
@@ -1294,7 +1294,7 @@
     <include name="MusicPlayerTitlewithButtons">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Up</include>
-            <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible>
+            <visible>Player.HasAudio + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat)</visible>
             <control type="label">
                 <visible>true</visible>
                 <posx>66</posx>
@@ -1505,7 +1505,7 @@
 
 	<include name="RandomRepeatButtonsFix">
 		<control type="group">
-            <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible>
+            <visible>Player.HasAudio + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat)</visible>
 			<posx>1100</posx>
 			<posy>500</posy> 
 			<include>Window_OpenClose_Animation_Slide_Up</include>
@@ -1601,7 +1601,7 @@
 
 	<include name="RandomRepeatButtons">
 		<control type="group">
-            <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible>
+            <visible>Player.HasAudio + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat)</visible>
 			<posx>1091</posx>
 			<posy>500</posy> 
 			<include>Window_OpenClose_Animation_Slide_Up</include>
@@ -1883,14 +1883,12 @@
                 <height>52</height>
                 <font>font30</font>
                 <textcolor>$VAR[CustomColorNofocus]</textcolor>
-                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>MusicPlayer.Artist</info>
                 <scrollspeed>50</scrollspeed>
-                <scrollsuffix> - </scrollsuffix>
             </control>
-            <control type="label">
+	        <control type="label">
                 <visible>true</visible>
                 <posx>40r</posx>
                 <posy>72</posy>
@@ -1898,12 +1896,10 @@
                 <height>52</height>
                 <font>font30</font>
                 <textcolor>$VAR[CustomColorNofocus]</textcolor>
-                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
-                <info>MusicPlayer.Title</info>
+                <label>$INFO[MusicPlayer.Title]</label>
                 <scrollspeed>50</scrollspeed>
-                <scrollsuffix> - </scrollsuffix>
             </control>
             <control type="label">
                 <visible>true</visible>
@@ -1913,12 +1909,10 @@
                 <height>52</height>
                 <font>font16</font>
                 <textcolor>$VAR[CustomColorNofocus]</textcolor>
-                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>MusicPlayer.Album</info>
                 <scrollspeed>50</scrollspeed>
-                <scrollsuffix> - </scrollsuffix>
             </control>
             <control type="label">
                 <visible>true</visible>
@@ -1928,11 +1922,9 @@
                 <height>52</height>
                 <font>font16</font>
                  <textcolor>$VAR[CustomColorNofocus]</textcolor>
-                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>Player.Time(mm:ss)</info>
-                <scrollsuffix> - </scrollsuffix>
             </control>
             <control type="label">
                 <visible>true</visible>
@@ -1942,11 +1934,9 @@
                 <height>52</height>
                 <font>font16</font>
                 <textcolor>$VAR[CustomColorNofocus]</textcolor>
-                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <label> / </label>
-                <scrollsuffix> - </scrollsuffix>
             </control>
             <control type="label">
                 <visible>true</visible>
@@ -1956,11 +1946,9 @@
                 <height>52</height>
                 <font>font16</font>
                 <textcolor>$VAR[CustomColorNofocus]</textcolor>
-                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>Player.TimeRemaining</info>
-                <scrollsuffix> - </scrollsuffix>
             </control>
             <control type="label">
                 <visible>true</visible>
@@ -1970,27 +1958,23 @@
                 <height>52</height>
                 <font>font30</font>
                 <textcolor>$VAR[CustomColorNofocus]</textcolor>
-                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>VideoPlayer.Artist</info>
                 <scrollspeed>50</scrollspeed>
-                <scrollsuffix> - </scrollsuffix>
             </control>
             <control type="label">
-                <visible>true</visible>
+                <visible>Player.HasVideo</visible>
                 <posx>40r</posx>
                 <posy>37</posy>
                 <width>ScreenWidth</width>
                 <height>70</height>
                 <font>font30</font>
                 <textcolor>$VAR[CustomColorNofocus]</textcolor>
-                <selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
                 <align>right</align>
                 <aligny>center</aligny>
                 <info>VideoPlayer.Title</info>
                 <scrollspeed>50</scrollspeed>
-                <scrollsuffix> - </scrollsuffix>
             </control>
         </control>
     </include>

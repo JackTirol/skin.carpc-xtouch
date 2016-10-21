@@ -1030,8 +1030,12 @@ msgctxt "#31264"
 msgid "Attention! The addon '1-Wire Dashboard' and at least one attached temperature sensor is required for this function! For more informations see the README_Addons.md, which is included in the skin files."
 msgstr ""
 
+msgctxt "#31265"
+msgid "Configure"
+msgstr ""
 
-#empty strings from id 31265 to 31299
+
+#empty strings from id 31266 to 31299
 #------------------------------------------------
 
 #Extra labels
