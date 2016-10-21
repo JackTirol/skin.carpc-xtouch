@@ -84,9 +84,9 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1072</posx>
+					<posx>620</posx>
 					<posy>15</posy>
-					<width>300</width>
+					<width>450</width>
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>white</textcolor>

@@ -2421,6 +2421,7 @@
     </include>
 
     <include name="MediaSubMenu">
+		<visible>Player.HasAudio | Player.HasVideo</visible>
 		<control type="button" id="19">
 			<description>Filter button needed for panel below to work</description>
 			<visible>false</visible>
@@ -2464,6 +2465,7 @@
             </content>
         </control>
     </include>
+
  
     <include name="MediaBladeLeft">
         <control type="group" id="555">
@@ -2588,53 +2590,50 @@
         <animation effect="slide" start="0,0" end="274,0" time="0" condition="StringCompare(Container(9002).NumItems,2)">conditional</animation>
         <animation effect="slide" start="0,0" end="375,0" time="0" condition="StringCompare(Container(9002).NumItems,1)">conditional</animation>
         <posx>485r</posx>
-        <posy>85r</posy>
+        <posy>95r</posy>
         <width>550</width>
         <height>90</height>
         <pagecontrol>-</pagecontrol>
         <scrolltime>300</scrolltime>
         <orientation>Horizontal</orientation>
-        <itemlayout height="70" width="70" align="right">
+        <itemlayout height="85" width="85" align="right">
             <control type="image">
                 <posx>0</posx>
                 <posy>4</posy>
-                <width>70</width>
-                <height>70</height>
-                <!--CommonBottom-->
+                <width>85</width>
+                <height>85</height>
                 <texture border="4">floor_button_t.png</texture>
             </control>
             <control type="image">
                 <posx>0</posx>
                 <posy>4</posy>
-                <width>70</width>
-                <height>70</height>
-                <!--<bordertexture border="5">floor_buttonfo.png</bordertexture>-->
+                <width>85</width>
+                <height>85</height>
                 <bordersize>6</bordersize>
                 <texture colordiffuse="$VAR[CustomColorNofocus]" border="5">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
             </control>
         </itemlayout>
-        <focusedlayout height="70" width="70" align="right">
+        <focusedlayout height="85" width="85" align="right">
             <control type="image">
                 <posx>0</posx>
                 <posy>4</posy>
-                <width>70</width>
-                <height>70</height>
+                <width>85</width>
+                <height>85</height>
                 <texture border="4">floor_button_t.png</texture>
             </control>
             <control type="image">
                 <posx>0</posx>
                 <posy>4</posy>
-                <width>70</width>
-                <height>70</height>
-                <!--<bordertexture border="5">IconBack-focus.png</bordertexture>-->
+                <width>85</width>
+                <height>85</height>
                 <bordersize>6</bordersize>
                 <texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
             </control>
         </focusedlayout>
     </include>
- 
+
     <include name="SubMenuCommonLayout2">
         <include>Window_OpenClose_Animation_Slide_Up</include>
         <animation effect="slide" start="0,0" end="0,0" time="0" condition="StringCompare(Container(9003).NumItems,7)">conditional</animation>
