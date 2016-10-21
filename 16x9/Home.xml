@@ -572,7 +572,7 @@
 					<label></label>
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms)</visible>
 					<icon>button_apps.png</icon>
-					<onclick>ActivateWindow(Programs)</onclick>
+					<onclick>ActivateWindow(Programs,addons://sources/executable)</onclick>
 				</item>
 				<item id="3025">
 					<label></label>
@@ -582,19 +582,17 @@
 				</item>
 				<item id="3026">
 					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day) + Skin.String(DayNightModus,night)</visible>
+					<visible>System.HasAddon(plugin.program.carpc-xtouch + substring(Window(Home).Property(xtouch.daynight),night)</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight)</visible>
 					<icon>button_day.png</icon>
-					<onclick>Skin.Reset(DayNightModus)</onclick>
-					<onclick>Skin.SetString(DayNightModus,day)</onclick>
-					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
+					<onclick condition="substring(Window(Home).Property(xtouch.updating),false)">RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
 				</item>
 				<item id="3026">
 					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night) + Skin.String(DayNightModus,day)</visible>
+					<visible>System.HasAddon(plugin.program.carpc-xtouch + substring(Window(Home).Property(xtouch.daynight),day)</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight)</visible>
 					<icon>button_night.png</icon>
-					<onclick>Skin.Reset(DayNightModus)</onclick>
-					<onclick>Skin.SetString(DayNightModus,night)</onclick>
-					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
+					<onclick condition="substring(Window(Home).Property(xtouch.updating),false)">RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
 				</item>
 <!--			<item>
 					<label></label>

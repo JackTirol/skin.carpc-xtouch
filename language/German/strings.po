@@ -1214,3 +1214,7 @@ msgstr ""
 msgctxt "#31552"
 msgid "Set Add-on to use for subtitles"
 msgstr ""
+
+msgctxt "#31553"
+msgid "For day/night mode plugin.program.carpc-xtouch (X-Touch Helper) v0.0.6 or up is needed."
+msgstr "Für die Tag-/Nacht-Umschaltung wird plugin.program.carpc-xtouch (X-Touch Helper) v0.0.6 oder höher benötigt."
