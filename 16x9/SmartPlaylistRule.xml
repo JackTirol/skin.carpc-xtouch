@@ -1,6 +1,6 @@
 <window id="137">
 	<defaultcontrol always="true">9001</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<include>16x9_xPos_Relocation</include>
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<include>CommonTopBar</include>	

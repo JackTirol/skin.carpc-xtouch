@@ -1,6 +1,6 @@
 <window type="dialog" id="1122">
 	<defaultcontrol always="false">103</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<include>16x9_xPos_Relocation</include>
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<onload>Skin.SetString(FirstSettings,1)</onload>

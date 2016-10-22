@@ -292,26 +292,16 @@
 			<include>Window_OpenClose_Animation_Zoom</include>
 		</control> 
 
-	    <include>VisualisationHome</include> 
-
-		<include>Clock_Date</include> 
-		<include>Clock_Time</include>
-		<include>Clock_Time_White</include>
-<!--	<include>Clock_Hour</include>  -->
-		<include>Time</include>				
-		
-		<include>CommonBottomBar</include>   
-
 		<!-- Song/radio info -->
 		<control type="group">
 			<control type="image">
-	            <visible>[Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle)] | [!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioStationName) + substring(Window(Home).Property(Radio.Active),true)]</visible>
+	            <visible>[Player.HasAudio + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle)] | [!Skin.HasSetting(HideHomeButtonRadioStationName) + substring(Window(Home).Property(Radio.Active),true)]</visible>
 				<description>Infobox Background</description>
 				<posx>70</posx>
                 <posy>500</posy>
                 <width>1140</width>
                 <height>65</height>
-				<aspectratio></aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<texture colordiffuse="$VAR[CustomColorNofocus]">info_bg.png</texture>
 				<include>Window_OpenClose_Animation_Zoom</include>
 			</control>
@@ -320,14 +310,12 @@
 			<include>MusicPlayerTitle</include>
 			<include>MusicPlayerTitlewithButtons</include>
 			<include>RadioStationName</include>
-<!--		<include>BottomBGFix</include> -->
 			<include>RandomRepeatButtonsFix</include> 
 			<include>MusicPlayerTitleFix</include>
 			<include>MusicPlayerTitlewithButtonsFix</include>
 			<include>RadioStationNameFix</include>
 		</control>
 
-<!--	<include>HomeRecentlyAddedInfo</include> -->
 		<include>BottomNowPLaying</include>
 		
 <!-- Submenu -->
@@ -603,6 +591,18 @@
 			</content>
 		</control>
 
+	    <include>VisualisationHome</include> 
+		<!-- Song/radio info -->
+	<control type="group">
+		<animation effect="fade" start="0" end="100" time="200" delay="3000">Visible</animation>
+		<include>Clock_Date</include> 
+		<include>Clock_Time</include>
+		<include>Clock_Time_White</include>
+<!--	<include>Clock_Hour</include>  -->
+		<include>Time</include>				
+	</control>
+
+		<include>CommonBottomBar</include>   
 
    		<include>BehindDialogFadeOut</include>
    		

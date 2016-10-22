@@ -1,6 +1,6 @@
 <window id="34">
 	<defaultcontrol always="true">2</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<controls>
 		<include>CommonBackground</include>
 		<!-- <include>CommonBackgroundOverlay</include> -->

@@ -1,6 +1,6 @@
 <window id="132">
 	<defaultcontrol always="true">3</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<include>16x9_xPos_Relocation</include>
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>

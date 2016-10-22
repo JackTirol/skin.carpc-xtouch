@@ -922,6 +922,7 @@
 	<include name="Clock_Time">
 		<control type="grouplist">
 			<visible>Skin.HasSetting(Enable_Clock_Animation) + !Skin.HasSetting(Show_Clock_white) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]</visible>
+<!--		<animation effect="fade" start="0" end="100" time="200" delay="10000">WindowOpen</animation> -->
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>432</posx>
 			<posy>78</posy>
@@ -980,6 +981,7 @@
 	<include name="Clock_Time_White">
 		<control type="grouplist">
 			<visible>Skin.HasSetting(Enable_Clock_Animation) + Skin.HasSetting(Show_Clock_white) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]</visible>
+<!--		<animation effect="fade" start="0" end="100" time="200" delay="10000">WindowOpen</animation> -->
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>432</posx>
 			<posy>78</posy>

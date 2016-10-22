@@ -1,6 +1,6 @@
 <window type="dialog" id="1113">
 	<defaultcontrol always="false">999</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<onunload>Control.SetFocus(9002)</onunload>
 	<include>16x9_xPos_Relocation</include>
 	<include>Window_OpenClose_Animation_Zoom</include>

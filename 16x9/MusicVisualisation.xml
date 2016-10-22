@@ -1,6 +1,6 @@
 <window id="2006">
 	<defaultcontrol>9002</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<controls>
 		<control type="image">
 			<posx>0</posx>

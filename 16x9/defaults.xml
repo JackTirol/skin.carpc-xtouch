@@ -118,6 +118,8 @@
 		<radioheight>45</radioheight>
 		<textureradioon>radiobutton2-focus.png</textureradioon>
 		<textureradiooff>radiobutton2-nofocus.png</textureradiooff>
+		<textureradioondisabled>radiobutton-disabled_focus.png</textureradioondisabled>
+		<textureradiooffdisabled>radiobutton-disabled_nofocus.png</textureradiooffdisabled>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
 		<label>215</label>
@@ -137,6 +139,8 @@
 		<radioheight>45</radioheight>
 		<textureradioon>radiobutton-focus.png</textureradioon>
 		<textureradiooff>radiobutton-nofocus.png</textureradiooff>
+		<textureradioondisabled>radiobutton2-disabled_focus.png</textureradioondisabled>
+		<textureradiooffdisabled>radiobutton2-disabled_nofocus.png</textureradiooffdisabled>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>button-nofocus.png</texturenofocus>
 		<label>215</label>

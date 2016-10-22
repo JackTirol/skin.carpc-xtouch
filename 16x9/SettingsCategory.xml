@@ -1,6 +1,6 @@
 <window id="12">
 	<defaultcontrol>3</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<controls>
 		<include>CommonBackground</include>
 		<include>CommonTopBar</include>

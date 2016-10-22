@@ -1,5 +1,5 @@
 <window>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<include>16x9_xPos_Relocation</include>
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>

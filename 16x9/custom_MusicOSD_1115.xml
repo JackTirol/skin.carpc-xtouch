@@ -1,8 +1,7 @@
 <window id="1115">
 	<defaultcontrol always="true">50</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<views>50,500</views>
-	
 	<onunload>Skin.Reset(MediaSubMenuVisible2)</onunload>
 	<controls>
 		<include>CommonBackground</include>

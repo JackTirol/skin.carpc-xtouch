@@ -1,6 +1,6 @@
 <window type="dialog" id="1124">
 	<defaultcontrol always="false">811</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<!-- removed allowoverlay -->
 	<include>16x9_xPos_Relocation</include>
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>
