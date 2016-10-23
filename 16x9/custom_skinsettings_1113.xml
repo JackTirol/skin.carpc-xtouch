@@ -2349,7 +2349,7 @@
 				<align>left</align>
 				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				<onclick>ActivateWindow(Weather)</onclick>
+				<onclick>Addon.OpenSettings(weather.openweathermap.extended)</onclick>
 				<onclick>Dialog.Close(1113)</onclick>
 				<onup>423</onup>
 				<ondown></ondown>

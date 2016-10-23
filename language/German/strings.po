@@ -717,8 +717,8 @@ msgid "Enable Weather Info (Top Right)"
 msgstr "Zeige Wetterinfo (oben rechts)"
 
 msgctxt "#31188"
-msgid ">> Go to Weather Addon"
-msgstr ">> Zum Wetter-Addon"
+msgid ">> Go to Weather Addon Settings"
+msgstr ">> Wetter Einstellungen"
 
 msgctxt "#31189"
 msgid "Quit"

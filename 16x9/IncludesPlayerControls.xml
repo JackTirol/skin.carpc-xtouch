@@ -665,10 +665,10 @@
 				<texturefocus border="5">floor_button_t.png</texturefocus>
 				<onclick>Skin.ToggleSetting(PlayerControlsShowAudioInfo)</onclick>
 				<visible>Player.HasAudio</visible>
-				<onleft>666</onleft>
-				<onright condition="Control.IsVisible(668)">668</onright>
-				<onright>669</onright>
-				<onup condition="!Control.IsVisible(668)"></onup>
+				<onleft>Control.SetFocus(666)</onleft>
+				<onright condition="Control.IsVisible(668)">Control.SetFocus(668)</onright>
+				<onright condition="!Control.IsVisible(668)">Control.SetFocus(669)</onright>
+				<onup></onup>
 				<ondown>87</ondown>
 			</control>
 			<control type="radiobutton" id="667">
@@ -685,13 +685,13 @@
 				<texturefocus border="5">floor_button_t.png</texturefocus>
 				<onclick>Skin.ToggleSetting(PlayerControlsShowVideoInfo)</onclick>
 				<visible>Player.HasVideo</visible>
-				<onleft>666</onleft>
-				<onright condition="Control.IsVisible(668)">668</onright>
-				<onright condition="!Control.IsVisible(668)">669</onright>
+				<onleft>Control.SetFocus(666)</onleft>
+				<onright condition="Control.IsVisible(668)">Control.SetFocus(668)</onright>
+				<onright condition="!Control.IsVisible(668)">Control.SetFocus(669)</onright>
 				<onup></onup>
 				<ondown>87</ondown>
 			</control>
-			<control type="button" id="668">
+<!--		<control type="button" id="668">
 				<description>Submenu Button</description>
 				<width>200</width>
 				<height>50</height>
@@ -708,7 +708,7 @@
 				<onright>669</onright>
 				<onup></onup>
 				<ondown>87</ondown>
-			</control>
+			</control> -->
 			<control type="radiobutton" id="669">
 				<description>Fullscreen Button</description>
 				<posy>5</posy>
@@ -727,9 +727,9 @@
 				<onclick>Control.SetFocus(669)</onclick>
 				<textureradioon>GoFullscreen.png</textureradioon>
 				<textureradiooff>GoFullscreen.png</textureradiooff>
-				<visible>!Window.IsVisible(Visualisation) + !Window.IsVisible(FullScreenVideo) + !Window.IsVisible(Karaoke)</visible>
-				<onleft condition="Control.IsVisible(668)">668</onleft>
-				<onleft>667</onleft>
+				<visible>!Window.IsVisible(Visualisation) + !Window.IsVisible(FullScreenVideo)</visible>
+				<onleft condition="Control.IsVisible(668)">Control.SetFocus(668)</onleft>
+				<onleft condition="!Control.IsVisible(668)">Control.SetFocus(667)</onleft>
 				<onup></onup>
 				<ondown>87</ondown>
 			</control>
@@ -753,9 +753,9 @@
 				<onclick>Control.SetFocus(669)</onclick>
 				<textureradioon flipx="true" flipy="true">GoFullscreen.png</textureradioon>
 				<textureradiooff flipx="true" flipy="true">GoFullscreen.png</textureradiooff>
-				<visible>Window.IsVisible(Visualisation) | Window.IsVisible(FullScreenVideo) + !Window.IsVisible(Karaoke)</visible>
-				<onleft condition="Control.IsVisible(668)">668</onleft>
-				<onleft condition="!Control.IsVisible(668)">667</onleft>
+				<visible>Window.IsVisible(Visualisation) | Window.IsVisible(FullScreenVideo)</visible>
+				<onleft condition="Control.IsVisible(668)">Control.SetFocus(668)</onleft>
+				<onleft condition="!Control.IsVisible(668)">Control.SetFocus(667)</onleft>
 				<onright></onright>
 				<onup></onup>
 				<ondown>87</ondown>
