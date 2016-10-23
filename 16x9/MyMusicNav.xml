@@ -27,6 +27,7 @@
 			<onright>Control.SetFocus(556)</onright>
 		</control>
 		<include>ScrollBarCommons</include>
+
 		<include>MediaSubMenu</include> 
 		<control type="group">
 			<visible>Skin.HasSetting(MediaSubMenuVisible2)</visible>

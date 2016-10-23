@@ -2247,7 +2247,7 @@
             <animation effect="slide" start="200,0" end="0,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
             <animation effect="slide" start="0,0" end="200,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
             <posx>75r</posx>
-            <posy>80</posy>
+            <posy>70</posy>
             <visible>Control.IsVisible(60)</visible>
             <animation effect="slide" start="90,0" end="0,0" time="400">Visible</animation>
             <animation effect="slide" start="0,0" end="90,0" time="400">Hidden</animation>
@@ -2256,15 +2256,26 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>75</width>
-                <height>550</height>
+                <height>575</height>
                 <texture border="0,60,0,60">ScrollBarBackground.png</texture>
                 <colordiffuse>50FFFFFF</colordiffuse>
             </control>
+            <control type="button" id="6001">
+                <description>Button PageUp</description>
+                <posx>10</posx>
+                <posy>30</posy>
+                <width>55</width>
+                <height>55</height>
+				<texturefocus>arrow-big-up.png</texturefocus>
+				<texturenofocus>arrow-big-up.png</texturenofocus>
+                <colordiffuse>50FFFFFF</colordiffuse>
+                <onclick>pageup(60)</onclick>
+            </control>
             <control type="scrollbar" id="60">
                 <posx>15</posx>
-                <posy>30</posy>
+                <posy>90</posy>
                 <width>37</width>
-                <height>480</height>
+                <height>390</height>
                 <texturesliderbackground border="0,14,0,14">linie_albastra_v.png</texturesliderbackground>
                 <texturesliderbar border="0,14,0,14">osdslidernib.png</texturesliderbar>
                 <texturesliderbarfocus border="0,14,0,14">osdslidernib.png</texturesliderbarfocus>
@@ -2279,8 +2290,52 @@
                 <animation effect="fade" time="150">Visible</animation>
                 <animation effect="fade" time="150">Hidden</animation>
             </control>
+            <control type="button" id="6002">
+                <description>Button PageDown</description>
+                <posx>10</posx>
+                <posy>490</posy>
+                <width>55</width>
+                <height>55</height>
+				<texturefocus>arrow-big-down.png</texturefocus>
+				<texturenofocus>arrow-big-down.png</texturenofocus>
+                <colordiffuse>50FFFFFF</colordiffuse>
+                <onclick>pagedown(60)</onclick>
+            </control>
         </control>
     </include>
+
+	<include name="ScrollBarButtons">
+        <control type="group">
+            <!--<include>Window_OpenClose_Animation</include>-->
+            <animation effect="slide" start="200,0" end="0,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
+            <animation effect="slide" start="0,0" end="200,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
+            <posx>75r</posx>
+            <posy>80</posy>
+            <visible>Control.IsVisible(60)</visible>
+            <animation effect="slide" start="90,0" end="0,0" time="400">Visible</animation>
+            <animation effect="slide" start="0,0" end="90,0" time="400">Hidden</animation>
+            <control type="button">
+                <description>Button PageUp</description>
+                <posx>10</posx>
+                <posy>30</posy>
+                <width>55</width>
+                <height>55</height>
+                <texture>arrow-big-up.png</texture>
+                <colordiffuse>50FFFFFF</colordiffuse>
+                <onclick>pageup(60)</onclick>
+            </control>
+            <control type="button">
+                <description>Button PageDown</description>
+                <posx>10</posx>
+                <posy>480</posy>
+                <width>55</width>
+                <height>55</height>
+                <texture>arrow-big-down.png</texture>
+                <colordiffuse>50FFFFFF</colordiffuse>
+                <onclick>pagedown(60)</onclick>
+            </control>
+        </control>
+	</include>
 
 	<include name="HomeButtonCommons">
         <control type="group" id="666">
