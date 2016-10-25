@@ -597,6 +597,24 @@
 				<onup></onup>
 				<ondown>87</ondown>
 			</control>
+			<control type="button" id="668">
+				<description>Submenu Button</description>
+				<width>200</width>
+				<height>50</height>
+				<label>$LOCALIZE[33063]</label>
+				<focusedcolor>$INFO[Skin.String(CustomColorFocus)]</focusedcolor>
+				<font>font13</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<texturenofocus border="5">floor_button_t.png</texturenofocus>
+				<texturefocus border="5">floor_button_t.png</texturefocus>
+				<onclick>Skin.ToggleSetting(PlayerControlsSubMenuVisible)</onclick>
+				<visible>Window.IsVisible(Fullscreenvideo) | Window.IsVisible(Visualisation)</visible>
+				<onleft>667</onleft>
+				<onright>669</onright>
+				<onup></onup>
+				<ondown>87</ondown>
+			</control>
 			<control type="radiobutton" id="669">
 				<description>Fullscreen Button</description>
 				<posy>5</posy>

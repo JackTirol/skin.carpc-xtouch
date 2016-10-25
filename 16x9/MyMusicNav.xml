@@ -9,7 +9,6 @@
 		<include>CommonTopBar</include>
 		<include>CommonBottomBar</include>
 		<include>FileCountCommons</include> 
-		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
 		<!-- <include>OptionsButtonCommons</include> -->
 		<include>BottomNowPLaying</include>
@@ -129,5 +128,9 @@
 		</control>
 		<include>ScrollOffsetLabel</include>
 		<include>BehindDialogFadeOut</include>
+	<control type="group">
+		<visible>Window.IsActive(Visualisation)</visible>
+		<include>HomeButtonCommons</include>
+	</control>
 	</controls>
 </window>
