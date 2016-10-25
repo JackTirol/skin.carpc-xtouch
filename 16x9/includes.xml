@@ -39,9 +39,6 @@
     <constant name="FanartCrossfadeTime">500</constant>
     <constant name="IconCrossfadeTime">400</constant>
     <constant name="16x9Offset">213</constant>
-    <constant name="hbposy1">74</constant>
-    <constant name="hbposy2">210</constant>
-    <constant name="hbposy3">346</constant>
     
     <variable name="BannerThumb">
         <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
@@ -2361,14 +2358,6 @@
 		<onright condition="Control.IsVisible(557)">Control.SetFocus(557)</onright>
                 <ondown condition="Control.IsVisible(5001)">Control.SetFocus(5001)</ondown>
             </control>
-<!--        <control type="image">
-                <description>Home Button Image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>70</width>
-                <height>70</height>
-                <texture>icon_home.png</texture>
-            </control> -->
         </control>
         
          <control type="group" id="666">
@@ -2419,14 +2408,6 @@
 		<onright condition="Control.IsVisible(557)">Control.SetFocus(557)</onright>
 		<visible>Window.IsVisible(Visualisation) | Window.IsVisible(FullScreenVideo)</visible>
            </control>
-<!--        <control type="image">
-                <description>Home Button Image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>70</width>
-                <height>70</height>
-                <texture>icon_home.png</texture>
-            </control> -->
         </control>
     </include>
 
