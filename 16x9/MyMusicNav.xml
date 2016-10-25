@@ -127,7 +127,6 @@
 				</control>
 			</control>
 		</control>
-		
 		<include>ScrollOffsetLabel</include>
 		<include>BehindDialogFadeOut</include>
 	</controls>

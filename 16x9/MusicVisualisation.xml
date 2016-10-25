@@ -1,6 +1,6 @@
 <window id="2006">
 	<defaultcontrol>9002</defaultcontrol>
-	<!-- removed allowoverlay -->
+	<allowoverlay>true</allowoverlay>
 	<controls>
 		<control type="image">
 			<posx>0</posx>
@@ -81,5 +81,7 @@
 		</control>
 		<!--<include>PlayerControlCommons</include>-->
 		<include>CommonAudioVideoTitle</include>
+		<include>HomeButtonCommons</include>
+
 	</controls>
 </window>

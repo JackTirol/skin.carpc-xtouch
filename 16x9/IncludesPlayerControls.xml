@@ -546,101 +546,7 @@
 				</control>
 			</control>
 		</control>
-	
-		<include>CommonTopBar</include>
-		
-		<!--<control type="grouplist">
-			<description>Top Left bar</description>
-			<posx>0</posx>
-			<posy>20</posy>
-			<width>70</width>
-			<height>64</height>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<control type="button">
-				<description>Playlist Button</description>
-				<width>64</width>
-				<height>64</height>
-				<texturenofocus>icon_playlistmusic.png</texturenofocus>
-				<texturefocus>icon_playlistmusic.png</texturefocus>
-				<onclick>Back</onclick>
-				<onclick>ActivateWindow(MusicPlaylist)</onclick>
-				<visible>Player.HasAudio</visible>
-			</control>
-			<control type="button">
-				<description>Playlist Button</description>
-				<width>64</width>
-				<height>64</height>
-				<texturenofocus>icon_playlistvideo.png</texturenofocus>
-				<texturefocus>icon_playlistvideo.png</texturefocus>
-				<onclick>Back</onclick>
-				<onclick>ActivateWindow(VideoPlaylist)</onclick>
-				<visible>Player.HasVideo</visible>
-			</control>
-			<control type="image">
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-			</control>
-		</control>-->
-		<!--<control type="group">
-			<visible>!System.Platform.IOS</visible>
-			<posx>80</posx>
-			<posy>28</posy>
-			<control type="label">
-				<description>label</description>
-				<posx>5</posx>
-				<posy>0</posy>
-				<height>20</height>
-				<width>200</width>
-				<label>13376</label>
-				<font>font12</font>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Volumelabel</description>
-				<posx>375</posx>
-				<posy>0</posy>
-				<height>20</height>
-				<width>200</width>
-				<label>$INFO[Control.GetLabel(1)]</label>
-				<font>font12</font>
-				<align>right</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="progress" id="2">
-				<description>Volume</description>
-				<posx>0</posx>
-				<posy>23</posy>
-				<width>380</width>
-				<height>20</height>
-				<info>Player.Volume</info>
-			</control>
-			<control type="slider" id="1">
-				<description>Volume Slider</description>
-				<posx>0</posx>
-				<posy>23</posy>
-				<width>380</width>
-				<height>20</height>
- 				<info>Player.Volume</info>
-				<action>Volume</action>
-				<texturesliderbar>OSDProgressBack2.png</texturesliderbar>
-				<textureslidernib>OSDSliderNib.png</textureslidernib>
-				<textureslidernibfocus>OSDSliderNib.png</textureslidernibfocus>
-			</control>
-			<control type="image">
-				<posx>390</posx>
-				<posy>-8</posy>
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-			</control>
-		</control>-->
+
 		<control type="grouplist">
 			<description>Top Right bar</description>
 			<include>Window_OpenClose_Animation_Slide_Down</include>
@@ -691,24 +597,6 @@
 				<onup></onup>
 				<ondown>87</ondown>
 			</control>
-<!--		<control type="button" id="668">
-				<description>Submenu Button</description>
-				<width>200</width>
-				<height>50</height>
-				<label>$LOCALIZE[33063]</label>
-				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-				<font>font13</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<texturenofocus border="5">floor_button_t.png</texturenofocus>
-				<texturefocus border="5">floor_button_t.png</texturefocus>
-				<onclick>Skin.ToggleSetting(PlayerControlsSubMenuVisible)</onclick>
-				<visible>Window.IsVisible(Fullscreenvideo) | Window.IsVisible(Visualisation)</visible>
-				<onleft>667</onleft>
-				<onright>669</onright>
-				<onup></onup>
-				<ondown>87</ondown>
-			</control> -->
 			<control type="radiobutton" id="669">
 				<description>Fullscreen Button</description>
 				<posy>5</posy>
@@ -761,29 +649,6 @@
 				<ondown>87</ondown>
 			</control>
 		</control>
-		<!--<control type="group">
-			<posx>65r</posx>
-			<posy>20</posy>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-			</control>
-			<control type="button">
-				<description>Close Button</description>
-				<posx>5</posx>
-				<posy>0</posy>
-				<width>56</width>
-				<height>56</height>
-				<font>-</font>
-				<onclick>Back</onclick>
-				<texturefocus>icon_close.png</texturefocus>
-				<texturenofocus>icon_close.png</texturenofocus>
-			</control>
-		</control>-->
-
 		<control type="group">
 			<posx>0</posx>
 			<posy>140r</posy>
@@ -968,107 +833,6 @@
 		</control>
 			
 		</control>
-		<!--Control buttons-->
-		<!--<control type="group" id="100">
-			<posx>415</posx>
-			<posy>82r</posy>
-			<animation effect="fade" time="200">VisibleChange</animation>
-			<include>16x9_xPos_Relocation</include>
-			<control type="button" id="600">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>80</width>
-				<height>80</height>
-				<label>210</label>
-				<font>-</font>
-				<texturefocus>OSDPrevTrackFO.png</texturefocus>
-				<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
-				<onleft>705</onleft>
-				<onright>601</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
-				<onclick>PlayerControl(Previous)</onclick>
-			</control>
-			<control type="button" id="601">
-				<posx>80</posx>
-				<posy>0</posy>
-				<width>80</width>
-				<height>80</height>
-				<label>31354</label>
-				<font>-</font>
-				<texturefocus>OSDRewindFO.png</texturefocus>
-				<texturenofocus>OSDRewindNF.png</texturenofocus>
-				<onleft>600</onleft>
-				<onright>602</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
-				<onclick>PlayerControl(Rewind)</onclick>
-			</control>
-			<control type="togglebutton" id="602">
-				<posx>160</posx>
-				<posy>0</posy>
-				<width>80</width>
-				<height>80</height>
-				<label>31351</label>
-				<altlabel>208</altlabel>
-				<font>-</font>
-				<texturefocus>OSDPauseFO.png</texturefocus>
-				<texturenofocus>OSDPauseNF.png</texturenofocus>
-				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus>OSDPlayFO.png</alttexturefocus>
-				<alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
-				<onleft>601</onleft>
-				<onright>603</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
-				<onclick>PlayerControl(Play)</onclick>
-			</control>
-			<control type="button" id="603">
-				<posx>240</posx>
-				<posy>0</posy>
-				<width>80</width>
-				<height>80</height>
-				<label>31352</label>
-				<font>-</font>
-				<texturefocus>OSDStopFO.png</texturefocus>
-				<texturenofocus>OSDStopNF.png</texturenofocus>
-				<onleft>602</onleft>
-				<onright>604</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
-				<onclick>PlayerControl(Stop)</onclick>
-			</control>
-			<control type="button" id="604">
-				<posx>320</posx>
-				<posy>0</posy>
-				<width>80</width>
-				<height>80</height>
-				<label>31353</label>
-				<font>-</font>
-				<texturefocus>OSDForwardFO.png</texturefocus>
-				<texturenofocus>OSDForwardNF.png</texturenofocus>
-				<onleft>603</onleft>
-				<onright>605</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
-				<onclick>PlayerControl(Forward)</onclick>
-			</control>
-			<control type="button" id="605">
-				<posx>400</posx>
-				<posy>0</posy>
-				<width>80</width>
-				<height>80</height>
-				<label>209</label>
-				<font>-</font>
-				<texturefocus>OSDNextTrackFO.png</texturefocus>
-				<texturenofocus>OSDNextTrackNF.png</texturenofocus>
-				<onleft>604</onleft>
-				<onright>701</onright>
-				<onup>1000</onup>
-				<ondown>1000</ondown>
-				<onclick>PlayerControl(Next)</onclick>
-			</control>
-		</control>-->
 		<include>BottomNowPLaying</include>
 		<control type="group">
 			<visible>Window.IsVisible(FullscreenVideo)</visible>

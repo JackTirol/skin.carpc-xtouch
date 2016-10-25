@@ -5403,7 +5403,7 @@
 					<onup>916</onup>
 					<ondown>921</ondown>
 				</control>
-<!--			<control type="button" id="918">
+				<control type="button" id="918">
 					<discription>MusicDB - Playlists</discription>
 					<visible>Skin.String(OpenSetting9a,1) + Skin.String(SkinSettings,9)</visible>
 					<height>55</height>
@@ -5416,11 +5416,11 @@
 					<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 			        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 					<onclick>Skin.Reset(CustomMusicPath)</onclick>
-					<onclick>Skin.SetString(CustomMusicPath,musicdb://playlists/)</onclick>
+					<onclick>Skin.SetString(CustomMusicPath,special://musicplaylists/)</onclick>
 					<enable>Skin.HasSetting(UseCustomMusic)</enable>
 					<onup>917</onup>
 					<ondown>921</ondown>
-				</control> -->
+				</control> 
 
 <!-- Video -->
 
