@@ -380,28 +380,6 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
-				<label>DialogKaraokeSongSelector.xml</label>
-				<visible>Window.IsVisible(DialogKaraokeSongSelector.xml)</visible>
-			</control>
-
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
-				<label>DialogKaraokeSongSelectorLarge.xml</label>
-				<visible>Window.IsVisible(DialogKaraokeSongSelectorLarge.xml)</visible>
-			</control>
-
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
 				<label>DialogKeyboard.xml</label>
 				<visible>Window.IsVisible(DialogKeyboard.xml)</visible>
 			</control>
@@ -723,17 +701,6 @@
 				<align>left</align>
 				<label>LockSettings.xml</label>
 				<visible>Window.IsVisible(LockSettings.xml)</visible>
-			</control>
-
-			<control type="label">
-				<width>780</width>
-				<height>21</height>
-				<textcolor>FFFF0000</textcolor>
-				<shadowcolor>FF000000</shadowcolor>
-				<font>font13</font>
-				<align>left</align>
-				<label>MusicKaraokeLyrics.xml</label>
-				<visible>Window.IsVisible(MusicKaraokeLyrics.xml)</visible>
 			</control>
 
 			<control type="label">

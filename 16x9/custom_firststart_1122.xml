@@ -61,7 +61,7 @@
 				<align>right</align>
 				<font>font18_title</font>
 				<textcolor>white</textcolor>
-				<label>v2.1</label>
+				<label>v2.2</label>
 			</control>
 		</control>
 
@@ -990,7 +990,7 @@
 				<texturefocus border="0,2,0,2">button_outline_black_f.png</texturefocus>
 			    <texturenofocus border="0,2,0,2">button_outline_black.png</texturenofocus>
 				<onclick>Skin.Reset(FirstSettings)</onclick>
-				<onclick>Skin.ToggleSetting(HideSettingsManager2.1)</onclick> 
+				<onclick>Skin.ToggleSetting(HideSettingsManager2.2)</onclick> 
 				<onclick>Dialog.Close(1122)</onclick>
 				<onclick>XBMC.ReloadSkin()</onclick>
 				<onleft>503</onleft>

@@ -7,7 +7,7 @@
 		<include>CommonBackgroundAddons</include>
         <!--include>CommonBackground</include-->
 		<include>CommonNowPlayingBackground</include>
-		<include>CommonBackgroundOverlays</include>
+<!--	<include>CommonBackgroundOverlay</include> -->
         <control type="group">
             <posx>0</posx>
             <posy>0</posy>   <!-- old: 45 -->

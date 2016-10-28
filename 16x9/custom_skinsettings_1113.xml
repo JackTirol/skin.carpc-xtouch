@@ -3012,9 +3012,9 @@
 				        <onclick>Skin.Reset(HomePos3G)</onclick>
 						<onclick>Skin.SetNumeric(HomePos3G)</onclick>
 						<onup>609</onup>
-						<ondown></ondown>
+						<ondown>612</ondown>
 					</control>  
-					<control type="button" id="611">
+					<control type="button" id="612">
 						<height>50</height>
 			        	<width>440</width>
 						<font>font24_title</font>
@@ -3026,8 +3026,11 @@
 				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
 				        <onclick>Skin.Reset(HomePosOBD)</onclick>
 						<onclick>Skin.SetNumeric(HomePosOBD)</onclick>
+						<onup>610</onup>
+						<ondown></ondown>
 					</control>  
 			</control>
+			
 
 <!-- ### Magic Buttons ### -->
 		<control type="grouplist" id="615">
@@ -5001,12 +5004,14 @@
 				<onclick>Skin.ToggleSetting(HideHomeButtonConnect3g)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonConnect3g)</selected>
 				<onup>813</onup>
-				<ondown>815</ondown>
+				<ondown condition="!Control.IsVisible(815)">Control.SetFocus(816)</ondown>
+				<ondown condition="Control.IsVisible(815)">Control.SetFocus(815)</ondown>
 				<onleft>802</onleft>
 				<onright></onright>
 			</control>  
 
 			<control type="radiobutton" id="815">
+				<visible>System.HasAddon(plugin.program.wifimanager)</visible>
 				<description>ConnectWiFi</description>
 				<height>55</height>
 				<width>450</width>
@@ -5036,7 +5041,8 @@
 				<label>$LOCALIZE[31108]</label>
 				<onclick>Skin.ToggleSetting(HideHomeButtonWeather)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonWeather)</selected>
-				<onup>815</onup>
+				<onup condition="!Control.IsVisible(815)">Control.SetFocus(814)</onup>
+				<onup condition="Control.IsVisible(815)">Control.SetFocus(815)</onup>
 				<ondown>817</ondown>
 				<onleft>802</onleft>
 				<onright></onright>
@@ -5055,12 +5061,13 @@
 				<onclick>Skin.ToggleSetting(HideHomeButtonShutdownDialog)</onclick>
 				<selected>Skin.HasSetting(HideHomeButtonShutdownDialog)</selected>
 				<onup>816</onup>
-				<ondown>818</ondown>
+				<ondown condition="Control.IsVisible(818)">Control.SetFocus(818)</ondown>
 				<onleft>802</onleft>
 				<onright></onright>
 			</control>  
 
 			<control type="radiobutton" id="818">
+				<visible>System.HasAddon(plugin.program.carpc-xtouch)</visible>
 				<description>Skin Day-Night</description>
 				<height>55</height>
 				<width>450</width>

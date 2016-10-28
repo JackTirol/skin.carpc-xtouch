@@ -2,7 +2,7 @@
 	<onload>RunScript("special://skin/scripts/check_calibration.py")</onload>
 	<onunload condition="Container(9000).Hasfocus(2) | Container(9000).Hasfocus(3) | ControlGroup(9010).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(1)">ClearProperty(VideosDirectLink)</onunload>
-	<onload condition="!Skin.HasSetting(HideSettingsManager2.1)">ActivateWindow(1122)</onload>
+	<onload condition="!Skin.HasSetting(HideSettingsManager2.2)">ActivateWindow(1122)</onload>
 	<defaultcontrol always="true">3001</defaultcontrol>
 	<controls>
 		<include>CommonBackground</include>

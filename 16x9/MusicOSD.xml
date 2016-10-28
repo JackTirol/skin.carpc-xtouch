@@ -11,5 +11,6 @@
 	<controls>
 		<include>CommonBottomBar</include>   
 		<include>PlayerControlCommons</include>
+		<include>HomeButtonCommons</include>
 	</controls>
 </window>
