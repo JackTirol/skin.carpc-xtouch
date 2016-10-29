@@ -40,18 +40,18 @@
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
-				<!--<control type="label">
-					<posx>1072</posx>
-					<posy>2</posy>
-					<width>300</width>
+				<control type="label">
+					<posx>620</posx>
+					<posy>15</posy>
+					<width>450</width>
 					<height>52</height>
 					<font>font40_title</font>
 					<textcolor>white</textcolor>
-					<selectedcolor>selected</selectedcolor>
+					<selectedcolor>$VAR[CustomColorNofocus]</selectedcolor> 
 					<align>right</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label2]</label>
-				</control>-->
+				</control>
 				
 			</itemlayout>
 			<focusedlayout height="75" width="1110">
@@ -357,7 +357,7 @@
 					<width>210</width>
 					<height>25</height>
 					<font>font12</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -408,7 +408,7 @@
 					<width>200</width>
 					<height>25</height>
 					<font>font12</font>
-					<textcolor>black</textcolor>
+					<textcolor>$VAR[CustomColorFocus]</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -459,7 +459,7 @@
 					<height>34</height>
 					<font>font10</font>
 					<textcolor>grey2</textcolor>
-					<selectedcolor>$VAR[CustomColorFocus]</selectedcolor>
+					<selectedcolor>$VAR[CustomColorNofocus]</selectedcolor>
 					<align>center</align>
 					<info>ListItem.Label</info>
 				</control>
@@ -557,7 +557,7 @@
 					<width>216</width>
 					<height>34</height>
 					<font>font10</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<info>ListItem.Label</info>
@@ -681,7 +681,7 @@
 					<width>596</width>
 					<height>37</height>
 					<font>font30_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>$VAR[CustomColorNofocus]</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
@@ -727,7 +727,7 @@
 					<width>525</width>
 					<height>37</height>
 					<font>font30_title</font>
-					<textcolor>black</textcolor>
+					<textcolor>$VAR[CustomColorFocus]</textcolor>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
