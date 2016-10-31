@@ -71,3 +71,6 @@ v2.2.0
    - Added the option to display the output of a temperature sensor in the top left corner. Requires the addon '1-Wire Dashboard' (thanks again to hawkeyexp for another useful addon). For more informations about the addon see the file README_Addons.md, which is included in this folder. 
    - Added new icons and buttons to Textures.xbt to bring the look of the RadioFM (Nextgen) addon more in line with the look of the skin.
 - A lot of code cleaning and optimizations under the hood.
+
+v2.2.1
+- Bugfix: Corrected visibility of bottom bar. 

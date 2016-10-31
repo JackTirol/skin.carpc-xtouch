@@ -861,7 +861,7 @@
 	<include name="BottomBG">
 		<control type="image">
 			<include>Window_OpenClose_Animation_Zoom</include>
-			<visible>Skin.HasSetting(EnableBottomBG) + !Player.HasAudio</visible> 
+			<visible>Skin.HasSetting(EnableBottomBG) + !Skin.HasSetting(EnablePlayerButtonsBG)</visible> 
 			<description>Bottom Bar Background</description>
 			<posx>0</posx>
 			<posy>620</posy>
@@ -897,6 +897,20 @@
 				<texture diffuse="bottombar_bg_mask.png">$INFO[Skin.String(BottomBGTransparency)]</texture>
             </control>
         </control>
+        <control type="group">
+			<visible>Skin.HasSetting(EnableBottomBG) + [Skin.HasSetting(EnablePlayerButtonsBG)  + ![Player.HasAudio | Player.HasVideo]]</visible> 
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<description>Bottom Bar Background</description>
+				<posx>0</posx>
+				<posy>620</posy>
+				<width>1280</width>
+				<height>100</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<colordiffuse>$INFO[Skin.String(BottomBGColor)]</colordiffuse>
+				<texture diffuse="bottombar_bg_nomask.png">$INFO[Skin.String(BottomBGTransparency)]</texture>
+			</control>
+		</control>
 	</include>
 
 
@@ -1915,7 +1929,7 @@
             </control>
             <control type="label">
                 <visible>true</visible>
-                <posx>145r</posx>
+                <posx>135r</posx>
                 <posy>151</posy>
                 <width>ScreenWidth</width>
                 <height>52</height>
@@ -1927,7 +1941,7 @@
             </control>
             <control type="label">
                 <visible>true</visible>
-                <posx>115r</posx>
+                <posx>103r</posx>
                 <posy>151</posy>
                 <width>ScreenWidth</width>
                 <height>52</height>
@@ -3123,8 +3137,8 @@
     </include>
 
     <include name="KeyboardButton">
-        <width>99</width>
-        <height>99</height>
+        <width>95</width>
+        <height>95</height>
         <texturenofocus border="5">keyboardkeydark.png</texturenofocus>
         <texturefocus border="5">KeyboardKey.png</texturefocus>
         <align>center</align>
