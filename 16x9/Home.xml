@@ -304,7 +304,6 @@
 				<texture colordiffuse="$VAR[CustomColorNofocus]">info_bg.png</texture>
 				<include>Window_OpenClose_Animation_Zoom</include>
 			</control>
-			<include>BottomBG</include>
 			<include>RandomRepeatButtons</include>
 			<include>MusicPlayerTitle</include>
 			<include>MusicPlayerTitlewithButtons</include>
@@ -315,6 +314,7 @@
 			<include>RadioStationNameFix</include>
 		</control>
 
+		<include>CommonBottomBar</include>   
 		<include>BottomNowPLaying</include>
 		
 <!-- Submenu -->
@@ -601,7 +601,6 @@
 		<include>Time</include>				
 	</control>
 
-		<include>CommonBottomBar</include>   
 
    		<include>BehindDialogFadeOut</include>
    		

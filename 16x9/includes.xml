@@ -833,8 +833,9 @@
 
    	<include name="PlayerButtonsBGFix">
         <control type="group">
+	        <visible>Skin.HasSetting(EnablePlayerButtonsBG) + [Player.HasAudio | Player.HasVideo]</visible> 
+			<include>Window_OpenClose_Animation_Zoom</include>
             <control type="image">
-	            <visible>Player.HasAudio + Skin.HasSetting(EnablePlayerButtonsBG)</visible>
                 <description>Player Buttons Background</description>
                 <posx>436</posx>
                 <posy>-30</posy>
@@ -844,7 +845,6 @@
 				<texture colordiffuse="$INFO[Skin.String(PlayerButtonsBGColor)]">$INFO[Skin.String(PlayerButtonsBGTransparency)]</texture>
             </control>
              <control type="image">
-	            <visible>Player.HasAudio + Skin.HasSetting(EnablePlayerButtonsBG)</visible>
                 <description>Player Buttons Background</description>
                 <posx>436</posx>
                 <posy>-30</posy>
@@ -875,18 +875,8 @@
    	<include name="BottomBG2">
         <control type="group">
 	        <visible>Skin.HasSetting(EnableBottomBG) + [Skin.HasSetting(EnablePlayerButtonsBG) + [Player.HasAudio | Player.HasVideo]]</visible> 
+			<include>Window_OpenClose_Animation_Zoom</include>
             <control type="image">
-				<include>Window_OpenClose_Animation_Zoom</include>
-                <description>Bottom Bar Background Shadow</description>
-                <posx>0</posx>
-                <posy>620</posy>
-                <width>1280</width>
-                <height>100</height>
-	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture>bottombar_bg_shadow.png</texture>
-            </control>
-            <control type="image">
-				<include>Window_OpenClose_Animation_Zoom</include>
                 <description>Bottom Bar Background</description>
                 <posx>0</posx>
                 <posy>620</posy>
@@ -899,8 +889,8 @@
         </control>
         <control type="group">
 			<visible>Skin.HasSetting(EnableBottomBG) + [Skin.HasSetting(EnablePlayerButtonsBG)  + ![Player.HasAudio | Player.HasVideo]]</visible> 
+			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="image">
-				<include>Window_OpenClose_Animation_Zoom</include>
 				<description>Bottom Bar Background</description>
 				<posx>0</posx>
 				<posy>620</posy>
@@ -910,6 +900,16 @@
 				<colordiffuse>$INFO[Skin.String(BottomBGColor)]</colordiffuse>
 				<texture diffuse="bottombar_bg_nomask.png">$INFO[Skin.String(BottomBGTransparency)]</texture>
 			</control>
+            <control type="image">
+				<visible>Player.HasAudio | Player.HasVideo</visible> 
+                <description>Bottom Bar Background Shadow</description>
+                <posx>0</posx>
+                <posy>620</posy>
+                <width>1280</width>
+                <height>100</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture>bottombar_bg_shadow.png</texture>
+            </control>
 		</control>
 	</include>
 
