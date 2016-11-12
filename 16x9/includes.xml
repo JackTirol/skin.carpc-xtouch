@@ -2353,7 +2353,6 @@
 	        <include>Window_OpenClose_Animation_Slide_Down</include>
             <posx>0</posx>
             <posy>0</posy>
-<!--		<visible>!Window.IsActive(PlayerControls) + !Player.HasVideo</visible> -->
             <include>VisibleFadeEffect</include>
             <control type="button">
                 <description>Home Button</description>
@@ -2364,7 +2363,8 @@
                 <font>-</font>
                 <texturenofocus colordiffuse="$VAR[CustomColorNofocus]" border="5">icon_home.png</texturenofocus>
                 <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_home.png</texturefocus>
-				<onclick>Dialog.Close(MusicOSD,true)</onclick>
+				<onclick condition="Player.HasAudio">Dialog.Close(MusicOSD,true)</onclick>
+				<onclick condition="Player.HasVideo">Dialog.Close(VideoOSD,true)</onclick>
                 <onclick>ActivateWindow(Home)</onclick>
                 <ondown condition="Control.IsVisible(555)">Control.SetFocus(555)</ondown>
                 <ondown condition="Control.IsVisible(4101)">Control.SetFocus(4101)</ondown>
@@ -2374,31 +2374,6 @@
                 <ondown condition="Control.IsVisible(5001)">Control.SetFocus(5001)</ondown>
             </control>
 		</control>
-		<control type="group" id="666">
-            <include>Window_OpenClose_Animation_Slide_Down</include>
-            <posx>0</posx>
-            <posy>0</posy>
-            <visible>Player.HasVideo + !Window.IsActive(PlayerControls)</visible>
-            <include>VisibleFadeEffect</include>
-            <control type="button">
-                <description>Home Button</description>
-                <posx>5</posx>
-                <posy>5</posy>
-                <width>70</width>
-                <height>70</height>
-                <font>-</font>
-                <texturenofocus colordiffuse="$VAR[CustomColorNofocus]" border="5">icon_home.png</texturenofocus>
-                <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="5">icon_home.png</texturefocus>
-                <onclick>PlayerControl(Stop)</onclick>
-                <onclick>ActivateWindow(Home)</onclick>
-                <onclick>XBMC.ReloadSkin()</onclick>
-                <ondown condition="Control.IsVisible(555)">Control.SetFocus(555)</ondown>
-                <ondown condition="Control.IsVisible(4101)">Control.SetFocus(4101)</ondown>
-                <ondown condition="Control.IsVisible(87)">Control.SetFocus(87)</ondown>
-				<onright condition="Control.IsVisible(667)">667</onright>
-				<onright condition="Control.IsVisible(557)">Control.SetFocus(557)</onright>
-           </control>
-        </control>
     </include>
 
     <include name="OptionsButtonCommons">
