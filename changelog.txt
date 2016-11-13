@@ -74,3 +74,6 @@ v2.2.0
 
 v2.2.1
 - Bugfix: Corrected visibility of bottom bar. 
+
+v.2.2.2
+- Bugfixes and optimizations.
