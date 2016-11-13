@@ -5768,8 +5768,8 @@
 				<ondown>15</ondown>
 			</control>  
 			<control type="button" id="15">
-				<visible>Skin.HasSetting(OpenSettingsMenu1)</visible>
-				<description>Settings5 - Correction</description>
+				<visible>Skin.HasSetting(OpenSettingsMenu1) + System.HasAddon(plugin.program.carpc-xtouch)</visible>
+				<description>Settings5 - Day/Night-Mode</description>
 				<width>300</width>
 				<height>60</height>
 				<include>ButtonInfoDialogsCommonValues</include>
