@@ -2471,6 +2471,9 @@
 				<onclick>Skin.Reset(DayNightModus)</onclick>
 				<onclick>Skin.SetString(DayNightModus,day)</onclick>
 				<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,saveday)</onclick>
+				<onclick>Skin.SetString(SaveDayNight,1)</onclick>
+				<onclick>AlarmClock(SaveDayNight,Skin.Reset(SaveDayNight),00:05,silent)</onclick>
+				<onclick>Control.SetFocus(40)</onclick>
 				<onup>Control.SetFocus(440)</onup>
 				<onup>440</onup>
 				<onright>443</onright>
@@ -2493,6 +2496,9 @@
 				<onclick>Skin.Reset(DayNightModus)</onclick>
 				<onclick>Skin.SetString(DayNightModus,night)</onclick>
 				<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,savenight)</onclick>
+				<onclick>Skin.SetString(SaveDayNight,1)</onclick>
+				<onclick>AlarmClock(SaveDayNight,Skin.Reset(SaveDayNight),00:05,silent)</onclick>
+				<onclick>Control.SetFocus(40)</onclick>
 				<onup>Control.SetFocus(440)</onup>
 				<onup>440</onup>
 				<onleft>442</onleft>
@@ -2536,6 +2542,28 @@
 				<onup>444</onup>
 				<ondown></ondown>
 			</control>
+
+		    <control type="group">
+				<description>UpdateMessage</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<visible>Skin.String(SkinSettings,42) + Skin.String(SaveDayNight)</visible>
+				<control type="image">
+					<height>80</height>
+			   		<width>920</width>
+			   		<texture>dialog_back_black.png</texture>
+				</control>
+				<control type="label">
+					<description>Title</description>
+					<posx>0</posx>
+					<posy>10</posy>
+					<width>920</width>
+					<font>font28_title</font>
+					<height>100</height>
+					<align>center</align>
+					<label>[B]$LOCALIZE[31267][/B]</label>
+				</control>
+		    </control>
 
 		</control> 					
 

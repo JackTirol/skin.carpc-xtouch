@@ -1034,8 +1034,12 @@ msgctxt "#31265"
 msgid "Configure"
 msgstr ""
 
+msgctxt "#31267"
+msgid "Skin settings will be saved. Please wait..."
+msgstr ""
 
-#empty strings from id 31266 to 31299
+
+#empty strings from id 31269 to 31299
 #------------------------------------------------
 
 #Extra labels
