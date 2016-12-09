@@ -426,10 +426,11 @@
 					<texture>clock/hours/11-3.png</texture>
 				</control>		
 			</control>
+		</control>
 	</include>
 
 <!--Clock black  -->
-<include name="Clock_Hour_black">
+	<include name="Clock_Hour_black">
 		<control type="grouplist">
 			<posx>440</posx>
 			<posy>70</posy>
@@ -853,5 +854,6 @@
 					<texture>clock/hours_black/11-3.png</texture>
 				</control>		
 			</control>
+		</control>
 	</include>
 </includes>

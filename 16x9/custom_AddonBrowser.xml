@@ -5,9 +5,7 @@
     <controls>
 		<include>CommonBackground</include>
 		<include>CommonBackgroundAddons</include>
-        <!--include>CommonBackground</include-->
 		<include>CommonNowPlayingBackground</include>
-<!--	<include>CommonBackgroundOverlay</include> -->
         <control type="group">
             <posx>0</posx>
             <posy>0</posy>   <!-- old: 45 -->
@@ -740,7 +738,6 @@
 			
 			
 		</control>
-        <include>CommonNowPlaying</include>
         <include>MainWindowMouseButtons</include>
         <include>BehindDialogFadeOut</include>
         <control type="image">

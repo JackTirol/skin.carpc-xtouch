@@ -150,7 +150,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>55</height>
-			<font>font13</font>
+			<font>font24_title</font>
 			<textcolor>black</textcolor>
 			<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
@@ -160,7 +160,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>55</height>
-			<font>font13</font>
+			<font>font24_title</font>
 			<textcolor>black</textcolor>
 			<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
@@ -170,7 +170,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>55</height>
-			<font>font13</font>
+			<font>font24_title</font>
 			<textcolor>black</textcolor>
 			<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
@@ -184,7 +184,7 @@
 		</control>
 		<control type="label" id="7">
 			<height>50</height>
-			<font>font13_title</font>
+			<font>font24_title</font>
 			<label>-</label>
 			<textcolor>black</textcolor>
 			<align>center</align>
@@ -195,7 +195,7 @@
 			<height>55</height>
 			<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
 			<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-			<font>font13</font>
+			<font>font24_title</font>
 			<textcolor>black</textcolor>
 		</control>
 	</controls>

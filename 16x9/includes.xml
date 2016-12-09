@@ -13,7 +13,7 @@
     <include file="IncludesClockHours.xml" />
     <include file="includeshomebuttons.xml" />
     <include file="includeshomebuttonsfix.xml" />
-<!-- <include file="includesbuttoncontent.xml" /> -->
+	<include file="IncludesMainButtons.xml" />
     <include file="IncludesSkinColor.xml" />
     <include file="IncludesFocusColor.xml" />
     <include file="IncludesButtonBGColor.xml" />
@@ -27,6 +27,7 @@
     <include file="IncludesOutlineColor.xml" />
     <include file="IncludesBottomBGColor.xml" />
     <include file="IncludesPlayerButtonsBGColor.xml" />
+    <include file="IncludesSubmenuBGColor.xml" />
     <include file="IncludesSkinColor_First.xml" />
     <include file="IncludesFocusColor_First.xml" />
     <include file="IncludesIconTextColor_First.xml" />
@@ -355,10 +356,10 @@
                 <description>Home_1_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_1_mask.png">$INFO[Skin.String(Home1BG)]</texture>
+				<texture diffuse="home_1n_mask.png">$INFO[Skin.String(Home1BG)]</texture>
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -366,10 +367,32 @@
                 <description>Home_1_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_1_mask.png">$INFO[Skin.String(Home1BGFocus)]</texture>
+				<texture diffuse="home_1n_mask.png">$INFO[Skin.String(Home1BGFocus)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+                <description>Home_1_Background Nofocus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_1f_mask.png">$INFO[Skin.String(Home1BG)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
+                <description>Home_1_Background Focus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_1f_mask.png">$INFO[Skin.String(Home1BGFocus)]</texture>
             </control>
 	</include>
 	
@@ -380,10 +403,10 @@
                 <description>Home_2_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_2_mask.png">$INFO[Skin.String(Home2BG)]</texture>
+				<texture diffuse="home_2n_mask.png">$INFO[Skin.String(Home2BG)]</texture>
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -391,10 +414,32 @@
                 <description>Home_2_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_2_mask.png">$INFO[Skin.String(Home2BGFocus)]</texture>
+				<texture diffuse="home_2n_mask.png">$INFO[Skin.String(Home2BGFocus)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+                <description>Home_2_Background Nofocus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_2f_mask.png">$INFO[Skin.String(Home2BG)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
+                <description>Home_2_Background Focus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_2f_mask.png">$INFO[Skin.String(Home2BGFocus)]</texture>
             </control>
 	</include>
 	
@@ -405,10 +450,10 @@
                 <description>Home_3_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_3_mask.png">$INFO[Skin.String(Home3BG)]</texture>
+				<texture diffuse="home_3n_mask.png">$INFO[Skin.String(Home3BG)]</texture>
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -416,10 +461,32 @@
                 <description>Home_3_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_3_mask.png">$INFO[Skin.String(Home3BGFocus)]</texture>
+				<texture diffuse="home_3n_mask.png">$INFO[Skin.String(Home3BGFocus)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+                <description>Home_3_Background Nofocus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_3f_mask.png">$INFO[Skin.String(Home3BG)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
+                <description>Home_3_Background Focus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_3f_mask.png">$INFO[Skin.String(Home3BGFocus)]</texture>
             </control>
 	</include>
 
@@ -430,10 +497,10 @@
                 <description>Home_4_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_4_mask.png">$INFO[Skin.String(Home4BG)]</texture>
+				<texture diffuse="home_4n_mask.png">$INFO[Skin.String(Home4BG)]</texture>
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -441,10 +508,32 @@
                 <description>Home_4_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_4_mask.png">$INFO[Skin.String(Home4BGFocus)]</texture>
+				<texture diffuse="home_4n_mask.png">$INFO[Skin.String(Home4BGFocus)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+                <description>Home_4_Background Nofocus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_4f_mask.png">$INFO[Skin.String(Home4BG)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
+                <description>Home_4_Background Focus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_4f_mask.png">$INFO[Skin.String(Home4BGFocus)]</texture>
             </control>
 	</include>
 	
@@ -455,10 +544,10 @@
                 <description>Home_5_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_5_mask.png">$INFO[Skin.String(Home5BG)]</texture>
+				<texture diffuse="home_5n_mask.png">$INFO[Skin.String(Home5BG)]</texture>
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -466,10 +555,32 @@
                 <description>Home_5_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_5_mask.png">$INFO[Skin.String(Home5BGFocus)]</texture>
+				<texture diffuse="home_5n_mask.png">$INFO[Skin.String(Home5BGFocus)]</texture>
+            </control>
+             <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+                <description>Home_5_Background Nofocus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_5f_mask.png">$INFO[Skin.String(Home5BG)]</texture>
+            </control>
+             <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
+                <description>Home_5_Background Focus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_5f_mask.png">$INFO[Skin.String(Home5BGFocus)]</texture>
             </control>
 	</include>
 	
@@ -480,10 +591,10 @@
                 <description>Home_6_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_6_mask.png">$INFO[Skin.String(Home6BG)]</texture>
+				<texture diffuse="home_6n_mask.png">$INFO[Skin.String(Home6BG)]</texture>
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -491,10 +602,32 @@
                 <description>Home_6_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_6_mask.png">$INFO[Skin.String(Home6BGFocus)]</texture>
+				<texture diffuse="home_6n_mask.png">$INFO[Skin.String(Home6BGFocus)]</texture>
+            </control>
+             <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+                <description>Home_6_Background Nofocus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_6f_mask.png">$INFO[Skin.String(Home6BG)]</texture>
+            </control>
+             <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
+                <description>Home_6_Background Focus</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_6f_mask.png">$INFO[Skin.String(Home6BGFocus)]</texture>
             </control>
 	</include> 
 
@@ -511,7 +644,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_1_mask.png">$INFO[Skin.String(Home1BG)]</texture>
+				<texture diffuse="home_1f_mask.png">$INFO[Skin.String(Home1BG)]</texture>
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -522,7 +655,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_1_mask.png">$INFO[Skin.String(Home1BGFocus)]</texture>
+				<texture diffuse="home_1f_mask.png">$INFO[Skin.String(Home1BGFocus)]</texture>
             </control>
 	</include>
 	
@@ -536,7 +669,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_2_mask.png">$INFO[Skin.String(Home2BG)]</texture>
+				<texture diffuse="home_2f_mask.png">$INFO[Skin.String(Home2BG)]</texture>
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -547,7 +680,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_2_mask.png">$INFO[Skin.String(Home2BGFocus)]</texture>
+				<texture diffuse="home_2f_mask.png">$INFO[Skin.String(Home2BGFocus)]</texture>
             </control>
 	</include>
 	
@@ -561,7 +694,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_3_mask.png">$INFO[Skin.String(Home3BG)]</texture>
+				<texture diffuse="home_3f_mask.png">$INFO[Skin.String(Home3BG)]</texture>
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -572,7 +705,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_3_mask.png">$INFO[Skin.String(Home3BGFocus)]</texture>
+				<texture diffuse="home_3f_mask.png">$INFO[Skin.String(Home3BGFocus)]</texture>
             </control>
 	</include>
 
@@ -586,7 +719,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_4_mask.png">$INFO[Skin.String(Home4BG)]</texture>
+				<texture diffuse="home_4f_mask.png">$INFO[Skin.String(Home4BG)]</texture>
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -597,7 +730,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_4_mask.png">$INFO[Skin.String(Home4BGFocus)]</texture>
+				<texture diffuse="home_4f_mask.png">$INFO[Skin.String(Home4BGFocus)]</texture>
             </control>
 	</include>
 	
@@ -611,7 +744,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_5_mask.png">$INFO[Skin.String(Home5BG)]</texture>
+				<texture diffuse="home_5f_mask.png">$INFO[Skin.String(Home5BG)]</texture>
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -622,7 +755,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_5_mask.png">$INFO[Skin.String(Home5BGFocus)]</texture>
+				<texture diffuse="home_5f_mask.png">$INFO[Skin.String(Home5BGFocus)]</texture>
             </control>
 	</include>
 	
@@ -636,7 +769,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_6_mask.png">$INFO[Skin.String(Home6BG)]</texture>
+				<texture diffuse="home_6f_mask.png">$INFO[Skin.String(Home6BG)]</texture>
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
@@ -647,7 +780,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_6_mask.png">$INFO[Skin.String(Home6BGFocus)]</texture>
+				<texture diffuse="home_6f_mask.png">$INFO[Skin.String(Home6BGFocus)]</texture>
             </control>
 	</include> 
 
@@ -661,10 +794,21 @@
                 <description>Home_1_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_1_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_1n_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+                <description>Home_1_Background</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_1f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 	
@@ -675,10 +819,21 @@
                 <description>Home_2_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_2_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_2n_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+                <description>Home_2_Background</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_2f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 	
@@ -689,10 +844,21 @@
                 <description>Home_3_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_3_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_3n_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+                <description>Home_3_Background</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_3f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 
@@ -703,10 +869,21 @@
                 <description>Home_4_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_4_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_4n_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+                <description>Home_4_Background</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_4f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 	
@@ -717,10 +894,21 @@
                 <description>Home_5_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_5_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_5n_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+                <description>Home_5_Background</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_5f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 	
@@ -731,10 +919,21 @@
                 <description>Home_6_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
-                <width>576</width>
+                <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_6_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_6n_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+            </control>
+            <control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+                <description>Home_6_Background</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>588</width>
+                <height>136</height>
+	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture diffuse="home_6f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include> 
 
@@ -751,7 +950,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_1_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_1f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 	
@@ -765,7 +964,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_2_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_2f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 	
@@ -779,7 +978,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_3_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_3f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 
@@ -793,7 +992,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_4_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_4f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 	
@@ -807,7 +1006,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_5_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_5f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include>
 	
@@ -821,7 +1020,7 @@
                 <width>588</width>
                 <height>136</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
-				<texture diffuse="home_6_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
+				<texture diffuse="home_6f_mask.png" colordiffuse="$INFO[Skin.String(HBSolidColor)]">$INFO[Skin.String(HBTransparency)]</texture>
             </control>
 	</include> 
          
@@ -838,18 +1037,18 @@
             <control type="image">
                 <description>Player Buttons Background</description>
                 <posx>436</posx>
-                <posy>-30</posy>
+                <posy>130r</posy>
                 <width>406</width>
-                <height>121</height>
+                <height>130</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 				<texture colordiffuse="$INFO[Skin.String(PlayerButtonsBGColor)]">$INFO[Skin.String(PlayerButtonsBGTransparency)]</texture>
             </control>
              <control type="image">
                 <description>Player Buttons Background</description>
                 <posx>436</posx>
-                <posy>-30</posy>
+                <posy>130r</posy>
                 <width>406</width>
-                <height>121</height>
+                <height>130</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 				<texture>playerbuttons_reflection.png</texture>
             </control>
@@ -864,9 +1063,9 @@
 			<visible>Skin.HasSetting(EnableBottomBG) + !Skin.HasSetting(EnablePlayerButtonsBG)</visible> 
 			<description>Bottom Bar Background</description>
 			<posx>0</posx>
-			<posy>620</posy>
+			<posy>120r</posy>
 			<width>1280</width>
-			<height>100</height>
+			<height>120</height>
 			<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 			<colordiffuse>$INFO[Skin.String(BottomBGColor)]</colordiffuse>
 			<texture diffuse="bottombar_bg_nomask.png">$INFO[Skin.String(BottomBGTransparency)]</texture>
@@ -879,9 +1078,9 @@
             <control type="image">
                 <description>Bottom Bar Background</description>
                 <posx>0</posx>
-                <posy>620</posy>
+                <posy>120r</posy>
                 <width>1280</width>
-                <height>100</height>
+                <height>120</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 				<colordiffuse>$INFO[Skin.String(BottomBGColor)]</colordiffuse>
 				<texture diffuse="bottombar_bg_mask.png">$INFO[Skin.String(BottomBGTransparency)]</texture>
@@ -893,9 +1092,9 @@
 			<control type="image">
 				<description>Bottom Bar Background</description>
 				<posx>0</posx>
-				<posy>620</posy>
+				<posy>120r</posy>
 				<width>1280</width>
-				<height>100</height>
+				<height>120</height>
 				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 				<colordiffuse>$INFO[Skin.String(BottomBGColor)]</colordiffuse>
 				<texture diffuse="bottombar_bg_nomask.png">$INFO[Skin.String(BottomBGTransparency)]</texture>
@@ -904,9 +1103,9 @@
 				<visible>Player.HasAudio | Player.HasVideo</visible> 
                 <description>Bottom Bar Background Shadow</description>
                 <posx>0</posx>
-                <posy>620</posy>
+                <posy>120r</posy>
                 <width>1280</width>
-                <height>100</height>
+                <height>120</height>
 	            <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
 				<texture>bottombar_bg_shadow.png</texture>
             </control>
@@ -933,7 +1132,6 @@
 	<include name="Clock_Time">
 		<control type="grouplist">
 			<visible>Skin.HasSetting(Enable_Clock_Animation) + !Skin.HasSetting(Show_Clock_white) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]</visible>
-<!--		<animation effect="fade" start="0" end="100" time="200" delay="10000">WindowOpen</animation> -->
             <include>Window_OpenClose_Animation_Zoom</include>
 			<posx>432</posx>
 			<posy>78</posy>
@@ -958,7 +1156,7 @@
 					<texture>clock\minutes\$INFO[System.Time(mm)].png</texture>
 				</control>
 				<control type="image">
-					<description>Clock Housr</description>
+					<description>Clock Hours</description>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>416</width>
@@ -1517,7 +1715,7 @@
     </include>
 
 	<include name="RandomRepeatButtonsFix">
-		<control type="group">
+		<control type="group" id="9010">
             <visible>Player.HasAudio + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat)</visible>
 			<posx>1100</posx>
 			<posy>500</posy> 
@@ -1535,7 +1733,9 @@
 				<onleft>-</onleft>
 				<onright>607</onright>
 				<onup>3006</onup>
-				<ondown>9003</ondown>
+				<ondown>Control.SetFocus(3050)</ondown>
+				<ondown condition="Control.IsVisible(9003) + !Control.IsVisible(3050)">Control.SetFocus(9003)</ondown>
+				<ondown condition="Control.IsVisible(100) + !Control.IsVisible(3050)">Control.SetFocus(100)</ondown>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -1607,17 +1807,21 @@
 				<onleft>606</onleft>
 				<onright>-</onright>
 				<onup>3006</onup>
-				<ondown>9003</ondown>
+				<onup>3006</onup>
+				<ondown>Control.SetFocus(3050)</ondown>
+				<ondown condition="Control.IsVisible(9003) + !Control.IsVisible(3050)">Control.SetFocus(9003)</ondown>
+				<ondown condition="Control.IsVisible(100) + !Control.IsVisible(3050)">Control.SetFocus(100)</ondown>
 			</control>
 		</control>	
 	</include> 
 
 	<include name="RandomRepeatButtons">
-		<control type="group">
+		<control type="group" id="9010">
             <visible>Player.HasAudio + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideRandomRepeat)</visible>
 			<posx>1091</posx>
 			<posy>500</posy> 
 			<include>Window_OpenClose_Animation_Slide_Up</include>
+			<onup>3006</onup>
 			<control type="button" id="606">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -1630,8 +1834,8 @@
 				<onclick>XBMC.PlayerControl(Repeat)</onclick>
 				<onleft>-</onleft>
 				<onright>607</onright>
-				<onup>3006</onup>
-				<ondown>9003</ondown>
+				<ondown condition="Control.IsVisible(9003) + !Control.IsVisible(3050)">Control.SetFocus(9003)</ondown>
+				<ondown condition="Control.IsVisible(100) + !Control.IsVisible(3050)">Control.SetFocus(100)</ondown>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -1703,7 +1907,8 @@
 				<onleft>606</onleft>
 				<onright>-</onright>
 				<onup>3006</onup>
-				<ondown>9003</ondown>
+				<ondown condition="Control.IsVisible(9003) + !Control.IsVisible(3050)">Control.SetFocus(9003)</ondown>
+				<ondown condition="Control.IsVisible(100) + !Control.IsVisible(3050)">Control.SetFocus(100)</ondown>
 			</control>
 		</control>	
 	</include>
@@ -1774,7 +1979,6 @@
 
 	        <include>BottomBG2</include>
 	        <include>PlayerButtonsBGFix</include>
-            <include>CommonNowPlaying</include>
             <include>CommonVolumeBottom</include>
             <include>PlayerControlsAll</include>
             <include>PlayerControlsAll_2</include>
@@ -2009,10 +2213,10 @@
                 <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDPrevTrackNF.png</texturenofocus>
                 <onleft></onleft>
                 <onright>Control.SetFocus(602)</onright>
-                <onup condition="Control.IsVisible(50)">50</onup>
+				<onup condition="Control.IsVisible(50)">50</onup>
                 <onup condition="Control.IsVisible(500)">500</onup>
-                <onup condition="Control.IsVisible(3001)">3001</onup>
                 <onup condition="Control.IsVisible(4181)">4181</onup>
+                <onup condition="Control.IsVisible(3001)">3001</onup>
 				<onup condition="Control.IsVisible(87)">Control.SetFocus(87)</onup>
                 <onclick>PlayerControl(Previous)</onclick>
             </control>
@@ -2031,10 +2235,10 @@
                 <alttexturenofocus>OSDPlayNF.png</alttexturenofocus>
                 <onleft>Control.SetFocus(600)</onleft>
                 <onright>Control.SetFocus(603)</onright>
-                <onup condition="Control.IsVisible(50)">50</onup>
+				<onup condition="Control.IsVisible(50)">50</onup>
                 <onup condition="Control.IsVisible(500)">500</onup>
-                <onup condition="Control.IsVisible(3001)">3001</onup>
                 <onup condition="Control.IsVisible(4181)">4181</onup>
+                <onup condition="Control.IsVisible(3001)">3001</onup>
 				<onup condition="Control.IsVisible(87)">Control.SetFocus(87)</onup>
                 <onclick>PlayerControl(Play)</onclick>
             </control>
@@ -2049,10 +2253,10 @@
                 <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDStopNF.png</texturenofocus>
                 <onleft>Control.SetFocus(602)</onleft>
                 <onright>Control.SetFocus(605)</onright>
-                <onup condition="Control.IsVisible(50)">50</onup>
+				<onup condition="Control.IsVisible(50)">50</onup>
                 <onup condition="Control.IsVisible(500)">500</onup>
-                <onup condition="Control.IsVisible(3001)">3001</onup>
                 <onup condition="Control.IsVisible(4181)">4181</onup>
+                <onup condition="Control.IsVisible(3001)">3001</onup>
 				<onup condition="Control.IsVisible(87)">Control.SetFocus(87)</onup>
                 <onclick>PlayerControl(Stop)</onclick>
             </control>
@@ -2066,15 +2270,16 @@
                 <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDNextTrackNF.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDNextTrackNF.png</texturenofocus>
                 <onleft>Control.SetFocus(603)</onleft>
-                <onright condition="Control.IsVisible(9002)">9002</onright>
-                <onright condition="Control.IsVisible(9003)">9003</onright>
-				<onright condition="Control.IsVisible(4301)">Control.SetFocus(4301)</onright>
 				<onup condition="Control.IsVisible(50)">50</onup>
                 <onup condition="Control.IsVisible(500)">500</onup>
                 <onup condition="Control.IsVisible(4181)">4181</onup>
                 <onup condition="Control.IsVisible(3001)">3001</onup>
 				<onup condition="Control.IsVisible(87)">Control.SetFocus(87)</onup>
-                <onclick>PlayerControl(Next)</onclick>
+				<onright condition="Control.IsVisible(3050)">Control.SetFocus(3050)</onright>
+            	<onright condition="Control.IsVisible(9002)">9002</onright>
+            	<onright condition="Control.IsVisible(9003)">9003</onright>	
+				<onright condition="Control.IsVisible(4301)">Control.SetFocus(4301)</onright>
+               <onclick>PlayerControl(Next)</onclick>
             </control>
         </control>
     </include>
@@ -2153,13 +2358,14 @@
                 <texturefocus colordiffuse="$VAR[CustomColorFocus]">OSDNextTrackFO2.png</texturefocus>
                 <texturenofocus colordiffuse="$VAR[CustomColorNofocus]">OSDNextTrackNF2.png</texturenofocus>
                 <onleft>Control.SetFocus(603)</onleft>
-                <onright condition="Control.IsVisible(9002)">9002</onright>
-                <onright condition="Control.IsVisible(9003)">9003</onright>
-                <onright condition="Control.IsVisible(606)">606</onright>
+                <onright condition="Control.IsVisible(4301)">Control.SetFocus(4301)</onright>
+				<onright condition="Control.IsVisible(3050)">Control.SetFocus(3050)</onright>
+            	<onright condition="Control.IsVisible(9002)">9002</onright>
+            	<onright condition="Control.IsVisible(9003)">9003</onright>	
+				<onright condition="Control.IsVisible(4301)">Control.SetFocus(4301)</onright>
                 <onup condition="Control.IsVisible(50)">50</onup>
                 <onup condition="Control.IsVisible(500)">500</onup>
                 <onup condition="Control.IsVisible(3001)">3001</onup>
-                <onright condition="Control.IsVisible(4301)">Control.SetFocus(4301)</onright>
                 <onup condition="Control.IsVisible(4181)">4181</onup>
 				<onup condition="Control.IsVisible(87)">Control.SetFocus(87)</onup>
 				<ondown>Control.SetFocus(603)</ondown>
@@ -2647,16 +2853,21 @@
 
     <include name="SubMenuCommonLayout2">
         <include>Window_OpenClose_Animation_Slide_Up</include>
-        <animation effect="slide" start="0,0" end="0,0" time="0" condition="StringCompare(Container(9003).NumItems,7)">conditional</animation>
-        <animation effect="slide" start="0,0" end="75,0" time="0" condition="StringCompare(Container(9003).NumItems,6)">conditional</animation>
-        <animation effect="slide" start="0,0" end="150,0" time="0" condition="StringCompare(Container(9003).NumItems,5)">conditional</animation>
-        <animation effect="slide" start="0,0" end="225,0" time="0" condition="StringCompare(Container(9003).NumItems,4)">conditional</animation>
-        <animation effect="slide" start="0,0" end="300,0" time="0" condition="StringCompare(Container(9003).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="375,0" time="0" condition="StringCompare(Container(9003).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="450,0" time="0" condition="StringCompare(Container(9003).NumItems,1)">conditional</animation>
-       <posx>730</posx>
+        <animation effect="slide" start="0,0" end="158,0" time="0" condition="StringCompare(Container(9003).NumItems,12)">conditional</animation>
+        <animation effect="slide" start="0,0" end="224,0" time="0" condition="StringCompare(Container(9003).NumItems,11)">conditional</animation>
+        <animation effect="slide" start="0,0" end="290,0" time="0" condition="StringCompare(Container(9003).NumItems,10)">conditional</animation>
+        <animation effect="slide" start="0,0" end="356,0" time="0" condition="StringCompare(Container(9003).NumItems,9)">conditional</animation>
+        <animation effect="slide" start="0,0" end="422,0" time="0" condition="StringCompare(Container(9003).NumItems,8)">conditional</animation>
+        <animation effect="slide" start="0,0" end="488,0" time="0" condition="StringCompare(Container(9003).NumItems,7)">conditional</animation>
+        <animation effect="slide" start="0,0" end="554,0" time="0" condition="StringCompare(Container(9003).NumItems,6)">conditional</animation>
+        <animation effect="slide" start="0,0" end="620,0" time="0" condition="StringCompare(Container(9003).NumItems,5)">conditional</animation>
+        <animation effect="slide" start="0,0" end="686,0" time="0" condition="StringCompare(Container(9003).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="752,0" time="0" condition="StringCompare(Container(9003).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="818,0" time="0" condition="StringCompare(Container(9003).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="884,0" time="0" condition="StringCompare(Container(9003).NumItems,1)">conditional</animation>
+		<posx>240</posx>
         <posy>85r</posy>
-        <width>560</width>
+        <width>1000</width>
         <height>90</height>
         <pagecontrol>-</pagecontrol>
         <scrolltime>300</scrolltime>
@@ -2665,27 +2876,80 @@
 		<ondown>Control.SetFocus(100)</ondown>
 		<onleft>Control.Move(9003,-1)</onleft>
 		<onright>Control.Move(9003,1)</onright>
-        <itemlayout height="70" width="70">
+        <itemlayout height="66" width="66">
             <control type="image">
 		        <onup>3006</onup>
 				<ondown>3001</ondown>
                 <posx>0</posx>
                 <posy>4</posy>
-                <width>70</width>
-                <height>70</height>
+                <width>68</width>
+                <height>68</height>
                 <bordersize>6</bordersize>
                 <texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
             </control>
         </itemlayout>
-        <focusedlayout height="70" width="70">
+        <focusedlayout height="66" width="66">
 			<control type="image">
 		        <onup>3006</onup>
 				<ondown>3001</ondown>
                 <posx>0</posx>
                 <posy>4</posy>
-                <width>70</width>
-                <height>70</height>
+                <width>68</width>
+                <height>68</height>
+                <bordersize>6</bordersize>
+                <texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
+                <align>right</align>
+		    </control>  
+        </focusedlayout>
+    </include>
+
+    <include name="SubMenuCommonLayout3">
+        <include>Window_OpenClose_Animation_Slide_Up</include>
+        <animation effect="slide" start="0,0" end="158,0" time="0" condition="StringCompare(Container(9003).NumItems,12)">conditional</animation>
+        <animation effect="slide" start="0,0" end="224,0" time="0" condition="StringCompare(Container(9003).NumItems,11)">conditional</animation>
+        <animation effect="slide" start="0,0" end="290,0" time="0" condition="StringCompare(Container(9003).NumItems,10)">conditional</animation>
+        <animation effect="slide" start="0,0" end="356,0" time="0" condition="StringCompare(Container(9003).NumItems,9)">conditional</animation>
+        <animation effect="slide" start="0,0" end="422,0" time="0" condition="StringCompare(Container(9003).NumItems,8)">conditional</animation>
+        <animation effect="slide" start="0,0" end="488,0" time="0" condition="StringCompare(Container(9003).NumItems,7)">conditional</animation>
+        <animation effect="slide" start="0,0" end="554,0" time="0" condition="StringCompare(Container(9003).NumItems,6)">conditional</animation>
+        <animation effect="slide" start="0,0" end="620,0" time="0" condition="StringCompare(Container(9003).NumItems,5)">conditional</animation>
+        <animation effect="slide" start="0,0" end="686,0" time="0" condition="StringCompare(Container(9003).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="752,0" time="0" condition="StringCompare(Container(9003).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="818,0" time="0" condition="StringCompare(Container(9003).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="884,0" time="0" condition="StringCompare(Container(9003).NumItems,1)">conditional</animation>
+		<posx>280</posx>
+        <posy>85r</posy>
+        <width>1000</width>
+        <height>90</height>
+        <pagecontrol>-</pagecontrol>
+        <scrolltime>300</scrolltime>
+        <orientation>Horizontal</orientation>
+		<onup>Control.SetFocus(3006)</onup>
+		<ondown>Control.SetFocus(100)</ondown>
+		<onleft>Control.Move(9003,-1)</onleft>
+		<onright>Control.Move(9003,1)</onright>
+        <itemlayout height="66" width="66">
+            <control type="image">
+		        <onup>3006</onup>
+				<ondown>3001</ondown>
+                <posx>0</posx>
+                <posy>4</posy>
+                <width>68</width>
+                <height>68</height>
+                <bordersize>6</bordersize>
+                <texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[ListItem.Icon]</texture>
+                <align>right</align>
+            </control>
+        </itemlayout>
+        <focusedlayout height="66" width="66">
+			<control type="image">
+		        <onup>3006</onup>
+				<ondown>3001</ondown>
+                <posx>0</posx>
+                <posy>4</posy>
+                <width>68</width>
+                <height>68</height>
                 <bordersize>6</bordersize>
                 <texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
@@ -2737,6 +3001,439 @@
                 <bordersize>6</bordersize>
                 <texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
                 <align>right</align>
+		    </control>  
+        </focusedlayout>
+    </include>
+
+
+<!-- Submenu Panel Mid -->
+	<include name="SubMenuBGMid">
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,1)</visible> 
+				<description>Submenu Background</description>
+				<posx>589</posx>
+				<posy>110r</posy>
+				<width>114</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,2)</visible> 
+				<description>Submenu Background</description>
+				<posx>542</posx>
+				<posy>110r</posy>
+				<width>208</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,3)</visible> 
+				<description>Submenu Background</description>
+				<posx>495</posx>
+				<posy>110r</posy>
+				<width>302</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,4)</visible> 
+				<description>Submenu Background</description>
+				<posx>448</posx>
+				<posy>110r</posy>
+				<width>394</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,5)</visible> 
+				<description>Submenu Background</description>
+				<posx>401</posx>
+				<posy>110r</posy>
+				<width>490</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,6)</visible> 
+				<description>Submenu Background</description>
+				<posx>354</posx>
+				<posy>110r</posy>
+				<width>584</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,7)</visible> 
+				<description>Submenu Background</description>
+				<posx>307</posx>
+				<posy>110r</posy>
+				<width>680</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,8)</visible> 
+				<description>Submenu Background</description>
+				<posx>260</posx>
+				<posy>110r</posy>
+				<width>768</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,9)</visible> 
+				<description>Submenu Background</description>
+				<posx>213</posx>
+				<posy>110r</posy>
+				<width>862</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,10)</visible> 
+				<description>Submenu Background</description>
+				<posx>166</posx>
+				<posy>110r</posy>
+				<width>954</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,11)</visible> 
+				<description>Submenu Background</description>
+				<posx>119</posx>
+				<posy>110r</posy>
+				<width>1048</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,12)</visible> 
+				<description>Submenu Background</description>
+				<posx>71</posx>
+				<posy>110r</posy>
+				<width>1138</width>
+				<height>115</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+	</include>
+    <include name="SubMenuPanelMid">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+        <animation effect="slide" start="0,0" end="67,0" time="0" condition="StringCompare(Container(9003).NumItems,12)">conditional</animation>
+        <animation effect="slide" start="0,0" end="114,0" time="0" condition="StringCompare(Container(9003).NumItems,11)">conditional</animation>
+        <animation effect="slide" start="0,0" end="161,0" time="0" condition="StringCompare(Container(9003).NumItems,10)">conditional</animation>
+        <animation effect="slide" start="0,0" end="208,0" time="0" condition="StringCompare(Container(9003).NumItems,9)">conditional</animation>
+        <animation effect="slide" start="0,0" end="255,0" time="0" condition="StringCompare(Container(9003).NumItems,8)">conditional</animation>
+        <animation effect="slide" start="0,0" end="302,0" time="0" condition="StringCompare(Container(9003).NumItems,7)">conditional</animation>
+        <animation effect="slide" start="0,0" end="349,0" time="0" condition="StringCompare(Container(9003).NumItems,6)">conditional</animation>
+        <animation effect="slide" start="0,0" end="396,0" time="0" condition="StringCompare(Container(9003).NumItems,5)">conditional</animation>
+        <animation effect="slide" start="0,0" end="443,0" time="0" condition="StringCompare(Container(9003).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="490,0" time="0" condition="StringCompare(Container(9003).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="537,0" time="0" condition="StringCompare(Container(9003).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="584,0" time="0" condition="StringCompare(Container(9003).NumItems,1)">conditional</animation>
+		<visible>Skin.HasSetting(SubmenuIconsMid) + !Player.HasAudio + !Player.HasVideo</visible> 
+		<posx>0</posx>
+		<posy>110r</posy>
+		<width>screenwidth</width>
+		<height>115</height>
+		<pagecontrol>-</pagecontrol>
+		<orientation>Horizontal</orientation>
+		<itemgap>30</itemgap>
+		<onup>Control.SetFocus(3006)</onup>
+		<ondown></ondown>
+		<onleft>Control.Move(9004,-1)</onleft>
+		<onright>Control.Move(9004,1)</onright>
+		<align>right</align>
+		<itemlayout height="105" width="94">
+	        <control type="image">
+				<onup>3006</onup>
+				<ondown>3001</ondown>
+				<posx>20</posx>
+				<posy>15</posy>
+				<width>84</width>
+				<height>84</height>
+				<bordersize>10</bordersize>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[ListItem.Icon]</texture>
+				<align>right</align>
+			</control>
+        </itemlayout>
+        <focusedlayout>
+			<control type="image">
+				<onup>3006</onup>
+				<ondown>3001</ondown>
+				<posx>20</posx>
+				<posy>15</posy>
+				<width>85</width>
+				<height>85</height>
+				<bordersize>10</bordersize>
+				<texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
+				<align>right</align>
+		    </control>  
+        </focusedlayout>
+    </include>
+
+<!-- Submenu Panel Big -->
+	<include name="SubMenuBGBig">
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,1)</visible> 
+				<description>Submenu Background</description>
+				<posx>575</posx>
+				<posy>120r</posy>
+				<width>130</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,2)</visible> 
+				<description>Submenu Background</description>
+				<posx>520</posx>
+				<posy>120r</posy>
+				<width>240</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,3)</visible> 
+				<description>Submenu Background</description>
+				<posx>465</posx>
+				<posy>120r</posy>
+				<width>350</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,4)</visible> 
+				<description>Submenu Background</description>
+				<posx>410</posx>
+				<posy>120r</posy>
+				<width>460</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,5)</visible> 
+				<description>Submenu Background</description>
+				<posx>355</posx>
+				<posy>120r</posy>
+				<width>570</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,6)</visible> 
+				<description>Submenu Background</description>
+				<posx>300</posx>
+				<posy>120r</posy>
+				<width>680</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,7)</visible> 
+				<description>Submenu Background</description>
+				<posx>245</posx>
+				<posy>120r</posy>
+				<width>790</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,8)</visible> 
+				<description>Submenu Background</description>
+				<posx>190</posx>
+				<posy>120r</posy>
+				<width>900</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,9)</visible> 
+				<description>Submenu Background</description>
+				<posx>135</posx>
+				<posy>120r</posy>
+				<width>1010</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,10)</visible> 
+				<description>Submenu Background</description>
+				<posx>80</posx>
+				<posy>120r</posy>
+				<width>1120</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,11)</visible> 
+				<description>Submenu Background</description>
+				<posx>25</posx>
+				<posy>120r</posy>
+				<width>1230</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+			<control type="image">
+				<include>Window_OpenClose_Animation_Zoom</include>
+				<visible>Skin.HasSetting(EnableSubmenuBG) + Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo + StringCompare(Container(9003).NumItems,12)</visible> 
+				<description>Submenu Background</description>
+				<posx>0</posx>
+				<posy>120r</posy>
+				<width>1280</width>
+				<height>130</height>
+				<aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(CustomSubmenuBGColor)]">$INFO[Skin.String(SubmenuBGTransparency)]</texture>
+			</control>
+	</include>
+    <include name="SubMenuPanelBig">
+		<include>Window_OpenClose_Animation_Slide_Up</include>
+        <animation effect="slide" start="0,0" end="-30,0" time="0" condition="StringCompare(Container(9003).NumItems,12)">conditional</animation>
+        <animation effect="slide" start="0,0" end="20,0" time="0" condition="StringCompare(Container(9003).NumItems,11)">conditional</animation>
+        <animation effect="slide" start="0,0" end="75,0" time="0" condition="StringCompare(Container(9003).NumItems,10)">conditional</animation>
+        <animation effect="slide" start="0,0" end="130,0" time="0" condition="StringCompare(Container(9003).NumItems,9)">conditional</animation>
+        <animation effect="slide" start="0,0" end="185,0" time="0" condition="StringCompare(Container(9003).NumItems,8)">conditional</animation>
+        <animation effect="slide" start="0,0" end="240,0" time="0" condition="StringCompare(Container(9003).NumItems,7)">conditional</animation>
+        <animation effect="slide" start="0,0" end="295,0" time="0" condition="StringCompare(Container(9003).NumItems,6)">conditional</animation>
+        <animation effect="slide" start="0,0" end="350,0" time="0" condition="StringCompare(Container(9003).NumItems,5)">conditional</animation>
+        <animation effect="slide" start="0,0" end="405,0" time="0" condition="StringCompare(Container(9003).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="460,0" time="0" condition="StringCompare(Container(9003).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="515,0" time="0" condition="StringCompare(Container(9003).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="570,0" time="0" condition="StringCompare(Container(9003).NumItems,1)">conditional</animation>
+		<visible>Skin.HasSetting(SubmenuIconsBig) + !Player.HasAudio + !Player.HasVideo</visible> 
+		<posx>0</posx>
+		<posy>124r</posy>
+		<width>screenwidth</width>
+		<height>140</height>
+		<pagecontrol>-</pagecontrol>
+		<orientation>Horizontal</orientation>
+		<itemgap>30</itemgap>
+		<onup>Control.SetFocus(3006)</onup>
+		<ondown></ondown>
+		<onleft>Control.Move(9004,-1)</onleft>
+		<onright>Control.Move(9004,1)</onright>
+		<align>right</align>
+		<itemlayout height="120" width="110">
+	        <control type="image">
+				<onup>3006</onup>
+				<ondown>3001</ondown>
+				<posx>20</posx>
+				<posy>15</posy>
+				<width>100</width>
+				<height>100</height>
+				<bordersize>10</bordersize>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[ListItem.Icon]</texture>
+				<align>right</align>
+			</control>
+        </itemlayout>
+        <focusedlayout>
+			<control type="image">
+				<onup>3006</onup>
+				<ondown>3001</ondown>
+				<posx>20</posx>
+				<posy>15</posy>
+				<width>100</width>
+				<height>100</height>
+				<bordersize>10</bordersize>
+				<texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
+				<align>right</align>
+		    </control>  
+        </focusedlayout>
+    </include>
+
+<!-- Menu App Switcher -->
+    <include name="AppSwitcher">
+        <animation effect="slide" start="0,0" end="40,0" time="0" condition="StringCompare(Container(9003).NumItems,10)">conditional</animation>
+        <animation effect="slide" start="0,0" end="150,0" time="0" condition="StringCompare(Container(9003).NumItems,9)">conditional</animation>
+        <animation effect="slide" start="0,0" end="260,0" time="0" condition="StringCompare(Container(9003).NumItems,8)">conditional</animation>
+        <animation effect="slide" start="0,0" end="370,0" time="0" condition="StringCompare(Container(9003).NumItems,7)">conditional</animation>
+        <animation effect="slide" start="0,0" end="480,0" time="0" condition="StringCompare(Container(9003).NumItems,6)">conditional</animation>
+        <animation effect="slide" start="0,0" end="590,0" time="0" condition="StringCompare(Container(9003).NumItems,5)">conditional</animation>
+        <animation effect="slide" start="0,0" end="700,0" time="0" condition="StringCompare(Container(9003).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="810,0" time="0" condition="StringCompare(Container(9003).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="920,0" time="0" condition="StringCompare(Container(9003).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="1030,0" time="0" condition="StringCompare(Container(9003).NumItems,1)">conditional</animation>
+		<posx>0</posx>
+		<posy></posy>
+		<width>screenwidth</width>
+		<height></height>
+		<pagecontrol>-</pagecontrol>
+		<orientation>vertical</orientation>
+		<itemgap>30</itemgap>
+		<onup>Control.SetFocus(3006)</onup>
+		<ondown></ondown>
+		<onleft>Control.Move(9004,-1)</onleft>
+		<onright>Control.Move(9004,1)</onright>
+		<align>right</align>
+		<itemlayout height="195" width="195">
+	        <control type="image">
+				<onup>3006</onup>
+				<ondown>3001</ondown>
+				<posx>10</posx>
+				<posy>10</posy>
+				<width>170</width>
+				<height>170</height>
+				<bordersize>10</bordersize>
+				<texture colordiffuse="$VAR[CustomColorNofocus]">$INFO[ListItem.Icon]</texture>
+				<align>right</align>
+			</control>
+        </itemlayout>
+        <focusedlayout height="195" width="195">
+			<control type="image">
+				<onup>3006</onup>
+				<ondown>3001</ondown>
+				<posx>10</posx>
+				<posy>10</posy>
+				<width>170</width>
+				<height>170</height>
+				<bordersize>10</bordersize>
+				<texture colordiffuse="$VAR[CustomColorFocus]" border="5">$INFO[ListItem.Icon]</texture>
+				<align>right</align>
 		    </control>  
         </focusedlayout>
     </include>
@@ -2914,6 +3611,7 @@
         <pulseonselect>false</pulseonselect>
     </include>
 
+
     <include name="CommonNowPlaying">
 <!--	<control type="group">
 			<posx>220</posx>
@@ -3029,6 +3727,7 @@
 	         </control>
          </control>-->  
     </include>
+   
 
     <include name="ScrollOffsetLabel">
         <control type="group">

@@ -68,7 +68,7 @@
 					<posy>0</posy>
 					<width>560</width>
 					<height>60</height>
-					<font>font13</font>
+					<font>font24_title</font>
 					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
@@ -89,7 +89,7 @@
 					<posy>0</posy>
 					<width>560</width>
 					<height>60</height>
-					<font>font13</font>
+					<font>font24_title</font>
 					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
@@ -143,7 +143,7 @@
 					<posy>5</posy>
 					<width>540</width>
 					<height>30</height>
-					<font>font13</font>
+					<font>font24_title</font>
 					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
@@ -155,7 +155,7 @@
 					<posy>37</posy>
 					<width>540</width>
 					<height>58</height>
-					<font>font12</font>
+					<font>font22_title</font>
 					<textcolor>black</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Addon.Summary)]</label>
@@ -183,7 +183,7 @@
 					<posy>5</posy>
 					<width>550</width>
 					<height>30</height>
-					<font>font13</font>
+					<font>font22_title</font>
 					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>left</align>
@@ -195,7 +195,7 @@
 					<posy>37</posy>
 					<width>540</width>
 					<height>58</height>
-					<font>font12</font>
+					<font>font22_title</font>
 					<textcolor>black</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Property(Addon.Summary)]</label>

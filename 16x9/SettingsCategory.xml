@@ -8,7 +8,6 @@
 		<!-- <include>CommonBackgroundOverlay</include> -->
 		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
-
 		<include>BottomNowPLaying</include>
 		
 		<control type="label">
@@ -30,15 +29,15 @@
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
-			<include>16x9_xPos_Relocation</include>
-			<posx>37</posx>
+<!--		<include>16x9_xPos_Relocation</include> -->
+			<posx>150</posx>
 			<posy>105</posy>
 			<control type="grouplist" id="3">
 				<description>button area</description>
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>210</width>
-				<height>640</height>
+				<height>580</height>
 				<itemgap>-1</itemgap>
 				<onleft>5</onleft>
 				<onright>5</onright>
@@ -47,10 +46,10 @@
 			</control>
 			<control type="grouplist" id="5">
 				<description>control area</description>
-				<posx>225</posx>
+				<posx>220</posx>
 				<posy>0</posy>
 				<width>760</width>
-				<height>520</height>
+				<height>580</height>
 				<itemgap>0</itemgap>
 				<pagecontrol>37</pagecontrol>
 				<onleft>3</onleft>
@@ -63,7 +62,7 @@
 
 		<control type="button" id="10">
 			<description>Default Category Button</description>
-			<height>70</height>
+			<height>60</height>
 			<textoffsetx>5</textoffsetx>
 			<align>left</align>
 			<aligny>center</aligny>
@@ -78,8 +77,8 @@
 			<description>Default Button</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<height>60</height>
-			<font>font13</font>
+			<height>50</height>
+			<font>font14</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>black</focusedcolor>
 			<texturefocus border="5">ListFO.png</texturefocus>
@@ -89,8 +88,8 @@
 			<description>Default RadioButton</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<height>60</height>
-			<font>font13</font>
+			<height>50</height>
+			<font>font14</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>black</focusedcolor>
 			<texturefocus border="5">ListFO.png</texturefocus>
@@ -100,8 +99,8 @@
 			<description>Default SpinControlex</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<height>60</height>
-			<font>font13</font>
+			<height>50</height>
+			<font>font14</font>
 			<textcolor>white</textcolor>
 			<focusedcolor>black</focusedcolor>
 			<texturefocus border="5">ListFO.png</texturefocus>
@@ -114,6 +113,21 @@
 			<height>5</height>
 			<texture>separator.png</texture>
 		</control>
+			<control type="scrollbar" id="37">
+				<posx>1140</posx>
+				<posy>105</posy>
+				<width>45</width>
+				<height>580</height>
+				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<onleft>5</onleft>
+				<onright>9002</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control>
 		<control type="label" id="2">
 			<description>Fake Label so we can pass it on</description>
 			<posx>0</posx>

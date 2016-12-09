@@ -60,15 +60,12 @@
 				<visible>Container(9).HasNext</visible>
 			</control>
 		</control>
-
-
 		
 <!-- ### Color Tables ### -->
-
-<include>SkinColorList_First</include>
-<include>FocusColorList_First</include>
-<include>OutlineColorList_First</include>
-<include>IconTextColorList_First</include>
+		<include>SkinColorList_First</include>
+<!--	<include>FocusColorList_First</include>
+		<include>OutlineColorList_First</include>
+		<include>IconTextColorList_First</include> -->
 
 	</controls>
 

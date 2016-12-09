@@ -61,7 +61,7 @@
 				<align>right</align>
 				<font>font18_title</font>
 				<textcolor>white</textcolor>
-				<label>v2.2.0</label>
+				<label>v2.3</label>
 			</control>
 		</control>
 
@@ -406,7 +406,7 @@
 				<width>920</width>
 				<wrapmultiline>true</wrapmultiline>
 				<font>font13_title</font>
-				<label>$LOCALIZE[31225] [CR][CR]$LOCALIZE[31230]</label>
+				<label>$LOCALIZE[31225]</label>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>top</aligny>
@@ -421,191 +421,662 @@
 
 
 <!-- Home Button Auswahl -->
-		<control type="grouplist">
-			<description>Main Menu Buttons List 1</description>
-			<posx>40</posx>
-			<posy>300</posy>
-			<width>455</width>
-			<height>335</height>
-			<itemgap>-1</itemgap>
-			<pagecontrol></pagecontrol>
-			<onup></onup>
-			<ondown>311</ondown>
+		<control type="group">
+			<description>Main Buttons</description>
+			<posx>230</posx>
+			<posy>200</posy>
+			<width>460</width>
+			<height>200</height>
+			<pagecontrol>30</pagecontrol>
+			<onup>Control.SetFocus()</onup>
+			<ondown>Control.SetFocus(301)</ondown>
 			<onleft></onleft>
 			<onright></onright>
 			<visible>Skin.String(FirstSettings,3)</visible>
+					<control type="image">
+						<description>Main Button 1 active</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_1.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 2 active</description>
+						<posx>0</posx>
+						<posy>55</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_2.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 3 active</description>
+						<posx>0</posx>
+						<posy>110</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_3.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 4 active</description>
+						<posx>270</posx>
+						<posy>0</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_4.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 5 active</description>
+						<posx>270</posx>
+						<posy>55</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_5.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 6 active</description>
+						<posx>270</posx>
+						<posy>110</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_6.png</texture>
+					</control>
+
+					<control type="image">
+						<description>Main Button 1 active</description>
+						<visible>Skin.String(ConfigButton,1)</visible>
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_1_f.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 2 active</description>
+						<visible>Skin.String(ConfigButton,2)</visible>
+						<posx>0</posx>
+						<posy>55</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_2_f.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 3 active</description>
+						<visible>Skin.String(ConfigButton,3)</visible>
+						<posx>0</posx>
+						<posy>110</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_3_f.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 4 active</description>
+						<visible>Skin.String(ConfigButton,4)</visible>
+						<posx>270</posx>
+						<posy>0</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_4_f.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 5 active</description>
+						<visible>Skin.String(ConfigButton,5)</visible>
+						<posx>270</posx>
+						<posy>55</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_5_f.png</texture>
+					</control>
+					<control type="image">
+						<description>Main Button 6 active</description>
+						<visible>Skin.String(ConfigButton,6)</visible>
+						<posx>270</posx>
+						<posy>110</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<texture>hbicon_6_f.png</texture>
+					</control>
+
 					<control type="button" id="301">
-						<height>55</height>
-			        	<width>440</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31061]</label>  
-						<label2>$INFO[Skin.String(HomePosRadio)]</label2>
+						<description>Main Button 1</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<font>font13_title</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textoffsetx>13</textoffsetx>
+						<label>$VAR[HomeButtonLabel1]</label>
 						<textcolor>white</textcolor>
 						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				        <onclick>Skin.Reset(HomePosRadio)</onclick>
-						<onclick>Skin.SetNumeric(HomePosRadio)</onclick>
-						<onup></onup>
+						<texturefocus border="0,2,0,2">hbiconsoutline-1.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">hbiconsoutline-1.png</texturenofocus>
+				        <onclick>Skin.SetString(ConfigButton,1)</onclick>
+						<onup>Control.SetFocus(630)</onup>
 						<ondown>302</ondown>
-						<onright>305</onright>
+						<onleft></onleft>
+						<onright>304</onright>
 					</control>
 					<control type="button" id="302">
-						<height>55</height>
-			        	<width>440</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31062]</label>  
-						<label2>$INFO[Skin.String(HomePosMusic)]</label2>
+						<description>Main Button 2</description>
+						<posx>0</posx>
+						<posy>55</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<font>font13_title</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textoffsetx>13</textoffsetx>
+						<label>$VAR[HomeButtonLabel2]</label>
 						<textcolor>white</textcolor>
 						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				        <onclick>Skin.Reset(HomePosMusic)</onclick>
-						<onclick>Skin.SetNumeric(HomePosMusic)</onclick>
+						<texturefocus border="0,2,0,2">hbiconsoutline-2.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">hbiconsoutline-2.png</texturenofocus>
+				        <onclick>Skin.SetString(ConfigButton,2)</onclick>
 						<onup>301</onup>
 						<ondown>303</ondown>
-						<onright>306</onright>
-					</control>  
+						<onleft></onleft>
+						<onright>305</onright>
+					</control>
 					<control type="button" id="303">
-						<height>55</height>
-			        	<width>440</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31063]</label>  
-						<label2>$INFO[Skin.String(HomePosVideo)]</label2>
+						<description>Main Button 3</description>
+						<posx>0</posx>
+						<posy>110</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<font>font13_title</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textoffsetx>13</textoffsetx>
+						<label>$VAR[HomeButtonLabel3]</label>
 						<textcolor>white</textcolor>
 						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				        <onclick>Skin.Reset(HomePosVideo)</onclick>
-						<onclick>Skin.SetNumeric(HomePosVideo)</onclick>
+						<texturefocus border="0,2,0,2">hbiconsoutline-3.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">hbiconsoutline-3.png</texturenofocus>
+				        <onclick>Skin.SetString(ConfigButton,3)</onclick>
 						<onup>302</onup>
-						<ondown>304</ondown>
-						<onright>307</onright>
-					</control>  
+						<ondown>310</ondown>
+						<onleft></onleft>
+						<onright>306</onright>
+					</control>
 					<control type="button" id="304">
-						<height>55</height>
-			        	<width>440</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31064]</label>  
-						<label2>$INFO[Skin.String(HomePosNavi)]</label2>
+						<description>Main Button 4</description>
+						<posx>270</posx>
+						<posy>0</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<font>font13_title</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textoffsetx>13</textoffsetx>
+						<label>$VAR[HomeButtonLabel4]</label>
 						<textcolor>white</textcolor>
 						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				        <onclick>Skin.Reset(HomePosNavi)</onclick>
-						<onclick>Skin.SetNumeric(HomePosNavi)</onclick>
-						<onup>303</onup>
-						<ondown>Control.SetFocus(311)</ondown>
-						<onright>308</onright>
-					</control>  
+						<texturefocus border="0,2,0,2">hbiconsoutline-4.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">hbiconsoutline-4.png</texturenofocus>
+				        <onclick>Skin.SetString(ConfigButton,4)</onclick>
+						<onup></onup>
+						<ondown>305</ondown>
+						<onleft>301</onleft>
+						<onright></onright>
+					</control>
+					<control type="button" id="305">
+						<description>Main Button 5</description>
+						<posx>270</posx>
+						<posy>55</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<font>font13_title</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textoffsetx>13</textoffsetx>
+						<label>$VAR[HomeButtonLabel5]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">hbiconsoutline-5.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">hbiconsoutline-5.png</texturenofocus>
+				        <onclick>Skin.SetString(ConfigButton,5)</onclick>
+						<onup>304</onup>
+						<ondown>306</ondown>
+						<onleft>302</onleft>
+						<onright></onright>
+					</control>
+					<control type="button" id="306">
+						<description>Main Button 6</description>
+						<posx>270</posx>
+						<posy>110</posy>
+						<height>50</height>
+			        	<width>270</width>
+						<font>font13_title</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textoffsetx>13</textoffsetx>
+						<label>$VAR[HomeButtonLabel6]</label>
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">hbiconsoutline-6.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">hbiconsoutline-6.png</texturenofocus>
+				        <onclick>Skin.SetString(ConfigButton,6)</onclick>
+						<onup>305</onup>
+						<ondown>310</ondown>
+						<onleft>303</onleft>
+						<onright></onright>
+					</control>
 		</control>
 
-		<control type="grouplist">
-			<description>Main Menu Buttons List 2</description>
-			<posx>495</posx>
-			<posy>250</posy>
-			<width>4</width>
-			<height>335</height>
-			<itemgap>-1</itemgap>
-			<pagecontrol>30</pagecontrol>
-			<onup>9</onup>
-			<ondown>9001</ondown>
-			<onleft>2</onleft>
-			<onright>30</onright>
+<!--	<control type="label">
 			<visible>Skin.String(FirstSettings,3)</visible>
+			<posx>0</posx>
+			<posy>360</posy>
+			<height>50</height>
+			<width>460</width>
+			<font>font24_title</font>
+			<label>$LOCALIZE[31269]$INFO[Skin.String(ConfigButton)]:</label>
+			<textcolor>white</textcolor>
+			<align>center</align>
+			<aligny>center</aligny>
+		</control> -->
 
-			<control type="image">
-				<height>300</height>
-				<width>4</width>
-				<texture>separator_v.png</texture>
-			</control>  
-		</control>
-
-
-		<control type="grouplist">
-			<description>control area</description>
-			<posx>515</posx>
-			<posy>300</posy>
-			<width>455</width>
-			<height>335</height>
-			<itemgap>-1</itemgap>
-			<pagecontrol></pagecontrol>
-			<onup></onup>
-			<ondown>311</ondown>
+<!-- Main Menu Buttons Choice-->	
+<!-- Row 1 -->
+		<control type="group" id="310">
+			<description>button area</description>
+			<posx>80</posx>
+			<posy>390</posy>
+			<width>1100</width>
+			<height>250</height>
+			<pagecontrol>30</pagecontrol>
+			<onup>Control.SetFocus(630)</onup>
+			<ondown>Control.SetFocus(602)</ondown>
 			<onleft></onleft>
 			<onright></onright>
 			<visible>Skin.String(FirstSettings,3)</visible>
-					<control type="button" id="305">
-						<height>55</height>
-			        	<width>440</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31065]</label>  
-						<label2>$INFO[Skin.String(HomePosSettings)]</label2>
+					<control type="button" id="311">
+						<description>Music Path</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31062]</label>
 						<textcolor>white</textcolor>
 						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				        <onclick>Skin.Reset(HomePosSettings)</onclick>
-						<onclick>Skin.SetNumeric(HomePosSettings)</onclick>
-						<onup>304</onup>
-						<ondown>306</ondown>
-						<onleft>301</onleft>
-					</control>  
-					<control type="button" id="306">
-						<height>55</height>
-			        	<width>440</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31119]</label>  
-						<label2>$INFO[Skin.String(HomePosShutdown)]</label2>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,MusicPath)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,MusicPath)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,MusicPath)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,MusicPath)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,MusicPath)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,MusicPath)</onclick>
+						<onup>Control.SetFocus(306)</onup>
+						<ondown>316</ondown>
+						<onleft></onleft>
+						<onright>312</onright>
+					</control>
+					<control type="button" id="312">
+						<description>Music Artists</description>
+						<posx>170</posx>
+						<posy>0</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31241]</label>  
 						<textcolor>white</textcolor>
 						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				        <onclick>Skin.Reset(HomePosShutdown)</onclick>
-						<onclick>Skin.SetNumeric(HomePosShutdown)</onclick>
-						<onup>305</onup>
-						<ondown>307</ondown>
-						<onleft>302</onleft>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,MusicArtists)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,MusicArtists)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,MusicArtists)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,MusicArtists)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,MusicArtists)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,MusicArtists)</onclick>
+						<onup>Control.SetFocus(306)</onup>
+						<ondown>317</ondown>
+						<onleft>311</onleft>
+						<onright>313</onright>
 					</control>  
-					<control type="button" id="307">
-						<height>55</height>
-			        	<width>440</width>
-						<font>font24_title</font>
+					<control type="button" id="313">
+						<description>Music Albums</description>
+						<posx>340</posx>
+						<posy>0</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31242]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,MusicAlbums)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,MusicAlbums)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,MusicAlbums)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,MusicAlbums)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,MusicAlbums)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,MusicAlbums)</onclick>
+						<onup>Control.SetFocus(306)</onup>
+						<ondown>318</ondown>
+						<onleft>312</onleft>
+						<onright>314</onright>
+					</control>  
+					<control type="button" id="314">
+						<description>Music Genres</description>
+						<posx>510</posx>
+						<posy>0</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31243]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,MusicGenres)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,MusicGenres)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,MusicGenres)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,MusicGenres)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,MusicGenres)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,MusicGenres)</onclick>
+						<onup>Control.SetFocus(306)</onup>
+						<ondown>319</ondown>
+						<onleft>313</onleft>
+						<onright>315</onright>
+					</control>  
+					<control type="button" id="315">
+						<description>Radio</description>
+						<posx>680</posx>
+						<posy>0</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31061]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,RadioFM)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,RadioFM)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,RadioFM)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,RadioFM)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,RadioFM)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,RadioFM)</onclick>
+						<onup>Control.SetFocus(306)</onup>
+						<ondown>320</ondown>
+						<onleft>314</onleft>
+						<onright>316</onright>
+					</control>  
+<!-- Row 2 -->
+					<control type="button" id="316">
+						<description>Video</description>
+						<posx>0</posx>
+						<posy>70</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31063]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,Video)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,Video)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,Video)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,Video)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,Video)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,Video)</onclick>
+						<onup>311</onup>
+						<ondown>321</ondown>
+						<onleft>315</onleft>
+						<onright>317</onright>
+					</control>  
+					<control type="button" id="317">
+						<description>Navigation</description>
+						<posx>170</posx>
+						<posy>70</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31064]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,Navigation)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,Navigation)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,Navigation)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,Navigation)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,Navigation)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,Navigation)</onclick>
+						<onup>312</onup>
+						<ondown>322</ondown>
+						<onleft>316</onleft>
+						<onright>318</onright>
+					</control>  
+					<control type="button" id="318">
+						<description>Favourites</description>
+						<posx>340</posx>
+						<posy>70</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31072]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,Favourites)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,Favourites)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,Favourites)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,Favourites)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,Favourites)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,Favourites)</onclick>
+						<onup>313</onup>
+						<ondown>323</ondown>
+						<onleft>317</onleft>
+						<onright>319</onright>
+					</control>  
+					<control type="button" id="319">
+						<description>Programs</description>
+						<posx>510</posx>
+						<posy>70</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31071]</label>  
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <texturenofocus border="0,2,0,2">radiobuttonblack.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,Programs)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,Programs)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,Programs)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,Programs)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,Programs)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,Programs)</onclick>
+						<onup>314</onup>
+						<ondown>324</ondown>
+						<onleft>318</onleft>
+						<onright>320</onright>
+					</control>  
+					<control type="button" id="320">
+						<description>Weather</description>
+						<posx>680</posx>
+						<posy>70</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
 						<label>$LOCALIZE[31135]</label>  
-						<label2>$INFO[Skin.String(HomePosWeather)]</label2>
 						<textcolor>white</textcolor>
 						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				        <onclick>Skin.Reset(HomePosWeather)</onclick>
-						<onclick>Skin.SetNumeric(HomePosWeather)</onclick>
-						<onup>306</onup>
-						<ondown>308</ondown>
-						<onleft>303</onleft>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,Weather)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,Weather)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,Weather)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,Weather)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,Weather)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,Weather)</onclick>
+						<onup>315</onup>
+						<ondown>325</ondown>
+						<onleft>319</onleft>
+						<onright>321</onright>
 					</control>  
-					<control type="button" id="308">
-						<height>55</height>
-			        	<width>440</width>
-						<font>font24_title</font>
-						<label>$LOCALIZE[31136]</label>  
-						<label2>$INFO[Skin.String(HomePos3G)]</label2>
+<!-- Row 3 -->
+					<control type="button" id="321">
+						<description>OBD</description>
+						<posx>0</posx>
+						<posy>140</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31137]</label>  
 						<textcolor>white</textcolor>
 						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
-						<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
-				        <texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
-				        <onclick>Skin.Reset(HomePos3G)</onclick>
-						<onclick>Skin.SetNumeric(HomePos3G)</onclick>
-						<onup>307</onup>
-						<ondown>Control.SetFocus(311)</ondown>
-						<onleft>304</onleft>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,OBD)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,OBD)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,OBD)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,OBD)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,OBD)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,OBD)</onclick>
+						<onup>316</onup>
+						<ondown>331</ondown>
+						<onleft>320</onleft>
+						<onright>322</onright>
 					</control>  
+					<control type="button" id="322">
+						<description>Connect3G</description>
+						<posx>170</posx>
+						<posy>140</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31073]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,Connect3G)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,Connect3G)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,Connect3G)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,Connect3G)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,Connect3G)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,Connect3G)</onclick>
+						<onup>317</onup>
+						<ondown>331</ondown>
+						<onleft>321</onleft>
+						<onright>323</onright>
+					</control>  
+					<control type="button" id="323">
+						<description>Settings</description>
+						<posx>340</posx>
+						<posy>140</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31065]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,Settings)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,Settings)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,Settings)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,Settings)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,Settings)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,Settings)</onclick>
+						<onup>318</onup>
+						<ondown>331</ondown>
+						<onleft>322</onleft>
+						<onright>324</onright>
+					</control>  
+					<control type="button" id="324">
+						<description>Shutdown</description>
+						<posx>510</posx>
+						<posy>140</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31285]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,Shutdown)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,Shutdown)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,Shutdown)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,Shutdown)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,Shutdown)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,Shutdown)</onclick>
+						<onup>319</onup>
+						<ondown>331</ondown>
+						<onleft>323</onleft>
+						<onright>325</onright>
+					</control>  
+					<control type="button" id="325">
+						<description>Magic Button</description>
+						<posx>680</posx>
+						<posy>140</posy>
+						<height>60</height>
+			        	<width>160</width>
+						<font>font13_title</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<label>$LOCALIZE[31286]</label>  
+						<textcolor>white</textcolor>
+						<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
+						<texturefocus border="0,2,0,2">menuitem_black_f.png</texturefocus>
+				        <texturenofocus border="0,2,0,2">menuitem_black_nf.png</texturenofocus>
+				        <onclick condition="Skin.String(ConfigButton,1)">Skin.SetString(HomeButton1Value,ShutdownNoDialog)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,2)">Skin.SetString(HomeButton2Value,ShutdownNoDialog)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,3)">Skin.SetString(HomeButton3Value,ShutdownNoDialog)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,4)">Skin.SetString(HomeButton4Value,ShutdownNoDialog)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,5)">Skin.SetString(HomeButton5Value,ShutdownNoDialog)</onclick>
+				        <onclick condition="Skin.String(ConfigButton,6)">Skin.SetString(HomeButton6Value,ShutdownNoDialog)</onclick>
+						<onup>320</onup>
+						<ondown>331</ondown>
+						<onleft>324</onleft>
+						<onright></onright>
+					</control>
 			</control>
 
 
-					<control type="button" id="310">
+<!-- Buttons -->
+					<control type="button" id="330">
 						<visible>Skin.String(FirstSettings,3)</visible>
 						<posx>100</posx>
-						<posy>600</posy>
+						<posy>615</posy>
 						<height>60</height>
 					   	<width>180</width>
 						<font>font24_title</font>
@@ -619,16 +1090,16 @@
 						<onclick>Skin.Reset(FirstSettings)</onclick>
 						<onclick>Skin.SetString(FirstSettings,2)</onclick>
 						<onclick>Control.SetFocus(201)</onclick>
-						<onup>304</onup>
+						<onup>325</onup>
 						<ondown></ondown>
-						<onright>311</onright>
+						<onright>331</onright>
 					</control> 
 
 
-					<control type="button" id="311">
+					<control type="button" id="331">
 						<visible>Skin.String(FirstSettings,3)</visible>
 						<centerleft>500</centerleft>
-						<posy>600</posy>
+						<posy>615</posy>
 						<height>60</height>
 					   	<width>340</width>
 						<font>font24_title</font>
@@ -642,9 +1113,9 @@
 						<onclick>Skin.Reset(FirstSettings)</onclick>
 						<onclick>Skin.SetString(FirstSettings,4)</onclick>
 						<onclick>Control.SetFocus(401)</onclick>
-						<onup>308</onup>
+						<onup>325</onup>
 						<ondown></ondown>
-						<onleft>310</onleft>
+						<onleft>330</onleft>
 					</control> 
 
 
@@ -990,7 +1461,7 @@
 				<texturefocus border="0,2,0,2">button_outline_black_f.png</texturefocus>
 			    <texturenofocus border="0,2,0,2">button_outline_black.png</texturenofocus>
 				<onclick>Skin.Reset(FirstSettings)</onclick>
-				<onclick>Skin.ToggleSetting(HideSettingsManager2.2)</onclick> 
+				<onclick>Skin.ToggleSetting(HideSettingsManager2.3)</onclick> 
 				<onclick>Dialog.Close(1122)</onclick>
 				<onclick>XBMC.ReloadSkin()</onclick>
 				<onleft>503</onleft>

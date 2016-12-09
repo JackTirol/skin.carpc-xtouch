@@ -462,18 +462,18 @@ msgstr "1024x600 Display Verzerrung korrigieren"
 
 #------------------------------------------------
 
-#Custom Paths for Music and Video
+#Media Section
 
 msgctxt "#31125"
-msgid "Music and Video Source"
-msgstr "Musik und Video Quelle"
+msgid "Autostart"
+msgstr "Autostart"
 
 msgctxt "#31126"
-msgid "Music Source"
-msgstr "Musik Quelle"
+msgid "Autostart media after system start"
+msgstr "Nach Systemstart automatisch spielen"
 
 msgctxt "#31127"
-msgid " >> Custom Music Path:"
+msgid "Custom Music Path:"
 msgstr "Pfad zur Musik:"
 
 msgctxt "#31128"
@@ -481,12 +481,12 @@ msgid "Custom Video Destination"
 msgstr "Eigenes Video Verzeichnis"
 
 msgctxt "#31129"
-msgid " >> Custom Video Path:"
-msgstr " >> Pfad zu den Videos:"
+msgid "Custom Video Path:"
+msgstr "Pfad zu den Videos:"
 
 msgctxt "#31130"
-msgid "Music & Video"
-msgstr "Musik & Video"
+msgid "Media Options"
+msgstr "Medien Optionen"
 
 msgctxt "#31131"
 msgid "Custom Skin Colors"
@@ -501,8 +501,8 @@ msgid "Focus Color"
 msgstr "Focus Farbe"
 
 msgctxt "#31134"
-msgid "Sort your Main Buttons"
-msgstr "Buttons Anordnung"
+msgid "Main Menu Config"
+msgstr "Hauptmenü konfigurieren"
 
 msgctxt "#31135"
 msgid "Weather"
@@ -577,8 +577,8 @@ msgid "Main Menu Buttons Help"
 msgstr "Home Screen Buttons Hilfe"
 
 msgctxt "#31153"
-msgid "Magic Buttons"
-msgstr "Magic Buttons"
+msgid "Magic Button"
+msgstr "Magic Button"
 
 msgctxt "#31154"
 msgid "Home Screen Position"
@@ -871,8 +871,8 @@ msgid "Choose the standard color and focus color for the the active elements (bu
 msgstr "Definiere die Standard-Farbe wie auch die Focus-Farbe für die Bedienelemente (Buttons) des Skins. Für den Anfang ist Weiß als Standard-Farbe eine gute Wahl. Du kannst die Farben später jederzeit wieder ändern. [CR] [CR]Wähle eine Farbe aus der Farbtabelle aus oder gebe eine eigene Farbe in Hex-Code AARRGGBB ein (AA=Transparenz: FF=deckend; 00=voll transparent. RRGGBB=Farbcode). "
 
 msgctxt "#31225"
-msgid "Choose up to six main menu buttons for the home screen. You can alter your choice, the position of the buttons on the home screen as well as the style of the buttons later at any time."
-msgstr "Wähle bis zu sechs Hauptmenübuttons, die auf dem Homescreen erscheinen sollen. Die kannst deine Wahl, die Positionen der Buttons auf dem Screen sowie deren Aussehen später jederzeit ändern."
+msgid "Choose the main menu buttons for the home screen. You can alter your choice, the position of the buttons on the home screen as well as the style of the buttons later at any time."
+msgstr "Wähle die Hauptmenübuttons, die auf dem Homescreen erscheinen sollen. Die kannst deine Auswahl, die Positionen der Buttons auf dem Screen sowie deren Aussehen später jederzeit ändern."
 
 msgctxt "#31226"
 msgid "Skin Basic Settings"
@@ -935,16 +935,16 @@ msgid "Depending on the chosen screen background it may be reasonable to give th
 msgstr "Abhängig vom gewählten Bildschirmhintergrund kann es sinnvoll sein, den unteren Bildschirmbereich mit einer Farbfläche zu unterlegen. Dies kannst du hier einstellen. Wähle eine Farbe für den Hintergrund aus der Farbtabelle aus oder gebe eine eigene Farbe in Hex-Code AARRGGBB ein (AA=Transparenz: FF=deckend; 00=voll transparent. RRGGBB=Farbcode). Die voreingestellte Farbe ist Schwarz. Zusätzlich kann die Deckkraft des Hintergrundes eingestellt werden."
 
 msgctxt "#31241"
-msgid " >> Artists"
-msgstr " >> Interpreten"
+msgid "Artists"
+msgstr "Interpreten"
 
 msgctxt "#31242"
-msgid " >> Albums"
-msgstr " >> Alben"
+msgid "Albums"
+msgstr "Alben"
 
 msgctxt "#31243"
-msgid " >> Genre"
-msgstr " >> Genre"
+msgid "Genres"
+msgstr "Genres"
 
 msgctxt "#31244"
 msgid "Activate background pictures"
@@ -1038,8 +1038,100 @@ msgctxt "#31267"
 msgid "Skin settings will be saved. Please wait..."
 msgstr "Skin-Einstellungen werden gesichert. Bitte warten..."
 
+msgctxt "#31268"
+msgid "Here you can configure your main menu buttons. Tap on the button you wish to configure and then choose the function for this button."
+msgstr "Hier kannst du dein Hauptmenü konfigurieren. Klicke auf den Button, den du bearbeiten möchtest, und wähle anschleißend die Funktion für diesen Button aus."
 
-#empty strings from id 31269 to 31299
+msgctxt "#31269"
+msgid "Choose a function for button "
+msgstr "Wähle eine Funktion für Button "
+
+msgctxt "#31270"
+msgid "Options for button type "
+msgstr "Optionen für Button "
+
+msgctxt "#31271"
+msgid "Direct Shutdown"
+msgstr "Ausschalten"
+
+msgctxt "#31272"
+msgid "Choose Music Directory:"
+msgstr "Wähle Musikordner:"
+
+msgctxt "#31273"
+msgid "There are no options for this button."
+msgstr "Für diesen Button gibt es keine Optionen."
+
+msgctxt "#31274"
+msgid "Configure Button Shutdown"
+msgstr "Button Shutdown konfigurieren."
+
+msgctxt "#31275"
+msgid "Choose Video Directory:"
+msgstr "Wähle Filmeordner:"
+
+msgctxt "#31276"
+msgid "Set custom icon (80x80px):"
+msgstr "Eigenes Icon verwenden (80x80px):"
+
+msgctxt "#31277"
+msgid "Custom icon"
+msgstr "Eigenes Icon"
+
+msgctxt "#31278"
+msgid "Choose icon"
+msgstr "Wähle Icon"
+
+msgctxt "#31279"
+msgid "Reset icon"
+msgstr "Zurücksetzen"
+
+msgctxt "#31280"
+msgid "Autostart Playlist"
+msgstr "Autostart Playlist"
+
+msgctxt "#31281"
+msgid "Choose Playlist"
+msgstr "Wähle Playlist"
+
+msgctxt "#31282"
+msgid "Enable Submenu – Big Icons"
+msgstr "Aktiviere Submenü (groß)"
+
+msgctxt "#31283"
+msgid "Enable Submenu – Midsize Icons"
+msgstr "Aktiviere Submenü (mittel)"
+
+msgctxt "#31284"
+msgid "Submenu Configuration"
+msgstr "Submenü Konfiguration"
+
+msgctxt "#31285"
+msgid "Shutd. Dialog"
+msgstr "Aus m. Dialog"
+
+msgctxt "#31286"
+msgid "Direct Shutd."
+msgstr "Aus o. Dialog"
+
+msgctxt "#31287"
+msgid "Enable App Switcher"
+msgstr "Aktiviere App Switcher"
+
+msgctxt "#31288"
+msgid "Enable Submenu – Small Icons"
+msgstr "Aktiviere Submenü (klein)"
+
+msgctxt "#31289"
+msgid "Custom Logo"
+msgstr "Eigenes Logo"
+
+msgctxt "#31290"
+msgid "Choose Logo Image (max. 500x70px)"
+msgstr "Wähle ein Bild (max. 500x70px)"
+
+
+#empty strings from id 31291 to 31299
 #------------------------------------------------
 
 #Extra labels

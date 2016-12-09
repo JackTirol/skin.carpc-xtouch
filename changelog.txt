@@ -70,10 +70,22 @@ v2.2.0
 	  - Added scripts for connecting/disconnecting WiFi. 
    - Added the option to display the output of a temperature sensor in the top left corner. Requires the addon '1-Wire Dashboard' (thanks again to hawkeyexp for another useful addon). For more informations about the addon see the file README_Addons.md, which is included in this folder. 
    - Added new icons and buttons to Textures.xbt to bring the look of the RadioFM (Nextgen) addon more in line with the look of the skin.
-- A lot of code cleaning and optimizations under the hood.
 
 v2.2.1
 - Bugfix: Corrected visibility of bottom bar. 
 
 v.2.2.2
 - Bugfixes and optimizations.
+
+v.2.3.0
+- NEW: Completely changed the way how the main buttons are managed and configured. What does this mean: 
+   - Assigning buttons to the menu ist now much more intuitive. 
+   - It is also now possible to have a button multiple times on the home screen (for example you can have two, three or even more music buttons with different paths to music sources). 
+   - You even can have up to six free configurable Magic Buttons. So the main menu is to 100% self configurable by the user. 
+   - Every main button now can have a custom icon, replacing the standard icon. 
+   - Last but not least this all means a dramatically reduced amount of code needed for the main buttons. 
+- NEW: App switcher. The App Switcher is basically a window which contains all menu/submenu items in one screen. When activated it installs a small button at the bottom right of the screen, with which you can open it.
+- Increased the size of the submenu buttons to make them more touch friendly. You can choose between two sizes: 'big' and 'midsize'. They appear centered at the bottom of the home screen when no music or video is playing and therefore no player controls are visible. When there are player controls, the submenu buttons will shrink to a smaller size. The sub menu buttons can also have a coloured background (with free choosable color and transparency). 
+- Added option to place a logo (max. 500x70px) in the top left corner.
+- Added autostart option for a music playlist automatically starting after system start.
+- As usual: overall code cleaning and different optimizations on the whole skin.

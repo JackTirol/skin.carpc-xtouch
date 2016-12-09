@@ -61,27 +61,27 @@
 			<ondown>450</ondown>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="50" width="960">
+			<itemlayout height="60" width="960">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>960</width>
-					<height>51</height>
+					<height>60</height>
 					<texture border="5">MenuItemNF.png</texture>
 				</control>
 				<control type="image">
 					<posx>10</posx>
 					<posy>2</posy>
-					<width>47</width>
-					<height>47</height>
+					<width>57</width>
+					<height>57</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>70</posx>
+					<posx>80</posx>
 					<posy>0</posy>
 					<width>780</width>
-					<height>50</height>
-					<font>font13</font>
+					<height>60</height>
+					<font>font16</font>
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>black</textcolor>
@@ -89,27 +89,27 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="50" width="960">
+			<focusedlayout height="60" width="960">
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>960</width>
-					<height>51</height>
+					<height>60</height>
 					<texture border="5">MenuItemNF.png</texture>
 				</control>
 				<control type="image">
 					<posx>10</posx>
 					<posy>2</posy>
-					<width>47</width>
-					<height>47</height>
+					<width>57</width>
+					<height>57</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<posx>70</posx>
+					<posx>80</posx>
 					<posy>0</posy>
 					<width>780</width>
-					<height>50</height>
-					<font>font13</font>
+					<height>60</height>
+					<font>font16</font>
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>black</textcolor>
@@ -163,22 +163,22 @@
 			<ondown>451</ondown>
 			<pagecontrol>61</pagecontrol>
 			<scrolltime>200</scrolltime>
-			<itemlayout height="250" width="320">
+			<itemlayout height="330" width="320">
 				<control type="image">
 					<posx>10</posx>
 					<posy>0</posy>
 					<width>300</width>
-					<height>220</height>
+					<height>300</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="label">
-					<posx>160</posx>
-					<posy>220</posy>
+					<posx>10</posx>
+					<posy>300</posy>
 					<width>300</width>
 					<height>20</height>
-					<font>font12</font>
+					<font>font13</font>
 					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
@@ -186,22 +186,22 @@
 					<info>ListItem.Label</info>
 				</control>
 			</itemlayout>
-			<focusedlayout height="250" width="320">
+			<focusedlayout height="330" width="320">
 				<control type="image">
 					<posx>10</posx>
 					<posy>0</posy>
 					<width>300</width>
-					<height>220</height>
+					<height>300</height>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
 				<control type="label">
-					<posx>160</posx>
-					<posy>220</posy>
+					<posx>10</posx>
+					<posy>300</posy>
 					<width>300</width>
 					<height>20</height>
-					<font>font12</font>
+					<font>font13</font>
 					<textcolor>black</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>

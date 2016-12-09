@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1125">
+	<defaultcontrol always="true">9009</defaultcontrol>
+	<include>Window_OpenClose_Animation</include>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+<!-- Background -->
+		<control type="image">
+			<posx>20</posx>
+			<posy>20</posy>
+			<width>1240</width>
+			<height>680</height>
+			<texture border="5">dialog_back_black.png</texture>
+		</control>
+
+<!-- App icons -->
+		<control type="panel" id="9009">
+			<posx>60</posx>
+			<posy>60</posy>
+			<width>1180</width>
+			<height>600</height>
+			<onfocus>Control.SetFocus(3010)</onfocus>
+			<onleft>Control.Move(9009,-1)</onleft>
+			<onright>Control.Move(9009,1)</onright>
+			<onup>Control.SetFocus(3030)</onup>
+			<ondown>Control.SetFocus(3030)</ondown>
+			<orientation>vertical</orientation>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime></scrolltime>
+			<visible>true</visible>
+<!--		<visible>!Window.IsActive(PlayerControls) + Skin.HasSetting(EnableAppSwitcher) + !Skin.HasSetting(SubmenuIconsMid) + !Skin.HasSetting(SubmenuIconsBig)</visible> -->
+			<include>AppSwitcher</include>
+			<content>
+				<item id="3010">
+					<label></label>
+					<icon>button_music.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Music,$INFO[Skin.String(CustomMusicPath)])</onclick>
+				</item>
+				<item id="3011">
+					<label></label>
+					<icon>button_musicartist.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Music,musicdb://artists/,return)</onclick>
+				</item>
+				<item id="3012">
+					<label></label>
+					<icon>button_musicalbum.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Music,musicdb://albums/,return])</onclick>
+				</item>
+				<item id="3013">
+					<label></label>
+					<icon>button_musicgenre.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Music,musicdb://genres/,return)</onclick>
+				</item>
+				<item id="3014">
+					<label></label>
+					<icon>button_video.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Videos,$INFO[Skin.String(CustomVideoPath)])</onclick>
+				</item>
+				<item id="3015">
+					<label></label>
+					<icon>button_navi.png</icon>
+					<onclick>RunScript("plugin.program.navigation")</onclick>
+					<onclick>Dialog.Close(1125)</onclick>
+				</item>
+				<item id="3016">
+					<label></label>
+					<icon>button_radio.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>RunScript("plugin.program.radioFM")</onclick>
+				</item> 
+				<item id="3017">
+					<label></label>
+					<icon>button_settings.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Settings)</onclick>
+				</item>
+				<item id="3018">
+					<label></label>
+					<icon>button_filemanager.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(FileManager)</onclick>
+				</item>
+				<item id="3019">
+					<label></label>
+					<icon>button_3g.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(1118)</onclick>
+				</item>
+				<item id="3020">
+					<label></label>
+					<icon>button_obd.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>-</onclick>
+				</item>  
+				<item id="3021">
+					<label></label>
+					<icon>button_weather.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Weather)</onclick>
+				</item>
+				<item id="3022">
+					<label></label>
+					<icon>button_favs.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Favourites)</onclick>
+				</item>
+				<item id="3023">
+					<label></label>
+					<icon>button_apps.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(Programs,addons://sources/executable)</onclick>
+				</item>
+				<item id="3024">
+					<label></label>
+					<icon>button_wifi.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(1119)</onclick>
+				</item>
+				<item id="3025">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.String(DayNightModus,day)</visible>
+					<icon>button_day.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,day)</onclick>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
+				</item>
+				<item id="3026">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.String(DayNightModus,night)</visible>
+					<icon>button_night.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,night)</onclick>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
+				</item>
+				<item id="3027">
+					<label></label>
+					<icon>button_shutdown.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>ActivateWindow(1998)</onclick>
+				</item>  
+				<item id="3028">
+					<label></label>
+					<icon>icon_shutdownnodialog.png</icon>
+					<onclick>Dialog.Close(1125)</onclick>
+					<onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
+					<ondown>Control.SetFocus(3030)</ondown>
+				</item>  
+			</content>
+		</control>
+
+
+<!-- Close button -->
+        <control type="button" id="3030">
+            <posx>80r</posx>
+            <posy>80r</posy>
+            <width>60</width>
+            <height>60</height>
+            <texturenofocus colordiffuse="$VAR[CustomColorNofocus]" border="0,2,0,2">icon_close.png</texturenofocus>
+            <texturefocus colordiffuse="$VAR[CustomColorFocus]" border="0,2,0,2">icon_close.png</texturefocus>
+			<onclick>Dialog.Close(1125)</onclick>
+			<onup>Control.SetFocus(9009)</onup>
+        </control>
+        
+	</controls>
+</window>

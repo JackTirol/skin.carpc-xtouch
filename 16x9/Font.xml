@@ -23,6 +23,11 @@
 			<size>20</size>
 		</font>
 		<font>
+			<name>font14</name>
+			<filename>RobotoCondensed-Light.ttf</filename>
+			<size>23</size>
+		</font>
+		<font>
 			<name>font16</name>
 			<filename>RobotoCondensed-Light.ttf</filename>
 			<size>25</size>

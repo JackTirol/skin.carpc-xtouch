@@ -8,7 +8,6 @@
 	<control type="group">
 		<posx>0</posx>
 		<posy>0</posy>
-		<visible>Skin.String(ChangeSkinColor,1)</visible>
 		<control type="group">
 			<posx>0</posx>
 			<control type="image">
@@ -51,9 +50,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color1">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color1">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color1)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color1)</onclick>
 				<onup></onup>
 				<ondown>826</ondown>
 				<onleft>825</onleft>
@@ -67,9 +66,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color2">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color2">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color2)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color2)</onclick>
 				<onup></onup>
 				<ondown>827</ondown>
 				<onleft>811</onleft>
@@ -83,9 +82,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color3">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color3">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color3)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color3)</onclick>
 				<onup></onup>
 				<ondown>828</ondown>
 				<onleft>812</onleft>
@@ -99,9 +98,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color4">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color4">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color4)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color4)</onclick>
 				<onup></onup>
 				<ondown>829</ondown>
 				<onleft>813</onleft>
@@ -115,9 +114,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color5">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color5">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color5)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color5)</onclick>
 				<onup></onup>
 				<ondown>830</ondown>
 				<onleft>814</onleft>
@@ -131,9 +130,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color6">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color6">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color6)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color6)</onclick>
 				<onup></onup>
 				<ondown>831</ondown>
 				<onleft>815</onleft>
@@ -147,9 +146,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color7">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color7">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color7)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color7)</onclick>
 				<onup></onup>
 				<ondown>832</ondown>
 				<onleft>816</onleft>
@@ -163,9 +162,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color8">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color8">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color8)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color8)</onclick>
 				<onup></onup>
 				<ondown>833</ondown>
 				<onleft>817</onleft>
@@ -179,9 +178,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color9">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color9">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color9)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color9)</onclick>
 				<onup></onup>
 				<ondown>834</ondown>
 				<onleft>818</onleft>
@@ -195,9 +194,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color10">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color10">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color10)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color10)</onclick>
 				<onup></onup>
 				<ondown>835</ondown>
 				<onleft>819</onleft>
@@ -211,9 +210,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color11">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color11">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color11)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color11)</onclick>
 				<onup></onup>
 				<ondown>836</ondown>
 				<onleft>820</onleft>
@@ -227,9 +226,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color12">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color12">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color12)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color12)</onclick>
 				<onup></onup>
 				<ondown>837</ondown>
 				<onleft>821</onleft>
@@ -243,9 +242,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color13">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color13">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color13)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color13)</onclick>
  				<onup></onup>
 				<ondown>838</ondown>
 				<onleft>822</onleft>
@@ -259,9 +258,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color14">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color14">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color14)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color14)</onclick>
   				<onup></onup>
 				<ondown>839</ondown>
 				<onleft>823</onleft>
@@ -275,9 +274,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color15">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color15">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color15)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color15)</onclick>
  				<onup></onup>
 				<ondown>840</ondown>
 				<onleft>824</onleft>
@@ -305,9 +304,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color16">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color16">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color16)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color16)</onclick>
  				<onup>811</onup>
 				<ondown>841</ondown>
 				<onleft>825</onleft>
@@ -321,9 +320,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color17">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color17">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color17)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color17)</onclick>
  				<onup>812</onup>
 				<ondown>842</ondown>
 				<onleft>826</onleft>
@@ -337,9 +336,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color18">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color18">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color18)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color18)</onclick>
  				<onup>813</onup>
 				<ondown>843</ondown>
 				<onleft>827</onleft>
@@ -353,9 +352,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color19">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color19">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color19)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color19)</onclick>
  				<onup>814</onup>
 				<ondown>844</ondown>
 				<onleft>828</onleft>
@@ -369,9 +368,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color10">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color10">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color20)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color20)</onclick>
  				<onup>815</onup>
 				<ondown>845</ondown>
 				<onleft>829</onleft>
@@ -385,9 +384,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color21">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color21">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color21)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color21)</onclick>
  				<onup>816</onup>
 				<ondown>846</ondown>
 				<onleft>830</onleft>
@@ -401,9 +400,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color22">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color22">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color22)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color22)</onclick>
  				<onup>817</onup>
 				<ondown>847</ondown>
 				<onleft>831</onleft>
@@ -417,9 +416,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color23">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color23">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color23)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color23)</onclick>
  				<onup>818</onup>
 				<ondown>848</ondown>
 				<onleft>832</onleft>
@@ -433,9 +432,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color24">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color24">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color24)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color24)</onclick>
  				<onup>819</onup>
 				<ondown>849</ondown>
 				<onleft>833</onleft>
@@ -449,9 +448,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color25">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color25">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color25)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color25)</onclick>
  				<onup>820</onup>
 				<ondown>850</ondown>
 				<onleft>834</onleft>
@@ -465,9 +464,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color26">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color26">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color26)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color26)</onclick>
  				<onup>821</onup>
 				<ondown>851</ondown>
 				<onleft>835</onleft>
@@ -481,9 +480,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color27">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color27">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color27)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color27)</onclick>
  				<onup>822</onup>
 				<ondown>852</ondown>
 				<onleft>836</onleft>
@@ -497,9 +496,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color28">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color28">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color28)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color28)</onclick>
  				<onup>823</onup>
 				<ondown>853</ondown>
 				<onleft>837</onleft>
@@ -513,9 +512,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color29">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color29">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color29)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color29)</onclick>
  				<onup>824</onup>
 				<ondown>854</ondown>
 				<onleft>838</onleft>
@@ -529,9 +528,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color30">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color30">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color30)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color30)</onclick>
  				<onup>825</onup>
 				<ondown>855</ondown>
 				<onleft>839</onleft>
@@ -557,9 +556,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color31">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color31">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color31)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color31)</onclick>
  				<onup>826</onup>
 				<ondown>856</ondown>
 				<onleft>840</onleft>
@@ -573,9 +572,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color32">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color32">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color32)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color32)</onclick>
   				<onup>827</onup>
 				<ondown>857</ondown>
 				<onleft>841</onleft>
@@ -589,9 +588,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color33">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color33">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color33)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color33)</onclick>
   				<onup>828</onup>
 				<ondown>858</ondown>
 				<onleft>842</onleft>
@@ -605,9 +604,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color34">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color34">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color34)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color34)</onclick>
   				<onup>829</onup>
 				<ondown>859</ondown>
 				<onleft>843</onleft>
@@ -621,9 +620,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color35">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color35">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color35)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color35)</onclick>
   				<onup>830</onup>
 				<ondown>860</ondown>
 				<onleft>844</onleft>
@@ -637,9 +636,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color36">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color36">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color36)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color36)</onclick>
   				<onup>831</onup>
 				<ondown>861</ondown>
 				<onleft>845</onleft>
@@ -653,9 +652,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color37">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color37">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color37)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color37)</onclick>
   				<onup>832</onup>
 				<ondown>862</ondown>
 				<onleft>846</onleft>
@@ -669,9 +668,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color38">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color38">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color38)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color38)</onclick>
   				<onup>833</onup>
 				<ondown>863</ondown>
 				<onleft>847</onleft>
@@ -685,9 +684,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color39">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color39">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color39)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color39)</onclick>
   				<onup>834</onup>
 				<ondown>864</ondown>
 				<onleft>848</onleft>
@@ -701,9 +700,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color40">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color40">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color40)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color40)</onclick>
   				<onup>835</onup>
 				<ondown>865</ondown>
 				<onleft>849</onleft>
@@ -717,9 +716,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color41">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color41">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color41)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color41)</onclick>
   				<onup>836</onup>
 				<ondown>866</ondown>
 				<onleft>850</onleft>
@@ -733,9 +732,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color42">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color42">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color42)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color42)</onclick>
   				<onup>837</onup>
 				<ondown>867</ondown>
 				<onleft>851</onleft>
@@ -749,9 +748,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color43">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color43">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color43)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color43)</onclick>
   				<onup>838</onup>
 				<ondown>868</ondown>
 				<onleft>852</onleft>
@@ -765,9 +764,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color44">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color44">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color44)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color44)</onclick>
   				<onup>839</onup>
 				<ondown>869</ondown>
 				<onleft>853</onleft>
@@ -781,9 +780,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color45">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color45">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color45)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color45)</onclick>
   				<onup>840</onup>
 				<ondown>870</ondown>
 				<onleft>854</onleft>
@@ -811,9 +810,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color46">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color46">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color46)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color46)</onclick>
   				<onup>841</onup>
 				<ondown>871</ondown>
 				<onleft>855</onleft>
@@ -827,9 +826,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color47">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color47">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color47)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color47)</onclick>
   				<onup>842</onup>
 				<ondown>872</ondown>
 				<onleft>856</onleft>
@@ -843,9 +842,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color48">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color48">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color48)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color48)</onclick>
   				<onup>843</onup>
 				<ondown>873</ondown>
 				<onleft>857</onleft>
@@ -859,9 +858,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color49">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color49">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color49)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color49)</onclick>
   				<onup>844</onup>
 				<ondown>874</ondown>
 				<onleft>858</onleft>
@@ -875,9 +874,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color50">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color50">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color50)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color50)</onclick>
   				<onup>845</onup>
 				<ondown>875</ondown>
 				<onleft>859</onleft>
@@ -891,9 +890,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color51">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color51">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color51)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color51)</onclick>
   				<onup>846</onup>
 				<ondown>876</ondown>
 				<onleft>860</onleft>
@@ -907,9 +906,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color52">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color52">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color52)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color52)</onclick>
   				<onup>847</onup>
 				<ondown>877</ondown>
 				<onleft>861</onleft>
@@ -923,9 +922,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color53">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color53">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color53)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color53)</onclick>
   				<onup>848</onup>
 				<ondown>878</ondown>
 				<onleft>862</onleft>
@@ -939,9 +938,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color54">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color54">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color54)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color54)</onclick>
   				<onup>849</onup>
 				<ondown>879</ondown>
 				<onleft>863</onleft>
@@ -955,9 +954,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color55">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color55">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color55)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color55)</onclick>
    				<onup>850</onup>
 				<ondown>880</ondown>
 				<onleft>864</onleft>
@@ -971,9 +970,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color56">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color56">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color56)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color56)</onclick>
     			<onup>851</onup>
 				<ondown>881</ondown>
 				<onleft>865</onleft>
@@ -987,9 +986,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color57">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color57">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color7)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color7)</onclick>
     			<onup>852</onup>
 				<ondown>882</ondown>
 				<onleft>866</onleft>
@@ -1003,9 +1002,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color58">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color58">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color58)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color58)</onclick>
     			<onup>853</onup>
 				<ondown>883</ondown>
 				<onleft>867</onleft>
@@ -1019,9 +1018,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color59">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color59">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color59)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color59)</onclick>
     			<onup>854</onup>
 				<ondown>884</ondown>
 				<onleft>868</onleft>
@@ -1035,9 +1034,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color60">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color60">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color60)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color60)</onclick>
     			<onup>855</onup>
 				<ondown>885</ondown>
 				<onleft>869</onleft>
@@ -1065,9 +1064,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color61">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color61">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color61)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color61)</onclick>
     			<onup>856</onup>
 				<ondown>886</ondown>
 				<onleft>870</onleft>
@@ -1081,9 +1080,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color62">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color62">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color62)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color62)</onclick>
     			<onup>857</onup>
 				<ondown>887</ondown>
 				<onleft>871</onleft>
@@ -1097,9 +1096,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color63">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color63">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color63)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color63)</onclick>
     			<onup>858</onup>
 				<ondown>888</ondown>
 				<onleft>872</onleft>
@@ -1113,9 +1112,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color64">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color64">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color64)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color64)</onclick>
     			<onup>859</onup>
 				<ondown>889</ondown>
 				<onleft>873</onleft>
@@ -1129,9 +1128,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color65">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color65">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color65)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color65)</onclick>
     			<onup>860</onup>
 				<ondown>890</ondown>
 				<onleft>874</onleft>
@@ -1145,9 +1144,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color66">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color66">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color66)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color66)</onclick>
     			<onup>861</onup>
 				<ondown>891</ondown>
 				<onleft>875</onleft>
@@ -1161,9 +1160,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color67">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color67">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color67)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color67)</onclick>
     			<onup>862</onup>
 				<ondown>892</ondown>
 				<onleft>876</onleft>
@@ -1177,9 +1176,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color68">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color68">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color68)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color68)</onclick>
      			<onup>863</onup>
 				<ondown>893</ondown>
 				<onleft>877</onleft>
@@ -1193,9 +1192,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color69">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color69">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color69)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color69)</onclick>
       			<onup>864</onup>
 				<ondown>894</ondown>
 				<onleft>878</onleft>
@@ -1209,9 +1208,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color70">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color70">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color70)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color70)</onclick>
        			<onup>865</onup>
 				<ondown>895</ondown>
 				<onleft>879</onleft>
@@ -1225,9 +1224,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color71">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color71">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color71)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color71)</onclick>
         		<onup>866</onup>
 				<ondown>896</ondown>
 				<onleft>880</onleft>
@@ -1241,9 +1240,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color72">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color72">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color72)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color72)</onclick>
          		<onup>867</onup>
 				<ondown>897</ondown>
 				<onleft>881</onleft>
@@ -1257,9 +1256,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color73">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color73">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color73)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color73)</onclick>
          		<onup>868</onup>
 				<ondown>898</ondown>
 				<onleft>882</onleft>
@@ -1273,9 +1272,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color74">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color74">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color74)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color74)</onclick>
          		<onup>869</onup>
 				<ondown>899</ondown>
 				<onleft>883</onleft>
@@ -1289,9 +1288,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color75">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color75">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color75)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color75)</onclick>
          		<onup>870</onup>
 				<ondown>900</ondown>
 				<onleft>884</onleft>
@@ -1319,9 +1318,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color76">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color76">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color76)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color76)</onclick>
          		<onup>871</onup>
 				<ondown>901</ondown>
 				<onleft>885</onleft>
@@ -1335,9 +1334,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color77">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color77">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color77)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color77)</onclick>
          		<onup>872</onup>
 				<ondown>902</ondown>
 				<onleft>886</onleft>
@@ -1351,9 +1350,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color78">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color78">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color78)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color78)</onclick>
           		<onup>873</onup>
 				<ondown>903</ondown>
 				<onleft>887</onleft>
@@ -1367,9 +1366,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color79">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color79">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color79)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color79)</onclick>
           		<onup>874</onup>
 				<ondown>904</ondown>
 				<onleft>888</onleft>
@@ -1383,9 +1382,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color80">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color80">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color80)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color80)</onclick>
            		<onup>875</onup>
 				<ondown>905</ondown>
 				<onleft>889</onleft>
@@ -1399,9 +1398,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color81">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color81">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color81)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color81)</onclick>
             	<onup>876</onup>
 				<ondown>906</ondown>
 				<onleft>890</onleft>
@@ -1415,9 +1414,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color82">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color82">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color82)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color82)</onclick>
             	<onup>877</onup>
 				<ondown>907</ondown>
 				<onleft>891</onleft>
@@ -1431,9 +1430,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color83">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color83">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color83)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color83)</onclick>
             	<onup>878</onup>
 				<ondown>908</ondown>
 				<onleft>892</onleft>
@@ -1447,9 +1446,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color84">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color84">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color84)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color84)</onclick>
              	<onup>879</onup>
 				<ondown>909</ondown>
 				<onleft>893</onleft>
@@ -1463,9 +1462,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color85">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color85">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color85)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color85)</onclick>
               	<onup>880</onup>
 				<ondown>910</ondown>
 				<onleft>894</onleft>
@@ -1479,9 +1478,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color86">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color86">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color86)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color86)</onclick>
               	<onup>881</onup>
 				<ondown>911</ondown>
 				<onleft>895</onleft>
@@ -1495,9 +1494,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color87">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color87">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color87)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color87)</onclick>
               	<onup>882</onup>
 				<ondown>912</ondown>
 				<onleft>896</onleft>
@@ -1511,9 +1510,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color88">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color88">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color88)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color88)</onclick>
               	<onup>883</onup>
 				<ondown>913</ondown>
 				<onleft>897</onleft>
@@ -1527,9 +1526,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color89">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color89">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color89)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color89)</onclick>
               	<onup>884</onup>
 				<ondown>914</ondown>
 				<onleft>898</onleft>
@@ -1543,9 +1542,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color90">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color90">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color90)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color90)</onclick>
               	<onup>885</onup>
 				<ondown>915</ondown>
 				<onleft>899</onleft>
@@ -1573,9 +1572,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color91">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color91">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color91)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color91)</onclick>
                	<onup>886</onup>
 				<ondown>916</ondown>
 				<onleft>900</onleft>
@@ -1589,9 +1588,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color92">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color92">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color92)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color92)</onclick>
                	<onup>887</onup>
 				<ondown>917</ondown>
 				<onleft>901</onleft>
@@ -1605,9 +1604,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color93">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color93">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color93)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color93)</onclick>
                	<onup>888</onup>
 				<ondown>918</ondown>
 				<onleft>902</onleft>
@@ -1621,9 +1620,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color94">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color94">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color94)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color94)</onclick>
                	<onup>889</onup>
 				<ondown>919</ondown>
 				<onleft>903</onleft>
@@ -1637,9 +1636,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color95">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color95">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color95)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color95)</onclick>
                	<onup>890</onup>
 				<ondown>920</ondown>
 				<onleft>904</onleft>
@@ -1653,9 +1652,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color96">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color96">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color96)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color96)</onclick>
                 <onup>891</onup>
 				<ondown>921</ondown>
 				<onleft>905</onleft>
@@ -1669,9 +1668,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color97">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color97">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color97)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color97)</onclick>
                 <onup>892</onup>
 				<ondown>922</ondown>
 				<onleft>906</onleft>
@@ -1685,9 +1684,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color98">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color98">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color98)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color98)</onclick>
                 <onup>893</onup>
 				<ondown>923</ondown>
 				<onleft>907</onleft>
@@ -1701,9 +1700,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color99">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color99">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color99)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color99)</onclick>
                 <onup>894</onup>
 				<ondown>924</ondown>
 				<onleft>908</onleft>
@@ -1717,9 +1716,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color100">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color100">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color100)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color100)</onclick>
                 <onup>895</onup>
 				<ondown>925</ondown>
 				<onleft>909</onleft>
@@ -1733,9 +1732,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color101">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color101">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color101)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color101)</onclick>
                 <onup>896</onup>
 				<ondown>926</ondown>
 				<onleft>910</onleft>
@@ -1749,9 +1748,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color102">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color102">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color102)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color102)</onclick>
                 <onup>897</onup>
 				<ondown>927</ondown>
 				<onleft>911</onleft>
@@ -1765,9 +1764,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color103">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color103">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color103)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color103)</onclick>
                 <onup>898</onup>
 				<ondown>928</ondown>
 				<onleft>912</onleft>
@@ -1781,9 +1780,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color104">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color104">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color104)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color104)</onclick>
                 <onup>899</onup>
 				<ondown>929</ondown>
 				<onleft>913</onleft>
@@ -1797,9 +1796,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color105">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color105">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color105)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color105)</onclick>
                 <onup>900</onup>
 				<ondown>930</ondown>
 				<onleft>914</onleft>
@@ -1827,9 +1826,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color106">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color106">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color106)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color106)</onclick>
                 <onup>901</onup>
 				<ondown>931</ondown>
 				<onleft>915</onleft>
@@ -1843,9 +1842,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color107">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color107">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color107)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color107)</onclick>
                 <onup>902</onup>
 				<ondown>932</ondown>
 				<onleft>916</onleft>
@@ -1859,9 +1858,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color108">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color108">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color108)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color108)</onclick>
                 <onup>903</onup>
 				<ondown>933</ondown>
 				<onleft>917</onleft>
@@ -1875,9 +1874,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color109">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color109">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color109)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color109)</onclick>
                 <onup>904</onup>
 				<ondown>934</ondown>
 				<onleft>918</onleft>
@@ -1891,9 +1890,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color110">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color110">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color110)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color110)</onclick>
                 <onup>905</onup>
 				<ondown>935</ondown>
 				<onleft>919</onleft>
@@ -1907,9 +1906,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color111">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color111">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color111)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color111)</onclick>
                 <onup>906</onup>
 				<ondown>936</ondown>
 				<onleft>920</onleft>
@@ -1923,9 +1922,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color112">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color112">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color112)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color112)</onclick>
                 <onup>907</onup>
 				<ondown>937</ondown>
 				<onleft>921</onleft>
@@ -1939,9 +1938,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color113">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color113">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color113)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color113)</onclick>
                 <onup>908</onup>
 				<ondown>938</ondown>
 				<onleft>922</onleft>
@@ -1955,9 +1954,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color114">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color114">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color114)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color114)</onclick>
                 <onup>909</onup>
 				<ondown>939</ondown>
 				<onleft>923</onleft>
@@ -1971,9 +1970,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color115">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color115">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color115)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color115)</onclick>
                 <onup>910</onup>
 				<ondown>940</ondown>
 				<onleft>924</onleft>
@@ -1987,9 +1986,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color116">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color116">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color116)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color116)</onclick>
                 <onup>911</onup>
 				<ondown>941</ondown>
 				<onleft>925</onleft>
@@ -2003,9 +2002,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color117">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color117">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color117)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color117)</onclick>
                 <onup>912</onup>
 				<ondown>942</ondown>
 				<onleft>926</onleft>
@@ -2019,9 +2018,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color118">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color118">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color118)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color118)</onclick>
                 <onup>913</onup>
 				<ondown>943</ondown>
 				<onleft>927</onleft>
@@ -2035,9 +2034,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color119">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color119">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color119)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color119)</onclick>
                 <onup>914</onup>
 				<ondown>944</ondown>
 				<onleft>928</onleft>
@@ -2051,9 +2050,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color120">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color120">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color120)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color120)</onclick>
                 <onup>915</onup>
 				<ondown>945</ondown>
 				<onleft>929</onleft>
@@ -2081,9 +2080,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color121">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color121">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color121)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color121)</onclick>
                 <onup>916</onup>
 				<ondown>950</ondown>
 				<onleft>930</onleft>
@@ -2097,9 +2096,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color122">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color122">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color122)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color122)</onclick>
                 <onup>917</onup>
 				<ondown>946</ondown>
 				<onleft>931</onleft>
@@ -2113,9 +2112,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color123">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color123">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color123)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color123)</onclick>
                 <onup>918</onup>
 				<ondown>950</ondown>
 				<onleft>932</onleft>
@@ -2129,9 +2128,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color124">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color124">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color124)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color124)</onclick>
                 <onup>919</onup>
 				<ondown>950</ondown>
 				<onleft>933</onleft>
@@ -2145,9 +2144,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color125">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color125">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color125)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color125)</onclick>
                 <onup>920</onup>
 				<ondown>950</ondown>
 				<onleft>934</onleft>
@@ -2161,9 +2160,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color126">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color126">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color126)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color126)</onclick>
                 <onup>921</onup>
 				<ondown>950</ondown>
 				<onleft>935</onleft>
@@ -2177,9 +2176,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color127">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color127">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color127)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color127)</onclick>
                 <onup>922</onup>
 				<ondown>950</ondown>
 				<onleft>936</onleft>
@@ -2193,9 +2192,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color128">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color128">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color128)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color128)</onclick>
                 <onup>923</onup>
 				<ondown>950</ondown>
 				<onleft>937</onleft>
@@ -2209,9 +2208,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color129">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color129">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color129)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color129)</onclick>
                 <onup>924</onup>
 				<ondown>950</ondown>
 				<onleft>938</onleft>
@@ -2225,9 +2224,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color130">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color130">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color130)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color130)</onclick>
                 <onup>925</onup>
 				<ondown>950</ondown>
 				<onleft>939</onleft>
@@ -2241,9 +2240,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color131">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color131">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color131)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color131)</onclick>
                 <onup>926</onup>
 				<ondown>950</ondown>
 				<onleft>940</onleft>
@@ -2257,9 +2256,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color132">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color132">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color132)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color132)</onclick>
                 <onup>927</onup>
 				<ondown>950</ondown>
 				<onleft>941</onleft>
@@ -2273,9 +2272,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color133">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color133">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color133)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color133)</onclick>
                 <onup>928</onup>
 				<ondown>950</ondown>
 				<onleft>942</onleft>
@@ -2289,9 +2288,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color134">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color134">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color134)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color134)</onclick>
                 <onup>929</onup>
 				<ondown>950</ondown>
 				<onleft>943</onleft>
@@ -2305,9 +2304,9 @@
                 <bordersize></bordersize>
                 <texturenofocus colordiffuse="Color135">button-nofocus.png</texturenofocus>
                 <texturefocus colordiffuse="Color135">button-focus.png</texturefocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus,Color135)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor],Color135)</onclick>
                 <onup>930</onup>
 				<ondown>950</ondown>
 				<onleft>944</onleft>
@@ -2344,12 +2343,12 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31191]</label>  
 				<textcolor>white</textcolor>
-				<focusedcolor>$VAR[CustomColorNofocus]</focusedcolor>
+				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline_black.png</texturefocus>
 			    <texturenofocus border="0,2,0,2">button_outline_black_f.png</texturenofocus>
-			    <onclick>Skin.Reset(CustomColorNofocus)</onclick>
+			    <onclick>Skin.Reset($VAR[SetColor])</onclick>
 			    <onclick>Control.SetFocus(952)</onclick>
-				<onclick>Skin.SetString(CustomColorNofocus)</onclick>
+				<onclick>Skin.SetString($VAR[SetColor])</onclick>
                 <onup>945</onup>
 				<ondown>951</ondown>
 				<onleft></onleft>
@@ -2367,6 +2366,7 @@
 				<aligny>center</aligny>
 			</control>
             <control type="image">
+            	<visible>Skin.String(ChangeSkinColor,1)</visible>
                 <description>Farbfeld</description>
 				<posx>700</posx>
 				<posy>15</posy>
@@ -2374,7 +2374,40 @@
                 <posy>0</posy>
                 <width>100</width>
                 <height>40</height>
-                <texture colordiffuse="$VAR[CustomColorNofocus]">button-nofocus.png</texture>
+                <texture colordiffuse="$INFO[Skin.String(CustomColorNofocus)]">button-nofocus.png</texture>
+            </control>
+	        <control type="image">
+            	<visible>Skin.String(ChangeFocusColor,1)</visible>
+                <description>Farbfeld</description>
+				<posx>700</posx>
+				<posy>15</posy>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>100</width>
+                <height>40</height>
+                <texture colordiffuse="$INFO[Skin.String(CustomColorFocus)]">button-nofocus.png</texture>
+            </control>
+            <control type="image">
+            	<visible>Skin.String(ChangeIconTextColor,1)</visible>
+                <description>Farbfeld</description>
+				<posx>700</posx>
+				<posy>15</posy>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>100</width>
+                <height>40</height>
+                <texture colordiffuse="$INFO[Skin.String(CustomColorHomebuttons)]">button-nofocus.png</texture>
+            </control>
+            <control type="image">
+            	<visible>Skin.String(ChangeOutlineColor,1)</visible>
+                <description>Farbfeld</description>
+				<posx>700</posx>
+				<posy>15</posy>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>100</width>
+                <height>40</height>
+                <texture colordiffuse="$INFO[Skin.String(HBOutlineColor)]">button-nofocus.png</texture>
             </control>
 				
 		</control>
@@ -2399,7 +2432,7 @@
 				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline2.png</texturefocus>
 				<texturenofocus border="0,2,0,2">button_outline2.png</texturenofocus>
-			    <onclick>Skin.SetString(CustomColorNofocus,white)</onclick>
+			    <onclick>Skin.SetString($VAR[SetColor],white)</onclick>
                 <onup>950</onup>
 				<ondown></ondown>
 				<onleft></onleft>
@@ -2415,9 +2448,11 @@
 				<focusedcolor>$VAR[CustomColorFocus]</focusedcolor>
 				<texturefocus border="0,2,0,2">button_outline2.png</texturefocus>
 				<texturenofocus border="0,2,0,2">button_outline2.png</texturenofocus>
-				<onclick>ActivateWindow(1122)</onclick>
 				<onclick>Skin.Reset(ChangeSkinColor)</onclick>
-				<onclick>Skin.SetString(FirstSettings,2)</onclick>
+				<onclick>Skin.Reset(ChangeFocusColor)</onclick>
+				<onclick>Skin.Reset(ChangeIconTextColor)</onclick>
+				<onclick>Skin.Reset(ChangeOutlineColor)</onclick>
+				<onclick>ActivateWindow(1122)</onclick>
 				<onclick>Dialog.Close(1130)</onclick>
                 <onup>950</onup>
 				<ondown></ondown>

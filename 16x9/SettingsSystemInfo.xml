@@ -48,7 +48,7 @@
 				<ondown>9000</ondown>
 				<control type="button" id="95">
 					<description>Button Summary Values</description>
-					<height>53</height>
+					<height>63</height>
 					<width>210</width>
 					<textoffsetx>15</textoffsetx>
 					<align>right</align>
@@ -62,7 +62,7 @@
 					<label>20037</label>
 				</control>
 				<control type="button" id="94">
-					<height>52</height>
+					<height>62</height>
 					<width>210</width>
 					<textoffsetx>15</textoffsetx>
 					<align>right</align>
@@ -77,7 +77,7 @@
 				</control>
 				<control type="button" id="96">
 					<description>Button Network</description>
-					<height>52</height>
+					<height>62</height>
 					<width>210</width>
 					<textoffsetx>15</textoffsetx>
 					<align>right</align>
@@ -92,7 +92,7 @@
 				</control>
 				<control type="button" id="97">
 					<description>Button Video</description>
-					<height>52</height>
+					<height>62</height>
 					<width>210</width>
 					<textoffsetx>15</textoffsetx>
 					<align>right</align>
@@ -107,7 +107,7 @@
 				</control>
 				<control type="button" id="98">
 					<description>Button Hardware</description>
-					<height>52</height>
+					<height>62</height>
 					<width>210</width>
 					<textoffsetx>15</textoffsetx>
 					<align>right</align>
@@ -128,7 +128,7 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>660</width>
-					<height>45</height>
+					<height>55</height>
 					<texture border="5">ListNF.png</texture>
 					<visible>!IsEmpty(Control.GetLabel(2))</visible>
 				</control>
@@ -137,17 +137,17 @@
 					<posx>7</posx>
 					<posy>0</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>45</posy>
 					<width>660</width>
-					<height>45</height>
+					<height>55</height>
 					<texture border="5">ListNF.png</texture>
 					<visible>!IsEmpty(Control.GetLabel(3))</visible>
 				</control>
@@ -156,11 +156,11 @@
 					<posx>7</posx>
 					<posy>45</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -175,11 +175,11 @@
 					<posx>7</posx>
 					<posy>90</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -194,17 +194,17 @@
 					<posx>7</posx>
 					<posy>135</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>180</posy>
 					<width>660</width>
-					<height>45</height>
+					<height>55</height>
 					<texture border="5">ListNF.png</texture>
 					<visible>!IsEmpty(Control.GetLabel(6))</visible>
 				</control>
@@ -213,17 +213,17 @@
 					<posx>7</posx>
 					<posy>180</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>225</posy>
 					<width>660</width>
-					<height>45</height>
+					<height>55</height>
 					<texture border="5">ListNF.png</texture>
 					<visible>!IsEmpty(Control.GetLabel(7))</visible>
 				</control>
@@ -236,13 +236,13 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>270</posy>
 					<width>660</width>
-					<height>45</height>
+					<height>55</height>
 					<texture border="5">ListNF.png</texture>
 					<visible>!IsEmpty(Control.GetLabel(8))</visible>
 				</control>
@@ -251,17 +251,17 @@
 					<posx>7</posx>
 					<posy>270</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>315</posy>
 					<width>660</width>
-					<height>45</height>
+					<height>55</height>
 					<texture border="5">ListNF.png</texture>
 					<visible>!IsEmpty(Control.GetLabel(9))</visible>
 				</control>
@@ -270,17 +270,17 @@
 					<posx>7</posx>
 					<posy>315</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>360</posy>
 					<width>660</width>
-					<height>45</height>
+					<height>55</height>
 					<texture border="5">ListNF.png</texture>
 					<visible>!IsEmpty(Control.GetLabel(10))</visible>
 				</control>
@@ -289,17 +289,17 @@
 					<posx>7</posx>
 					<posy>360</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>405</posy>
 					<width>660</width>
-					<height>45</height>
+					<height>55</height>
 					<texture border="5">ListNF.png</texture>
 					<visible>!IsEmpty(Control.GetLabel(11))</visible>
 				</control>
@@ -308,11 +308,11 @@
 					<posx>7</posx>
 					<posy>405</posy>
 					<width>645</width>
-					<height>45</height>
+					<height>55</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>-</label>
-					<font>font12</font>
+					<font>font14</font>
 				</control>
 			</control>
 			<control type="group">
@@ -327,27 +327,27 @@
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<font>font12_title</font>
+					<font>font13_title</font>
 				</control>
 				<control type="label">
 					<description>CPU Text</description>
 					<posx>600</posx>
 					<posy>30</posy>
 					<width>600</width>
-					<height>19</height>
+					<height>25</height>
 					<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<font>font12_title</font>
+					<font>font13_title</font>
 				</control>
 				<control type="progress">
 					<description>CPU BAR</description>
 					<posx>607</posx>
 					<posy>30</posy>
 					<width>240</width>
-					<height>19</height>
+					<height>25</height>
 					<info>System.CPUUsage</info>
 				</control>
 				<control type="label">
@@ -355,20 +355,20 @@
 					<posx>600</posx>
 					<posy>52</posy>
 					<width>600</width>
-					<height>19</height>
+					<height>25</height>
 					<label>$LOCALIZE[31309] $INFO[system.memory(used.percent)]</label>
 					<align>right</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<font>font12_title</font>
+					<font>font13_title</font>
 				</control>
 				<control type="progress">
 					<description>Memory BAR</description>
 					<posx>607</posx>
 					<posy>52</posy>
 					<width>240</width>
-					<height>19</height>
+					<height>25</height>
 					<info>system.memory(used)</info>
 				</control>
 			</control>

@@ -2,18 +2,10 @@
 	<onload>RunScript("special://skin/scripts/check_calibration.py")</onload>
 	<onunload condition="Container(9000).Hasfocus(2) | Container(9000).Hasfocus(3) | ControlGroup(9010).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
 	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(1)">ClearProperty(VideosDirectLink)</onunload>
-	<onload condition="!Skin.HasSetting(HideSettingsManager2.2)">ActivateWindow(1122)</onload>
+	<onload condition="!Skin.HasSetting(HideSettingsManager2.3)">ActivateWindow(1122)</onload>
 	<defaultcontrol always="true">3001</defaultcontrol>
 	<controls>
 		<include>CommonBackground</include>
-<!--	<control type="videowindow">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>ScreenWidth</width>
-			<height>ScreenHeight</height>
-			<visible>Player.HasVideo</visible>
-		</control>	-->	
-		
 		<include>CommonTopBar</include>		
  	    <include>WeatherTitleWidget</include>
 		
@@ -27,6 +19,18 @@
 		<include condition="Skin.String(TempSensor,7) + System.HasAddon(plugin.program.piwire)">TempText7</include>
 		<include condition="Skin.String(TempSensor,8) + System.HasAddon(plugin.program.piwire)">TempText8</include>
 
+		<control type="image">
+			<description>Image Top Left</description>
+			<visible>Skin.HasSetting(EnableTitleImage)</visible>
+			<posx>50</posx>
+			<posy>5</posy>
+			<width>400</width>
+			<height>70</height>
+	        <aspectratio scalediffuse="true" align="left" aligny="center">keep</aspectratio>
+			<texture>$INFO[Skin.String(HomeScreenTitleImage)]</texture>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
+
 		<control type="label">
 			<description>Text Top Left</description>
 			<visible>Skin.HasSetting(EnableTitleText)</visible>
@@ -39,7 +43,7 @@
 			<aligny>center</aligny>
 			<font>font40_title</font>
 			<textcolor>$VAR[CustomColorNofocus]</textcolor>
-		</control> 
+		</control>
 		
 		<control type="button">
 			<description>Viz Fullscreen Button</description>
@@ -56,170 +60,13 @@
 			<onclick>ActivateWindow(2006)</onclick>
 		</control>
 
-			<!--Menu customized-->
-		
-<!-- Homebuttons -->
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,1) + ![Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">Radio1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,2) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">Radio2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,3) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">Radio3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,4) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">Radio4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,5) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,6)]">Radio5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,6) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5)]">Radio6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,1) + ![Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">Music1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,2) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">Music2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,3) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">Music3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,4) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">Music4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,5) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,6)]">Music5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,6) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5)]">Music6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,1) + ![Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">Video1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,2) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">Video2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,3) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">Video3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,4) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">Video4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,5) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,6)]">Video5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,6) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5)]">Video6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,1) + ![Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">Navigation1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,2) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">Navigation2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,3) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">Navigation3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,4) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">Navigation4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,5) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,6)]">Navigation5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,6) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5)]">Navigation6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,1) + ![Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">Settings1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,2) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">Settings2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,3) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">Settings3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,4) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">Settings4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,5) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,6)]">Settings5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,6) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5)]">Settings6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,1) + ![Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">Shutdown1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,2) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">Shutdown2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,3) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">Shutdown3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,4) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">Shutdown4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,5) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,6)]">Shutdown5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,6) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5)]">Shutdown6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,1) + ![Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,2) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,3) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,4) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,5) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialog5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,6) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5)]">ShutdownNoDialog6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,1) + ![Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">Weather1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,2) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">Weather2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,3) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">Weather3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,4) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">Weather4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,5) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,6)]">Weather5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,6) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5)]">Weather6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,1) + ![Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">Connect3G1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,2) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">Connect3G2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,3) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">Connect3G3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,4) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">Connect3G4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,5) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,6)]">Connect3G5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,6) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5)]">Connect3G6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,1) + ![Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBD1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,2) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBD2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,3) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBD3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,4) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBD4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,5) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,6)]">OBD5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,6) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5)]">OBD6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,1) + ![Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButton1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,2) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButton2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,3) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButton3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,4) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButton4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,5) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,6)]">CustomButton5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,6) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5)]">CustomButton6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,1) + ![Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,2) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,3) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,4) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,5) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton2-5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,6) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5)]">CustomButton2-6</include> 
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,1) + ![Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-1</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,2) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-2</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,3) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-3</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,4) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-4</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,5) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3-5</include>
-		<include condition="Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,6) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5)]">CustomButton3-6</include>
-
-
-<!-- Homebuttons 1024x600Fix -->
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,1) + ![Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">RadioFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,2) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">RadioFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,3) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">RadioFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,4) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]">RadioFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,5) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,6)]">RadioFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosRadio,6) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5)]">RadioFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,1) + ![Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">MusicFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,2) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">MusicFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,3) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">MusicFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,4) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]">MusicFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,5) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,6)]">MusicFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosMusic,6) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5)]">MusicFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,1) + ![Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">VideoFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,2) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">VideoFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,3) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">VideoFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,4) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]">VideoFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,5) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,6)]">VideoFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosVideo,6) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5)]">VideoFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,1) + ![Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">NavigationFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,2) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">NavigationFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,3) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">NavigationFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,4) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]">NavigationFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,5) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,6)]">NavigationFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosNavi,6) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5)]">NavigationFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,1) + ![Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">SettingsFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,2) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">SettingsFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,3) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">SettingsFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,4) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]">SettingsFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,5) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,6)]">SettingsFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosSettings,6) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5)]">SettingsFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,1) + ![Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">ShutdownFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,2) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">ShutdownFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,3) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">ShutdownFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,4) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)]">ShutdownFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,5) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,6)]">ShutdownFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdown,6) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5)]">ShutdownFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,1) + ![Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,2) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,3) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,4) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,5) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,6)]">ShutdownNoDialogFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosShutdownNoDialog,6) + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5)]">ShutdownNoDialogFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,1) + ![Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">WeatherFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,2) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">WeatherFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,3) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">WeatherFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,4) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]">WeatherFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,5) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,6)]">WeatherFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosWeather,6) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5)]">WeatherFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,1) + ![Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">3GFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,2) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">3GFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,3) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">3GFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,4) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]">3GFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,5) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,6)]">3GFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePos3G,6) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5)]">3GFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,1) + ![Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBDFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,2) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBDFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,3) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBDFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,4) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]">OBDFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,5) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,6)]">OBDFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(HomePosOBD,6) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5)]">OBDFix6</include> 
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,1) + ![Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,2) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,3) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,4) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,5) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,5) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,6)]">CustomButtonFix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButtonPos,6) + ![Skin.String(CustomHomeButtonPos,1) | Skin.String(CustomHomeButtonPos,2) | Skin.String(CustomHomeButtonPos,3) | Skin.String(CustomHomeButtonPos,4) | Skin.String(CustomHomeButtonPos,5)]">CustomButtonFix6</include> 
-
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,1) + ![Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,5) | Skin.String(CustomHomeButton2Pos,6)]">CustomButton2Fix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,2) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,5) | Skin.String(CustomHomeButton2Pos,6)]">CustomButton2Fix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,3) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,5) | Skin.String(CustomHomeButton2Pos,6)]">CustomButton2Fix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,4) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,5) | Skin.String(CustomHomeButton2Pos,6)]">CustomButton2Fix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,5) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,6)]">CustomButton2Fix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton2Pos,6) + ![Skin.String(CustomHomeButton2Pos,1) | Skin.String(CustomHomeButton2Pos,2) | Skin.String(CustomHomeButton2Pos,3) | Skin.String(CustomHomeButton2Pos,4) | Skin.String(CustomHomeButton2Pos,5)]">CustomButton2Fix6</include> 
-
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,1) + ![Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix1</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,2) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix2</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,3) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix3</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,4) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,5) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix4</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,5) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,6)]">CustomButton3Fix5</include>
-		<include condition="!Skin.HasSetting(Hide1024x600Fix) + Skin.String(CustomHomeButton3Pos,6) + ![Skin.String(CustomHomeButton3Pos,1) | Skin.String(CustomHomeButton3Pos,2) | Skin.String(CustomHomeButton3Pos,3) | Skin.String(CustomHomeButton3Pos,4) | Skin.String(CustomHomeButton3Pos,5)]">CustomButton3Fix6</include> 
+<!--Menu customized-->
+		<include>MainButton1</include>		
+		<include>MainButton2</include>		
+		<include>MainButton3</include>		
+		<include>MainButton4</include>		
+		<include>MainButton5</include>		
+		<include>MainButton6</include>		
 
 <!-- Logo area -->
 		<control type="image">
@@ -291,7 +138,7 @@
 			<include>Window_OpenClose_Animation_Zoom</include>
 		</control> 
 
-		<!-- Song/radio info -->
+<!-- Song/radio info -->
 		<control type="group">
 			<control type="image">
 	            <visible>[Player.HasAudio + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle)] | [!Skin.HasSetting(HideHomeButtonRadioStationName) + substring(Window(Home).Property(Radio.Active),true)]</visible>
@@ -316,69 +163,73 @@
 
 		<include>CommonBottomBar</include>   
 		<include>BottomNowPLaying</include>
+		<include>VisualisationHome</include> 
 		
-<!-- Submenu -->
+<!-- Submenu small -->
 		<control type="panel" id="9003">
-			<visible>!Window.IsActive(PlayerControls) + [Player.HasAudio | Player.HasVideo]</visible>
-			<include>SubMenuCommonLayout2</include>
+			<visible>!Window.IsActive(PlayerControls) + Skin.HasSetting(SubmenuIconsSmall) + [Player.HasAudio | Player.HasVideo]</visible>
+			<include condition="!Skin.HasSetting(HideAppSwitcher)">SubMenuCommonLayout2</include>
+			<include condition="Skin.HasSetting(HideAppSwitcher)">SubMenuCommonLayout3</include>
+			<onleft>Control.SetFocus(100)</onleft>
+			<onright>Control.SetFocus(3050)</onright>
 			<content>
 				<item id="3010">
 					<label></label>
-					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusic) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]</visible>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusic) + !Skin.String(HomeButton1Value,MusicPath) + !Skin.String(HomeButton2Value,MusicPath) + !Skin.String(HomeButton3Value,MusicPath) + !Skin.String(HomeButton4Value,MusicPath) + !Skin.String(HomeButton5Value,MusicPath) + !Skin.String(HomeButton6Value,MusicPath)</visible>
 					<icon>button_music.png</icon>
 					<onclick>ActivateWindow(Music,$INFO[Skin.String(CustomMusicPath)])</onclick>
 				</item>
 				<item id="3011">
 					<label></label>
-					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicArtists)</visible>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicArtists) + !Skin.String(HomeButton1Value,MusicArtists) + !Skin.String(HomeButton2Value,MusicArtists) + !Skin.String(HomeButton3Value,MusicArtists) + !Skin.String(HomeButton4Value,MusicArtists) + !Skin.String(HomeButton5Value,MusicArtists) + !Skin.String(HomeButton6Value,MusicArtists)</visible>
 					<icon>button_musicartist.png</icon>
 					<onclick>ActivateWindow(Music,musicdb://artists/,return)</onclick>
 				</item>
 				<item id="3012">
 					<label></label>
-					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicAlbums)</visible>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicAlbums) + !Skin.String(HomeButton1Value,MusicAlbums) + !Skin.String(HomeButton2Value,MusicAlbums) + !Skin.String(HomeButton3Value,MusicAlbums) + !Skin.String(HomeButton4Value,MusicAlbums) + !Skin.String(HomeButton5Value,MusicAlbums) + !Skin.String(HomeButton6Value,MusicAlbums)</visible>
 					<icon>button_musicalbum.png</icon>
 					<onclick>ActivateWindow(Music,musicdb://albums/,return])</onclick>
 				</item>
 				<item id="3013">
 					<label></label>
-					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicGenre)</visible>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicGenre) + !Skin.String(HomeButton1Value,MusicGenre) + !Skin.String(HomeButton2Value,MusicGenre) + !Skin.String(HomeButton3Value,MusicGenre) + !Skin.String(HomeButton4Value,MusicGenre) + !Skin.String(HomeButton5Value,MusicGenre) + !Skin.String(HomeButton6Value,MusicGenre)</visible>
 					<icon>button_musicgenre.png</icon>
 					<onclick>ActivateWindow(Music,musicdb://genres/,return)</onclick>
 				</item>
 				<item id="3014">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVideo) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVideo) + !Skin.String(HomeButton1Value,Video) + !Skin.String(HomeButton2Value,Video) + !Skin.String(HomeButton3Value,Video) + !Skin.String(HomeButton4Value,Video) + !Skin.String(HomeButton5Value,Video) + !Skin.String(HomeButton6Value,Video)</visible>
 					<icon>button_video.png</icon>
 					<onclick>ActivateWindow(Videos,$INFO[Skin.String(CustomVideoPath)])</onclick>
 				</item>
 				<item id="3015">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonNavigation) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonNavigation) + !Skin.String(HomeButton1Value,Navigation) + !Skin.String(HomeButton2Value,Navigation) + !Skin.String(HomeButton3Value,Navigation) + !Skin.String(HomeButton4Value,Navigation) + !Skin.String(HomeButton5Value,Navigation) + !Skin.String(HomeButton6Value,Navigation)</visible>
 					<icon>button_navi.png</icon>
 					<onclick>RunScript("plugin.program.navigation")</onclick>
 				</item>
 				<item id="3016">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadio) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadio) + !Skin.String(HomeButton1Value,RadioFM) + !Skin.String(HomeButton2Value,RadioFM) + !Skin.String(HomeButton3Value,RadioFM) + !Skin.String(HomeButton4Value,RadioFM) + !Skin.String(HomeButton5Value,RadioFM) + !Skin.String(HomeButton6Value,RadioFM)</visible>
 					<icon>button_radio.png</icon>
 					<onclick>RunScript("plugin.program.radioFM")</onclick>
-				</item>
+				</item> 
 				<item id="3017">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.String(HomeButton1Value,Settings) + !Skin.String(HomeButton2Value,Settings) + !Skin.String(HomeButton3Value,Settings) + !Skin.String(HomeButton4Value,Settings) + !Skin.String(HomeButton5Value,Settings) + !Skin.String(HomeButton6Value,Settings)</visible>
 					<icon>button_settings.png</icon>
 					<onclick>ActivateWindow(Settings)</onclick>
 				</item>
 				<item id="3018">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonShutdownDialog) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)] + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonShutdownDialog) + !Skin.String(HomeButton1Value,Shutdown) + !Skin.String(HomeButton2Value,Shutdown) + !Skin.String(HomeButton3Value,Shutdown) + !Skin.String(HomeButton4Value,Shutdown) + !Skin.String(HomeButton5Value,Shutdown) + !Skin.String(HomeButton6Value,Shutdown) + !Skin.String(HomeButton1Value,ShutdownNoDialog) + !Skin.String(HomeButton2Value,ShutdownNoDialog) + !Skin.String(HomeButton3Value,ShutdownNoDialog) + !Skin.String(HomeButton4Value,ShutdownNoDialog) + !Skin.String(HomeButton5Value,ShutdownNoDialog) + !Skin.String(HomeButton6Value,ShutdownNoDialog)</visible>
 					<icon>button_shutdown.png</icon>
 					<onclick>ActivateWindow(1998)</onclick>
 				</item>  
 				<item id="3019">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(HideHomeButtonShutdownDialog) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)] + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(HideHomeButtonShutdownDialog) + !Skin.String(HomeButton1Value,Shutdown) + !Skin.String(HomeButton2Value,Shutdown) + !Skin.String(HomeButton3Value,Shutdown) + !Skin.String(HomeButton4Value,Shutdown) + !Skin.String(HomeButton5Value,Shutdown) + !Skin.String(HomeButton6Value,Shutdown) + !Skin.String(HomeButton1Value,ShutdownNoDialog) + !Skin.String(HomeButton2Value,ShutdownNoDialog) + !Skin.String(HomeButton3Value,ShutdownNoDialog) + !Skin.String(HomeButton4Value,ShutdownNoDialog) + !Skin.String(HomeButton5Value,ShutdownNoDialog) + !Skin.String(HomeButton6Value,ShutdownNoDialog)</visible>
 					<icon>button_shutdown.png</icon>
 					<onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
 				</item>  
@@ -390,47 +241,41 @@
 				</item>
 				<item id="3021">
 					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnect3g) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnect3g) + !Skin.String(HomeButton1Value,Connect3G) + !Skin.String(HomeButton2Value,Connect3G) + !Skin.String(HomeButton3Value,Connect3G) + !Skin.String(HomeButton4Value,Connect3G) + !Skin.String(HomeButton5Value,Connect3G) + !Skin.String(HomeButton6Value,Connect3G)</visible>
 					<icon>button_3g.png</icon>
 					<onclick>ActivateWindow(1118)</onclick>
 				</item>
-<!--			<item>
-					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonOBD) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]</visible>
-					<icon>button_obd.png</icon>
-					<onclick>-</onclick>
-				</item>  -->
 				<item id="3022">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonOBD) + !Skin.String(HomeButton1Value,OBD) + !Skin.String(HomeButton2Value,OBD) + !Skin.String(HomeButton3Value,OBD) + !Skin.String(HomeButton4Value,OBD) + !Skin.String(HomeButton5Value,OBD) + !Skin.String(HomeButton6Value,OBD)</visible>
+					<icon>button_obd.png</icon>
+					<onclick>-</onclick>
+				</item>  
+				<item id="3023">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather) + !Skin.String(HomeButton1Value,Weather) + !Skin.String(HomeButton2Value,Weather) + !Skin.String(HomeButton3Value,Weather) + !Skin.String(HomeButton4Value,Weather) + !Skin.String(HomeButton5Value,Weather) + !Skin.String(HomeButton6Value,Weather)</visible>
 					<icon>button_weather.png</icon>
 					<onclick>ActivateWindow(Weather)</onclick>
 				</item>
-<!--			<item>
+				<item id="3024">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPictures)</visible>
-					<icon>button_pictures.png</icon>
-					<onclick>ActivateWindow(Pictures)</onclick>
-				</item> -->
-				<item id="3023">
-					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFavourites)</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFavourites) + !Skin.String(HomeButton1Value,Favourites) + !Skin.String(HomeButton2Value,Favourites) + !Skin.String(HomeButton3Value,Favourites) + !Skin.String(HomeButton4Value,Favourites) + !Skin.String(HomeButton5Value,Favourites) + !Skin.String(HomeButton6Value,Favourites)</visible>
 					<icon>button_favs.png</icon>
 					<onclick>ActivateWindow(Favourites)</onclick>
 				</item>
-				<item id="3024">
-					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms)</visible>
-					<icon>button_apps.png</icon>
-					<onclick>ActivateWindow(Programs)</onclick>
-				</item>
 				<item id="3025">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms) + !Skin.String(HomeButton1Value,Programs) + !Skin.String(HomeButton2Value,Programs) + !Skin.String(HomeButton3Value,Programs) + !Skin.String(HomeButton4Value,Programs) + !Skin.String(HomeButton5Value,Programs) + !Skin.String(HomeButton6Value,Programs)</visible>
+					<icon>button_apps.png</icon>
+					<onclick>ActivateWindow(Programs,addons://sources/executable)</onclick>
+				</item>
+				<item id="3026">
 					<label></label>
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnectWiFi)</visible>
 					<icon>button_wifi.png</icon>
 					<onclick>ActivateWindow(1119)</onclick>
 				</item>
-				<item id="3026">
+				<item id="3027">
 					<label></label>
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day)</visible>
 					<icon>button_day.png</icon>
@@ -438,7 +283,7 @@
 					<onclick>Skin.SetString(DayNightModus,day)</onclick>
 					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
 				</item>
-				<item id="3026">
+				<item id="3028">
 					<label></label>
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night)</visible>
 					<icon>button_night.png</icon>
@@ -446,76 +291,73 @@
 					<onclick>Skin.SetString(DayNightModus,night)</onclick>
 					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
 				</item>
-
-<!--			<item>
-					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonReload)</visible>
-					<icon>button_reload.png</icon>
-					<onclick>XBMC.ReloadSkin()</onclick>
-				</item>  -->
 			</content>
 		</control>
+
 		<control type="panel" id="9003">
-			<visible>!Window.IsActive(PlayerControls) + !Player.HasAudio + !Player.HasVideo</visible>
-			<include>SubMenuCommonLayoutBig</include>
+			<visible>!Window.IsActive(PlayerControls) + Skin.HasSetting(SubmenuIconsSmall) + !Skin.HasSetting(SubmenuIconsMid) + !Skin.HasSetting(SubmenuIconsBig)</visible>
+			<include condition="!Skin.HasSetting(HideAppSwitcher)">SubMenuCommonLayout2</include>
+			<include condition="Skin.HasSetting(HideAppSwitcher)">SubMenuCommonLayout3</include>
+			<onright>Control.SetFocus(3050)</onright>
+			<onup>Control.SetFocus(3006)</onup>
 			<content>
 				<item id="3010">
 					<label></label>
-					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusic) + ![Skin.String(HomePosMusic,1) | Skin.String(HomePosMusic,2) | Skin.String(HomePosMusic,3) | Skin.String(HomePosMusic,4) | Skin.String(HomePosMusic,5) | Skin.String(HomePosMusic,6)]</visible>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusic) + !Skin.String(HomeButton1Value,MusicPath) + !Skin.String(HomeButton2Value,MusicPath) + !Skin.String(HomeButton3Value,MusicPath) + !Skin.String(HomeButton4Value,MusicPath) + !Skin.String(HomeButton5Value,MusicPath) + !Skin.String(HomeButton6Value,MusicPath)</visible>
 					<icon>button_music.png</icon>
 					<onclick>ActivateWindow(Music,$INFO[Skin.String(CustomMusicPath)])</onclick>
 				</item>
 				<item id="3011">
 					<label></label>
-					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicArtists)</visible>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicArtists) + !Skin.String(HomeButton1Value,MusicArtists) + !Skin.String(HomeButton2Value,MusicArtists) + !Skin.String(HomeButton3Value,MusicArtists) + !Skin.String(HomeButton4Value,MusicArtists) + !Skin.String(HomeButton5Value,MusicArtists) + !Skin.String(HomeButton6Value,MusicArtists)</visible>
 					<icon>button_musicartist.png</icon>
 					<onclick>ActivateWindow(Music,musicdb://artists/,return)</onclick>
 				</item>
 				<item id="3012">
 					<label></label>
-					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicAlbums)</visible>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicAlbums) + !Skin.String(HomeButton1Value,MusicAlbums) + !Skin.String(HomeButton2Value,MusicAlbums) + !Skin.String(HomeButton3Value,MusicAlbums) + !Skin.String(HomeButton4Value,MusicAlbums) + !Skin.String(HomeButton5Value,MusicAlbums) + !Skin.String(HomeButton6Value,MusicAlbums)</visible>
 					<icon>button_musicalbum.png</icon>
 					<onclick>ActivateWindow(Music,musicdb://albums/,return])</onclick>
 				</item>
 				<item id="3013">
 					<label></label>
-					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicGenre)</visible>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicGenre) + !Skin.String(HomeButton1Value,MusicGenre) + !Skin.String(HomeButton2Value,MusicGenre) + !Skin.String(HomeButton3Value,MusicGenre) + !Skin.String(HomeButton4Value,MusicGenre) + !Skin.String(HomeButton5Value,MusicGenre) + !Skin.String(HomeButton6Value,MusicGenre)</visible>
 					<icon>button_musicgenre.png</icon>
 					<onclick>ActivateWindow(Music,musicdb://genres/,return)</onclick>
 				</item>
 				<item id="3014">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVideo) + ![Skin.String(HomePosVideo,1) | Skin.String(HomePosVideo,2) | Skin.String(HomePosVideo,3) | Skin.String(HomePosVideo,4) | Skin.String(HomePosVideo,5) | Skin.String(HomePosVideo,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVideo) + !Skin.String(HomeButton1Value,Video) + !Skin.String(HomeButton2Value,Video) + !Skin.String(HomeButton3Value,Video) + !Skin.String(HomeButton4Value,Video) + !Skin.String(HomeButton5Value,Video) + !Skin.String(HomeButton6Value,Video)</visible>
 					<icon>button_video.png</icon>
 					<onclick>ActivateWindow(Videos,$INFO[Skin.String(CustomVideoPath)])</onclick>
 				</item>
 				<item id="3015">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonNavigation) + ![Skin.String(HomePosNavi,1) | Skin.String(HomePosNavi,2) | Skin.String(HomePosNavi,3) | Skin.String(HomePosNavi,4) | Skin.String(HomePosNavi,5) | Skin.String(HomePosNavi,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonNavigation) + !Skin.String(HomeButton1Value,Navigation) + !Skin.String(HomeButton2Value,Navigation) + !Skin.String(HomeButton3Value,Navigation) + !Skin.String(HomeButton4Value,Navigation) + !Skin.String(HomeButton5Value,Navigation) + !Skin.String(HomeButton6Value,Navigation)</visible>
 					<icon>button_navi.png</icon>
 					<onclick>RunScript("plugin.program.navigation")</onclick>
 				</item>
 				<item id="3016">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadio) + ![Skin.String(HomePosRadio,1) | Skin.String(HomePosRadio,2) | Skin.String(HomePosRadio,3) | Skin.String(HomePosRadio,4) | Skin.String(HomePosRadio,5) | Skin.String(HomePosRadio,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadio) + !Skin.String(HomeButton1Value,RadioFM) + !Skin.String(HomeButton2Value,RadioFM) + !Skin.String(HomeButton3Value,RadioFM) + !Skin.String(HomeButton4Value,RadioFM) + !Skin.String(HomeButton5Value,RadioFM) + !Skin.String(HomeButton6Value,RadioFM)</visible>
 					<icon>button_radio.png</icon>
 					<onclick>RunScript("plugin.program.radioFM")</onclick>
-				</item>
+				</item> 
 				<item id="3017">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + ![Skin.String(HomePosSettings,1) | Skin.String(HomePosSettings,2) | Skin.String(HomePosSettings,3) | Skin.String(HomePosSettings,4) | Skin.String(HomePosSettings,5) | Skin.String(HomePosSettings,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.String(HomeButton1Value,Settings) + !Skin.String(HomeButton2Value,Settings) + !Skin.String(HomeButton3Value,Settings) + !Skin.String(HomeButton4Value,Settings) + !Skin.String(HomeButton5Value,Settings) + !Skin.String(HomeButton6Value,Settings)</visible>
 					<icon>button_settings.png</icon>
 					<onclick>ActivateWindow(Settings)</onclick>
 				</item>
 				<item id="3018">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonShutdownDialog) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)] + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonShutdownDialog) + !Skin.String(HomeButton1Value,Shutdown) + !Skin.String(HomeButton2Value,Shutdown) + !Skin.String(HomeButton3Value,Shutdown) + !Skin.String(HomeButton4Value,Shutdown) + !Skin.String(HomeButton5Value,Shutdown) + !Skin.String(HomeButton6Value,Shutdown) + !Skin.String(HomeButton1Value,ShutdownNoDialog) + !Skin.String(HomeButton2Value,ShutdownNoDialog) + !Skin.String(HomeButton3Value,ShutdownNoDialog) + !Skin.String(HomeButton4Value,ShutdownNoDialog) + !Skin.String(HomeButton5Value,ShutdownNoDialog) + !Skin.String(HomeButton6Value,ShutdownNoDialog)</visible>
 					<icon>button_shutdown.png</icon>
 					<onclick>ActivateWindow(1998)</onclick>
 				</item>  
 				<item id="3019">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(HideHomeButtonShutdownDialog) + ![Skin.String(HomePosShutdown,1) | Skin.String(HomePosShutdown,2) | Skin.String(HomePosShutdown,3) | Skin.String(HomePosShutdown,4) | Skin.String(HomePosShutdown,5) | Skin.String(HomePosShutdown,6)] + ![Skin.String(HomePosShutdownNoDialog,1) | Skin.String(HomePosShutdownNoDialog,2) | Skin.String(HomePosShutdownNoDialog,3) | Skin.String(HomePosShutdownNoDialog,4) | Skin.String(HomePosShutdownNoDialog,5) | Skin.String(HomePosShutdownNoDialog,6)]</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(HideHomeButtonShutdownDialog) + !Skin.String(HomeButton1Value,Shutdown) + !Skin.String(HomeButton2Value,Shutdown) + !Skin.String(HomeButton3Value,Shutdown) + !Skin.String(HomeButton4Value,Shutdown) + !Skin.String(HomeButton5Value,Shutdown) + !Skin.String(HomeButton6Value,Shutdown) + !Skin.String(HomeButton1Value,ShutdownNoDialog) + !Skin.String(HomeButton2Value,ShutdownNoDialog) + !Skin.String(HomeButton3Value,ShutdownNoDialog) + !Skin.String(HomeButton4Value,ShutdownNoDialog) + !Skin.String(HomeButton5Value,ShutdownNoDialog) + !Skin.String(HomeButton6Value,ShutdownNoDialog)</visible>
 					<icon>button_shutdown.png</icon>
 					<onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
 				</item>  
@@ -527,84 +369,354 @@
 				</item>
 				<item id="3021">
 					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnect3g) + ![Skin.String(HomePos3G,1) | Skin.String(HomePos3G,2) | Skin.String(HomePos3G,3) | Skin.String(HomePos3G,4) | Skin.String(HomePos3G,5) | Skin.String(HomePos3G,6)]</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnect3g) + !Skin.String(HomeButton1Value,Connect3G) + !Skin.String(HomeButton2Value,Connect3G) + !Skin.String(HomeButton3Value,Connect3G) + !Skin.String(HomeButton4Value,Connect3G) + !Skin.String(HomeButton5Value,Connect3G) + !Skin.String(HomeButton6Value,Connect3G)</visible>
 					<icon>button_3g.png</icon>
 					<onclick>ActivateWindow(1118)</onclick>
 				</item>
-<!--			<item>
-					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonOBD) + ![Skin.String(HomePosOBD,1) | Skin.String(HomePosOBD,2) | Skin.String(HomePosOBD,3) | Skin.String(HomePosOBD,4) | Skin.String(HomePosOBD,5) | Skin.String(HomePosOBD,6)]</visible>
-					<icon>button_obd.png</icon>
-					<onclick>-</onclick>
-				</item>  -->
 				<item id="3022">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather) + ![Skin.String(HomePosWeather,1) | Skin.String(HomePosWeather,2) | Skin.String(HomePosWeather,3) | Skin.String(HomePosWeather,4) | Skin.String(HomePosWeather,5) | Skin.String(HomePosWeather,6)]</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonOBD) + !Skin.String(HomeButton1Value,OBD) + !Skin.String(HomeButton2Value,OBD) + !Skin.String(HomeButton3Value,OBD) + !Skin.String(HomeButton4Value,OBD) + !Skin.String(HomeButton5Value,OBD) + !Skin.String(HomeButton6Value,OBD)</visible>
+					<icon>button_obd.png</icon>
+					<onclick>-</onclick>
+				</item>  
+				<item id="3023">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather) + !Skin.String(HomeButton1Value,Weather) + !Skin.String(HomeButton2Value,Weather) + !Skin.String(HomeButton3Value,Weather) + !Skin.String(HomeButton4Value,Weather) + !Skin.String(HomeButton5Value,Weather) + !Skin.String(HomeButton6Value,Weather)</visible>
 					<icon>button_weather.png</icon>
 					<onclick>ActivateWindow(Weather)</onclick>
 				</item>
-<!--			<item>
+				<item id="3024">
 					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPictures)</visible>
-					<icon>button_pictures.png</icon>
-					<onclick>ActivateWindow(Pictures)</onclick>
-				</item> -->
-				<item id="3023">
-					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFavourites)</visible>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFavourites) + !Skin.String(HomeButton1Value,Favourites) + !Skin.String(HomeButton2Value,Favourites) + !Skin.String(HomeButton3Value,Favourites) + !Skin.String(HomeButton4Value,Favourites) + !Skin.String(HomeButton5Value,Favourites) + !Skin.String(HomeButton6Value,Favourites)</visible>
 					<icon>button_favs.png</icon>
 					<onclick>ActivateWindow(Favourites)</onclick>
 				</item>
-				<item id="3024">
+				<item id="3025">
 					<label></label>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms)</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms) + !Skin.String(HomeButton1Value,Programs) + !Skin.String(HomeButton2Value,Programs) + !Skin.String(HomeButton3Value,Programs) + !Skin.String(HomeButton4Value,Programs) + !Skin.String(HomeButton5Value,Programs) + !Skin.String(HomeButton6Value,Programs)</visible>
 					<icon>button_apps.png</icon>
 					<onclick>ActivateWindow(Programs,addons://sources/executable)</onclick>
 				</item>
-				<item id="3025">
+				<item id="3026">
 					<label></label>
 			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnectWiFi)</visible>
 					<icon>button_wifi.png</icon>
 					<onclick>ActivateWindow(1119)</onclick>
 				</item>
-				<item id="3026">
+				<item id="3027">
 					<label></label>
-					<visible>System.HasAddon(plugin.program.carpc-xtouch + substring(Window(Home).Property(xtouch.daynight),night)</visible>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight)</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day)</visible>
 					<icon>button_day.png</icon>
-					<onclick condition="substring(Window(Home).Property(xtouch.updating),false)">RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,day)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
 				</item>
-				<item id="3026">
+				<item id="3028">
 					<label></label>
-					<visible>System.HasAddon(plugin.program.carpc-xtouch + substring(Window(Home).Property(xtouch.daynight),day)</visible>
-			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight)</visible>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night)</visible>
 					<icon>button_night.png</icon>
-					<onclick condition="substring(Window(Home).Property(xtouch.updating),false)">RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,night)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
 				</item>
-<!--			<item>
-					<label></label>
-		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonReload)</visible>
-					<icon>button_reload.png</icon>
-					<onclick>XBMC.ReloadSkin()</onclick>
-				</item>  -->
 			</content>
 		</control>
 
-	    <include>VisualisationHome</include> 
-		<!-- Song/radio info -->
-	<control type="group">
-		<animation effect="fade" start="0" end="100" time="200" delay="3000">Visible</animation>
-		<include>Clock_Date</include> 
-		<include>Clock_Time</include>
-		<include>Clock_Time_White</include>
-<!--	<include>Clock_Hour</include>  -->
-		<include>Time</include>				
-	</control>
+<!-- Submenu mid -->
+		<include>SubMenuBGMid</include>
+		<control type="panel" id="9004">
+			<visible>![Player.HasAudio | Player.HasVideo]</visible>
+			<align>center</align>
+			<include>SubMenuPanelMid</include>
+			<onup>Control.SetFocus(3006)</onup>
+			<onright condition="Control.IsVisible(3050)">Control.SetFocus(3050)</onright>
+			<content>
+				<item id="4010">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusic) + !Skin.String(HomeButton1Value,MusicPath) + !Skin.String(HomeButton2Value,MusicPath) + !Skin.String(HomeButton3Value,MusicPath) + !Skin.String(HomeButton4Value,MusicPath) + !Skin.String(HomeButton5Value,MusicPath) + !Skin.String(HomeButton6Value,MusicPath)</visible>
+					<icon>button_music.png</icon>
+					<onclick>ActivateWindow(Music,$INFO[Skin.String(CustomMusicPath)])</onclick>
+				</item>
+				<item id="4011">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicArtists) + !Skin.String(HomeButton1Value,MusicArtists) + !Skin.String(HomeButton2Value,MusicArtists) + !Skin.String(HomeButton3Value,MusicArtists) + !Skin.String(HomeButton4Value,MusicArtists) + !Skin.String(HomeButton5Value,MusicArtists) + !Skin.String(HomeButton6Value,MusicArtists)</visible>
+					<icon>button_musicartist.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://artists/,return)</onclick>
+				</item>
+				<item id="4012">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicAlbums) + !Skin.String(HomeButton1Value,MusicAlbums) + !Skin.String(HomeButton2Value,MusicAlbums) + !Skin.String(HomeButton3Value,MusicAlbums) + !Skin.String(HomeButton4Value,MusicAlbums) + !Skin.String(HomeButton5Value,MusicAlbums) + !Skin.String(HomeButton6Value,MusicAlbums)</visible>
+					<icon>button_musicalbum.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://albums/,return])</onclick>
+				</item>
+				<item id="4013">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicGenre) + !Skin.String(HomeButton1Value,MusicGenre) + !Skin.String(HomeButton2Value,MusicGenre) + !Skin.String(HomeButton3Value,MusicGenre) + !Skin.String(HomeButton4Value,MusicGenre) + !Skin.String(HomeButton5Value,MusicGenre) + !Skin.String(HomeButton6Value,MusicGenre)</visible>
+					<icon>button_musicgenre.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://genres/,return)</onclick>
+				</item>
+				<item id="4014">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVideo) + !Skin.String(HomeButton1Value,Video) + !Skin.String(HomeButton2Value,Video) + !Skin.String(HomeButton3Value,Video) + !Skin.String(HomeButton4Value,Video) + !Skin.String(HomeButton5Value,Video) + !Skin.String(HomeButton6Value,Video)</visible>
+					<icon>button_video.png</icon>
+					<onclick>ActivateWindow(Videos,$INFO[Skin.String(CustomVideoPath)])</onclick>
+				</item>
+				<item id="4015">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonNavigation) + !Skin.String(HomeButton1Value,Navigation) + !Skin.String(HomeButton2Value,Navigation) + !Skin.String(HomeButton3Value,Navigation) + !Skin.String(HomeButton4Value,Navigation) + !Skin.String(HomeButton5Value,Navigation) + !Skin.String(HomeButton6Value,Navigation)</visible>
+					<icon>button_navi.png</icon>
+					<onclick>RunScript("plugin.program.navigation")</onclick>
+				</item>
+				<item id="4016">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadio) + !Skin.String(HomeButton1Value,RadioFM) + !Skin.String(HomeButton2Value,RadioFM) + !Skin.String(HomeButton3Value,RadioFM) + !Skin.String(HomeButton4Value,RadioFM) + !Skin.String(HomeButton5Value,RadioFM) + !Skin.String(HomeButton6Value,RadioFM)</visible>
+					<icon>button_radio.png</icon>
+					<onclick>RunScript("plugin.program.radioFM")</onclick>
+				</item>
+				<item id="4017">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.String(HomeButton1Value,Settings) + !Skin.String(HomeButton2Value,Settings) + !Skin.String(HomeButton3Value,Settings) + !Skin.String(HomeButton4Value,Settings) + !Skin.String(HomeButton5Value,Settings) + !Skin.String(HomeButton6Value,Settings)</visible>
+					<icon>button_settings.png</icon>
+					<onclick>ActivateWindow(Settings)</onclick>
+				</item>
+				<item id="4018">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonShutdownDialog) + !Skin.String(HomeButton1Value,Shutdown) + !Skin.String(HomeButton2Value,Shutdown) + !Skin.String(HomeButton3Value,Shutdown) + !Skin.String(HomeButton4Value,Shutdown) + !Skin.String(HomeButton5Value,Shutdown) + !Skin.String(HomeButton6Value,Shutdown) + !Skin.String(HomeButton1Value,ShutdownNoDialog) + !Skin.String(HomeButton2Value,ShutdownNoDialog) + !Skin.String(HomeButton3Value,ShutdownNoDialog) + !Skin.String(HomeButton4Value,ShutdownNoDialog) + !Skin.String(HomeButton5Value,ShutdownNoDialog) + !Skin.String(HomeButton6Value,ShutdownNoDialog)</visible>
+					<icon>button_shutdown.png</icon>
+					<onclick>ActivateWindow(1998)</onclick>
+				</item>  
+				<item id="4019">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(HideHomeButtonShutdownDialog) + !Skin.String(HomeButton1Value,Shutdown) + !Skin.String(HomeButton2Value,Shutdown) + !Skin.String(HomeButton3Value,Shutdown) + !Skin.String(HomeButton4Value,Shutdown) + !Skin.String(HomeButton5Value,Shutdown) + !Skin.String(HomeButton6Value,Shutdown) + !Skin.String(HomeButton1Value,ShutdownNoDialog) + !Skin.String(HomeButton2Value,ShutdownNoDialog) + !Skin.String(HomeButton3Value,ShutdownNoDialog) + !Skin.String(HomeButton4Value,ShutdownNoDialog) + !Skin.String(HomeButton5Value,ShutdownNoDialog) + !Skin.String(HomeButton6Value,ShutdownNoDialog)</visible>
+					<icon>button_shutdown.png</icon>
+					<onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
+				</item>  
+				<item id="4020">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFileManager)</visible>
+					<icon>button_filemanager.png</icon>
+					<onclick>ActivateWindow(FileManager)</onclick>
+				</item>
+				<item id="4021">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnect3g) + !Skin.String(HomeButton1Value,Connect3G) + !Skin.String(HomeButton2Value,Connect3G) + !Skin.String(HomeButton3Value,Connect3G) + !Skin.String(HomeButton4Value,Connect3G) + !Skin.String(HomeButton5Value,Connect3G) + !Skin.String(HomeButton6Value,Connect3G)</visible>
+					<icon>button_3g.png</icon>
+					<onclick>ActivateWindow(1118)</onclick>
+				</item>
+				<item id="4022">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonOBD) + !Skin.String(HomeButton1Value,OBD) + !Skin.String(HomeButton2Value,OBD) + !Skin.String(HomeButton3Value,OBD) + !Skin.String(HomeButton4Value,OBD) + !Skin.String(HomeButton5Value,OBD) + !Skin.String(HomeButton6Value,OBD)</visible>
+					<icon>button_obd.png</icon>
+					<onclick>-</onclick>
+				</item>  
+				<item id="4023">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather) + !Skin.String(HomeButton1Value,Weather) + !Skin.String(HomeButton2Value,Weather) + !Skin.String(HomeButton3Value,Weather) + !Skin.String(HomeButton4Value,Weather) + !Skin.String(HomeButton5Value,Weather) + !Skin.String(HomeButton6Value,Weather)</visible>
+					<icon>button_weather.png</icon>
+					<onclick>ActivateWindow(Weather)</onclick>
+				</item>
+				<item id="4024">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFavourites) + !Skin.String(HomeButton1Value,Favourites) + !Skin.String(HomeButton2Value,Favourites) + !Skin.String(HomeButton3Value,Favourites) + !Skin.String(HomeButton4Value,Favourites) + !Skin.String(HomeButton5Value,Favourites) + !Skin.String(HomeButton6Value,Favourites)</visible>
+					<icon>button_favs.png</icon>
+					<onclick>ActivateWindow(Favourites)</onclick>
+				</item>
+				<item id="4025">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms) + !Skin.String(HomeButton1Value,Programs) + !Skin.String(HomeButton2Value,Programs) + !Skin.String(HomeButton3Value,Programs) + !Skin.String(HomeButton4Value,Programs) + !Skin.String(HomeButton5Value,Programs) + !Skin.String(HomeButton6Value,Programs)</visible>
+					<icon>button_apps.png</icon>
+					<onclick>ActivateWindow(Programs,addons://sources/executable)</onclick>
+				</item>
+				<item id="4026">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnectWiFi)</visible>
+					<icon>button_wifi.png</icon>
+					<onclick>ActivateWindow(1119)</onclick>
+				</item>
+				<item id="4027">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day)</visible>
+					<icon>button_day.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,day)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
+				</item>
+				<item id="4028">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night)</visible>
+					<icon>button_night.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,night)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
+				</item> 
 
+			</content>
+		</control>
+
+<!-- Submenu big -->
+		<include>SubMenuBGBig</include>
+		<control type="panel" id="9004">
+			<visible>![Player.HasAudio | Player.HasVideo]</visible>
+			<align>center</align>
+			<visible></visible>
+			<include>SubMenuPanelBig</include>
+			<onup>Control.SetFocus(3006)</onup>
+			<onright>Control.SetFocus(3050)</onright>
+			<content>
+				<item id="4010">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusic) + !Skin.String(HomeButton1Value,MusicPath) + !Skin.String(HomeButton2Value,MusicPath) + !Skin.String(HomeButton3Value,MusicPath) + !Skin.String(HomeButton4Value,MusicPath) + !Skin.String(HomeButton5Value,MusicPath) + !Skin.String(HomeButton6Value,MusicPath)</visible>
+					<icon>button_music.png</icon>
+					<onclick>ActivateWindow(Music,$INFO[Skin.String(CustomMusicPath)])</onclick>
+				</item>
+				<item id="4011">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicArtists) + !Skin.String(HomeButton1Value,MusicArtists) + !Skin.String(HomeButton2Value,MusicArtists) + !Skin.String(HomeButton3Value,MusicArtists) + !Skin.String(HomeButton4Value,MusicArtists) + !Skin.String(HomeButton5Value,MusicArtists) + !Skin.String(HomeButton6Value,MusicArtists)</visible>
+					<icon>button_musicartist.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://artists/,return)</onclick>
+				</item>
+				<item id="4012">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicAlbums) + !Skin.String(HomeButton1Value,MusicAlbums) + !Skin.String(HomeButton2Value,MusicAlbums) + !Skin.String(HomeButton3Value,MusicAlbums) + !Skin.String(HomeButton4Value,MusicAlbums) + !Skin.String(HomeButton5Value,MusicAlbums) + !Skin.String(HomeButton6Value,MusicAlbums)</visible>
+					<icon>button_musicalbum.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://albums/,return])</onclick>
+				</item>
+				<item id="4013">
+					<label></label>
+					<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicGenre) + !Skin.String(HomeButton1Value,MusicGenre) + !Skin.String(HomeButton2Value,MusicGenre) + !Skin.String(HomeButton3Value,MusicGenre) + !Skin.String(HomeButton4Value,MusicGenre) + !Skin.String(HomeButton5Value,MusicGenre) + !Skin.String(HomeButton6Value,MusicGenre)</visible>
+					<icon>button_musicgenre.png</icon>
+					<onclick>ActivateWindow(Music,musicdb://genres/,return)</onclick>
+				</item>
+				<item id="4014">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonVideo) + !Skin.String(HomeButton1Value,Video) + !Skin.String(HomeButton2Value,Video) + !Skin.String(HomeButton3Value,Video) + !Skin.String(HomeButton4Value,Video) + !Skin.String(HomeButton5Value,Video) + !Skin.String(HomeButton6Value,Video)</visible>
+					<icon>button_video.png</icon>
+					<onclick>ActivateWindow(Videos,$INFO[Skin.String(CustomVideoPath)])</onclick>
+				</item>
+				<item id="4015">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonNavigation) + !Skin.String(HomeButton1Value,Navigation) + !Skin.String(HomeButton2Value,Navigation) + !Skin.String(HomeButton3Value,Navigation) + !Skin.String(HomeButton4Value,Navigation) + !Skin.String(HomeButton5Value,Navigation) + !Skin.String(HomeButton6Value,Navigation)</visible>
+					<icon>button_navi.png</icon>
+					<onclick>RunScript("plugin.program.navigation")</onclick>
+				</item>
+				<item id="4016">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadio) + !Skin.String(HomeButton1Value,RadioFM) + !Skin.String(HomeButton2Value,RadioFM) + !Skin.String(HomeButton3Value,RadioFM) + !Skin.String(HomeButton4Value,RadioFM) + !Skin.String(HomeButton5Value,RadioFM) + !Skin.String(HomeButton6Value,RadioFM)</visible>
+					<icon>button_radio.png</icon>
+					<onclick>RunScript("plugin.program.radioFM")</onclick>
+				</item>
+				<item id="4017">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.String(HomeButton1Value,Settings) + !Skin.String(HomeButton2Value,Settings) + !Skin.String(HomeButton3Value,Settings) + !Skin.String(HomeButton4Value,Settings) + !Skin.String(HomeButton5Value,Settings) + !Skin.String(HomeButton6Value,Settings)</visible>
+					<icon>button_settings.png</icon>
+					<onclick>ActivateWindow(Settings)</onclick>
+				</item>
+				<item id="4018">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonShutdownDialog) + !Skin.String(HomeButton1Value,Shutdown) + !Skin.String(HomeButton2Value,Shutdown) + !Skin.String(HomeButton3Value,Shutdown) + !Skin.String(HomeButton4Value,Shutdown) + !Skin.String(HomeButton5Value,Shutdown) + !Skin.String(HomeButton6Value,Shutdown) + !Skin.String(HomeButton1Value,ShutdownNoDialog) + !Skin.String(HomeButton2Value,ShutdownNoDialog) + !Skin.String(HomeButton3Value,ShutdownNoDialog) + !Skin.String(HomeButton4Value,ShutdownNoDialog) + !Skin.String(HomeButton5Value,ShutdownNoDialog) + !Skin.String(HomeButton6Value,ShutdownNoDialog)</visible>
+					<icon>button_shutdown.png</icon>
+					<onclick>ActivateWindow(1998)</onclick>
+				</item>  
+				<item id="4019">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(HideHomeButtonShutdownDialog) + !Skin.String(HomeButton1Value,Shutdown) + !Skin.String(HomeButton2Value,Shutdown) + !Skin.String(HomeButton3Value,Shutdown) + !Skin.String(HomeButton4Value,Shutdown) + !Skin.String(HomeButton5Value,Shutdown) + !Skin.String(HomeButton6Value,Shutdown) + !Skin.String(HomeButton1Value,ShutdownNoDialog) + !Skin.String(HomeButton2Value,ShutdownNoDialog) + !Skin.String(HomeButton3Value,ShutdownNoDialog) + !Skin.String(HomeButton4Value,ShutdownNoDialog) + !Skin.String(HomeButton5Value,ShutdownNoDialog) + !Skin.String(HomeButton6Value,ShutdownNoDialog)</visible>
+					<icon>button_shutdown.png</icon>
+					<onclick>RunScript("special://skin/scripts/system_poweroff.py")</onclick>
+				</item>  
+				<item id="4020">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFileManager)</visible>
+					<icon>button_filemanager.png</icon>
+					<onclick>ActivateWindow(FileManager)</onclick>
+				</item>
+				<item id="4021">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnect3g) + !Skin.String(HomeButton1Value,Connect3G) + !Skin.String(HomeButton2Value,Connect3G) + !Skin.String(HomeButton3Value,Connect3G) + !Skin.String(HomeButton4Value,Connect3G) + !Skin.String(HomeButton5Value,Connect3G) + !Skin.String(HomeButton6Value,Connect3G)</visible>
+					<icon>button_3g.png</icon>
+					<onclick>ActivateWindow(1118)</onclick>
+				</item>
+				<item id="4022">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonOBD) + !Skin.String(HomeButton1Value,OBD) + !Skin.String(HomeButton2Value,OBD) + !Skin.String(HomeButton3Value,OBD) + !Skin.String(HomeButton4Value,OBD) + !Skin.String(HomeButton5Value,OBD) + !Skin.String(HomeButton6Value,OBD)</visible>
+					<icon>button_obd.png</icon>
+					<onclick>-</onclick>
+				</item>  
+				<item id="4023">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather) + !Skin.String(HomeButton1Value,Weather) + !Skin.String(HomeButton2Value,Weather) + !Skin.String(HomeButton3Value,Weather) + !Skin.String(HomeButton4Value,Weather) + !Skin.String(HomeButton5Value,Weather) + !Skin.String(HomeButton6Value,Weather)</visible>
+					<icon>button_weather.png</icon>
+					<onclick>ActivateWindow(Weather)</onclick>
+				</item>
+				<item id="4024">
+					<label></label>
+		        	<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonFavourites) + !Skin.String(HomeButton1Value,Favourites) + !Skin.String(HomeButton2Value,Favourites) + !Skin.String(HomeButton3Value,Favourites) + !Skin.String(HomeButton4Value,Favourites) + !Skin.String(HomeButton5Value,Favourites) + !Skin.String(HomeButton6Value,Favourites)</visible>
+					<icon>button_favs.png</icon>
+					<onclick>ActivateWindow(Favourites)</onclick>
+				</item>
+				<item id="4025">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonPrograms) + !Skin.String(HomeButton1Value,Programs) + !Skin.String(HomeButton2Value,Programs) + !Skin.String(HomeButton3Value,Programs) + !Skin.String(HomeButton4Value,Programs) + !Skin.String(HomeButton5Value,Programs) + !Skin.String(HomeButton6Value,Programs)</visible>
+					<icon>button_apps.png</icon>
+					<onclick>ActivateWindow(Programs,addons://sources/executable)</onclick>
+				</item>
+				<item id="4026">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonConnectWiFi)</visible>
+					<icon>button_wifi.png</icon>
+					<onclick>ActivateWindow(1119)</onclick>
+				</item>
+				<item id="4027">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,day)</visible>
+					<icon>button_day.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,day)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadday)</onclick>
+				</item>
+				<item id="4028">
+					<label></label>
+			 		<visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonDayNight) + !Skin.String(DayNightModus,night)</visible>
+					<icon>button_night.png</icon>
+					<onclick>Skin.Reset(DayNightModus)</onclick>
+					<onclick>Skin.SetString(DayNightModus,night)</onclick>
+					<onclick>RunScript(/home/pi/.kodi/addons/plugin.program.carpc-xtouch/addon.py,loadnight)</onclick>
+				</item> 
+
+			</content>
+		</control>
+
+<!-- Appswitcher button -->
+		<control type="button" id="3050">
+			<description>App Switcher Icon</description>
+			<visible>!Skin.HasSetting(HideAppSwitcher)</visible>
+			<posx>74r</posx>
+			<posy>76r</posy>
+			<height>55</height>
+			<width>55</width>
+			<label></label> 
+			<font>font40_title</font>
+			<textcolor>-</textcolor>
+			<texturenofocus colordiffuse="$VAR[CustomColorNofocus]">button_switcher.png</texturenofocus>
+			<texturefocus colordiffuse="$VAR[CustomColorFocus]">button_switcher.png</texturefocus>
+			<onclick>ActivateWindow(1125)</onclick>
+			<onup condition="Control.IsVisible(9010)">Control.SetFocus(606)</onup>
+			<onup condition="!Control.IsVisible(9010)">Control.SetFocus(3006)</onup>
+			<onleft condition="Control.IsVisible(9004)">Control.SetFocus(9004)</onleft>
+			<onleft condition="Control.IsVisible(9003)">Control.SetFocus(9003)</onleft>
+			<onleft condition="!Control.IsVisible(9003) + !Control.IsVisible(9004)">Control.SetFocus(100)</onleft>
+		</control>
+		
+<!-- Clock -->
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="200" delay="3000">Visible</animation>
+			<include>Clock_Date</include> 
+			<include>Clock_Time</include>
+			<include>Clock_Time_White</include>
+	<!--	<include>Clock_Hour</include>  -->
+			<include>Time</include>				
+		</control>
 
    		<include>BehindDialogFadeOut</include>
-   		
-   			
    		
 	</controls>	
 </window>
