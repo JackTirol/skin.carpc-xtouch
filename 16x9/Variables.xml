@@ -180,9 +180,9 @@
 		<value condition="Skin.String(HomeButton1Value,OBD) + Skin.HasSetting(CustomMenuOBDIcon1)">$INFO[Skin.String(CustomOBDIcon1)]</value>
 		<value condition="Skin.String(HomeButton1Value,Weather) + Skin.HasSetting(CustomMenuWeatherIcon1)">$INFO[Skin.String(CustomWeatherIcon1)]</value>
 		<value condition="Skin.String(HomeButton1Value,Connect3G) + Skin.HasSetting(CustomMenu3GIcon1)">$INFO[Skin.String(Custom3GIcon1)]</value>
-		<value condition="Skin.String(HomeButton1Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon1)">$INFO[Skin.String(SettingsIcon2)]</value>
-		<value condition="Skin.String(HomeButton1Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon1)">$INFO[Skin.String(CustomMenuShutdownIcon1)]</value>
-		<value condition="Skin.String(HomeButton1Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon1)">$INFO[Skin.String(CustomMenuShutDownNoDialogIcon1)]</value>
+		<value condition="Skin.String(HomeButton1Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon1)">$INFO[Skin.String(CustomSettingsIcon1)]</value>
+		<value condition="Skin.String(HomeButton1Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon1)">$INFO[Skin.String(CustomMenuShutIcon1)]</value>
+		<value condition="Skin.String(HomeButton1Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon1)">$INFO[Skin.String(CustomShutDownNoDialogIcon1)]</value>
 		<value></value>
 	</variable>
 	<variable name="HomeButtonIcon2">
@@ -215,9 +215,9 @@
 		<value condition="Skin.String(HomeButton2Value,OBD) + Skin.HasSetting(CustomMenuOBDIcon2)">$INFO[Skin.String(CustomOBDIcon2)]</value>
 		<value condition="Skin.String(HomeButton2Value,Weather) + Skin.HasSetting(CustomMenuWeatherIcon2)">$INFO[Skin.String(CustomWeatherIcon2)]</value>
 		<value condition="Skin.String(HomeButton2Value,Connect3G) + Skin.HasSetting(CustomMenu3GIcon2)">$INFO[Skin.String(Custom3GIcon2)]</value>
-		<value condition="Skin.String(HomeButton2Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon2)">$INFO[Skin.String(SettingsIcon2)]</value>
-		<value condition="Skin.String(HomeButton2Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon2)">$INFO[Skin.String(CustomMenuShutdownIcon2)]</value>
-		<value condition="Skin.String(HomeButton2Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon2)">$INFO[Skin.String(CustomMenuShutDownNoDialogIcon2)]</value>
+		<value condition="Skin.String(HomeButton2Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon2)">$INFO[Skin.String(CustomSettingsIcon2)]</value>
+		<value condition="Skin.String(HomeButton2Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon2)">$INFO[Skin.String(CustomShutdownIcon2)]</value>
+		<value condition="Skin.String(HomeButton2Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon2)">$INFO[Skin.String(CustomShutDownNoDialogIcon2)]</value>
 		<value></value>
 	</variable>
 	<variable name="HomeButtonIcon3">
@@ -250,9 +250,9 @@
 		<value condition="Skin.String(HomeButton3Value,OBD) + Skin.HasSetting(CustomMenuOBDIcon3)">$INFO[Skin.String(CustomOBDIcon3)]</value>
 		<value condition="Skin.String(HomeButton3Value,Weather) + Skin.HasSetting(CustomMenuWeatherIcon3)">$INFO[Skin.String(CustomWeatherIcon3)]</value>
 		<value condition="Skin.String(HomeButton3Value,Connect3G) + Skin.HasSetting(CustomMenu3GIcon3)">$INFO[Skin.String(Custom3GIcon3)]</value>
-		<value condition="Skin.String(HomeButton3Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon3)">$INFO[Skin.String(SettingsIcon2)]</value>
-		<value condition="Skin.String(HomeButton3Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon3)">$INFO[Skin.String(CustomMenuShutdownIcon3)]</value>
-		<value condition="Skin.String(HomeButton3Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon3)">$INFO[Skin.String(CustomMenuShutDownNoDialogIcon3)]</value>
+		<value condition="Skin.String(HomeButton3Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon3)">$INFO[Skin.String(CustomSettingsIcon3)]</value>
+		<value condition="Skin.String(HomeButton3Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon3)">$INFO[Skin.String(CustomShutdownIcon3)]</value>
+		<value condition="Skin.String(HomeButton3Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon3)">$INFO[Skin.String(CustomShutDownNoDialogIcon3)]</value>
 		<value></value>
 	</variable>
 	<variable name="HomeButtonIcon4">
@@ -285,9 +285,9 @@
 		<value condition="Skin.String(HomeButton4Value,OBD) + Skin.HasSetting(CustomMenuOBDIcon4)">$INFO[Skin.String(CustomOBDIcon4)]</value>
 		<value condition="Skin.String(HomeButton4Value,Weather) + Skin.HasSetting(CustomMenuWeatherIcon4)">$INFO[Skin.String(CustomWeatherIcon4)]</value>
 		<value condition="Skin.String(HomeButton4Value,Connect3G) + Skin.HasSetting(CustomMenu3GIcon4)">$INFO[Skin.String(Custom3GIcon4)]</value>
-		<value condition="Skin.String(HomeButton4Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon4)">$INFO[Skin.String(SettingsIcon2)]</value>
-		<value condition="Skin.String(HomeButton4Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon4)">$INFO[Skin.String(CustomMenuShutdownIcon4)]</value>
-		<value condition="Skin.String(HomeButton4Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon4)">$INFO[Skin.String(CustomMenuShutDownNoDialogIcon4)]</value>
+		<value condition="Skin.String(HomeButton4Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon4)">$INFO[Skin.String(CustomSettingsIcon4)]</value>
+		<value condition="Skin.String(HomeButton4Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon4)">$INFO[Skin.String(CustomShutdownIcon4)]</value>
+		<value condition="Skin.String(HomeButton4Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon4)">$INFO[Skin.String(CustomShutDownNoDialogIcon4)]</value>
 		<value></value>
 	</variable>
 	<variable name="HomeButtonIcon5">
@@ -320,9 +320,9 @@
 		<value condition="Skin.String(HomeButton5Value,OBD) + Skin.HasSetting(CustomMenuOBDIcon5)">$INFO[Skin.String(CustomOBDIcon5)]</value>
 		<value condition="Skin.String(HomeButton5Value,Weather) + Skin.HasSetting(CustomMenuWeatherIcon5)">$INFO[Skin.String(CustomWeatherIcon5)]</value>
 		<value condition="Skin.String(HomeButton5Value,Connect3G) + Skin.HasSetting(CustomMenu3GIcon5)">$INFO[Skin.String(Custom3GIcon5)]</value>
-		<value condition="Skin.String(HomeButton5Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon5)">$INFO[Skin.String(SettingsIcon2)]</value>
-		<value condition="Skin.String(HomeButton5Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon5)">$INFO[Skin.String(CustomMenuShutdownIcon5)]</value>
-		<value condition="Skin.String(HomeButton5Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon5)">$INFO[Skin.String(CustomMenuShutDownNoDialogIcon5)]</value>
+		<value condition="Skin.String(HomeButton5Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon5)">$INFO[Skin.String(CustomSettingsIcon5)]</value>
+		<value condition="Skin.String(HomeButton5Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon5)">$INFO[Skin.String(CustomShutdownIcon5)]</value>
+		<value condition="Skin.String(HomeButton5Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon5)">$INFO[Skin.String(CustomShutDownNoDialogIcon5)]</value>
 		<value></value>
 	</variable>
 	<variable name="HomeButtonIcon6">
@@ -355,9 +355,9 @@
 		<value condition="Skin.String(HomeButton6Value,OBD) + Skin.HasSetting(CustomMenuOBDIcon6)">$INFO[Skin.String(CustomOBDIcon6)]</value>
 		<value condition="Skin.String(HomeButton6Value,Weather) + Skin.HasSetting(CustomMenuWeatherIcon6)">$INFO[Skin.String(CustomWeatherIcon6)]</value>
 		<value condition="Skin.String(HomeButton6Value,Connect3G) + Skin.HasSetting(CustomMenu3GIcon6)">$INFO[Skin.String(Custom3GIcon6)]</value>
-		<value condition="Skin.String(HomeButton6Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon6)">$INFO[Skin.String(SettingsIcon2)]</value>
-		<value condition="Skin.String(HomeButton6Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon6)">$INFO[Skin.String(CustomMenuShutdownIcon6)]</value>
-		<value condition="Skin.String(HomeButton6Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon6)">$INFO[Skin.String(CustomMenuShutDownNoDialogIcon6)]</value>
+		<value condition="Skin.String(HomeButton6Value,Settings) + Skin.HasSetting(CustomMenuSettingsIcon6)">$INFO[Skin.String(CustomSettingsIcon6)]</value>
+		<value condition="Skin.String(HomeButton6Value,Shutdown) + Skin.HasSetting(CustomMenuShutdownIcon6)">$INFO[Skin.String(CustomShutdownIcon6)]</value>
+		<value condition="Skin.String(HomeButton6Value,ShutdownNoDialog) + Skin.HasSetting(CustomMenuShutDownNoDialogIcon6)">$INFO[Skin.String(CustomShutDownNoDialogIcon6)]</value>
 		<value></value>
 	</variable>
 

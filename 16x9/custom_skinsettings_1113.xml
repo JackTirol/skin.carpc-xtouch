@@ -1922,7 +1922,7 @@
 				<ondown>326</ondown>
 			</control>		
 
-			<control type="radiobutton" id="326">
+<!--		<control type="radiobutton" id="326">
 				<visible>Skin.String(OpenSetting3b,1)</visible>
 				<height>55</height>
 				<width>920</width>
@@ -1938,7 +1938,7 @@
 				<ondown>327</ondown>
 			</control>
 			<control type="button" id="327">
-				<visible>Skin.String(OpenSetting3b,1)</visible>
+				<visible>Skin.String(OpenSetting3b,1) + Skin.HasSetting(UseCustomLogo)</visible>
 				<height>55</height>
 				<width>920</width>
 				<font>font24_title</font>
@@ -1952,7 +1952,7 @@
 				<enable>Skin.HasSetting(UseCustomLogo)</enable>
 				<onup>326</onup>
 				<ondown></ondown>
-			</control>
+			</control> -->
 		</control>
 
 <!-- Visualisation Home Screen -->

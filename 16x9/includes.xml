@@ -82,18 +82,7 @@
    
     <include name="Time">
         <control type="group">
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + [!Skin.HasSetting(HideHomeButtonTime) | Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]</visible>
-            <control type="image">
-                <include>Window_OpenClose_Animation_Slide_Down</include>
-                <include>VisibleFadeEffect</include>
-                <posx>440</posx>
-                <posy>20</posy>
-                <width>400</width>
-                <height>40</height>
-                <aligny>center</aligny>
-                <align>center</align>
-<!--            <texture>ceas.png</texture>  -->
-            </control>
+            <visible>[!Skin.HasSetting(HideHomeButtonTime) | [Player.HasAudio + !Skin.HasSetting(HideVisualisationHome) + Skin.HasSetting(Enable_Clock_Animation)]]</visible>
             <control type="label">
                 <include>Window_OpenClose_Animation_Slide_Down</include>
                 <description>time label</description>
@@ -104,10 +93,9 @@
                 <aligny>center</aligny>
                 <align>center</align>
                 <font>font60_title</font>
-                <textcolor>white</textcolor>
+                <textcolor>$VAR[CustomColorNofocus]</textcolor>
                 <label>$INFO[System.Time]</label>
                 <include>VisibleFadeEffect</include>
-         <!--       <include>16x9_xPos_Relocation</include>    -->
             </control>
         </control>
     </include>
@@ -117,7 +105,7 @@
     <include name="Weather">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Down</include>
-            <visible>[!IsEmpty(Weather.Plugin) + Weather.IsFetched] + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonWeather)</visible>
+            <visible>[!IsEmpty(Weather.Plugin) + Weather.IsFetched] + !Skin.HasSetting(HideHomeButtonWeather)</visible>
             <include>VisibleFadeEffect</include>
             <posx>712</posx>
             <posy>1</posy>
@@ -200,7 +188,7 @@
     <!-- weather Title Info -->
     <include name="WeatherTitleWidget">
         <control type="grouplist">
-            <visible>[!IsEmpty(Weather.Plugin) + Weather.IsFetched] + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideWeatherTitleWidget)</visible>
+            <visible>[!IsEmpty(Weather.Plugin) + Weather.IsFetched] + !Skin.HasSetting(HideWeatherTitleWidget)</visible>
                 <posx>820</posx>
                 <posy>5</posy>
                 <width>400</width>
@@ -309,7 +297,7 @@
             <height>400</height>
             <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
             <texture>logo_b.png</texture>
-            <visible>!!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonLogob) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]+ Skin.HasSetting(Hide1024x600Fix)</visible>
+            <visible>!Skin.HasSetting(HideHomeButtonLogob) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]+ Skin.HasSetting(Hide1024x600Fix)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
         </control>
     </include>
@@ -323,7 +311,7 @@
             <height>400</height>
             <aspectratio scalediffuse="true" align="center" aligny="center">stretch</aspectratio>
             <texture>logo_b.png</texture>
-            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonLogob) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]+ !Skin.HasSetting(Hide1024x600Fix)</visible>
+            <visible>!Skin.HasSetting(HideHomeButtonLogob) + ![Player.HasAudio + !Skin.HasSetting(HideVisualisationHome)]+ !Skin.HasSetting(Hide1024x600Fix)</visible>
             <include>Window_OpenClose_Animation_Zoom</include>
         </control>
     </include>
@@ -352,7 +340,7 @@
 	<include name="HomeBG_1">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_1_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -363,7 +351,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
                 <description>Home_1_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -374,7 +362,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_1_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -385,7 +373,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
                 <description>Home_1_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -399,7 +387,7 @@
 	<include name="HomeBG_2">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_2_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -410,7 +398,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
                 <description>Home_2_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -421,7 +409,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_2_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -432,7 +420,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
                 <description>Home_2_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -446,7 +434,7 @@
 	<include name="HomeBG_3">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_3_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -457,7 +445,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
                 <description>Home_3_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -468,7 +456,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_3_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -479,7 +467,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
                 <description>Home_3_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -493,7 +481,7 @@
 	<include name="HomeBG_4">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_4_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -504,7 +492,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
                 <description>Home_4_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -515,7 +503,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_4_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -526,7 +514,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
                 <description>Home_4_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -540,7 +528,7 @@
 	<include name="HomeBG_5">
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_5_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -551,7 +539,7 @@
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
                 <description>Home_5_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -562,7 +550,7 @@
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_5_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -573,7 +561,7 @@
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
                 <description>Home_5_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -587,7 +575,7 @@
 	<include name="HomeBG_6">
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_6_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -598,7 +586,7 @@
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
                 <description>Home_6_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -609,7 +597,7 @@
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_6_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -620,7 +608,7 @@
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
                 <description>Home_6_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -637,7 +625,7 @@
 	<include name="HomeBG_1Fix">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_1_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -648,7 +636,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3001)]</visible>
                 <description>Home_1_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -662,7 +650,7 @@
 	<include name="HomeBG_2Fix">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_2_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -673,7 +661,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3002)]</visible>
                 <description>Home_2_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -687,7 +675,7 @@
 	<include name="HomeBG_3Fix">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_3_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -698,7 +686,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3003)]</visible>
                 <description>Home_3_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -712,7 +700,7 @@
 	<include name="HomeBG_4Fix">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_4_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -723,7 +711,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3004)]</visible>
                 <description>Home_4_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -737,7 +725,7 @@
 	<include name="HomeBG_5Fix">
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_5_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -748,7 +736,7 @@
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3005)]</visible>
                 <description>Home_5_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -762,7 +750,7 @@
 	<include name="HomeBG_6Fix">
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures)</visible>
                 <description>Home_6_Background Nofocus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -773,7 +761,7 @@
             </control>
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGPictures) + [Skin.HasSetting(BGPicturesAllowFocus) + Control.HasFocus(3006)]</visible>
                 <description>Home_6_Background Focus</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -790,7 +778,7 @@
    	<include name="HomeBGColor_1">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_1_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -801,7 +789,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_1_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -815,7 +803,7 @@
 	<include name="HomeBGColor_2">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_2_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -826,7 +814,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_2_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -840,7 +828,7 @@
 	<include name="HomeBGColor_3">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_3_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -851,7 +839,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_3_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -865,7 +853,7 @@
 	<include name="HomeBGColor_4">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_4_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -876,7 +864,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_4_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -890,7 +878,7 @@
 	<include name="HomeBGColor_5">
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_5_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -901,7 +889,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_5_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -915,7 +903,7 @@
 	<include name="HomeBGColor_6">
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_6_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -926,7 +914,7 @@
             </control>
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_6_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -943,7 +931,7 @@
 	<include name="HomeBGColor_1Fix">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_1_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -957,7 +945,7 @@
 	<include name="HomeBGColor_2Fix">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_2_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -971,7 +959,7 @@
 	<include name="HomeBGColor_3Fix">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_3_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -985,7 +973,7 @@
 	<include name="HomeBGColor_4Fix">
             <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_4_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -999,7 +987,7 @@
 	<include name="HomeBGColor_5Fix">
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_5_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -1013,7 +1001,7 @@
 	<include name="HomeBGColor_6Fix">
              <control type="image">
 				<include>Window_OpenClose_Animation_Zoom</include>
-	            <visible>!Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
+	            <visible>!Skin.HasSetting(Hide1024x600Fix) + Skin.HasSetting(EnableBGColor)</visible>
                 <description>Home_6_Background</description>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -1258,7 +1246,7 @@
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Up</include>
 	       <visible>Player.HasAudio + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat)</visible> 
-<!--       <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible> -->
+<!--       <visible>Player.HasAudio + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible> -->
             <control type="label">
                 <visible>true</visible>
                 <posx>50</posx>
@@ -1397,7 +1385,7 @@
 
     <include name="RadioStationNameFix">
         <control type="group">
-        	<visible>substring(Window(Home).Property(Radio.Active),true) + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonRadioStationName) + !Player.HasAudio</visible>
+        	<visible>substring(Window(Home).Property(Radio.Active),true) + !Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonRadioStationName) + !Player.HasAudio</visible>
             <include>Window_OpenClose_Animation_Slide_Up</include>
             <control type="label">
                 <visible>true</visible>
@@ -1432,7 +1420,7 @@
     <include name="MusicPlayerTitle">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Up</include>
-<!--             <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible> -->
+<!--             <visible>Player.HasAudio + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat) + substring(Window(Home).Property(Radio.Active),false)</visible> -->
             <visible>Player.HasAudio + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + Skin.HasSetting(HideRandomRepeat)</visible>
             <control type="label">
                 <visible>true</visible>
@@ -1575,7 +1563,7 @@
     <include name="MusicPlayerTitleNavit">
         <control type="group">
             <include>Window_OpenClose_Animation_Slide_Up</include>
-            <visible>Player.HasAudio + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + substring(Window(Home).Property(Radio.Active),false)</visible>
+            <visible>Player.HasAudio + !Skin.HasSetting(HideHomeButtonMusicPlayerTitle) + substring(Window(Home).Property(Radio.Active),false)</visible>
             <control type="label">
                 <visible>true</visible>
                 <posx>66</posx>
@@ -1646,7 +1634,7 @@
 
     <include name="RadioStationNameNavit">
         <control type="group">
-        	<visible>substring(Window(Home).Property(Radio.Active),true) + !Window.IsVisible(ExtendedProgressDialog) + !Skin.HasSetting(HideHomeButtonRadioStationName) + !Player.HasAudio</visible>
+        	<visible>substring(Window(Home).Property(Radio.Active),true) + !Skin.HasSetting(HideHomeButtonRadioStationName) + !Player.HasAudio</visible>
             <include>Window_OpenClose_Animation_Slide_Up</include>
             <control type="label">
                 <visible>true</visible>
@@ -1681,7 +1669,7 @@
 
     <include name="RadioStationName">
         <control type="group">
-        	<visible>substring(Window(Home).Property(Radio.Active),true) + !Window.IsVisible(ExtendedProgressDialog) + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonRadioStationName) + !Player.HasAudio</visible>
+        	<visible>substring(Window(Home).Property(Radio.Active),true) + Skin.HasSetting(Hide1024x600Fix) + !Skin.HasSetting(HideHomeButtonRadioStationName) + !Player.HasAudio</visible>
             <include>Window_OpenClose_Animation_Slide_Up</include>
             <control type="label">
                 <visible>true</visible>
@@ -1987,7 +1975,6 @@
 
     <include name="CommonVolumeBottom">
         <control type="group">
-            <!--<visible>Player.HasMedia</visible>-->
             <posx>50</posx>
             <posy>0</posy>
             <control type="label">
@@ -2416,7 +2403,7 @@
         <control type="group">
             <posx>7</posx>
             <posy>15</posy>
-            <visible>!Window.IsVisible(ExtendedProgressDialog)</visible>
+            <visible></visible>
             <!--<include>Window_OpenClose_Animation</include>-->
             <include>Window_OpenClose_Animation_Slide_Down</include>
             <control type="image">

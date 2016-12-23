@@ -601,7 +601,7 @@
                 <posy>28</posy>
                 <width>80</width>
                 <height>80</height>
-                <texture colordiffuse="$VAR[CustomColorHomebuttons]">$INFO[Skin.String(CustomMenuButtonIcon6)]</texture>
+                <texture colordiffuse="$VAR[CustomColorHomebuttons]">$VAR[HomeButtonIcon6]</texture>
             </control>
             <control type="label">
                 <description>Button-6 Label</description>
